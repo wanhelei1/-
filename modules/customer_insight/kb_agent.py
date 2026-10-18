@@ -255,12 +255,24 @@ def build_insight(payload: dict, kb: KnowledgeBase) -> dict:
     concern_detail = text("concern_detail")
     trigger = "、".join(trigger_values)
     customer_words = text("customer_words", 1200)
-    priority_concern = text("priority_concern", 120)
-    if priority_concern == "其他" and text("concern_other", 160):
-        priority_concern = "其他：" + text("concern_other", 160)
-    if priority_concern not in concern_values:
-        priority_concern = concern_values[0] if concern_values else concern_detail[:80]
-    primary_concern = priority_concern
+    priority_values = choices("priority_concerns", 12)
+    legacy_priority = payload.get("priority_concern", "")
+    if not priority_values:
+        if isinstance(legacy_priority, list):
+            priority_values = [str(item).strip()[:80] for item in legacy_priority if str(item).strip()]
+        else:
+            legacy_text = str(legacy_priority or "").strip()[:120]
+            if legacy_text:
+                priority_values = [legacy_text]
+    if priority_values:
+        priority_values = add_other(priority_values, "concern_other")
+    if not priority_values:
+        priority_values = concern_values[:]
+    if not priority_values and concern_detail:
+        priority_values = [concern_detail[:80]]
+    priority_values = list(dict.fromkeys(priority_values))
+    primary_concern = priority_values[0] if priority_values else ""
+    priority_concern = "、".join(priority_values)
     channel = "、".join(channel_values)
     if not any((persona, scene, needs, concern_values, trigger, customer_words, scene_detail, need_detail, concern_detail)):
         raise ValueError("至少填写一项客户需求信息，再生成洞察卡。")
@@ -366,7 +378,8 @@ def build_insight(payload: dict, kb: KnowledgeBase) -> dict:
             "scene": entry(scene_value),
             "needs": entry(need_value),
             "concern": entry(concern_value),
-            "priority_concern": primary_concern,
+            "priority_concern": priority_concern,
+            "priority_concerns": priority_values,
             "trigger": entry(trigger),
             "channel": channel,
         },

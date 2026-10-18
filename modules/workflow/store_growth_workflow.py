@@ -110,6 +110,9 @@ def run_store_growth_workflow(payload: Mapping[str, Any]) -> dict[str, Any]:
     insight_scene = customer.get("scene", {}).get("value", "")
     insight_persona = customer.get("persona", {}).get("value", "")
     insight_concern = customer.get("concern", {}).get("value", "")
+    insight_priorities = customer.get("priority_concerns", [])
+    if isinstance(insight_priorities, list):
+        insight_priorities = "、".join(str(item).strip() for item in insight_priorities if str(item).strip())
     profile = {
         "need": str(payload.get("customer_task") or payload.get("need") or insight_need).strip(),
         "customer_type": str(payload.get("customer_type") or insight_persona),
@@ -122,7 +125,7 @@ def run_store_growth_workflow(payload: Mapping[str, Any]) -> dict[str, Any]:
             str(payload.get("required_software", "")),
             str(payload.get("peripherals", "")),
         ))),
-        "preferences": str(payload.get("preferences") or insight_concern),
+        "preferences": str(payload.get("preferences") or insight_priorities or insight_concern),
         "rejected_features": str(payload.get("rejected_features", "")),
         "notes": "\n".join(filter(None, (
             str(payload.get("required_software", "")),

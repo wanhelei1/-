@@ -15,6 +15,24 @@ class WorkflowIntegrationTests(unittest.TestCase):
         self.assertEqual(result["customer"]["scene"]["status"], "待追问")
         self.assertTrue(result["follow_up"])
 
+    def test_insight_preserves_multiple_priority_concerns_in_order(self):
+        result = run_customer_insight({
+            "needs": ["学习资料整理"],
+            "concerns": ["预算与价格", "软件与外设兼容", "便携与续航"],
+            "priority_concerns": ["预算与价格", "软件与外设兼容"],
+        })
+        customer = result["customer"]
+        self.assertEqual(customer["priority_concerns"], ["预算与价格", "软件与外设兼容"])
+        self.assertEqual(customer["priority_concern"], "预算与价格、软件与外设兼容")
+
+    def test_legacy_single_priority_concern_remains_supported(self):
+        result = run_customer_insight({
+            "needs": ["软件兼容"],
+            "concerns": ["软件/外设兼容"],
+            "priority_concern": "软件/外设兼容",
+        })
+        self.assertEqual(result["customer"]["priority_concerns"], ["软件/外设兼容"])
+
     def test_complete_flow_connects_insight_recommendation_price_and_compliance(self):
         result = run_store_growth_workflow({
             "personas": ["学生"],
