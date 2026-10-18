@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from follow_up_module import (
+from modules.follow_up.follow_up_module import (
     create_plan,
     load_plans,
     save_plans,

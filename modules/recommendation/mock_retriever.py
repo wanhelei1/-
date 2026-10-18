@@ -16,10 +16,10 @@ from typing import Any, Iterable, Mapping
 
 LOGGER = logging.getLogger(__name__)
 
-PROJECT_ROOT = Path(__file__).resolve().parent
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_KB_ROOT = (
     PROJECT_ROOT
-    / ".huawei-kb-review-session"
+    / "knowledge-base"
     / "华为PC全板块深度知识库_v7"
 )
 

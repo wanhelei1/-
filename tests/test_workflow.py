@@ -5,7 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from store_growth_workflow import run_customer_insight, run_store_growth_workflow
+from modules.workflow.store_growth_workflow import run_customer_insight, run_store_growth_workflow
 
 
 class WorkflowIntegrationTests(unittest.TestCase):

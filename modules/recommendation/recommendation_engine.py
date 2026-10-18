@@ -13,7 +13,7 @@ from dataclasses import dataclass, field
 from typing import Any, Callable, Mapping
 from urllib.parse import urlparse
 
-from retrieval_adapter import RetrievalAdapterError, RetrievalResponse, retrieve_with_adapter
+from .retrieval_adapter import RetrievalAdapterError, RetrievalResponse, retrieve_with_adapter
 
 LOGGER = logging.getLogger(__name__)
 MAX_RECOMMENDATIONS = 3
