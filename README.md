@@ -4,9 +4,9 @@
 
 ## 30 秒了解项目
 
-- **解决什么问题：** 把门店顾客接待中的需求确认、产品推荐、公开价格核验、营销草稿、成交跟进和依据合规检查组织成一条可追溯流程。
+- **解决什么问题：** 把需求确认、产品推荐、公开价格核验、营销草稿、3 分钟顾客演示脚本、成交跟进和依据合规检查组织成一条可追溯流程。
 - **怎么运行：** 不需要 API Key，不需要第三方 Python 包，不需要联网；使用随包分发的公开知识库和确定性规则即可运行。
-- **当前边界：** 六个业务环节已有对应功能；“按客户洞察自动生成个性化 3 分钟演示脚本”仍是 P1 规划项。
+- **当前边界：** 七步业务环节均有代码实现；演示脚本是可编辑的规则驱动草稿，产品事实带来源，兼容、价格、库存与体验仍须核验。
 - **提交入口：** GitHub 当前地址为 `https://github.com/wanhelei1/-`；ModelScope 尚未配置已验证的公开地址。
 
 ## 先看程序流程
@@ -23,6 +23,7 @@ flowchart TD
     FLOW --> RECOMMEND["02 recommendation\n推荐与本地检索适配"]
     FLOW --> PRICE["03 pricing\n公开价格快照核验"]
     FLOW --> MARKETING["04 marketing\n证据优先营销草稿"]
+    FLOW --> DEMO["05 demo_script\n五段式顾客演示脚本"]
     FLOW --> COMPLIANCE["07 compliance\n依据与风险检查"]
     APP --> FOLLOWUP["06 follow_up\n匿名四节点成交跟进"]
 
@@ -30,13 +31,13 @@ flowchart TD
     RECOMMEND --> KB
     PRICE --> KB
     MARKETING --> KB
+    DEMO --> KB
     FLOW --> RESULT["结构化结果\n来源 / 风险 / 待人工确认"]
     COMPLIANCE --> RESULT
     FOLLOWUP --> RESULT
     QUICK --> RESULT
     RESULT --> UI
 
-    DEMO["05 演示脚本\n当前为规划项"] -. "P1" .-> FLOW
 ```
 
 ### 七步业务流程
@@ -47,7 +48,7 @@ flowchart TD
 | 02 推荐方案 | 产品、推荐理由、关键事实、适配程度、来源 | 已实现 | `modules/recommendation/` |
 | 03 价格与报价状态 | 配置、公开价格、价格口径、基准日期、来源、待核验项 | 已实现 | `modules/pricing/` |
 | 04 营销内容 | 平台、策略、标题、正文、行动引导、图片来源 | 已实现 | `modules/marketing/` |
-| 05 3 分钟演示脚本 | 开场、需求确认、产品演示、异议处理、收口 | 规划中 | 知识库方法论可检索，自动个性化生成尚未实现 |
+| 05 3 分钟演示脚本 | 开场、需求确认、产品演示、异议处理、收口 | 已实现 | `modules/demo_script/`；180 秒规则驱动草稿，事实带出处，未知项待核验 |
 | 06 成交跟进 | 今天、第 1 天、第 3 天、第 7 天 | 已实现 | `modules/follow_up/` |
 | 07 依据与合规 | 引用来源、风险、待人工确认项 | 已实现 | `modules/compliance/` |
 
@@ -94,7 +95,8 @@ py -3 -m unittest discover -s tests -v
 2. 选择「门店零售」，点击示例输入。
 3. 点击「生成接待方案与价格核验」。
 4. 重点查看客户洞察、推荐依据、价格核验日期、营销草稿和合规待确认项。
-5. 再进入「知识问答」和「成交跟进」，查看本地检索来源与匿名四节点计划。
+5. 点击「查看生成的 3 分钟演示脚本」，检查五段话术及产品事实出处；也可从侧栏独立生成。
+6. 再进入「知识问答」和「成交跟进」，查看本地检索来源与匿名四节点计划。
 
 ## 接口入口
 
@@ -103,11 +105,12 @@ py -3 -m unittest discover -s tests -v
 | GET | `/health` | 服务健康检查 |
 | GET | `/api/bootstrap` | 前端初始化数据 |
 | POST | `/api/insight` | 生成客户洞察卡 |
-| POST | `/api/workflow` | 串联洞察、推荐、价格、营销和合规 |
+| POST | `/api/workflow` | 串联洞察、推荐、价格、营销、演示脚本和合规 |
 | POST | `/api/consult` | 轻量顾客接待结果 |
 | POST | `/api/knowledge-query` | 本地知识片段检索 |
 | POST | `/api/quote` | 公开价格快照与核验状态 |
 | POST | `/api/marketing` | 生成营销内容草稿 |
+| POST | `/api/demo-script` | 生成五段式顾客演示脚本 |
 | POST | `/api/followups/plan` | 创建四节点跟进计划 |
 | POST | `/api/followups/task` | 更新单个跟进节点 |
 | POST | `/api/followups/status` | 更新计划状态 |
@@ -130,6 +133,7 @@ py -3 -m unittest discover -s tests -v
 │   ├── recommendation/       # 02 推荐与检索适配
 │   ├── pricing/              # 03 价格快照核验
 │   ├── marketing/            # 04 营销草稿
+│   ├── demo_script/          # 05 三分钟顾客演示脚本
 │   ├── follow_up/            # 06 成交跟进
 │   └── compliance/           # 07 依据与合规
 ├── tests/                    # 自动化测试和测试说明
@@ -141,7 +145,7 @@ py -3 -m unittest discover -s tests -v
 
 1. [modules/workflow/](modules/workflow/)：先看跨模块如何串联。
 2. [modules/customer_insight/](modules/customer_insight/) 和 [modules/recommendation/](modules/recommendation/)：理解客户需求与推荐依据如何形成。
-3. [modules/pricing/](modules/pricing/)、[modules/marketing/](modules/marketing/) 和 [modules/compliance/](modules/compliance/)：理解价格、内容和合规边界。
+3. [modules/pricing/](modules/pricing/)、[modules/marketing/](modules/marketing/)、[modules/demo_script/](modules/demo_script/) 和 [modules/compliance/](modules/compliance/)：理解价格、内容、顾客演示和合规边界。
 4. [modules/follow_up/](modules/follow_up/)：查看匿名跟进计划的数据结构和状态流转。
 5. [tests/](tests/)：用测试确认接口和跨模块契约。
 
@@ -149,11 +153,12 @@ py -3 -m unittest discover -s tests -v
 
 | 目录 | 核心文件 | 作用 |
 |---|---|---|
-| `modules/workflow/` | `store_growth_workflow.py` | 统一装配洞察、推荐、价格、营销和合规结果 |
+| `modules/workflow/` | `store_growth_workflow.py` | 统一装配洞察、推荐、价格、营销、演示脚本和合规结果 |
 | `modules/customer_insight/` | `kb_agent.py` | 从显式顾客输入生成洞察卡和待追问项 |
 | `modules/recommendation/` | `recommendation_engine.py`、`retrieval_adapter.py`、`mock_retriever.py` | 本地 Mock 检索、推荐候选和硬条件评估 |
 | `modules/pricing/` | `pricing_module.py` | 读取官方公开价格快照，区分金额、日期和人工核验项 |
 | `modules/marketing/` | `marketing_content_module.py` | 依据 P2/P6 素材生成可审阅营销草稿 |
+| `modules/demo_script/` | `demo_script_module.py` | 生成五段式顾客演示草稿，产品事实附来源和行号 |
 | `modules/follow_up/` | `follow_up_module.py` | 生成今天、第 1 天、第 3 天、第 7 天匿名跟进计划 |
 | `modules/compliance/` | `block07_compliance.py` | 检查绝对化、价格促销、无依据比较、虚构体验等风险 |
 
@@ -190,7 +195,7 @@ py -3 prepare_public_deploy.py --output dist/public-deploy
 
 1. 本地检索使用确定性关键词排序和精选片段，下一步可扩展全库索引与相关性调优。
 2. 价格模块不接入动态促销、库存、补贴或授权折扣。
-3. 3 分钟演示脚本的个性化自动生成列为 P1，当前仅保留知识库方法论和话术片段。
+3. 演示脚本为确定性规则生成，缺少匹配事实时保持待核验；不能替代 SKU、兼容性、实时商业信息或现场体验确认。
 4. 未使用真实门店成交或转化样本，不声明销售提升、ROI 或客户案例效果。
 
 ## 团队

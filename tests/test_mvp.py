@@ -94,6 +94,14 @@ class HttpSmokeTests(unittest.TestCase):
         self.assertIn("title", marketing)
         quote = self.post("/api/quote", {"product":"HUAWEI MateBook 14"})
         self.assertIn("status", quote)
+        script = self.post("/api/demo-script", {
+            "product":"HUAWEI MateBook 14",
+            "customer_task":"整理课程资料",
+            "concern":"软件兼容",
+        })
+        self.assertEqual(script["duration_seconds"], 180)
+        self.assertEqual(len(script["sections"]), 5)
+        self.assertTrue(script["sections"][2]["evidence"])
 
     def test_unified_workflow_endpoint(self):
         result = self.post("/api/workflow", {
