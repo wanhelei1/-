@@ -10,6 +10,7 @@ KB = BASE / "knowledge-base" / "华为PC全板块深度知识库_v7"
 os.environ.setdefault("KB_ROOT", str(KB))
 
 from modules.compliance.block07_compliance import build_evidence_section  # noqa: E402
+from modules.demo_script.demo_script_module import generate_demo_script  # noqa: E402
 from modules.customer_insight.kb_agent import KnowledgeBase, build_insight  # noqa: E402
 from modules.marketing.marketing_content_module import generate_marketing_content  # noqa: E402
 from modules.pricing.pricing_module import build_quote_status  # noqa: E402
@@ -165,6 +166,19 @@ def run_store_growth_workflow(payload: Mapping[str, Any]) -> dict[str, Any]:
         )
         marketing["compliance_review"] = compliance
 
+    demo_script = generate_demo_script(
+        {
+            "product": product,
+            "customer_type": payload.get("customer_type") or insight_persona,
+            "scenario": payload.get("scenario") or payload.get("usage_scenario") or insight_scene,
+            "customer_task": profile["need"],
+            "concern": payload.get("concern") or payload.get("priority_concern") or insight_concern,
+            "required_software": payload.get("required_software", ""),
+            "peripherals": payload.get("peripherals", ""),
+        },
+        knowledge_base_dir=KB,
+    )
+
     return {
         "workflow": "store_growth_evidence_first_v1",
         "customer_insight": insight,
@@ -179,6 +193,7 @@ def run_store_growth_workflow(payload: Mapping[str, Any]) -> dict[str, Any]:
         },
         "quote": quote,
         "marketing": marketing,
+        "demo_script": demo_script,
         "compliance": compliance,
         "guardrails": [
             "推荐仅基于检索来源；硬条件未知时不会按满足处理。",

@@ -14,6 +14,7 @@ from urllib.parse import unquote, urlparse
 
 from modules.follow_up.follow_up_module import create_plan as create_follow_up_plan
 from modules.follow_up.follow_up_module import update_plan_status, update_task as update_follow_up_task
+from modules.demo_script.demo_script_module import generate_demo_script
 from modules.marketing.marketing_content_module import generate_marketing_content
 from modules.pricing.pricing_module import build_quote_status
 from modules.recommendation.retrieval_adapter import (
@@ -227,6 +228,8 @@ class Handler(BaseHTTPRequestHandler):
                 result = _consult(payload)
             elif path == "/api/quote":
                 result = build_quote_status(str(payload.get("product", ""))).to_dict()
+            elif path == "/api/demo-script":
+                result = generate_demo_script(payload, knowledge_base_dir=KB)
             elif path == "/api/marketing":
                 result = generate_marketing_content(
                     str(payload.get("product", "")), str(payload.get("platform", "小红书")),

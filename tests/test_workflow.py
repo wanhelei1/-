@@ -48,6 +48,8 @@ class WorkflowIntegrationTests(unittest.TestCase):
         })
         self.assertIn("customer_insight", result)
         self.assertIn("recommendation", result)
+        self.assertIn("demo_script", result)
+        self.assertEqual(result["demo_script"]["duration_seconds"], 180)
         self.assertIsNotNone(result["quote"])
         self.assertIsNotNone(result["marketing"])
         self.assertIn("compliance_review", result["marketing"])
