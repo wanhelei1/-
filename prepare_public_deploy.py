@@ -15,17 +15,9 @@ ROOT_FILES = (
     "README.md",
     "app.py",
     "index.html",
-    "follow_up_module.py",
-    "marketing_content_module.py",
-    "pricing_module.py",
     "prepare_public_deploy.py",
-    "store_growth_workflow.py",
 )
-MODULE_FILES = {
-    "3号(1)": ("mock_retriever.py", "recommendation_engine.py", "retrieval_adapter.py"),
-    "BLOCK-07": ("block07_compliance.py",),
-    "customer_insight_agent": ("kb_agent.py",),
-}
+MODULE_DIR = "modules"
 
 
 def _ignore_restricted(directory: str, names: list[str]) -> set[str]:
@@ -57,27 +49,43 @@ def create_bundle(output: Path) -> tuple[int, int]:
         shutil.copy2(source, destination)
         copied.append(relative)
 
-    for directory, filenames in MODULE_FILES.items():
-        for filename in filenames:
-            relative = Path(directory) / filename
-            source = ROOT / relative
-            if not source.is_file():
-                raise FileNotFoundError(source)
-            destination = output / relative
-            destination.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(source, destination)
-            copied.append(relative.as_posix())
+    module_source = ROOT / MODULE_DIR
+    if not module_source.is_dir():
+        raise FileNotFoundError(module_source)
+    shutil.copytree(
+        module_source,
+        output / MODULE_DIR,
+        ignore=shutil.ignore_patterns("__pycache__", "*.pyc"),
+    )
+    copied.extend(
+        path.relative_to(output).as_posix()
+        for path in (output / MODULE_DIR).rglob("*")
+        if path.is_file()
+    )
 
     test_source = ROOT / "tests"
     if not test_source.is_dir():
         raise FileNotFoundError(test_source)
     shutil.copytree(test_source, output / "tests", ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
-    copied.extend(path.relative_to(output).as_posix() for path in (output / "tests").rglob("*.py"))
+    copied.extend(
+        path.relative_to(output).as_posix()
+        for path in (output / "tests").rglob("*")
+        if path.is_file()
+    )
 
-    knowledge_base = ROOT / "knowledge-base" / KB_NAME
+    knowledge_base_root = ROOT / "knowledge-base"
+    knowledge_base_readme = knowledge_base_root / "README.md"
+    if not knowledge_base_readme.is_file():
+        raise FileNotFoundError(knowledge_base_readme)
+    knowledge_base_target = output / "knowledge-base"
+    knowledge_base_target.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(knowledge_base_readme, knowledge_base_target / "README.md")
+    copied.append("knowledge-base/README.md")
+
+    knowledge_base = knowledge_base_root / KB_NAME
     if not knowledge_base.is_dir():
         raise FileNotFoundError(knowledge_base)
-    target_kb = output / "knowledge-base" / KB_NAME
+    target_kb = knowledge_base_target / KB_NAME
     shutil.copytree(knowledge_base, target_kb, ignore=_ignore_restricted)
     knowledge_files = sorted(
         path.relative_to(output).as_posix()

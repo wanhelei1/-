@@ -290,7 +290,7 @@ def retrieve_with_adapter(
     payload = {"query": query.strip(), "top_k": top_k}
 
     if selected_mode == "mock":
-        from mock_retriever import retrieve as mock_retrieve
+        from .mock_retriever import retrieve as mock_retrieve
 
         try:
             raw = mock_retrieve(payload)

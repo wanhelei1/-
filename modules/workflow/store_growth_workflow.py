@@ -2,30 +2,22 @@
 from __future__ import annotations
 
 import os
-import sys
 from pathlib import Path
 from typing import Any, Mapping
 
-BASE = Path(__file__).resolve().parent
+BASE = Path(__file__).resolve().parents[2]
 KB = BASE / "knowledge-base" / "华为PC全板块深度知识库_v7"
-TEAM_DIR = BASE / "3号(1)"
-COMPLIANCE_DIR = BASE / "BLOCK-07"
-
-# Preserve the independent teammate modules and their import contracts.
-for module_dir in (str(TEAM_DIR), str(COMPLIANCE_DIR)):
-    if module_dir not in sys.path:
-        sys.path.insert(0, module_dir)
 os.environ.setdefault("KB_ROOT", str(KB))
 
-from customer_insight_agent.kb_agent import KnowledgeBase, build_insight  # noqa: E402
-from recommendation_engine import (  # noqa: E402
+from modules.compliance.block07_compliance import build_evidence_section  # noqa: E402
+from modules.customer_insight.kb_agent import KnowledgeBase, build_insight  # noqa: E402
+from modules.marketing.marketing_content_module import generate_marketing_content  # noqa: E402
+from modules.pricing.pricing_module import build_quote_status  # noqa: E402
+from modules.recommendation.recommendation_engine import (  # noqa: E402
     generate_recommendation_plan,
     render_customer_requirements,
     render_recommendation_results,
 )
-from block07_compliance import build_evidence_section  # noqa: E402
-from marketing_content_module import generate_marketing_content  # noqa: E402
-from pricing_module import build_quote_status  # noqa: E402
 
 
 _INSIGHT_KB: KnowledgeBase | None = None

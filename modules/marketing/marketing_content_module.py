@@ -5,7 +5,7 @@ briefs and the P6 image index; it never invents testimonials, dynamic offers,
 prices, inventory, performance claims, or image rights.
 
 Example:
-    from marketing_content_module import generate_marketing_content
+    from modules.marketing.marketing_content_module import generate_marketing_content
     result = generate_marketing_content(
         "HUAWEI MateBook 14", platform="小红书", audience="学生用户"
     )
@@ -19,7 +19,7 @@ from typing import Dict, List, Optional
 
 
 DEFAULT_KB = (
-    Path(__file__).resolve().parent
+    Path(__file__).resolve().parents[2]
     / "knowledge-base"
     / "华为PC全板块深度知识库_v7"
 )

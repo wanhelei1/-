@@ -2,7 +2,7 @@
 
 本模块只处理价格事实，不计算未授权的门店折扣、补贴或成交价。
 队友接入方式：
-    from pricing_module import get_quote_status
+    from modules.pricing.pricing_module import get_quote_status
     result = get_quote_status("HUAWEI MateBook 14（鸿蒙版）", "预算6000元")
 
 返回值是可直接序列化为 JSON 的 dict，不依赖第三方包。
@@ -21,7 +21,7 @@ from typing import Dict, Iterable, List, Optional
 
 
 DEFAULT_CSV = (
-    Path(__file__).resolve().parent
+    Path(__file__).resolve().parents[2]
     / "knowledge-base"
     / "华为PC全板块深度知识库_v7"
     / "P1-产品参数库"
@@ -117,7 +117,7 @@ def load_price_records(csv_path: Optional[Path | str] = None) -> List[PriceRecor
     if not path.exists():
         raise FileNotFoundError(
             f"找不到价格快照：{path}\n"
-            "请确认知识库已解压到 pricing_module.py 同级的 knowledge-base 目录。"
+            "请确认仓库根目录的 knowledge-base 目录已准备好。"
         )
     with path.open("r", encoding="utf-8-sig", newline="") as handle:
         return [_record(row) for row in csv.DictReader(handle)]

@@ -12,12 +12,16 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
-from marketing_content_module import generate_marketing_content
-from pricing_module import build_quote_status
-from store_growth_workflow import run_customer_insight, run_store_growth_workflow
-from follow_up_module import create_plan as create_follow_up_plan
-from follow_up_module import update_plan_status, update_task as update_follow_up_task
-from retrieval_adapter import RetrievalAdapterError, mode_label, retrieve_with_adapter
+from modules.follow_up.follow_up_module import create_plan as create_follow_up_plan
+from modules.follow_up.follow_up_module import update_plan_status, update_task as update_follow_up_task
+from modules.marketing.marketing_content_module import generate_marketing_content
+from modules.pricing.pricing_module import build_quote_status
+from modules.recommendation.retrieval_adapter import (
+    RetrievalAdapterError,
+    mode_label,
+    retrieve_with_adapter,
+)
+from modules.workflow.store_growth_workflow import run_customer_insight, run_store_growth_workflow
 
 BASE = Path(__file__).resolve().parent
 KB = BASE / "knowledge-base" / "华为PC全板块深度知识库_v7"

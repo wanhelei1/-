@@ -9,9 +9,8 @@ from pathlib import Path
 from typing import Iterable
 
 
-_PROJECT_ROOT = Path(__file__).resolve().parent.parent
-_PROJECT_KB = _PROJECT_ROOT / "knowledge-base" / "华为PC全板块深度知识库_v7"
-DEFAULT_KB = _PROJECT_KB if _PROJECT_KB.is_dir() else _PROJECT_ROOT / "华为PC全板块深度知识库_v7"
+_PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_KB = _PROJECT_ROOT / "knowledge-base" / "华为PC全板块深度知识库_v7"
 EXCLUDED_PARTS = {"P4-价格政策库（机密）", "90-待审核", "99-历史归档", "09-来源研究底稿"}
 TEXT_SUFFIXES = {".md", ".csv", ".json"}
 PRODUCT_DIRS = (
