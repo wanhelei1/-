@@ -1,0 +1,17 @@
+# ===== 密钥与环境（红线：任何 Key 不得进仓库）=====
+.env
+*.key
+
+# ===== Python 运行产物 =====
+__pycache__/
+*.pyc
+
+# ===== 大文件与受限资料（教材/赛题 PDF、压缩包不进仓库）=====
+*.pdf
+*.zip
+node_modules/
+data/uploads/
+
+# ===== 本地构建与系统文件 =====
+dist/
+.DS_Store

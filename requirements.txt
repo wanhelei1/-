@@ -1,0 +1,2 @@
+# Standard-library only. No API key or external package is required.
+# Python >= 3.10，直接运行：python3 app.py（Windows: py -3 app.py）

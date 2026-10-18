@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.git/
+tests/
+*.zip
+knowledge-base/华为PC全板块深度知识库_v7/P4-价格政策库（机密）/
+knowledge-base/华为PC全板块深度知识库_v7/90-待审核/
+knowledge-base/华为PC全板块深度知识库_v7/99-历史归档/
+knowledge-base/华为PC全板块深度知识库_v7/00-建库规范/09-来源研究底稿/
+dist/

@@ -1,0 +1,1522 @@
+﻿相对路径,字节数,SHA256
+00-建库规范/01-分类与命名规范/分类与命名规范.md,3837,9912a8890e25e8af78a78ee5eda3b989ae50245541b939672c66b10253c1bc02
+00-建库规范/02-元数据模板/元数据模板.md,3814,847c4179c71e3924a647d56d37f03505d21973f29ac1145cfaa15218e75d2697
+00-建库规范/03-术语与权威源/权威来源顺序.md,3821,a5532bfa9416e6062432de1f0a3fec9946fba677fa65f153d95e10e0eb5a8f00
+00-建库规范/04-内容审核/事实核验流程.md,3710,55d8de8b5b514bebfb08758bc4a2453263ed13e8ce51e298103f4e709bab2848
+00-建库规范/04-内容审核/发布前检查表.md,4010,f0ac50732a3c1daa287c8c2ffd8b46b20b81b04bec7411864629fc39c76f6cb9
+00-建库规范/04-内容审核/图片核验流程.md,3764,bcc6412316269ee15660450aefdff5928ac972d21810ace3218ebb90d7a06c83
+00-建库规范/05-版本管理/冲突信息处理.md,3672,bb8051d3a41af4d9f0433725523598b0814c6d9d17401008fa6da4e9314e93e8
+00-建库规范/05-版本管理/更新与归档规则.md,3639,4101f85d7681cce57fac274eca4ce2ff03ec5d7588baca7d6590c46d69f2d1b0
+00-建库规范/06-智能体规则/引用格式.md,3678,fe46270774a02b8a83b301a51905089e736aa4c415a1397008aaf7a68a762593
+00-建库规范/06-智能体规则/拒答与转人工.md,3690,8072439c4eb7ad6294a12834c448b4df837352ac295a09af0b01b8ca9c150286
+00-建库规范/06-智能体规则/检索顺序.md,3663,d9584ea82febebe5dc2fa5e3b02e1d1e45f9d34d37a0d3afb90db720e219c523
+00-建库规范/07-数据质量/敏感信息规则.md,3716,714cd66357f0d8d01faf4d5206672f93b13f8439df2a6d1fa6fccf24f78ff9f0
+00-建库规范/07-数据质量/重复内容判定.md,3721,7cfd477989d3bb8cd7e6a65bfd1ffd456260c69f5a84048a675b20fa8320d588
+00-建库规范/08-术语表/内容类型术语.md,3990,7a6fbe4e630636a0a717e03f6ef0b8c80382f8a3f1247a1e06b876fdec76df86
+00-建库规范/08-术语表/电脑核心术语.md,3976,e67f70a9c437c44b04419330b652326ccb4c42fb3dca3d38e9021f11165a7fdd
+00-建库规范/09-来源研究底稿/research_competitors_a.md,14513,0bfd7ae6c3759614e71c6a2ac21e2c74ac18509fca0e3a79b77499672d0c6f1b
+00-建库规范/09-来源研究底稿/research_competitors_b.md,8291,1d8172f3fada263a334f3e94eb3e055857192aa66f868057fe3a957527c75445
+00-建库规范/09-来源研究底稿/research_huawei_marketing_cases_v6.md,199312,9bc7017162857b32d3b31adbf75145bb6a9873b9e428f7e24663bbe9e76c0af5
+00-建库规范/09-来源研究底稿/research_platform_softcopy_cases_v6.md,59539,914bcbafb375ac05331e1bea4319c2475a3104d501c03084f3ef6ba4fe762e81
+00-建库规范/09-来源研究底稿/research_products_commercial.md,14136,938ff99f56ebaf83c9165ef54f1ee477482b5afb073567040bad702fcc9a9484
+00-建库规范/09-来源研究底稿/research_support_official.md,40755,0e901ad75bc46d42820e48d4635a0527f69b810474075bacfdecae68552533da
+00-建库规范/09-来源研究底稿/来源研究与使用边界.md,3963,b84f3e35816f5fa987052894919b04e7bde20c13244b5bffcd2bbd3524a54cb7
+90-待审核/使用说明.md,2996,dfbbea4fec79ab64a377795f43e9e089c9f9ba337749813fedb81bb18afbf9d9
+99-历史归档/使用说明.md,3157,05006494126ca106bcc15fab0be226281c9d388a103de69714144a9926e13fda
+P1-产品参数库/00-全库横向索引/全型号参数联合矩阵.csv,13869,61d6c58bd6843e2d7012d695c231d6327dabc7722656b4665c81c3bffd5055ac
+P1-产品参数库/00-全库横向索引/全型号总览.md,4132,62bee32e4a2d7c1e43ab6274c18b442675c28f1c3282a4747eb0c0dfb34126ff
+P1-产品参数库/00-全库横向索引/全部图片联合检索表.csv,40139,5f70d9711bc00dbe4f01447c3cee1a9aec9d930b37acfdc57df4df5623c17a8f
+P1-产品参数库/00-全库横向索引/内存矩阵.csv,1112,5e4f9c6009b8b33c9dbca3369a7b00f38a6446daf4a482c062cd99374ee09738
+P1-产品参数库/00-全库横向索引/处理器矩阵.csv,1715,cd967361e2922a0153b44c0d796f50c5161da735c93b8106e704cbdaa50fd312
+P1-产品参数库/00-全库横向索引/存储矩阵.csv,1215,87eb0c9a65358e32382f33b42960a0477be5500df0fa35f876801187297569f2
+P1-产品参数库/00-全库横向索引/尺寸重量矩阵.csv,2309,2be24fa1b410e24d212ec48e3489c4964e3c2e2d09695d1e8b78c9ed48433be6
+P1-产品参数库/00-全库横向索引/屏幕规格矩阵.csv,2584,fc7760b98b9822439dd8595893794f54a81bae2e89a5720fc1a06dbc21843569
+P1-产品参数库/00-全库横向索引/接口矩阵.csv,3182,67338af01ea843131c1e746ea13f80da24d88e13d2d4ae1bb7897ae54b009908
+P1-产品参数库/00-全库横向索引/摄像头矩阵.csv,1361,4725ad7b6d67aeb62e6e03bbe869895f0e9207187b3f0eae3868319f1cb18bfd
+P1-产品参数库/00-全库横向索引/操作系统矩阵.csv,1279,0b200cebe875c521bb023482a77be69ee944b2ade18091b57fa743beef30b762
+P1-产品参数库/00-全库横向索引/特色应用矩阵.csv,4498,ac5fcfa2f29ec5c62fe7e0ea432b218426c9cd73026ae1b93f2633b14c9123e0
+P1-产品参数库/00-全库横向索引/电池矩阵.csv,1569,e30ac8eed6c3ac32a20863fb9dd769aad0f04d6bdc2edc25734effce7b5f2b7f
+P1-产品参数库/00-全库横向索引/键盘触控板矩阵.csv,2504,cf44f8afc45fd4d3af74729da58ec8d1314c77abbe953b15bcdc75feab65a734
+P1-产品参数库/00-全库横向索引/音频矩阵.csv,1332,4b6e658033ae93f599ff8ef5fc887cf6e9b1ccf66adbcd50f8ed8d1b84479430
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/images/hwpc_matebook-14-harmonyos_原野绿多彩配色_04.png,569412,9f9470747d7e3c406b87c31ecd5d51f1f3542626001ed8b00b04c5db8973de82
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/images/hwpc_matebook-14-harmonyos_多彩配色外观_01_7e0eedb6.png,533666,e320384c91d75f723fb785fce8505c9ce099980cf4330e37d08d75430f32650d
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/images/hwpc_matebook-14-harmonyos_手写笔创作场景_07.jpg,76576,85fadb0cbceb8632b00301aa07db8b815469e0107b8c89b5d91baab15a9c281b
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/images/hwpc_matebook-14-harmonyos_深空灰沉稳配色_05.png,557277,ab085ae7d9fd83af91b68e1b32c9f6f2148ca22e0d656f16f89815b93650f440
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/产品事实.md,3127,5101ff448d12cc7c70319845c3f74923656426dce7ab18fb150fda5bd17cab1f
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/卖点与限制.md,10496,5b63c29bfc0566224a23352a9bb0dc3d0b68c563f5eaeea58f7a7c230235f3db
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_丰富接口轻薄侧面_13.png,13964,361c5f89cb2bbc269210bf051e33b18a4e516d0536f2ae86067106edf4155458
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_原野绿正面产品展示_09.png,225613,793fe65d16b209f47f162537955c4c288be35000916105038b40cf4ebb81ce7d
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_原野绿简洁A面外观_05.png,96069,d36c93bb3309a15889de0c880c67fea59c1dd548e29cb823f84058989bc5076d
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_原野绿经典开合外观_18.png,80633,6cd1c887d3624dc55aa6f4d0db1d6deb59f98d766a7f61d3567557e832f7ea1d
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_原野绿键盘俯视外观_03.png,124427,c892487b3077760859991b683017ac96f876e040357aa9aa0ffbf4fa9babe972
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_原野绿键盘屏幕展示_16.png,78610,dc06ae68921c4bb406b9ea3c5a517521b5f204009dabbcb5721401de5ce74879
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_双侧接口机身细节_14.png,19751,67f9d40dba32d929116396390c3402043270665a57cd880d186176cef658ac71
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_强劲性能释放展示_02.jpg,120855,0bc94b00136a83292b1820a564b48087ddba3125b9852be977b4018e2e030c4f
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_手机协同桌面展示_15.png,54281,36e59dd6859b68fc4ab1f0dc8f0d81c9e16cefb283d5bb4fd8fad3d9bab83f61
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_柔光金优雅产品外观_11.webp,11252,1eda318e16490f59a945959dea7807be76aebe823e6728cb1e36d1da87da5e53
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_樱粉金OLED云晰柔光屏_07.jpg,71071,e68e9e549fea829dd4e899a44148feafdcf4d1f8d9628127ace25256b616d34e
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_樱粉金开合产品外观_08.png,66902,3b93b5d25e868c5966e65d8fc1b86cd561781aa616ee55ebb5860941aa855745
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_樱粉金正面产品展示_06.png,201108,16c1a684146eac925112a8e6cfce48b2da1418348f9dcb67103c98e2e999e996
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_轻薄原野绿侧面细节_04.png,13290,b2a991f2763fd7d646e6a362b48536e3949c197137f097ad06b5fcb6fb3e321b
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/vmall_matebook-14-harmonyos_长续航影音场景_17.jpg,113720,184c7622d78ff75778c6159af6121387b014bfe4e2aa198cdcc2f9dbf2d4446b
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/商城款式图片/图片索引.csv,5010,39ec2101991331bb32c62634dac57f5714f5c2604812e06ebfe53e83fca442f1
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/图片索引.csv,1846,b412571ccb1f6f39fb8913efb254933c6546458b92105dfd9e2445e35ce925f7
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/来源清单.csv,373,086ca7725a9a4707cc9920b1dd46ac6ad4e5d965b6543404c40c7f8e49caa38e
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Fold 非凡大师/images/hwpc_matebook-fold-ultimate-design_多彩配色外观_03_6e547337.jpg,24110,fa79555380e2fe0f21150da4e4f0427fbd4eb2d63ba344f1e29a9b21af116552
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Fold 非凡大师/images/hwpc_matebook-fold-ultimate-design_多彩配色外观_04_8a0efa3c.jpg,23727,0c899ed8d886279a773ffb2b0e0a92c2cd495b4e2072b5d200349f82a60ea9af
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Fold 非凡大师/images/hwpc_matebook-fold-ultimate-design_多彩配色外观_05_98d35730.jpg,22472,3f41d3e266e690859fe0b0f134ab596d5bcb7be7f5718f5f8ecf663eafb99638
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Fold 非凡大师/images/hwpc_matebook-fold-ultimate-design_轻薄精致机身_02_58c0f688.jpg,32556,8a481bfd1c318953484196cdaacd9150643010f6d1e1b52e13e755a2e4a53a7a
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Fold 非凡大师/images/hwpc_matebook-fold-ultimate-design_高质感主视觉_01_34dae805.jpg,53191,0ca951de6825e588950327be851259c9fe8dff18c9599ca6b9cea2d7765d4144
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Fold 非凡大师/产品事实.md,4177,c5e586e1c5e984c7e7b27a76ae8373f355082ccb69b73ed932047cdd3ffad368
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Fold 非凡大师/卖点与限制.md,10636,b5be0c92ae7b853d6e2eee99453f18d61f0d14fccb5c4455c858f3e153570298
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Fold 非凡大师/图片索引.csv,2436,5279b0a34b680bba5d6dca64defababb8efd730d386d1596e9140af04e7e7c35
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Fold 非凡大师/来源清单.csv,373,42408cab3df0bb900c3cf1c7fc0aa8b30cef0bc4dabf2fbecaddf2f3b8e855e5
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro/images/hwpc_matebook-pro-harmonyos_多彩配色外观_04_305ae9ec.jpg,23428,b497feae15d66cb640eb14345f324234243079d18e619ba34a76f6c1fa0c30f6
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro/images/hwpc_matebook-pro-harmonyos_多彩配色外观_05_46d10ff8.jpg,36365,7e502e7fe969ee70dcbb9c98cbb9f60b903b216f7babb3a707e0f6f6839bfff6
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro/images/hwpc_matebook-pro-harmonyos_多彩配色外观_06_f74ed58c.jpg,58331,a6b6265f40892ae5ac767d5885cdc3ba040ff4794f854b8e5e637cdab1bd0945
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro/images/hwpc_matebook-pro-harmonyos_多彩配色外观_07_5f7155ab.jpg,54179,c7cda19d0676643e55c639a2585f8bf23f9ffd9ee9771c6064aeaa0158ab51c1
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro/images/hwpc_matebook-pro-harmonyos_多彩配色外观_08_1c34dfdb.jpg,54179,147cb4886163000b3f3ed204070f02e2258fb4e7eef2460a99549aaf17dcb115
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro/images/hwpc_matebook-pro-harmonyos_精致产品细节_02_5b5cda90.jpg,57985,560099251ec0da953461932a3a3a8c4177735a9ef6de76cdc259c1ba04a1847a
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro/images/hwpc_matebook-pro-harmonyos_轻薄精致机身_03_3ddf67b9.jpg,20937,b5745be99251fac372a5967a827e43ccd8f8e1c845a8dab470b5a2f6c81bfb11
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro/images/hwpc_matebook-pro-harmonyos_高清护眼屏幕_01_7da16b65.jpg,26092,a4422ab8a507393174e1ab673fd991b6e6e1e497a5640e84e44aec49ed3467fa
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro/产品事实.md,3085,963a7651c3684e2ee82aca87c4b8c1f30464ec6bacf54e13a0e3b88ebd16fabb
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro/卖点与限制.md,9996,301e14c483f54f68025e5e37640b45826f8062c32a96cae7174f03a99b643f4d
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro/图片索引.csv,3421,06314a3e799bd8260ae339f505611237561511922da330613e0e265f7c02a87a
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro/来源清单.csv,311,203b10020d86af0cf318117811c8cf784dd9673e8f581c3e00e392495788abf2
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro S/images/hwpc_matebook-pro-s_多彩配色外观_05_0f907e31.jpg,52522,88477e9fb10790da1068abd21fafb341cb79cbd415bb0cc4129bdca3e3ed9c16
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro S/images/hwpc_matebook-pro-s_多彩配色外观_06_d792d65d.jpg,51855,8df67bfab9c9d91af866526a5a7e82b74885b5399115202e170593b9e1a88bf1
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro S/images/hwpc_matebook-pro-s_智慧协同功能_03_076021a9.jpg,48352,2d7d2da727f726550085a11d54d0297b6dfd6bd5e5668fb65190f621c37fd3fa
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro S/images/hwpc_matebook-pro-s_精致产品细节_01_9e99c213.jpg,48277,8a3b93e9b7df3fe13cb958e14726db8f76d871e6507774c4fec9a45a768f2826
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro S/images/hwpc_matebook-pro-s_长续航快充场景_04_6f60ddb8.jpg,46012,d0e45db5dc74d9d42e75eea7aa94224c27a8788d4b238efd8b4dc8466d3b42e8
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro S/images/hwpc_matebook-pro-s_高清护眼屏幕_02_f55ba57d.jpg,34697,4fd3d4c0ebc9ff6fae83c74ad4f9f1a335186e599010a36304c7da2c1d64d256
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro S/产品事实.md,3624,b2c07e62dcaa1e4568d58e4c27acc7b346031333c195d6c3f490993625768d06
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro S/卖点与限制.md,9931,0a788d84e5a94c26ae07ff630ef89d660f1bb8a4d21c5be6b8d5fd253571a39f
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro S/图片索引.csv,2495,3f3f31b583ffe334a224b0a862d2022556a52980c5ae4399e5a8e9757c86bba9
+P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro S/来源清单.csv,319,6483cab2b0b1426829f285ae7cbcf12f646f511d0fc89f20214bf05ed2928a95
+P1-产品参数库/02-MateBook-Windows/MateBook 14 酷睿 Ultra/images/hwpc_matebook-14-2024_舒适键盘细节_04_f6154c23.png,561612,42fe5f2856ddddf71d2099e9d2a43a53e100c08ead52d63b7a616a31276bba29
+P1-产品参数库/02-MateBook-Windows/MateBook 14 酷睿 Ultra/images/hwpc_matebook-14-2024_轻薄机身细节_03_85b55d8b.png,56148,58fc4d2b72b827ea9a6942315067b0e2d3f8a5c908c40bfd0c1c6303e325cb24
+P1-产品参数库/02-MateBook-Windows/MateBook 14 酷睿 Ultra/images/hwpc_matebook-14-2024_高清护眼屏幕_05_d640f28e.jpg,33818,fbbaed8b92725dfc7873783c40d458321ec9c88f4e4946bee7f93a122712651c
+P1-产品参数库/02-MateBook-Windows/MateBook 14 酷睿 Ultra/images/hwpc_matebook-14-2024_高清护眼屏幕_06_d9033734.jpg,42955,8c943ab29658ddaf3dbdcafccc656c66d5c6a3216cdbdf221724334c8f37ade5
+P1-产品参数库/02-MateBook-Windows/MateBook 14 酷睿 Ultra/images/hwpc_matebook-14-2024_高清护眼屏幕_07_af839e1b.jpg,29752,3c1145f841caab0c3b13aef08a825cffb8c36d8d59b8935bc4269639c06485da
+P1-产品参数库/02-MateBook-Windows/MateBook 14 酷睿 Ultra/images/hwpc_matebook-14-2024_高清护眼屏幕_08_b38b9561.jpg,30939,eee2123a29badc715f9be786d9e3ce9f418ac5daedd7f82a229040402d7cdb86
+P1-产品参数库/02-MateBook-Windows/MateBook 14 酷睿 Ultra/images/hwpc_matebook-14-2024_高质感主视觉_01_69e09aca.jpg,21591,1287e5a6d1d6fd75e79f2dc4ca19c83e0436253e53b9c11f178be023c2d38981
+P1-产品参数库/02-MateBook-Windows/MateBook 14 酷睿 Ultra/images/hwpc_matebook-14-2024_高质感主视觉_02_b694be0b.jpg,42965,36b36120c6d3d390d1c2f5465830695fc90d4b99c06074fc94b9ea688d4436da
+P1-产品参数库/02-MateBook-Windows/MateBook 14 酷睿 Ultra/产品事实.md,2618,c6aea730841021636b85bfcaaed4e722f277b5d9c03d06d4c92be5b6a91f5f93
+P1-产品参数库/02-MateBook-Windows/MateBook 14 酷睿 Ultra/卖点与限制.md,9539,0ab15ca3f733073f5ba4806237ab4e80aef275224524bda52ffc7ee0888a2e9a
+P1-产品参数库/02-MateBook-Windows/MateBook 14 酷睿 Ultra/图片索引.csv,3185,d5467fbd499c6e735743215bf625f68b841ff14a25e65da227e312b2db79f248
+P1-产品参数库/02-MateBook-Windows/MateBook 14 酷睿 Ultra/来源清单.csv,321,41cc4539526ef134b8aae74ae00cf15a3338a252fec0c946f9f7809afcacefd9
+P1-产品参数库/02-MateBook-Windows/MateBook D 14/images/hwpc_matebook-d-14-2024_智慧协同功能_02_1ddd3013.png,68647,161572cf649f168b342c1d8ee66b2dd98bd0a8ab3f182c0eef9a3e4f7c9fee7e
+P1-产品参数库/02-MateBook-Windows/MateBook D 14/images/hwpc_matebook-d-14-2024_轻薄机身细节_03_f95df550.png,157194,5a768865a483be382b627eac6f88806e2a098d171a9cd9d7ac8716b9f8579ca1
+P1-产品参数库/02-MateBook-Windows/MateBook D 14/images/hwpc_matebook-d-14-2024_高清护眼屏幕_01_9cbdf422.png,119310,bb5dccd7a1f0c440e123a37563c56c67b8756be4dd15a330b87a8aa0d6824307
+P1-产品参数库/02-MateBook-Windows/MateBook D 14/images/hwpc_matebook-d-14-2024_高清护眼屏幕_04_a03d1eae.png,500748,53781651c6f0027c32f9ead10d06c9fc3a2b4269af09fad8aed65e1b9255e6e0
+P1-产品参数库/02-MateBook-Windows/MateBook D 14/images/hwpc_matebook-d-14-2024_高清护眼屏幕_05_f84041e5.png,1351657,823cf134fee72fcd929fa03aeb99860a32c7eeb32cc90ef551ef43a04f7be73c
+P1-产品参数库/02-MateBook-Windows/MateBook D 14/images/hwpc_matebook-d-14-2024_高清护眼屏幕_06_f4903c68.png,52368,0fb0a6d574d7b5ad3d91605d88f72ca3087ee497d172b8dd84458d36f93ecb53
+P1-产品参数库/02-MateBook-Windows/MateBook D 14/images/hwpc_matebook-d-14-2024_高清护眼屏幕_07_8de85af9.png,554832,7fdbb0266f50aacb2001a1ffb3a2cff7b231df5c41e6be30dda169e821c2ae35
+P1-产品参数库/02-MateBook-Windows/MateBook D 14/产品事实.md,3251,0c30f899e6c94518ead98a1bcfa73e1256632149500be38a7ad8e362b57104ac
+P1-产品参数库/02-MateBook-Windows/MateBook D 14/卖点与限制.md,9262,d2117f1fa39df1905296e0bfa380ec4ce3216f2089a1df942689ee705cbe7bed
+P1-产品参数库/02-MateBook-Windows/MateBook D 14/图片索引.csv,3135,77a8b0411b3a382d69825ac85653ed20c8ec7ff1b0107f1cf234760dca3cedab
+P1-产品参数库/02-MateBook-Windows/MateBook D 14/来源清单.csv,341,d1134b7c8e6c6def6b35f2b5cbd78c4993ed9a0cb23d14a1b3744495f7e41a77
+P1-产品参数库/02-MateBook-Windows/MateBook D 16/images/hwpc_matebook-d-16-2024_强劲处理器性能_02.jpg,22227,667d51d8d9e30cd722d57435cc6f1b646ac6de3e36cca72ff8947c545cae9866
+P1-产品参数库/02-MateBook-Windows/MateBook D 16/images/hwpc_matebook-d-16-2024_超级终端协同_08.jpg,20519,292dbabfa8e367cb72f8745812399c75f7b7945f265f8b8448b0ed93f2682ccb
+P1-产品参数库/02-MateBook-Windows/MateBook D 16/产品事实.md,2966,9987340e95842652c619d348cf62eb7ef4ba6670f06f80e809f25bd134a1de1d
+P1-产品参数库/02-MateBook-Windows/MateBook D 16/卖点与限制.md,9041,ca018f2b942a2ad956028726d8bc2a987f38d551d0f9e9be37f55e51381c6653
+P1-产品参数库/02-MateBook-Windows/MateBook D 16/图片索引.csv,885,1c065cbe513e1ef9dc1c4cf527d61147de2c4337a5f7aace0c3df44a0067bdc8
+P1-产品参数库/02-MateBook-Windows/MateBook D 16/来源清单.csv,313,b1cc2a80d53255b002bcf3635b52f352f4004acae23ed8330404c32c1d63b394
+P1-产品参数库/02-MateBook-Windows/MateBook D 16 SE 版/images/hwpc_matebook-d-16-se-2024_智慧协同功能_02_1f89afe9.jpg,27270,3e3a201d39a3bc3d47967efdaa3728a9081eb7c82cb0801010fd0620ee5a1ca6
+P1-产品参数库/02-MateBook-Windows/MateBook D 16 SE 版/images/hwpc_matebook-d-16-se-2024_精致产品外观_01_4d88a11a.png,215902,06d927ab992db55b6687b27cb5e416559e88d408ceb1cef0ff4308b363db0862
+P1-产品参数库/02-MateBook-Windows/MateBook D 16 SE 版/images/hwpc_matebook-d-16-se-2024_轻薄机身细节_03_03dd8731.png,608521,72c8ba4247c7d56624f426a2643f0b69ac5275f20c73c83ae037ae9b529a300e
+P1-产品参数库/02-MateBook-Windows/MateBook D 16 SE 版/images/hwpc_matebook-d-16-se-2024_高清护眼屏幕_04_bf88f38d.png,118569,fbd6e8e5e327a8f8c752095fdbbd51fc335bdda968d29ce332cf05caed03d3f7
+P1-产品参数库/02-MateBook-Windows/MateBook D 16 SE 版/images/hwpc_matebook-d-16-se-2024_高清护眼屏幕_05_f176cb0b.png,975409,06bebb8fa25c57ca11e24b0f773347ba3de3d7d64f654bc0d3c8d89214a38889
+P1-产品参数库/02-MateBook-Windows/MateBook D 16 SE 版/产品事实.md,2833,af83091cf7c8cda9c4216993057c07b0cc3eaf4bdf36fa8c2efc40f1cc281d51
+P1-产品参数库/02-MateBook-Windows/MateBook D 16 SE 版/卖点与限制.md,8972,f1500e32c086a955bfb4d625675ea2cac23a1004c9f9d5c1f2725beded481b18
+P1-产品参数库/02-MateBook-Windows/MateBook D 16 SE 版/图片索引.csv,2140,d5d53a67ea6cf3120bcb66ff577a91d7c9c4d76f41e165ee0b59465688138e9f
+P1-产品参数库/02-MateBook-Windows/MateBook D 16 SE 版/来源清单.csv,333,c2b938c35d173e4d8a1c8ce4bc6382e8fe252b985e6f1a0ad98ece6503dd0f56
+P1-产品参数库/02-MateBook-Windows/MateBook GT 系列/images/hwpc_matebook-gt-14_OLED高清屏幕_05.png,204558,e07d62713c78b6e8af74e37d1926319fe2653e44ecaecc52a5cf291b0451dd14
+P1-产品参数库/02-MateBook-Windows/MateBook GT 系列/images/hwpc_matebook-gt-14_专业接口细节_06.png,31690,d0068293dc022e0d8b4981a6ca0b9cc44abe0058efc2920cc7fa3b7da4b87612
+P1-产品参数库/02-MateBook-Windows/MateBook GT 系列/images/hwpc_matebook-gt-14_六大核心卖点_02.jpg,133851,9958e2c2ab5019b207d16c32f96dfd445cba33ad079561008bef7587e84a199b
+P1-产品参数库/02-MateBook-Windows/MateBook GT 系列/images/hwpc_matebook-gt-14_智慧AI空间_07.jpg,241115,30f700a053f66fa5038ea684da260869bfa5b6413668947bb26973fb984013c5
+P1-产品参数库/02-MateBook-Windows/MateBook GT 系列/images/hwpc_matebook-gt-14_超能性能释放_04.png,54747,89dddc4f9bdb7202c19927d576038fc09e58139bb481a6ad91aaa873b170894f
+P1-产品参数库/02-MateBook-Windows/MateBook GT 系列/images/hwpc_matebook-gt-14_高质感主视觉_01_d0476f4d.png,1351156,1a9693fffa90a90e116a3d2feae80f829d11c26a7756d48dd9dac24fa298da1d
+P1-产品参数库/02-MateBook-Windows/MateBook GT 系列/产品事实.md,6056,5baf0c5ecedeecb48acf4018553b4a895d1e8ba4c6c58fe4d45c7b9b7e5728e1
+P1-产品参数库/02-MateBook-Windows/MateBook GT 系列/卖点与限制.md,9753,c3dc0d54c2cfa844049016d42bc892536f1e85237db6dbf9642841fdb77b202a
+P1-产品参数库/02-MateBook-Windows/MateBook GT 系列/图片索引.csv,2283,dc31a4f38fe6681b55d65c669fd0fca6b4e211877fb3f34c795092ee448ed4ce
+P1-产品参数库/02-MateBook-Windows/MateBook GT 系列/来源清单.csv,297,33dbb8a59a7bdabb2cc1e79f8954ac850da32944cea8b6404c14d3e9fb9fd811
+P1-产品参数库/02-MateBook-Windows/MateBook X系列/images/hwpc_matebook-x-pro-ultra_多彩配色外观_01_50d0c488.jpg,42729,8988e18241d9aaab213cd8f024038e11d475fba5598f66c8e13f35a819b171ee
+P1-产品参数库/02-MateBook-Windows/MateBook X系列/images/hwpc_matebook-x-pro-ultra_多彩配色外观_02_033ceab6.jpg,43296,b47741b3430582dea4daa2af2c1c5ea24ce356835da60bdd6db3fd82f6cea9cb
+P1-产品参数库/02-MateBook-Windows/MateBook X系列/产品事实.md,5359,dd71def57084e1184e6f41d6a1fa4335138c69623639a5d86fe5c083ae2259b9
+P1-产品参数库/02-MateBook-Windows/MateBook X系列/卖点与限制.md,9766,62d815b4859f08ae18479573d2908541fd21f38c4e6418802140e776fe501a32
+P1-产品参数库/02-MateBook-Windows/MateBook X系列/图片索引.csv,998,083ec107d2f884aa61bf4a975716c62d2b442d9152c74d32fd7292021e1a9964
+P1-产品参数库/02-MateBook-Windows/MateBook X系列/来源清单.csv,399,50b1beb483bff29154e1613ba0a90766341ee54b5ddd275510fa04209d38e8c6
+P1-产品参数库/03-华为擎云商用/目录说明.md,10134,370dbdcf7f06d37d3ae86ca42833f0538f52e380271bd9980ed3339d71670d3c
+P1-产品参数库/04-华为商城销售款式/MateBook 14 鸿蒙版销售配置.md,10293,8b3543567f2ea8d58aa7ec7f2941cd9b1ad3134979f0c1742fe69a016e79e104
+P1-产品参数库/04-华为商城销售款式/商城在售款式快照.md,10001,1b9b339ad45f9dcdde6ec8f464cd8be6c170e4f30387cc85944b55629bcbd3bb
+P1-产品参数库/04-华为商城销售款式/商城款式字段模板.md,9691,d06e2ee1e66b776e445cdc4bf814955dfd1efa133a42e03d5e78f3aa98a3ba92
+P1-产品参数库/05-华为智选及生态产品/目录说明.md,10296,ee390f85ddc314710a40d722088d311307659e53af8252c56cf05ccfcd53c319
+P1-产品参数库/06-型号检索卡/00-总索引.md,5678,c694d5f6b0e7337b089e8a18323ae2cb03767e9996022e76495c53eb5af517fa
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook 14/01-型号身份卡.md,8387,d75426a5fbffcd062fa0a618779b211a616cc0cac00cc12f829154433323ed8a
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook 14/02-屏幕与显示卡.md,8646,6e8a709245b040d9c5ce5b096faf05a61a4592a23e76e0cf24fd06a076689fe3
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook 14/03-性能与存储卡.md,8388,24d57e81c61c32bc8a08754b20cda917cd5a95f1bd4b75bba9e7fd21abd204e1
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook 14/04-便携续航接口卡.md,8685,9b6e7e14f08c8a7008fcd8254234d0cd9bfa8c0f8237c404027e4860a84fb88e
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook 14/05-系统协同与兼容卡.md,8798,b00686e8902b7084e4a9bbe3eee3630a9c4375288ea453d2f097e32edc5af9cc
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook 14/06-适用人群与限制卡.md,8280,3fade65725db57d44dccb5ce6b0d6a5a417362c41ded61acde89f591f90bf5ad
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Fold 非凡大师/01-型号身份卡.md,8636,da80013b994874adbb9f8cc25b8f5625cba96e835d4da01c34cbeebb03b46bc2
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Fold 非凡大师/02-屏幕与显示卡.md,8816,a40168ac73746d4a05996a1a67ef4a8f5d9fd161802dd5df2c97c7b0e5cb5551
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Fold 非凡大师/03-性能与存储卡.md,8361,acfe7920e5779f244e01b52eb79d6629ebc5baace79385edce54d506ea366052
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Fold 非凡大师/04-便携续航接口卡.md,8823,014091eb114af9223aaf5319fa663f2bd242ed4a595e6cee48a42f4d5ddc91e1
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Fold 非凡大师/05-系统协同与兼容卡.md,9031,a295380a183c488029e398b1c34902e5a7d7c53c47be1c05333e1d7a6517b2ec
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Fold 非凡大师/06-适用人群与限制卡.md,8329,31bc30cd82bd269c55a649efd36133263dfb9d5ff34592bb1043287f9c2e7c0c
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Pro/01-型号身份卡.md,8270,bd7dbe4b7c6cc35d776111e631837c7296ce0c82c49cbe1cbac9828f1f4af96f
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Pro/02-屏幕与显示卡.md,8341,78ee25a02ebdb9979ad2c03147cd3649f4b05849c3e12ff030f30172f5fc2a7e
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Pro/03-性能与存储卡.md,8188,f270c4e8e0ed55ff9604a7fd603c908370d99301c460e58fbe7a87110d758e06
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Pro/04-便携续航接口卡.md,8438,c9dabb3b604d123e0bfad332e7f1c50cb39ac2c302f345e66670e99f6dcd4ce4
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Pro/05-系统协同与兼容卡.md,8700,cd93f28acf30a2600b2993b07c00858ef3eb5ea3883103dec091f1e9bd09ac07
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Pro/06-适用人群与限制卡.md,7844,e8022be8fbff8c1c2e97823a52bd799163dae077b2eb2518bff8c323cf977965
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Pro S/01-型号身份卡.md,8333,03a2c8cbe9ad95a72c8f7d16d01cc2086b7cda339d629025c9997212d8395aae
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Pro S/02-屏幕与显示卡.md,8414,9b76cb639c5cb8c01a40a2b110b1afba6aeaf6f90e45ef839047d66c5984ec21
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Pro S/03-性能与存储卡.md,8297,812eeac1e6591ff576923d75425dc750710517f97c41dbe10ff75a1d9d245130
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Pro S/04-便携续航接口卡.md,8316,736e7382356170958294df711f22e067ee01d86816fb208cac1feb7d59f2d57e
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Pro S/05-系统协同与兼容卡.md,8737,d72c8b390a11d85e8890553bd35af2601bde06c036e19ab61439f49c4d89fa8d
+P1-产品参数库/06-型号检索卡/HUAWEI MateBook Pro S/06-适用人群与限制卡.md,7855,a6835ebc32e37a2e623cdcfcfd0a59d57416cba91cbe3cf8438ba191d4f4452e
+P1-产品参数库/06-型号检索卡/MateBook 14 酷睿 Ultra/01-型号身份卡.md,8350,4dbe2dd96d905c366d7e3a8f6e10f3451668baae3a0e79a7ca8c92e80db8855a
+P1-产品参数库/06-型号检索卡/MateBook 14 酷睿 Ultra/02-屏幕与显示卡.md,8096,40a1371fcc16e079d7c29282396a23c35b80b9a82734ed7ef18b665476e032a8
+P1-产品参数库/06-型号检索卡/MateBook 14 酷睿 Ultra/03-性能与存储卡.md,8269,08c04cf1922de076a8fcd180dfa40baa88c434f397202e1e006f4523cdf87272
+P1-产品参数库/06-型号检索卡/MateBook 14 酷睿 Ultra/04-便携续航接口卡.md,8078,24ae959a0d89ba9ae2083f3cf2b1e06409e62e8a1f93c169fb7e1b237be914b1
+P1-产品参数库/06-型号检索卡/MateBook 14 酷睿 Ultra/05-系统协同与兼容卡.md,8340,92a1322186db41bf0582eb2946844b554b18a15d1afd4a7a7658e08e6dafd2fd
+P1-产品参数库/06-型号检索卡/MateBook 14 酷睿 Ultra/06-适用人群与限制卡.md,7891,23956c5533c5e4d0d01ba6cf32410442f520debc470a37966f5c226fe4232f6d
+P1-产品参数库/06-型号检索卡/MateBook D 14/01-型号身份卡.md,8088,cc751a9c464d43fb8c5dcf714588dd51635f9c2769d70d4c70b7215d50784094
+P1-产品参数库/06-型号检索卡/MateBook D 14/02-屏幕与显示卡.md,7922,319cfad1cbdf64cdcace60d1fc7be4fb5e327d5e6381e1ec12e9db432d832e03
+P1-产品参数库/06-型号检索卡/MateBook D 14/03-性能与存储卡.md,7980,0f23f3b5655651b3a2ee37944a5f0db38e072b6daa7fac9f4a1e3b0b02c0c5a3
+P1-产品参数库/06-型号检索卡/MateBook D 14/04-便携续航接口卡.md,8290,9bd82ada4470797afd55aab178fbb6f521b27fbb5bd9aff7d1e92474d87b16c1
+P1-产品参数库/06-型号检索卡/MateBook D 14/05-系统协同与兼容卡.md,8006,8431d220ba3359adb723b2a73e178e22c31869a20eb2ff39431b9cee194d908f
+P1-产品参数库/06-型号检索卡/MateBook D 14/06-适用人群与限制卡.md,7883,b49bd499c537941b3f3f707c834ca4a9c5a99a7635a2f42e152ac51b47da4446
+P1-产品参数库/06-型号检索卡/MateBook D 16/01-型号身份卡.md,7961,ffdf0d146ff7346bcda448c2a51aaab6b5b24be46d887a1a15bbb73cbe18f49a
+P1-产品参数库/06-型号检索卡/MateBook D 16/02-屏幕与显示卡.md,7717,6aa06ad0455e5d712764aab6363e2599e4881f2d90189dd22e3ff2b7b897e146
+P1-产品参数库/06-型号检索卡/MateBook D 16/03-性能与存储卡.md,7949,88ad404540ca978093b82b9b6226dc86de7c6514df413cfbd9f2e457a5f25d73
+P1-产品参数库/06-型号检索卡/MateBook D 16/04-便携续航接口卡.md,8054,e3013ecc7dbe6d032214cbcaa0199cfc0c36869556cad65dfe71b4c353fd3615
+P1-产品参数库/06-型号检索卡/MateBook D 16/05-系统协同与兼容卡.md,8026,5b40d44095187c2a4fd84e8f967ea62b4c5ecd1a35e44388de81a1747b79a94c
+P1-产品参数库/06-型号检索卡/MateBook D 16/06-适用人群与限制卡.md,7847,73be9af03923aa081efd3ecbd1265315b7def442b1c6f0214a5917c93efcd7cb
+P1-产品参数库/06-型号检索卡/MateBook D 16 SE 版/01-型号身份卡.md,8093,ba0fb641f796e80327d8923108ace8b21020ecd358030fde8031fe8f9420404d
+P1-产品参数库/06-型号检索卡/MateBook D 16 SE 版/02-屏幕与显示卡.md,7806,a7a34fe557aa5331357e0388b8aa0565d3bac4ad2d1cdd82eced41d8fa07441e
+P1-产品参数库/06-型号检索卡/MateBook D 16 SE 版/03-性能与存储卡.md,8079,53f8b06b00298acc31863a26a3c89a9472d7e9290de3427b7d0162d282e1716d
+P1-产品参数库/06-型号检索卡/MateBook D 16 SE 版/04-便携续航接口卡.md,8112,17172ddcaf7287e3af04d70480f85c228e1c9e0125222b2cd43281144c4e0a4e
+P1-产品参数库/06-型号检索卡/MateBook D 16 SE 版/05-系统协同与兼容卡.md,8236,f93ee1e8aa3092552205c82b0d13d85ec1dabe6e74132ee8ec81c6e2550718ea
+P1-产品参数库/06-型号检索卡/MateBook D 16 SE 版/06-适用人群与限制卡.md,7913,5251f6caabef6efe3f8c1ae99835e4f16101722c0423c687ccd238d12e960a4b
+P1-产品参数库/06-型号检索卡/MateBook GT 系列/01-型号身份卡.md,8150,1dc6c6d5dab5892a9cf76e3c1398b4d1793781127a8eee617c2058b4f5487ece
+P1-产品参数库/06-型号检索卡/MateBook GT 系列/02-屏幕与显示卡.md,8366,4d9266ea0e2c09062fc970256c556d26037bd060f5ccd22296a89ae81f4ea0bd
+P1-产品参数库/06-型号检索卡/MateBook GT 系列/03-性能与存储卡.md,8366,0dc9e5c37ce153e8fea49aa3c1e60e29af124bc3d1e65473de4069f47144ded2
+P1-产品参数库/06-型号检索卡/MateBook GT 系列/04-便携续航接口卡.md,8345,4a3161757b5ea89be2ce32a02e561e0d18fb179cb086a8411b139b02ad7b71c6
+P1-产品参数库/06-型号检索卡/MateBook GT 系列/05-系统协同与兼容卡.md,8659,fda2a5ab750d833851addb16cef863c55de4ea28625dd64cf925096f768df607
+P1-产品参数库/06-型号检索卡/MateBook GT 系列/06-适用人群与限制卡.md,7964,fef53a2c2889736f18e741284483490557b67b8c894320d52b613732df101fcc
+P1-产品参数库/06-型号检索卡/MateBook X系列/01-型号身份卡.md,8431,011512da0870ffd5264397975903cc5a40d1685bd1e1119c29cb7a9dea86deff
+P1-产品参数库/06-型号检索卡/MateBook X系列/02-屏幕与显示卡.md,8582,00386ed90a525741e2bb96d4d6d6d4452e428009239d9e97ed60973b53855369
+P1-产品参数库/06-型号检索卡/MateBook X系列/03-性能与存储卡.md,8382,12c4b0d5977d3c0a9e153b34d2224c7edde298e62a766fe28732bd08653b525e
+P1-产品参数库/06-型号检索卡/MateBook X系列/04-便携续航接口卡.md,8506,3f299c76447c7a1e8f4ce68a3355e83ed63f370f480c88df22921ebcba479cb6
+P1-产品参数库/06-型号检索卡/MateBook X系列/05-系统协同与兼容卡.md,8894,64325867efb887069c9f7154660c9547eefd18dd308f3efc7299e9c1f1a55c95
+P1-产品参数库/06-型号检索卡/MateBook X系列/06-适用人群与限制卡.md,8158,7dc7a1cd90e76b36b8744d665b111ba1d88d66600770cca45fed2a6f6161ab5d
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/11-HUAWEI MateBook Fold 企业版.md,6968,46edce7339bf05248fb815d1864ce233641587a0aca52b0024792409a2505867
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/12-华为擎云 HM740.md,6448,5cd18a0fc433dac731d7448b40ab55fd4b0c58adaaa17668878b9ce201de3102
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/13-华为擎云 HM940.md,6467,8e939cb5652b696194cd478f3faa8c5be2de0653be385610bedd3175ae7d4951
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/14-华为擎云 L420z.md,6446,18fbbcee19071487593bcce955c9bb9ab441747fcc3138fa78977c9a48a686c9
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/15-华为擎云 L540z.md,6688,a626a1c110dd217f3b416abf93f5431cc7c81ee92955b2eb3bb322a60ec3cdd5
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/16-华为擎云 L540z 优享版.md,6867,fd3c5ba2d28a35004590efe6216440bef1154118e40e95e5af049dc58fc9e519
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/17-华为擎云 L420x.md,6455,c40986fa78c501f7ed7843fce99dc003ef4cc4e222a3cf2ba91d70eef4662e3b
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/18-华为擎云 L540x.md,6651,4c5db331d04d1a81d4682204194867c47cb40d29fbff3ea60f8ceb7eacae2daa
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/19-华为擎云 L540x 优享版.md,6701,0ba9ccc4ce541c4ac726236b51711eae5f86b0d1cc863261d8627261c21a93ab
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/20-华为擎云 L420.md,6640,1b0f5c1b8b11f86b3437204cb8584e631b5b34db7cf1533f4df71aabcc671a62
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/21-华为擎云 W515y.md,6429,cf9b07d49fe6d1dc9df20dd228ebe02f7327eeaf9502b6d51b4d14fdb31d2b23
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/22-华为擎云 W585y.md,6486,b64ffb4f8b15b4099e5c518e18323494a65f3b7fba7d1b2b4a3f4b4669fd1c94
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/23-华为擎云 W585y 行业版.md,6661,a33ee8c7bf411c1e33a244c2e1124fbe233ff95e1f2289f5b983ac70be1ab85d
+P1-产品参数库/07-扩展产品目录/商用鸿蒙电脑、笔记本与台式机/24-华为擎云 W585x 优享版.md,6926,6002bd7d623fff673506fb0f482bc40eca8feef657cddfc024ebde435904278c
+P1-产品参数库/07-扩展产品目录/打印机、型号款式与耗材/36-华为毕昇激光打印机 X1.md,7184,de0fab2503559eccc870b1055ae6c80a6e0a7caa01163ead043d6ffdbf39393e
+P1-产品参数库/07-扩展产品目录/打印机、型号款式与耗材/37-华为毕昇激光打印机 X1 Pro.md,6874,64ae9327dc0f5d3370255775c17198d60aeac28427a1b350ba5df10fc4562f8d
+P1-产品参数库/07-扩展产品目录/打印机、型号款式与耗材/38-华为毕昇激光打印机 X1 Max.md,6873,9e6595b9ba6702e2d3c7eaa11bfac6327a7896d1d3800fee93f42db0915600f6
+P1-产品参数库/07-扩展产品目录/打印机、型号款式与耗材/39-HUAWEI PixLab X1.md,6508,1af30545f8f73ac582fb8a17ef287e73984d6bd82612b120d5f1b08184642149
+P1-产品参数库/07-扩展产品目录/打印机、型号款式与耗材/40-HUAWEI PixLab V1.md,6643,004f862d5a2aa8af6ff1526e24c8cc663e2886cce6536c37c38d55f5890e9cfc
+P1-产品参数库/07-扩展产品目录/打印机、型号款式与耗材/41-HUAWEI PixLab B5.md,6340,342a31decc694c1b43013ac0cd2dcae97cbfe13b6cb9909cee78d441b1add6d3
+P1-产品参数库/07-扩展产品目录/打印机、型号款式与耗材/42-华为擎云 P5 激光多功能一体机.md,7358,5f643f004262ade71a00838a554993db5c0b86dc1a2997098b85d7d10dac05d2
+P1-产品参数库/07-扩展产品目录/打印机、型号款式与耗材/43-华为擎云 P5 激光单功能打印机.md,7179,181723e52d7fdf760fbef58eec43bcf68d7fce653be7c1c5de1bce2c51bc020b
+P1-产品参数库/07-扩展产品目录/打印机、型号款式与耗材/44-HUAWEI F-1500BZ.md,6459,6b203fbf772a98174843177bc87d7e696d9dcca04c1a310ff747898a2e465009
+P1-产品参数库/07-扩展产品目录/打印机、型号款式与耗材/45-HUAWEI X-15000BZ.md,6463,671891eea918902954fb91e4c6a92d86efe7f581516189085aff61c458257999
+P1-产品参数库/07-扩展产品目录/扩展产品索引.csv,17582,78a6e09379798908fe7dafe0a76a65ac55bd0320b223f2107699387097886b35
+P1-产品参数库/07-扩展产品目录/显示器及明确款式/25-HUAWEI MateView GT 27 英寸 4K 超清版.md,7222,fae8eab0196503bd12151fcfe1ace5eb4ac292f58bfc84c5d56203d7194120c2
+P1-产品参数库/07-扩展产品目录/显示器及明确款式/26-HUAWEI MateView GT 27 英寸高刷版.md,6972,eb962e3e0271db0014d8158d4660092aa6a81ae937870a28f404fda753a90b1f
+P1-产品参数库/07-扩展产品目录/显示器及明确款式/27-HUAWEI MateView SE 27 英寸 QHD.md,6938,52c8412e6de40e46fec8289d27c1a44af13752beb3a340f4cfb08785f49444fe
+P1-产品参数库/07-扩展产品目录/显示器及明确款式/28-HUAWEI MateView SE 27 英寸 FHD.md,6985,46e2cda878614108993708e38a908170a0ea7f06e9a3707867b0079970660a74
+P1-产品参数库/07-扩展产品目录/显示器及明确款式/29-华为擎云 M273U 标准版.md,6871,0ffd3a50e1ea79a96561d737a316b43dfad761b17529e5db189b38d939f26ad3
+P1-产品参数库/07-扩展产品目录/显示器及明确款式/30-华为擎云 M273U 柔光版.md,6725,42e3c37a4c784b3085ccad8d7742e9ebc9b7ac78a8f6bbadab2626ac5bbe4afa
+P1-产品参数库/07-扩展产品目录/显示器及明确款式/31-华为擎云 M272Q.md,6626,cf681e1852ccb506e5760a1fa98b279a3dfd7f648dde77bce50a75e311dfdbb4
+P1-产品参数库/07-扩展产品目录/显示器及明确款式/32-华为擎云 M271H.md,6848,96132adefc91c5b92abf40d76d86a0c61151afcc3af6dcc86ec61cdd3471cc64
+P1-产品参数库/07-扩展产品目录/显示器及明确款式/33-华为擎云 M272H.md,6655,0ab3b1760913bef6d331fc8b7ec6a827f7368a68e7d31f9892fed801840eb25b
+P1-产品参数库/07-扩展产品目录/显示器及明确款式/34-华为显示器 B3-242H.md,6759,2f93146b515002b89f88510ceec11363287e027e874bd3a92c18ea42687ed5b8
+P1-产品参数库/07-扩展产品目录/显示器及明确款式/35-华为显示器 B3-243H.md,6801,4a378a1b34fd890c6daf8cf31121c64666cf1e7614d3eb782577418c62dbcb2c
+P1-产品参数库/07-扩展产品目录/消费级 PC/01-HUAWEI MateBook Pro（鸿蒙版）.md,6771,8d65234dc27f13e585bf68c3f4df2508784334d87a5d61c5b4be2f87dc25badc
+P1-产品参数库/07-扩展产品目录/消费级 PC/02-HUAWEI MateBook 14（鸿蒙版）.md,6919,f00c695c266e6fffb3f2156271491326c27331829946ae9cddc45f5baa364339
+P1-产品参数库/07-扩展产品目录/消费级 PC/03-HUAWEI MateBook Pro S.md,6636,3626948e5328dbf2dfd63facb9be1fb3ad1580f18362a1829b10c907ec5e5c43
+P1-产品参数库/07-扩展产品目录/消费级 PC/04-HUAWEI MateBook Fold 非凡大师.md,6953,c117ab1c5330437ef71858dd8c7e0c389a6aef7e57c72d0e7a4f3211e399d699
+P1-产品参数库/07-扩展产品目录/消费级 PC/05-HUAWEI MateBook 14 酷睿 Ultra.md,6825,a558d8246439cad39b9cf65e7fa4b8450b37f4296d524d670a6c014334ccbd92
+P1-产品参数库/07-扩展产品目录/消费级 PC/06-HUAWEI MateBook D 16 2024.md,6770,398792bb940549c38e475e5b741eced8b143bb1cb52cad2559a8f59acb842943
+P1-产品参数库/07-扩展产品目录/消费级 PC/07-HUAWEI MateBook D 16 SE 版 2024.md,6849,cbfec3159b863bc6a6af1113175513c04e783829eadbb84565b4cb946d381ca6
+P1-产品参数库/07-扩展产品目录/消费级 PC/08-HUAWEI MateBook D 14 2024.md,6767,ec666c5b4be355831607201a79c9130ecff484c2e027ffdb2ba6f0312f9856b8
+P1-产品参数库/07-扩展产品目录/消费级 PC/09-HUAWEI MateBook GT 14.md,6638,a63ee028bbe609c26518be7fc598b2bdb9e608eee2aa0e575607b7fd3be2252b
+P1-产品参数库/07-扩展产品目录/消费级 PC/10-HUAWEI MateBook X Pro 酷睿 Ultra 微绒典藏版.md,7268,40e72dda4e47326d0d457bf9ced1376f2e352b087575a4ebf0db9cd948409a82
+P1-产品参数库/07-扩展产品目录/电脑配件与连接配件/46-华为无线鼠标 3.md,6794,5e89d3157206a0a73012eae7e5081dedc07d1e3b25eafb7732eca16426822438
+P1-产品参数库/07-扩展产品目录/电脑配件与连接配件/47-华为无线鼠标 3 轻音版.md,6632,ebe67267f6af04f49168bac0ebe5ca1634542cdb01b85a3102127ac8e6cc0056
+P1-产品参数库/07-扩展产品目录/电脑配件与连接配件/48-华为无线鼠标（第二代）.md,6904,13254f6c614d9770a38155616a6643e1e273890b13b3c4bb29d260a0c01e16eb
+P1-产品参数库/07-扩展产品目录/电脑配件与连接配件/49-华为无线鼠标 Slim 专业版.md,6906,01d796bfb0df7215cb09089238dc7c4aad5d09fdc4eab08bcb427e80d6b38e74
+P1-产品参数库/07-扩展产品目录/电脑配件与连接配件/50-华为无线鼠标 星闪版.md,6752,f4af7f33f27b93ce76dca8a3dee7bee51c454e880a86afc05bc56683ca7adc78
+P1-产品参数库/07-扩展产品目录/电脑配件与连接配件/51-华为星跃随行键盘.md,6740,a5aeb09c1e7553de78035bbde11972f198390a4937769487d6a940560afede80
+P1-产品参数库/07-扩展产品目录/电脑配件与连接配件/52-HUAWEI 高键程智能键盘.md,6563,9f4dfa0437704d170bb5d14fb3d5a0bc04aadceba6b06e7913ff80073f9c2ce0
+P1-产品参数库/07-扩展产品目录/电脑配件与连接配件/53-HUAWEI MateDock 2.md,6664,cc8c79129c07a78de17912762e1a04f05a0ee268157f330fe22494bbb3d8f41a
+P1-产品参数库/07-扩展产品目录/电脑配件与连接配件/54-HUAWEI MateDock 3.md,6874,2998e669f834cc60c16c15b287c16e07ced41b73406013ee34cafe0c0f5b0e64
+P1-产品参数库/07-扩展产品目录/电脑配件与连接配件/55-华为全能充多口充电器（Max 100 W）.md,6856,5b6ecc92f3acfad8e096ecb655ccc55c71d67cbe52c43c88b2e70a86ef114d31
+P1-产品参数库/08-官方公开价格快照/00-总索引.md,9322,497d68e206614f1558fbc66fdb2575afc514ed9d84b6b06798253326904b531d
+P1-产品参数库/08-官方公开价格快照/01-字段字典与调用规则.md,5188,43015ea25d4371aa3754963838c15b34646a726b3ed4f9e633d92044db346bf2
+P1-产品参数库/08-官方公开价格快照/01-消费级PC/HUAWEI MateBook 14 酷睿 Ultra-价格卡.md,8136,8a20111416ae8456a003874848d468cbe9fc8b3225ff1e36146dbf6fcb9551ac
+P1-产品参数库/08-官方公开价格快照/01-消费级PC/HUAWEI MateBook 14（鸿蒙版）-价格卡.md,16121,742064dcaa488353c7eff2f27d662627fdf92e2b84d6c9dc8630461d7b6f7b0f
+P1-产品参数库/08-官方公开价格快照/01-消费级PC/HUAWEI MateBook D 14 2024-价格卡.md,8169,d8b51c5793970a4eeb6212813541585254e3d3246c4d52d7f5192dc07c213d77
+P1-产品参数库/08-官方公开价格快照/01-消费级PC/HUAWEI MateBook D 16 2024-价格卡.md,8111,f6398841444291b9f0ab976351b77c464b83ac5a98c6b41a80d2479b06187fac
+P1-产品参数库/08-官方公开价格快照/01-消费级PC/HUAWEI MateBook D 16 SE 版 2024-价格卡.md,8156,c43611bc1bbcd3ab1c8060a9280c3f3953d164ba66110755087bff14269d2933
+P1-产品参数库/08-官方公开价格快照/01-消费级PC/HUAWEI MateBook Fold 非凡大师-价格卡.md,12817,c7f54890e6a9f71de73dc7132e6d8474e4a249b429e29c08643b9926a27c5ba7
+P1-产品参数库/08-官方公开价格快照/01-消费级PC/HUAWEI MateBook GT 14-价格卡.md,8061,148bfa86c9d27a2131ce8904ceb84123fe50ecd312e045cf13b757c5c961440f
+P1-产品参数库/08-官方公开价格快照/01-消费级PC/HUAWEI MateBook Pro S-价格卡.md,17259,ad8c5357a5ec76e83a35294c16f09ddd3add5651cc85db822974e33a4e42e2a1
+P1-产品参数库/08-官方公开价格快照/01-消费级PC/HUAWEI MateBook Pro（鸿蒙版）-价格卡.md,13724,a931f50d568971d481b658d02daf71b2468810c95ab15605579d78a8193b2f87
+P1-产品参数库/08-官方公开价格快照/01-消费级PC/HUAWEI MateBook X Pro 酷睿 Ultra 微绒典藏版-价格卡.md,8357,d4102a41b9cd07e40e3715bb707f7a5b56584e894ed47ac243b32c96548501b5
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/HUAWEI MateBook Fold 企业版-价格卡.md,6222,35ca4a545cc66a2840f2de74a2a7ffd0c8af5d337ce03d02488165d16b5e9f72
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/华为擎云 HM740-价格卡.md,6059,2b01af3568834ab4f5ba75767d6feacc933a1e3b92b8b7279b63600b8c0efc7a
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/华为擎云 HM940-价格卡.md,6053,d98fd5295ee13724eff3a642fb6c93d95a4be448357d8a28c75a7abadfd3ac62
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/华为擎云 L420-价格卡.md,6030,070e3d2212617e294c996cbc78df2635afa65d35c046d7e08b854e8ed61cfaf7
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/华为擎云 L420x-价格卡.md,6022,325d14e9ac7971040e5de6874840d16e0b31d03d4f7d38771b63ba3b362d7e56
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/华为擎云 L420z-价格卡.md,6022,69d58e624108690d584acab19694f0dac1c230c7e67b5210cdf46e0b1eb4b9e3
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/华为擎云 L540x 优享版-价格卡.md,6165,24cb1bff348717398076422774a4f15c55dfece01768d397eb783308d011540d
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/华为擎云 L540x-价格卡.md,6041,1d294831b685661ba4140e678d44bcc33e47b08676ff853ccf591673bf013ba2
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/华为擎云 L540z 优享版-价格卡.md,6162,622edf874d637dc426902545e113c0d7ef9a76d96a8ae6c50477bf7b271246cf
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/华为擎云 L540z-价格卡.md,6050,e22b3c7e95cb4efa20a1fc91227579913440e81bccbefd7fa00d3bc03f5714c0
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/华为擎云 W515y-价格卡.md,6052,db0c86cbdc9c4a58d1dd53842851e0e10622fade635a9caf54e92b96aebc2318
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/华为擎云 W585x 优享版-价格卡.md,6160,ced05fdbd6d194dd9f126ef2523764e36d73cd5c4bb2acd465b42d985071010d
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/华为擎云 W585y 行业版-价格卡.md,6125,84fdb249dfe6e6521af82d905c94f4a72d16aac3aa04007defb799d196adf60f
+P1-产品参数库/08-官方公开价格快照/02-商用电脑/华为擎云 W585y-价格卡.md,6028,ad6a9297ebd669ac173dbe5163084b526458bfa313c75bb48bc21f715665a77e
+P1-产品参数库/08-官方公开价格快照/02-覆盖与缺口报告.md,2477,62831fea78903f64240cf259e71e3aecdedcd3088b9f930d99327bb9bb7c650f
+P1-产品参数库/08-官方公开价格快照/03-全部价格记录.md,40163,c99e82a3e5ce8a7fc87e82e270350a3d8f2e0e8e4665beb08deb8172525a7473
+P1-产品参数库/08-官方公开价格快照/03-显示器/HUAWEI MateView GT 27 英寸 4K 超清版-价格卡.md,6042,648ecad42a0e1629702f85e26902e0964b04090b5deb593c4daf79a0de5169d6
+P1-产品参数库/08-官方公开价格快照/03-显示器/HUAWEI MateView GT 27 英寸高刷版-价格卡.md,6661,0f086008e302797f6d7b7dce4a359d6aadfc27c1a7ea4ec70218bf97c22de47b
+P1-产品参数库/08-官方公开价格快照/03-显示器/HUAWEI MateView SE 27 英寸 FHD-价格卡.md,6737,bb64825663ec2027cd0a0f7470148e0705e2e0544a92fa71130097a4ea05ef46
+P1-产品参数库/08-官方公开价格快照/03-显示器/HUAWEI MateView SE 27 英寸 QHD-价格卡.md,5999,581e0f2b6c45bbc70a60575bedaec0cb4d6d01d83f1817be5d1a36b75f3c4d85
+P1-产品参数库/08-官方公开价格快照/03-显示器/华为擎云 M271H-价格卡.md,5979,98e9323e1c5d8e402ba0fe2e7a87e04a3b8e3197e5fcfab72308ce8268616b49
+P1-产品参数库/08-官方公开价格快照/03-显示器/华为擎云 M272H-价格卡.md,5970,f82b52f5beb84d68d2f9ee1c0e3849739989dc1b9b938f4d951b540691513777
+P1-产品参数库/08-官方公开价格快照/03-显示器/华为擎云 M272Q-价格卡.md,5964,a389c715fb5c8d3085c20fc87b5051bc26cfc246da4376f86c6b4f60bd221235
+P1-产品参数库/08-官方公开价格快照/03-显示器/华为擎云 M273U 柔光版-价格卡.md,6077,9f336adb007addcdd010b2c597dfcbbc02454e95dd5d58ad0856c683f82eafac
+P1-产品参数库/08-官方公开价格快照/03-显示器/华为擎云 M273U 标准版-价格卡.md,6049,b002d1c316557b29d77965fa44742effd384c97bdb5cb6848d6df2ccabe022f7
+P1-产品参数库/08-官方公开价格快照/03-显示器/华为显示器 B3-242H-价格卡.md,5993,8501a1c7b097ad3ac7cab3d660fd2fa0ab3a2f9d3c52106bcd315a14b5f27a65
+P1-产品参数库/08-官方公开价格快照/03-显示器/华为显示器 B3-243H-价格卡.md,5998,f3e2f9cbab51416fecfa8e565485fc7d6e2a97e3974a1856f78475d5b98a8e72
+P1-产品参数库/08-官方公开价格快照/04-Agent价格问答测试集.md,3320,0221f8c4a1532a99ab350b0393bdcd81e7640a227e2d9622fd15a429339f94d7
+P1-产品参数库/08-官方公开价格快照/04-打印机与耗材/HUAWEI F-1500BZ-价格卡.md,6084,1c974b4871a0f3c5bd3660a0752bb3bc9523b6e2c9cab0007e9b958378762cf3
+P1-产品参数库/08-官方公开价格快照/04-打印机与耗材/HUAWEI PixLab B5-价格卡.md,6009,1c6b9e56ebda37d547427a4a446f1b616ba2a76620be569d926514cce8500fab
+P1-产品参数库/08-官方公开价格快照/04-打印机与耗材/HUAWEI PixLab V1-价格卡.md,5929,dead2747a5d3d0d4bbe02bffece4e1a62cc754dd280a400c9bd5e62dd61fd95b
+P1-产品参数库/08-官方公开价格快照/04-打印机与耗材/HUAWEI PixLab X1-价格卡.md,5929,5f3fe6f162bc0cad24fe43eefd3c488ee25f8eb33191b9111b402b81b51a9cea
+P1-产品参数库/08-官方公开价格快照/04-打印机与耗材/HUAWEI X-15000BZ-价格卡.md,6088,8ffd1eb2de81d291a90a5f2f049305bb962ba423b844af4b52b43e8b4f42c4bb
+P1-产品参数库/08-官方公开价格快照/04-打印机与耗材/华为擎云 P5 激光单功能打印机-价格卡.md,6202,d6b175cf5b20fedad9e1d3cec6e6ed6f65707de5224b285a7e41a18977852e8e
+P1-产品参数库/08-官方公开价格快照/04-打印机与耗材/华为擎云 P5 激光多功能一体机-价格卡.md,6194,32748dbc6ac87a71b17e025f2478c5078019ce59902e4a2a7093b1f6307dab3d
+P1-产品参数库/08-官方公开价格快照/04-打印机与耗材/华为毕昇激光打印机 X1 Max-价格卡.md,6081,c45edddfc9d57da3519862d8800cbb9737bb159c940b05e973e38f1cb605ba6c
+P1-产品参数库/08-官方公开价格快照/04-打印机与耗材/华为毕昇激光打印机 X1 Pro-价格卡.md,6078,da0db2ac341cb39ecfc5c9de9575ac74e152cd6a09877a66ecc5052ffb7468f8
+P1-产品参数库/08-官方公开价格快照/04-打印机与耗材/华为毕昇激光打印机 X1-价格卡.md,6775,f072f768d6f69b101024a8b0c5ef4da94d7cc71fae7baa067fffb4a2c7e51950
+P1-产品参数库/08-官方公开价格快照/05-电脑配件/HUAWEI MateDock 2-价格卡.md,5911,6c274d13e12989508550ab9b419b1c2979012f920a058fdd204e9b47766a01f1
+P1-产品参数库/08-官方公开价格快照/05-电脑配件/HUAWEI MateDock 3-价格卡.md,5918,9b95be9a31b10d4bbf49dec2cba1eba73d60f4231951dd981a7581984f576a14
+P1-产品参数库/08-官方公开价格快照/05-电脑配件/HUAWEI 高键程智能键盘-价格卡.md,5981,d17a102f05bf0faf26366f84f5f5eaaf452b0d00d4aca46242e80f55e3a578ae
+P1-产品参数库/08-官方公开价格快照/05-电脑配件/华为全能充多口充电器（Max 100 W）-价格卡.md,6136,53e139b79305cd692bcab0a783c4f9c3eed3931abfce015b6110ec904f5ede70
+P1-产品参数库/08-官方公开价格快照/05-电脑配件/华为无线鼠标 3 轻音版-价格卡.md,6813,d932cec22d3b6cfc357249dc299022ab0147b48df64397bafedb4b477a142753
+P1-产品参数库/08-官方公开价格快照/05-电脑配件/华为无线鼠标 3-价格卡.md,6467,e29d8671f65217f259807a97efb2b1f1831ddfb1db24bc5d11508b40bcba92b4
+P1-产品参数库/08-官方公开价格快照/05-电脑配件/华为无线鼠标 Slim 专业版-价格卡.md,7367,6e9f830615781865026ba080f9ea8b8ae3367df8d9aee1f9520204225bbd3c74
+P1-产品参数库/08-官方公开价格快照/05-电脑配件/华为无线鼠标 星闪版-价格卡.md,6471,b4d1e02f291e0c9db96ebd5515149bc90f1c480413c2f64293ce8863d688dfbb
+P1-产品参数库/08-官方公开价格快照/05-电脑配件/华为无线鼠标（第二代）-价格卡.md,6077,028e60bf818776417bbe9e1be7722a4f99d6e1f9c5724a19b3a4cec491691250
+P1-产品参数库/08-官方公开价格快照/05-电脑配件/华为星跃随行键盘-价格卡.md,6010,1719abf6fc7e1ccc9df85f0878701f0540e5df8485471b0126e326c10b1d5006
+P1-产品参数库/08-官方公开价格快照/06-商城额外款式/HUAWEI M-Pen 3 多功能笔-价格卡.md,5761,70bb9465ae21b5e3845e827f2aead9ee8ceb597c23f4fd43595ec125552d8708
+P1-产品参数库/08-官方公开价格快照/06-商城额外款式/M-Pen 3 多功能笔-价格卡.md,5387,5b4865d4a916add1ae840245a86f0633d3e71ece6184d3f0fed195f6591a6fd8
+P1-产品参数库/08-官方公开价格快照/06-商城额外款式/MateView SE 23.8英寸-价格卡.md,5451,58eb2cd8c809cddd998985b10ab9aee8e352c927bcc396cc5c8e0f8166f5b316
+P1-产品参数库/08-官方公开价格快照/06-商城额外款式/华为 F-1500 原装粉盒-价格卡.md,5448,61e8144a101c5e5ae53bf77b0691eedc60175ea61cb35cee6cb0f59d19fa67b2
+P1-产品参数库/08-官方公开价格快照/06-商城额外款式/华为 X-15000 原装硒鼓-价格卡.md,5385,19a693e89ecb40729bdd11338f5daebef9c509088bdac09a52da844e3ff5dca1
+P1-产品参数库/08-官方公开价格快照/06-商城额外款式/华为内胆包-价格卡.md,5322,343ae57c091f98a4a308f6fdbbeaaf93d17d2207d16637c409b2943b8fc19bb5
+P1-产品参数库/08-官方公开价格快照/06-商城额外款式/华为喷墨打印机喷头-价格卡.md,5376,72fb9fcad2c0999600734a76e779ef423179da2f690b9234ccd3e960a9560900
+P1-产品参数库/08-官方公开价格快照/06-商城额外款式/华为臻彩墨水-价格卡.md,5413,7d65c14dcc4d0349b40220b1c91dd7cc7367125ea49d27c3978aba813a5109d5
+P1-产品参数库/08-官方公开价格快照/06-商城额外款式/华为超级快充电源适配器（Max 65 W）-价格卡.md,5533,68f9a62c92492480e5b2b92d48251ebaaca7f49d74539a4a8d874b29a6a60fa8
+P1-产品参数库/08-官方公开价格快照/06-商城额外款式/华为轻尚双肩包-价格卡.md,6205,5dcc08a88c698dd173200cbdcf1fcbb8ef223ff80e59ec99db0972b7368af634
+P1-产品参数库/08-官方公开价格快照/07-来源研究底稿/research_prices_consumer_v7.md,9306,5357dfa5e2018583e9c516a3a357c1d2c180af0cb4f42f5b5d033cc4d28d398f
+P1-产品参数库/08-官方公开价格快照/07-来源研究底稿/research_prices_official_reference_v7.md,2855,5f01a34366c62eada44209d4b17bf6ffd760b3ecadd4d89bae5aeed9c2b09be7
+P1-产品参数库/08-官方公开价格快照/07-来源研究底稿/research_prices_vmall_zone_v7.md,5521,199adc7b739ea534123f000e3a000f05a7fa134ad8ab2df4e2ef6b4041a25f98
+P1-产品参数库/08-官方公开价格快照/价格数据审计报告.md,777,ddb99b279e4853af55366d10044dfead90122495e651b5ff8c41b25ac81ca48b
+P1-产品参数库/08-官方公开价格快照/价格采集统计.json,1849,47e9d0fad004e6e1f8258261420dcef8d0e0ba10716ba56f53aa46bfee6b2620
+P1-产品参数库/08-官方公开价格快照/官方价格快照.csv,112175,4f46c9ad2cd75642071ae42530b4a796253aa420c8393f42c8c9580d23bc7152
+P2-卖点话术库/00-使用说明/话术事实边界.md,5588,3152a58d3f886ff1b237765e6a736ba0c6721a4745d59dbcbde307e490acc03b
+P2-卖点话术库/01-零售/零售话术框架.md,5489,39d1759fbd9c6fdb9fa7e7fe08f9f735961b95af5e13e6814508d54e217e8e4a
+P2-卖点话术库/01-零售/零售顾问需求访谈卡.md,5316,5c83675323581bcfd9ce7e557cc41cbf8e885f888107e3d6be6c29bc65d6e4c2
+P2-卖点话术库/02-渠道分销/渠道分销话术框架.md,5339,e7435ccbaa011820331086a4d4eed44419932ad47e023344c69a3932a1c17c7f
+P2-卖点话术库/02-渠道分销/渠道经理需求访谈卡.md,5271,c3b5021fde3bec3ac89ac390d8d248c1d2e69e7dc2e9beec42ba534d24797799
+P2-卖点话术库/03-政企/政企话术框架.md,5362,a4ea74233e6f2acf5ec619bba4b036e040f4f859e0aa7e9142d484b81883cb04
+P2-卖点话术库/03-政企/政企顾问需求访谈卡.md,5309,679e6824d8fa224d79a581a3bab1b6da651d69512a6b25989f635b661d00c698
+P2-卖点话术库/04-教育/教育行业顾问需求访谈卡.md,5245,2c71150b11acb87ce808b34ed0484fde6c0cb0fdf4660a5d3c3f89a050241247
+P2-卖点话术库/04-教育/教育话术框架.md,5424,d1fc337112d198a338fd01dab0190f2739f7d1b15052e324aee5db448fe147d6
+P2-卖点话术库/05-售后价值/服务价值表达.md,5396,c0fffd1aa17a77834d0d373aa215dcb5556e2b9b7a88c36ec9e983f2632d9d87
+P2-卖点话术库/06-换机迁移/旧机换新沟通卡.md,5436,79447ab094533eb6063dcbdf86c11693a88688902c62eb2fd0b85025198beed1
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook 14/企业采购人沟通卡.md,2938,cd374264bc865f761579f2dd04197b58f1948ec54237459de6e5c87357650b5c
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook 14/内容创作者沟通卡.md,2982,62ff959d9c6311fd09bb53465478784bed90e92322cf1cef9cec40eccd55dc33
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook 14/商务差旅用户沟通卡.md,2877,4c300dd7980f994eab88a7c9dcd433b99b68fdb95d4812d3042a2887d5660e48
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook 14/学生用户沟通卡.md,3130,e150d4074e466482558548880d5a30d5153be275c83e8d4d0a9b08c875da80ae
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook 14/教师用户沟通卡.md,3042,2c3a41e396d8000050f423dc952901a66560af5af7e0a10268295ab82d3729f0
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook 14/旧机换新用户沟通卡.md,3109,c3d97131012eb98030c301c36aec97e4f5aa54494f183184def7a1ffce930777
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook 14/管理者沟通卡.md,3022,88fe95ec52acd7775cd0198734586b1cf6263fc0c98a1c3bab7f0ed545437420
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook 14/门店顾客沟通卡.md,3282,97e10c758ab2ffdf1ec1869c42c718e5062136072ada7be5715649f8de4d315c
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Fold 非凡大师/企业采购人沟通卡.md,3000,8d47488891d8a7b8def51f7b0da8763da4027ec3e3dc254c898218b189dd122b
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Fold 非凡大师/内容创作者沟通卡.md,3069,3a657a74a59ade06d9ab3df87281d01cf62fdb668798d0fa5c11eea6f450c577
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Fold 非凡大师/商务差旅用户沟通卡.md,2932,53f031bd7979a8145dfe82704cc50c6e5a37e43712cacc2f83d28f987247533a
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Fold 非凡大师/学生用户沟通卡.md,3243,75296cb36a8b6c64979e8c02bc5ff31038a8429b6a9c7abefbdaef4e6883ff50
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Fold 非凡大师/教师用户沟通卡.md,3178,2af519f67d086b8d3346e123613a4630d91eb4cfc4a9afea83a79ac2cd894762
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Fold 非凡大师/旧机换新用户沟通卡.md,3144,bb86e004cd5b43dd8bb5a2251f81367da9fbc6e1117d96e846f944115d18126a
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Fold 非凡大师/管理者沟通卡.md,3148,668f6de06ffd63d754938291363189f0723473f6e6c620cd80707ca68e9ed372
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Fold 非凡大师/门店顾客沟通卡.md,3345,c0733460550370e2fcd38a73a305eb4cd2eb87462a82044c9c5eea4eef1223dc
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro/企业采购人沟通卡.md,2801,ccaba77a9aa22ec487ec13a36bc4694c112c6ccc22a19db93ef82fc42ca0d1e3
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro/内容创作者沟通卡.md,2819,3f6aaa4c0b8b149fe8276518a37236fe2386f40869661bf1d996f7d26c68275b
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro/商务差旅用户沟通卡.md,2760,ed0d40b888f773337eab42b5761e4a5fe40a263c766e838be1daa02fc4245876
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro/学生用户沟通卡.md,3020,fc2b7becceff9080a94fecb31768d64fa9397917109ce8c6665f0ef4270b9870
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro/教师用户沟通卡.md,2962,391389f187396213d550cf2287c3ca12c00c9245633198a4e491ca72f802ffe7
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro/旧机换新用户沟通卡.md,2943,4b14b3542d7abad9b5a35345fc73ef67afb4798c7bb632f2c8206f47b2c9908e
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro/管理者沟通卡.md,2958,85f7d43a1810e21578da3711f3c4bea4caba89b1e4e6ec30964fa985e09b24ed
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro/门店顾客沟通卡.md,3058,e1387b89b881a59943f501e9ffbcd1760ff0f5f4d59070a7ae594da7f100e758
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro S/企业采购人沟通卡.md,2819,751462958b0560d27204fc6fbcf6459d487dd9dea95bba862bf0c4a17286adb1
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro S/内容创作者沟通卡.md,2838,cf583fc0ad3a0362cd1717657bd46b98fc04f79e3747fa970b758b9ab429972e
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro S/商务差旅用户沟通卡.md,2795,a782da6aac17faa3591f7abb54d302de9ec3c9a10260ebde2f2bb1301d010d1e
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro S/学生用户沟通卡.md,3039,ff1c00edcd5d3a80811727b21ce0aa311276cb3e9af90b9e1e4bb168bf7d3694
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro S/教师用户沟通卡.md,3003,f211246d93c72b34bba4e9707802957f696ac465119168c8aba239b52aeca41b
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro S/旧机换新用户沟通卡.md,2987,234ab7c6c9d5e237ed1479f51dc9712d218f0674a32640afe1f939c592b1c9a9
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro S/管理者沟通卡.md,3038,fba11a9c8a3ed841b28dbe92b594343751136844d1802f6a1ffb343b57b44bee
+P2-卖点话术库/07-按型号角色/HUAWEI MateBook Pro S/门店顾客沟通卡.md,3135,3467b53bd0e24c34da15122b705d9cdbfd503316df55fcf69f9dcd2f1e7aa989
+P2-卖点话术库/07-按型号角色/MateBook 14 酷睿 Ultra/企业采购人沟通卡.md,2863,ce759e576dec33a31bdc1d8bb7fd9ad88cd381e545ca260dbaf2aeb23aaabb8e
+P2-卖点话术库/07-按型号角色/MateBook 14 酷睿 Ultra/内容创作者沟通卡.md,2847,46d4b5a5eee31c1b162590c0db7c28689d71cd6e638f664f598b94227dbc2b3a
+P2-卖点话术库/07-按型号角色/MateBook 14 酷睿 Ultra/商务差旅用户沟通卡.md,2658,4e295a1f883e8b6b1c186e780bc3b1d3a6bd983977c517de16a62432a32f928f
+P2-卖点话术库/07-按型号角色/MateBook 14 酷睿 Ultra/学生用户沟通卡.md,2990,96e04e09568944aa4893978bc59d40fb2c606856aa134a3cf208e67e2efa4acb
+P2-卖点话术库/07-按型号角色/MateBook 14 酷睿 Ultra/教师用户沟通卡.md,2901,52df6455202e5fe0134ccfc1f049e2b06ec6741e3dff9775085bc42e59d32387
+P2-卖点话术库/07-按型号角色/MateBook 14 酷睿 Ultra/旧机换新用户沟通卡.md,2983,71882edefd19d843e6c2a867cf30805a2444ffb8c923b8435adf5e0e56cec873
+P2-卖点话术库/07-按型号角色/MateBook 14 酷睿 Ultra/管理者沟通卡.md,2904,0face37d6e1c3ae644bfc202e7ef4ee7c9c2d83cc3159f8cf8021e182e55555e
+P2-卖点话术库/07-按型号角色/MateBook 14 酷睿 Ultra/门店顾客沟通卡.md,3137,1cb82f01c89d94f4e3585f236dc261baadf373f15ab5b0cefbc87da350f27015
+P2-卖点话术库/07-按型号角色/MateBook D 14/企业采购人沟通卡.md,2772,00815dd9395323ba70c71c1303b365fbe939e6a5866f4d247c9e7eec117942e5
+P2-卖点话术库/07-按型号角色/MateBook D 14/内容创作者沟通卡.md,2792,dd849d215f46caa09b3e7d27803184d1358caf56b8bdd7fc93152ebe02e6e60f
+P2-卖点话术库/07-按型号角色/MateBook D 14/商务差旅用户沟通卡.md,2658,c24df2d07f35428f639c69f1af87bb277416fd44eb3540291ed1a4d176e27d5f
+P2-卖点话术库/07-按型号角色/MateBook D 14/学生用户沟通卡.md,2951,b3728958a39bcf6e88c709648c925845e819e0e597583adf1c2c325ffc2c78a0
+P2-卖点话术库/07-按型号角色/MateBook D 14/教师用户沟通卡.md,2882,4d625bb608e89e9c4f3e4dc84e43638b66b8745ddba9169420545fca3a781e79
+P2-卖点话术库/07-按型号角色/MateBook D 14/旧机换新用户沟通卡.md,2886,733eb874062be41e4a53dab98c8aafbce5b9eaf62c4deac38414d517ebc640f4
+P2-卖点话术库/07-按型号角色/MateBook D 14/管理者沟通卡.md,2833,db586d986cef9f924b68a4ca021d7e66cd0860badb17408fa58d2a41578bb617
+P2-卖点话术库/07-按型号角色/MateBook D 14/门店顾客沟通卡.md,3026,7bc7268e23f04ab50346e83dbd6615661a8f7b2980a1056b4a603af30f4003db
+P2-卖点话术库/07-按型号角色/MateBook D 16/企业采购人沟通卡.md,2778,190f21684af5b818012169f632491b7df2a102d0a6861a517fcb080ae43b7e2b
+P2-卖点话术库/07-按型号角色/MateBook D 16/内容创作者沟通卡.md,2713,ef7d59b9c672964ddc2b8e767b417c3cf0ce7fab806df96acdea3bfddc9ad2fc
+P2-卖点话术库/07-按型号角色/MateBook D 16/商务差旅用户沟通卡.md,2609,660d1dcd6a0f9fcd5bf58713a0eccff44f5b0a616cf4f6fcc9432521d420eb29
+P2-卖点话术库/07-按型号角色/MateBook D 16/学生用户沟通卡.md,2852,c4e700a1ed074a9137884b023e2b510f221b2a01ee5579e9569db80e8aee785b
+P2-卖点话术库/07-按型号角色/MateBook D 16/教师用户沟通卡.md,2831,cceba09092bf771aaa48fe8924abb4b6f5bee3db5dba1bf867450cc98fce6491
+P2-卖点话术库/07-按型号角色/MateBook D 16/旧机换新用户沟通卡.md,2913,1d2d720f61252b5b19d114cf7a663970cc5c7c3cbe37d8e7735687d0ad0b67e1
+P2-卖点话术库/07-按型号角色/MateBook D 16/管理者沟通卡.md,2731,7c12b088909422721dadc6c5d3d9775bebc02ef81ec66c7cd498075b2ac7b687
+P2-卖点话术库/07-按型号角色/MateBook D 16/门店顾客沟通卡.md,2976,8234cd4775dab58152b630200386107c741a50f6db2927f6436b66daa1f30227
+P2-卖点话术库/07-按型号角色/MateBook D 16 SE 版/企业采购人沟通卡.md,3006,018f348e1ee9a8390dc33c8a0bf6c3acaecbd0d6676c282656ef9150fc43cf1e
+P2-卖点话术库/07-按型号角色/MateBook D 16 SE 版/内容创作者沟通卡.md,2830,297922dff10076eea7ee88300022cd9e898f02a84ddcf823008c87e55e1355fe
+P2-卖点话术库/07-按型号角色/MateBook D 16 SE 版/商务差旅用户沟通卡.md,2713,c9e1ccd9e6ba39d0c6afc9286da27e3295cf412f8e3a345800ce5c390730b0ac
+P2-卖点话术库/07-按型号角色/MateBook D 16 SE 版/学生用户沟通卡.md,2965,bd55b38c09b103b801a9121a9183663674a2f5215f41a9965c7a9e8b0a832d68
+P2-卖点话术库/07-按型号角色/MateBook D 16 SE 版/教师用户沟通卡.md,2935,8604a6e56b2913389b5e4263f176d82638993318919dc77406d85a1fffe2a00e
+P2-卖点话术库/07-按型号角色/MateBook D 16 SE 版/旧机换新用户沟通卡.md,3000,6d9f81f6ff28c1c9c25bb253297df355c9f8715e9f8072fee29d916416d686af
+P2-卖点话术库/07-按型号角色/MateBook D 16 SE 版/管理者沟通卡.md,2897,1ee05fdf7f75a5da74cf985d80a6905e1170738b42903011c87cbee20811f528
+P2-卖点话术库/07-按型号角色/MateBook D 16 SE 版/门店顾客沟通卡.md,3103,856b4bf2b84499e62b98106766c827614ffeee5f64121a53dec5ac4d824caae6
+P2-卖点话术库/07-按型号角色/MateBook GT 系列/企业采购人沟通卡.md,2955,871690342026de4cf0f4aab8fb6b5bef55337d1a77480fbba43b4dabfc0f6059
+P2-卖点话术库/07-按型号角色/MateBook GT 系列/内容创作者沟通卡.md,2990,ac5261efb081013bd012b52a8776cd04f08c69eff4cf4835cb92d2d1efe01bf3
+P2-卖点话术库/07-按型号角色/MateBook GT 系列/商务差旅用户沟通卡.md,2758,56d1eeb2810a5360c7ae7e9d31109ecaf25ddfd037bb18e1cacf0f7de69afacd
+P2-卖点话术库/07-按型号角色/MateBook GT 系列/学生用户沟通卡.md,3106,43602f1ee9fac5c9b26f2696edd38ac103a99951de434c6f21e8387b075f32c7
+P2-卖点话术库/07-按型号角色/MateBook GT 系列/教师用户沟通卡.md,3045,0aeab62359e9d35857ccad8892835ecc47c779ad1dbc9be6c55ea613206acdac
+P2-卖点话术库/07-按型号角色/MateBook GT 系列/旧机换新用户沟通卡.md,3087,b303d464933ca0c2b33db462ae4e04d2966adf0f299fa6b277dd62986c3139df
+P2-卖点话术库/07-按型号角色/MateBook GT 系列/管理者沟通卡.md,2909,358821864fecec6d120fdacf6f2a06de69a40e7c0723b1c09ae3646611c658c8
+P2-卖点话术库/07-按型号角色/MateBook GT 系列/门店顾客沟通卡.md,3240,92811e5607846e3ab86ad01fe63c2685db42f7ab2d993b7ed4ada473a695cb6b
+P2-卖点话术库/07-按型号角色/MateBook X系列/企业采购人沟通卡.md,2910,0eb3ed5e1ec581819539f39e0783340d9c7557805b30d8e272c3bcac7fdad1ea
+P2-卖点话术库/07-按型号角色/MateBook X系列/内容创作者沟通卡.md,2960,01aee13ecb7ca0b24de969755b676015dabf08b12258f79b61160717779164f4
+P2-卖点话术库/07-按型号角色/MateBook X系列/商务差旅用户沟通卡.md,2834,c2148939a0193d1243b9d53bae0c6ca19bd48694f9241f5c8ac2c8f4dd4a6f9c
+P2-卖点话术库/07-按型号角色/MateBook X系列/学生用户沟通卡.md,3090,724097fef9b0b202f27b9c911bf6f6394cbd9c7283a762f381dbe03d5d413a4e
+P2-卖点话术库/07-按型号角色/MateBook X系列/教师用户沟通卡.md,3092,03b4fb09d96651455765626bb20d8151fd7d1bbd2d0003ae101b9e303ea8f8ea
+P2-卖点话术库/07-按型号角色/MateBook X系列/旧机换新用户沟通卡.md,3062,9f2656becdabffeb4437600566797eb81fc43cd7cd63c93740466f21374c225f
+P2-卖点话术库/07-按型号角色/MateBook X系列/管理者沟通卡.md,2981,b88eb601e378175d959d735eafd04371e1ae7d4e7bf91c73fd0a83f0348cd780
+P2-卖点话术库/07-按型号角色/MateBook X系列/门店顾客沟通卡.md,3226,c5d21bbc7b9b686d960fe1af25bbc47554a01f301dc275bc36e513ffaed007fb
+P2-卖点话术库/08-方法论/01-参数转收益四步法.md,4621,a7fe7db3b16e6d60d831170e21b45f5dc8756a6e58163eec759a4b76e02da38f
+P2-卖点话术库/08-方法论/02-需求六维诊断.md,5104,d8b5e87fcc940bd853c7fdcf86d3fdfc445329d9d15bbfd0d9a3569c75c25d6d
+P2-卖点话术库/08-方法论/03-三档推荐法.md,4636,1bceff7061360bd0dfda287dbef3e428efee4344193d4963005a98d4674fd7db
+P2-卖点话术库/08-方法论/04-异议处理结构.md,4848,cf70f55e31ed80289daea8c9ffacef77a6ef6e5959ce9e7c3756ff86a66297ad
+P2-卖点话术库/08-方法论/05-事实与体验分离.md,4911,07f3bc57be8c03db297b708887c53f723146223b082022ca4e028fdba63d325c
+P2-卖点话术库/08-方法论/06-成交确认清单.md,5225,724f9c0eb31cf89c63ab277ce5619ab7c8e475ee18fff969ba3951e9e4040c57
+P2-卖点话术库/08-方法论/07-兼容性询问法.md,5225,e120dc3bead27c88b7a2cd6f8a5eb65c940f6cbf6bee106f979ca7bf8492b956
+P2-卖点话术库/08-方法论/08-政企方案表达.md,4907,3d3e692c7021324f23ed25b34fa4a8c994fdb85aba445b2c9bbaf094c9cec689
+P2-卖点话术库/08-方法论/09-教育方案表达.md,4807,cff8ce26d1d3204dbd0094fb11fe62296d318e4567d6db86741fe778dc4630b6
+P2-卖点话术库/08-方法论/10-渠道培训表达.md,4837,178e842b5feed32db70693577b5ebf5173f1ef00205739b68c8540de2002005c
+P3-竞品资料库/00-对比模板/同价位任务适配对比模板.md,5070,e2baac653e02dca8f07dd17b78ccca58e717af91d9684f57e8a5592734ea4ec5
+P3-竞品资料库/00-对比模板/售后服务对比字段.md,3889,c3acb7a6480dae28205369a5eafe7a264d03de5337467414c3a1b0d583e4edce
+P3-竞品资料库/05-官方来源登记/ThinkPad.md,3987,f4d2537b4ac6e11277d836a0e1b2c559cc267d3e824460114a47f40a37c9fde8
+P3-竞品资料库/05-官方来源登记/华硕.md,3864,03dc8bd1aec4d2e3d6ebca4e2bd54a19c798b4c097d467977f0d5e9a5a776a15
+P3-竞品资料库/05-官方来源登记/小米笔记本.md,3996,5936306a71873255be00e6fe82478e3168a5d6df9a2151e97bcefb4baf59b873
+P3-竞品资料库/05-官方来源登记/惠普.md,4304,84d695f11bf6f83715f808ea519970a5a0048f0ad019d79113d75a7b5536e43a
+P3-竞品资料库/05-官方来源登记/戴尔.md,3930,0206ade21ed1661015f6a1a9cece8448707e044782604595ba65f6294dddf334
+P3-竞品资料库/05-官方来源登记/联想.md,3731,69bf09a0eeeaa48196b5f11e45df0b1633e403214bd24ee0d7317cb4f252aa76
+P3-竞品资料库/05-官方来源登记/苹果MacBook.md,3730,7483aea87c54978c290eeaff21c5ff1c7f7ec756448bd7dd4cbd84829b6170e7
+P3-竞品资料库/06-维度对比/00-总索引.md,5658,932e05cfb6fce9a0c0ef20eb50cc26e0cddebdf4c7aadd5a24300b5d8abe26d0
+P3-竞品资料库/06-维度对比/ThinkPad/保修服务与维修.md,10532,f72cf0133add5dee0b2ba11b292be6147f77acdde71637534e327a42a107ea9e
+P3-竞品资料库/06-维度对比/ThinkPad/内存与存储.md,10450,8b8e66c04a043830002e35b51b520de686f1cba822949d21b89ebe655cc6d89d
+P3-竞品资料库/06-维度对比/ThinkPad/同期价格与促销.md,10470,501426317299ebf51886373a0c62ff803a64e2e6c351f45b4dc8ff903f8931a0
+P3-竞品资料库/06-维度对比/ThinkPad/处理器与显卡.md,10643,dd963a3653b641e742f4fab84919814e05f9824307d07adcd33ae1639bad66f6
+P3-竞品资料库/06-维度对比/ThinkPad/完整SKU与上市时间.md,10716,4e8c36499ab6bb5d3666a4d5c5f94112a935239d4538a7d898b9253a0839bbc9
+P3-竞品资料库/06-维度对比/ThinkPad/屏幕与触控.md,10423,bace45cfa66ef39587f2ee00ecc2997d79b53252d346457de1217f5bc8edd3e3
+P3-竞品资料库/06-维度对比/ThinkPad/接口与无线连接.md,10429,a2d948c5701f3615f32a45e0150d39d49f4ff3eed6ebd445df4ba98ffff02db7
+P3-竞品资料库/06-维度对比/ThinkPad/摄像头音频与会议.md,10408,7fe39b635e2fc6717eab83a93bef82d3715859360870595ab7a8bbc1604f7b15
+P3-竞品资料库/06-维度对比/ThinkPad/操作系统与软件兼容.md,10587,628d9e5845d6369d72a442a19f1d3c28d9bcb96ecff6c80307e3789c9845777f
+P3-竞品资料库/06-维度对比/ThinkPad/电池续航与充电.md,10397,711f350bd5acf2b7db03f2b5134ca633dd162ebbb933d6e6ddfda843339288d9
+P3-竞品资料库/06-维度对比/ThinkPad/跨设备协同.md,10499,93c7761849bfae1d81196a3eaff64804b7eb7736e8d4626e11af59ddd405d7a1
+P3-竞品资料库/06-维度对比/ThinkPad/重量尺寸与材质.md,10343,42b1ee36adca29a75e7e053757780d194c5c1b8729720b5c62eb2b3e142b48c1
+P3-竞品资料库/06-维度对比/华硕/保修服务与维修.md,10198,913a0f3b44509fa1746b95693a0b46183ba2cb60d6a2a419a7af1353a02561a0
+P3-竞品资料库/06-维度对比/华硕/内存与存储.md,10136,017154be1ea48e46491c63415b669fdfbd3922b5ee3ecc08a36e19adc850ac46
+P3-竞品资料库/06-维度对比/华硕/同期价格与促销.md,10142,9c1fdf0c2bd3bda4423c6bde4186bb2553fa3bf857dba1735617a502233e7ae0
+P3-竞品资料库/06-维度对比/华硕/处理器与显卡.md,10254,fd6d47daf4d6a5851f5c9ea2291809d63d2a99bb53bddffd4a26c3f09dc5637b
+P3-竞品资料库/06-维度对比/华硕/完整SKU与上市时间.md,10370,5bb0c5c2bf5c8278e4e0fa739321992e31df7ac41e5d163a1bed938ed4bd2d7f
+P3-竞品资料库/06-维度对比/华硕/屏幕与触控.md,10094,c338911ebd5a5e82ab9f6cb26110eac06a8d2f2f7a8d09e137f268d93ac96cd8
+P3-竞品资料库/06-维度对比/华硕/接口与无线连接.md,10105,6a81a5a725784edd31c200085de6f042ed41aa56526ab0a45b68de7fb458f266
+P3-竞品资料库/06-维度对比/华硕/摄像头音频与会议.md,10118,042023f8c3ef8da194a1db76dc287ec91a30a70c1d9126a9fab0fa998a3527e2
+P3-竞品资料库/06-维度对比/华硕/操作系统与软件兼容.md,10197,991656c43d998182333e5d09a87e3cdd10764543d32c02c5ec1e28f201cd952c
+P3-竞品资料库/06-维度对比/华硕/电池续航与充电.md,10065,88a62d036fa2d0d3d4bc765b9c5d0a532b574288953bc15931725155f8124c36
+P3-竞品资料库/06-维度对比/华硕/跨设备协同.md,10113,57e3d3853cfaa841a9e38f1deac3b31b5ab852027cf4243ed0235a6aa39f17c6
+P3-竞品资料库/06-维度对比/华硕/重量尺寸与材质.md,10162,cae3fea989d686067b5563cc67049f43efc92b3fbe4c2936f4bea7eda7a8dd0e
+P3-竞品资料库/06-维度对比/小米笔记本/保修服务与维修.md,10254,25d5e5e065ffea50e691e5356583643f582b507c101a690ec17a84889dd5aa76
+P3-竞品资料库/06-维度对比/小米笔记本/内存与存储.md,10195,663f6f57e0a45a5e6fe665d1bc956936f076d7d8ee1626ab8ce6a6f59ec7868f
+P3-竞品资料库/06-维度对比/小米笔记本/同期价格与促销.md,10186,bec73a274a05d2d00cd8e9e5fd621f9c1853e14bdf3dd8e1bdde58097588e16d
+P3-竞品资料库/06-维度对比/小米笔记本/处理器与显卡.md,10339,b3c71de3d2bfec89d87b0acb6d0d57a4595b0851c654e8bc3a6b5503b1e5aa4c
+P3-竞品资料库/06-维度对比/小米笔记本/完整SKU与上市时间.md,10353,e72cf8c14c7c4ec74bff47a6ebe979127f717c80685349aa892c14312f3e08bf
+P3-竞品资料库/06-维度对比/小米笔记本/屏幕与触控.md,10157,56ee8f1a0780081e85d4a7f87880edd77d7c34b7df3e8a819e60f572eae965ba
+P3-竞品资料库/06-维度对比/小米笔记本/接口与无线连接.md,10173,d8123ebd5257e51344eb91b7cd8608e71a556907defa312c21f7710239b64eac
+P3-竞品资料库/06-维度对比/小米笔记本/摄像头音频与会议.md,10174,d9e6b7922f265c34e5168fdfe0bf9d79269a2830a7a6e0eac7146c556baa7606
+P3-竞品资料库/06-维度对比/小米笔记本/操作系统与软件兼容.md,10186,144015a8cbfed602384f726bb3c429e0256136bd1d356c7eafaa80800c242eda
+P3-竞品资料库/06-维度对比/小米笔记本/电池续航与充电.md,10233,450f0c511a359f9c6857de7c2708a24d4d07577cd838a1a54a9c88652c222dc1
+P3-竞品资料库/06-维度对比/小米笔记本/跨设备协同.md,10191,5d83f38b7816bda2fdf47eba2fe0f665996db4f6a5fda2367544da81325c4fab
+P3-竞品资料库/06-维度对比/小米笔记本/重量尺寸与材质.md,10171,5e2eafe514df34b48c1fb24b93ce220e7f12f26bcd622fdb776bb6222c659e4c
+P3-竞品资料库/06-维度对比/惠普/保修服务与维修.md,10253,08bde0ad1475c4a3ee53f64a1f0522d051593541ee686e9f2d99d432cc725733
+P3-竞品资料库/06-维度对比/惠普/内存与存储.md,10208,4e4200e2f47d42f712771ab4c88429f8191e026b598a1fc18e7e3d29e8eee7a0
+P3-竞品资料库/06-维度对比/惠普/同期价格与促销.md,10299,c333c4a539d98807deecd9ce1ad2e42684c7754e6c8175cdc84bc45ec9adf398
+P3-竞品资料库/06-维度对比/惠普/处理器与显卡.md,10323,cea52c54e87c5988c4425b5d5690167aa21e843c93c8583f7e33df0ccbb7e14f
+P3-竞品资料库/06-维度对比/惠普/完整SKU与上市时间.md,10384,ccb4a3378f850c13dafa3d01ab612ecb52c69801fb709c119947758bbb309003
+P3-竞品资料库/06-维度对比/惠普/屏幕与触控.md,10139,27dfda0f722699978360b616b3050bc03153058f1e57cbd3df557404b7933fea
+P3-竞品资料库/06-维度对比/惠普/接口与无线连接.md,10267,f569236eb0ab9eb8065772e90605bf4ede11a3fe880d411ef22a3087290cfeac
+P3-竞品资料库/06-维度对比/惠普/摄像头音频与会议.md,10170,733b2fcd14df2122a0dbf1c2925e4f4949ce7cf2b2aab8f4654d71c0fbb4a766
+P3-竞品资料库/06-维度对比/惠普/操作系统与软件兼容.md,10264,f2b49c4e1d356bdfd6802c180edbb6c718f1f591efbe7da69e775e065837b256
+P3-竞品资料库/06-维度对比/惠普/电池续航与充电.md,10199,06dee2026946321280e11a3514be9812cec886f91bc187cd07e034432d33f958
+P3-竞品资料库/06-维度对比/惠普/跨设备协同.md,10151,7ca8615af83c19aee90cdc1c8aa37628ac6bc39a1e760c5bb800200896c93dbd
+P3-竞品资料库/06-维度对比/惠普/重量尺寸与材质.md,10045,36ea0a3a2d39c8437e4f75ee3a3c6f8e0b03d64ed943e651583736092c92e63b
+P3-竞品资料库/06-维度对比/戴尔/保修服务与维修.md,10165,6bb80844130e9a87dce32c3e1f5ce53fd091a1adf80531bd906a25d8a54c8b9f
+P3-竞品资料库/06-维度对比/戴尔/内存与存储.md,10015,c7947886e2a784a596f9799a1f75904e25e2f2f8aa7654d642a9f82fbe677d75
+P3-竞品资料库/06-维度对比/戴尔/同期价格与促销.md,10083,73c8e02adcfb16a026c7730af02fc14000de5da31d31ed1734f02a3e085e26f5
+P3-竞品资料库/06-维度对比/戴尔/处理器与显卡.md,10179,bb865b22f96b57d0ca5b2cc5fd2fc9af55bbe74a19eb21bd6843de340e2bee3d
+P3-竞品资料库/06-维度对比/戴尔/完整SKU与上市时间.md,10228,244b031477125724e353a15596a88c543feea513b7b3b3f4d8965bd48ee2aef6
+P3-竞品资料库/06-维度对比/戴尔/屏幕与触控.md,10094,b94ee7c0cb637b387a593233afa390d6bb889a0492ed2c045b60d71adc7319fa
+P3-竞品资料库/06-维度对比/戴尔/接口与无线连接.md,10055,e2d81dcad22c28440bdb150b75bed54aa3dd0635e95b65d190ec53355d3eee91
+P3-竞品资料库/06-维度对比/戴尔/摄像头音频与会议.md,9960,f679ae4480b772aca791e2b08c63a936b6d9bf0df0b1ad3da1b1adc523f575b3
+P3-竞品资料库/06-维度对比/戴尔/操作系统与软件兼容.md,10043,ceb0cac667d7d7869bb3f8d3d804a9eab02646aacb977eee65ead4e732b6db50
+P3-竞品资料库/06-维度对比/戴尔/电池续航与充电.md,9933,83c56a9272a87b81f74abf6ce0ca8cfb4f838dc2204bc7b1cfea2ff26ff880be
+P3-竞品资料库/06-维度对比/戴尔/跨设备协同.md,10000,aa802fce9a941d30c941b380057d147b7777ed98be38152191b054cc93891c84
+P3-竞品资料库/06-维度对比/戴尔/重量尺寸与材质.md,9932,45d300b63c8ed5254fddaeba19cc624fd4e0bb25ae3026bab8cb309ce9c80606
+P3-竞品资料库/06-维度对比/联想/保修服务与维修.md,10353,bc231011820221aaf1f4d0c76adb255e1d8f79a1356754f7e8238741189deb37
+P3-竞品资料库/06-维度对比/联想/内存与存储.md,10396,87939c0eec8987ac602c29abc50d0f4f724893872e9b24d11292030dbcd887eb
+P3-竞品资料库/06-维度对比/联想/同期价格与促销.md,10291,3a1a390ff0c7b8240fd78d48678e266025ec0035041a45e26fd29e842b51731a
+P3-竞品资料库/06-维度对比/联想/处理器与显卡.md,10435,a0163d11dfe6ea2cb3091579d9b8db6cfae62432950f05c119aba6aa44d67393
+P3-竞品资料库/06-维度对比/联想/完整SKU与上市时间.md,10453,45413f41ff4a151f63494cae41f96e59905409251a80d24ba279fb039d3e33c9
+P3-竞品资料库/06-维度对比/联想/屏幕与触控.md,10275,9c183fbaebb4023ef4085751c8b8434dec23fd4f5acd59de59b623fba7f71fa5
+P3-竞品资料库/06-维度对比/联想/接口与无线连接.md,10256,b8879c14d42b2b5e26a1fda6ab78fa1c71b69d1138985ecef922cd1128944b98
+P3-竞品资料库/06-维度对比/联想/摄像头音频与会议.md,10367,2acaea92e639ed275fe042c2128717d072d0611301d3d928dc3ad98be2360bfb
+P3-竞品资料库/06-维度对比/联想/操作系统与软件兼容.md,10323,d319e2ac7ac8ac2dd7319196f5457ecffa4eb08e972e954b39c0db2b8c5504e1
+P3-竞品资料库/06-维度对比/联想/电池续航与充电.md,10220,9fc767a451b5059d842ce17447cf7b4cfeec6dfa257fbc964fe64444bce563f6
+P3-竞品资料库/06-维度对比/联想/跨设备协同.md,10253,cd6ca095d6cafd963dc00f5c38626c0c02a91cfd93da6c88b449ab3934dfb452
+P3-竞品资料库/06-维度对比/联想/重量尺寸与材质.md,10216,cc16eab0475d7d70e44973311c36534ce7b333f2559fa7ff7bf56099b0dcf39d
+P3-竞品资料库/06-维度对比/苹果MacBook/保修服务与维修.md,10153,8f5b15d7b22983cefde748fc5f6c47580b24a0872dea5f2ca38437816329b97e
+P3-竞品资料库/06-维度对比/苹果MacBook/内存与存储.md,10164,fe6602b81600507716f4de85151c26fd6789211015ec7eb225c4a9e17e4262b8
+P3-竞品资料库/06-维度对比/苹果MacBook/同期价格与促销.md,10117,c934ffbff66b6ee4f97429a54146984e9807f23a23117d066d809e0d68af4301
+P3-竞品资料库/06-维度对比/苹果MacBook/处理器与显卡.md,10355,edc2972eeb8d161b148a634b6b3079b6a42173111a6d8c5d853a5b8ab201c1b4
+P3-竞品资料库/06-维度对比/苹果MacBook/完整SKU与上市时间.md,10269,de8847c0c0766559480fcc075361ac8b9ae91f07fbafc4e6aa31fa892f145932
+P3-竞品资料库/06-维度对比/苹果MacBook/屏幕与触控.md,10071,1d3e630313637094cc8cbc1884dda1b837a5e8ad3451b5c3a603ade768fd7b73
+P3-竞品资料库/06-维度对比/苹果MacBook/接口与无线连接.md,10115,8423f8cf48aab67ada833bac03b18d4070b2499ff312c3cb749955eece905ab5
+P3-竞品资料库/06-维度对比/苹果MacBook/摄像头音频与会议.md,10140,62c4c699736fd82d451f0d61920cbf428e79e5f10986f5141ce05d098852b36b
+P3-竞品资料库/06-维度对比/苹果MacBook/操作系统与软件兼容.md,10115,7eda386504183716537b852502ff0c799bd18267544ddd075a370fdb0055ca57
+P3-竞品资料库/06-维度对比/苹果MacBook/电池续航与充电.md,10036,d6261d3c3a1172ec95ea8332476408acf7515540e0a5f0953fd1c62f72628239
+P3-竞品资料库/06-维度对比/苹果MacBook/跨设备协同.md,10206,21de1554cd6a0a3ddcb9187932ac2257b5ea884716c0ed2cc724643e5a378335
+P3-竞品资料库/06-维度对比/苹果MacBook/重量尺寸与材质.md,10023,c626210f81adc0138611c8ddab6bf8ab679126ec8610ed213199f45b2cd3f629
+P3-竞品资料库/07-品牌官网当前产品事实/ThinkPad/ThinkPad X1 Carbon G13 2025 新款 Ultra 5 225H - 32GB - 1TB SSD.md,20461,94a6f4748bf008cb43304e78be822f7315a07aaf55131f313addd38ea4d69e48
+P3-竞品资料库/07-品牌官网当前产品事实/ThinkPad/ThinkPad X14 2026 酷睿 Ultra 5 便携 AI 商旅本.md,20520,0dd494e9c86810d0f4f237545c32c7967b0ac9657183fd74c951d4c986694f70
+P3-竞品资料库/07-品牌官网当前产品事实/使用与对比规则.md,5653,ff77a718c5a196fa2333897c7de761aeedfffdc682cbe94e9a7080b0864f5935
+P3-竞品资料库/07-品牌官网当前产品事实/华硕/ProArt 创14（H7407，RTX Spark）.md,21441,8d5d0e1d4044e0a82905cfa5315dc69e7b8111e12f15c89e0776b67f05e7d6d5
+P3-竞品资料库/07-品牌官网当前产品事实/华硕/a豆14 Air 2026（M5451GA）.md,20062,5886ce818f82853fa2733d1fe86b3ee498514686ce444e4893cee6c0f7540139
+P3-竞品资料库/07-品牌官网当前产品事实/华硕/华硕天选7 Pro 酷睿版（2026，FX608）.md,21139,e2eb6326171d7d48649e9a80c58730772ff81765c6fd1b84f3e1a1020be3200a
+P3-竞品资料库/07-品牌官网当前产品事实/华硕/华硕无畏16SE（S3652MA）.md,20673,afc2c45c05948d1c4ac1b6ebdaada094ba102499137156c590ecc644d6f508ff
+P3-竞品资料库/07-品牌官网当前产品事实/华硕/华硕灵耀14 双屏 2026（UX8407）.md,20138,2d9d0bdf9aeba391878657ef026042a46b389e55430936b84e6d9215e4afebd6
+P3-竞品资料库/07-品牌官网当前产品事实/华硕/无畏 Pro14 酷睿版 2026（S5450AA）.md,21509,dec81c47eefa11608b06d68c0edfe5f9584a607a293722457e38917b8225f39f
+P3-竞品资料库/07-品牌官网当前产品事实/华硕/灵耀14 Air 锐龙版 2026（UM5406）.md,19852,811abdfc3db285a672a40533fe79a49b89191aee4e3e54b5d76b81616461704c
+P3-竞品资料库/07-品牌官网当前产品事实/品牌官网当前产品事实索引.csv,19745,37bb51d4027bca9d758ac6f2c9b03e39d36f269f41a32c535bdf75f2b4c07f61
+P3-竞品资料库/07-品牌官网当前产品事实/小米与REDMI/REDMI Book 14 2026.md,18440,3394b3d1da39b0ec97b97ef682e99d07b35aa88417275a2581bae74941c404d8
+P3-竞品资料库/07-品牌官网当前产品事实/小米与REDMI/REDMI Book 14 锐龙版 2025.md,19321,82e73e060e92e2e02c98fe86c0e6332ec67b8c59d166a149ecd574a17a8155d0
+P3-竞品资料库/07-品牌官网当前产品事实/小米与REDMI/REDMI Book 16 2026.md,19990,864ac3dd5c67f494c976a6fb377717e79f7c29e629d82a839ca0b779933d1732
+P3-竞品资料库/07-品牌官网当前产品事实/小米与REDMI/REDMI Book Pro 14 2026.md,18321,b41c6ff74b07ababa6e5c725cee6538badcd15e94a11c9679966d772803b4c7b
+P3-竞品资料库/07-品牌官网当前产品事实/小米与REDMI/REDMI Book Pro 16 2026.md,17954,133ae1b51033a4adf1d950fb5a2f26fb93ee154cb199586b44427f1d2aa4a46d
+P3-竞品资料库/07-品牌官网当前产品事实/小米与REDMI/Xiaomi Book Pro 14.md,18207,527e764fa69919874725f3e60e15b8fc2cb5dc80a42e569e8d96b5cf4356b6d3
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/HP EliteBook X Flip G2i 14 英寸新一代 AI PC.md,20077,90681f41d399eb693a4863c3620e6d97e0a2cb0922ad49b368d9dfceb9c41d0b
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/HP EliteBook X G2a 14 英寸新一代 AI PC.md,19665,7cd1c396de59880ef105381a99bf32ec806f266e7b9ec73d0764c6c650f7ecc1
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/HP EliteBook X G2i 14 英寸新一代 AI PC.md,18926,483af8e72b1742c5df83245a5e214d347c30a05cdecfdbb0a684dfe8fa3ab86c
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/HP EliteBook X G2q 14 英寸新一代 AI PC.md,19654,c2a013fcfb0a318019622d6b63aea20be739f4d6ce1fbbb0a0d3b8b166ed3fff
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/HP ZBook 8 G1i - G1a 移动工作站.md,18727,6d221e5256b25e9ca861f82d6da76cd1cc40853e1fc19e627b91395429c131f3
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/HP ZBook Fury G1i 16 - 18 英寸移动工作站.md,20161,bd4b4b1f4f8999888e83b0ecb1821969abf856e5aa86697e4838c3df5923c62f
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/HP ZBook Studio 16 英寸 G11 移动工作站.md,20278,847df397d5cebc908fb20a77233f28a1d5029e204ecbf13456cfc21ef8924d13
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/HP ZBook Ultra G1a 移动工作站.md,19580,05ab22aa780a80b9fc46643e4f06ee5b1176c49715a223edc10a8d7f91211bf2
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/HP ZBook X G1i 移动工作站.md,18925,1539f7552c1e8cc63693076ee2f78d682e14b10baa2f1b222aa832ded4d7940e
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/HYPERX 暗影精灵 MAX 英特尔游戏本（2026，即将面市）.md,20201,99f149d3d121c31d6bebf285d5e594bafbdc95f5428124851989cd391c6d79f1
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/HyperX 暗影精灵 PRO 15（英特尔，2026）.md,19601,a4deb7e01ece4758bd7939f7ce4c8b75ee73c3f5eb2f3c0975fffd30247176e8
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/惠普 EliteBook 6 系列.md,19019,48102cc39d27aa3055001e64245b67db727f8ebfe083e40742762275d3e45f01
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/惠普 EliteBook 8 系列.md,18133,d082cb1224f32ad6f059ab8f1ef919114203ce2be34252b2f0de7fab63cb671d
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/惠普 EliteBook Ultra 系列.md,19426,d3d278040c8e3285ebfd9201928d343d0925a5df541da6c84d9b8b545bc0e818
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/惠普专家系列 ProBook 4.md,18821,054fec300202b98cfacd08b8d37003690dba13ad474db678506bcbc2e85eea11
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/惠普星Book AI PC 系列.md,18901,4b817b07e7aafe7e76c366e61626a26c40accd6a8e5acba95b1cf40792fedd9f
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/惠普星Book Pro 系列.md,16814,dc559884843a54a284681eaad6946d646d19f4fb8acc3497586846d344dfc5a8
+P3-竞品资料库/07-品牌官网当前产品事实/惠普/惠普星Book 系列.md,16050,d1789e90f6b92334c8aa30760f155b10f8bee195c9c119eecb8265f3109271ec
+P3-竞品资料库/07-品牌官网当前产品事实/戴尔/Alienware 外星人 16 Area-51 游戏本（AA16250）.md,20392,2bda897c390fee9c975dc728250b279521317e0215acd0a1d8973d5781afb8f3
+P3-竞品资料库/07-品牌官网当前产品事实/戴尔/Alienware 外星人 16 Aurora 游戏本（AC16250）.md,19366,4706f01ee132dd19a4a5405539d0edb7b5ea4b18f1591afa898f5a0a271d021e
+P3-竞品资料库/07-品牌官网当前产品事实/戴尔/Alienware 外星人 16X Aurora 游戏本（AC16251）.md,20388,8e4aded3ffde9d32d5c0c256cf7aa4bf28609352419258e29ef29933c601151b
+P3-竞品资料库/07-品牌官网当前产品事实/戴尔/Alienware 外星人 18 Area-51 游戏本（AA18250）.md,20405,ad54b0003d1a611096b150a42252e21023bfc1d0d561a5c74a79b0aeb1892067
+P3-竞品资料库/07-品牌官网当前产品事实/戴尔/Dell 15 笔记本（DC15250）.md,17393,0ad866f8f49d80245577a3e5f6427ced7f134c35bbcfab8b934a334b3b81b789
+P3-竞品资料库/07-品牌官网当前产品事实/戴尔/Dell Pro 13 Premium 笔记本（PA13250）.md,18290,3e413b7d4e2305feed69d6edc6d084b2fa6c12325d86286deb386764c605ada6
+P3-竞品资料库/07-品牌官网当前产品事实/戴尔/Dell Pro 14 Premium 笔记本（PA14250）.md,18617,cb411dd81f0aca04c1f6e8d5fa8aa54562889bc066b0afc10fb5a9d156301cbe
+P3-竞品资料库/07-品牌官网当前产品事实/戴尔/Dell Pro 14 笔记本（PC14250）.md,18654,64c2053081552b6ccf0d282557296dc4c42475686d6d1fab6fa6c6dba3bb93aa
+P3-竞品资料库/07-品牌官网当前产品事实/戴尔/Dell Pro 16 笔记本（PC16250）.md,17518,c30efc489f618ab51449130111dd0e8a39a234ba4081b0d5fd156b413941027c
+P3-竞品资料库/07-品牌官网当前产品事实/戴尔/Dell Pro Max 18 Plus 笔记本（MB18250）.md,19545,211d5e866b9db80e11e4559fa7dfd934219a45b9db59df1798f72da79635548b
+P3-竞品资料库/07-品牌官网当前产品事实/戴尔/新 XPS 13 笔记本（2026，DX13260）.md,19286,cc65fa7ad3c3a9b6b2ee7f8e84520a337807a4ef773e7cd2a266bef5fa6dcf23
+P3-竞品资料库/07-品牌官网当前产品事实/戴尔/新 XPS 14 笔记本（2026，DA14260）.md,19124,a87c482ace6373cd6fdfde9a93e3e15ab764819ab7bb32d67abc060006464829
+P3-竞品资料库/07-品牌官网当前产品事实/戴尔/新 XPS 16 笔记本（2026，DA16260）.md,19425,cbda7329d9bfc483d16c964df141888c37c84bbe3c48448e45de38bdab39e27c
+P3-竞品资料库/07-品牌官网当前产品事实/联想/ThinkBook 14+ 2026 酷睿 Ultra 5 AI 全能本.md,21034,f53deaa98951bf1846910573269514ed625d6ab01bf1a8e7ffa152eb6a5683ab
+P3-竞品资料库/07-品牌官网当前产品事实/联想/YOGA Air 14 Ultra Aura 2026 14英寸轻薄笔记本电脑.md,20997,ded246e3e4126e315a5b192e87273fe4784255babc7454845d0bbc64ce641498
+P3-竞品资料库/07-品牌官网当前产品事实/联想/联想 ThinkBook 16+ 2026 酷睿 Ultra 7 AI 全能本 04CD.md,20713,5f9bf14571ee93bf3b6e2732233da0bd473690ece8afe2b21d952b186c4efea4
+P3-竞品资料库/07-品牌官网当前产品事实/联想/联想小新 Pro16 酷睿 16英寸轻薄笔记本电脑（小新 Pro 16 IPH11）.md,22396,215ca369dae9e68b61233507127068ad16fd59da8727fd4584509334f5a631b6
+P3-竞品资料库/07-品牌官网当前产品事实/联想/联想拯救者 Y9000P 2026 16英寸电竞游戏本笔记本电脑 碳晶黑.md,22671,c7d2edf003da461916d61b43d5be8d2174ad0c3f2a0b3b407df2b2ca7cc8cd30
+P3-竞品资料库/07-品牌官网当前产品事实/苹果/MacBook Air 13 英寸（M5）.md,19506,c9dcaf18dffa59e896744973acb34dd01fd44deb0beb5cdf124cd81e9d3aa496
+P3-竞品资料库/07-品牌官网当前产品事实/苹果/MacBook Air 15 英寸（M5）.md,19292,697c514ac880c5b1de7b2f6d4c17e9af675145b1f9ab3bf538888ca6e7b243a8
+P3-竞品资料库/07-品牌官网当前产品事实/苹果/MacBook Neo（A18 Pro）.md,18981,b2609d0852eb221f4d53562fdddcbf0dec63b286242bbec386d3e2b0574e503e
+P3-竞品资料库/07-品牌官网当前产品事实/苹果/MacBook Pro 14 英寸（M5 Max）.md,18797,46c84bc84c0fd9cef799c769d85b0c113e09b67bc7234b9f010c57b5e1dc24e2
+P3-竞品资料库/07-品牌官网当前产品事实/苹果/MacBook Pro 14 英寸（M5 Pro）.md,18647,5d853799ffd7bee4333647116c05b2f2021ff4a98b13b5f998f5886826b34bbe
+P3-竞品资料库/07-品牌官网当前产品事实/苹果/MacBook Pro 14 英寸（M5）.md,18676,105344c82b77b22d86abb2114fe4eb5c7633e5f28d3db15dfcb49235295b254a
+P3-竞品资料库/07-品牌官网当前产品事实/苹果/MacBook Pro 16 英寸（M5 Max）.md,19082,7a900d02a2527d24e87a3b9a80fe4d051f329d8b849d271d8758807fa92689ca
+P3-竞品资料库/07-品牌官网当前产品事实/苹果/MacBook Pro 16 英寸（M5 Pro）.md,18508,a9c95be2542b52d62dee5d933bb06799393929efed4d9b5d235983235df7c65a
+P3-竞品资料库/08-已填充竞品对比案例/00-总索引.md,9984,24499c794dea83fff61ecf301f1d39e66ea3fdf7858467447b5ec64dcc20cea6
+P3-竞品资料库/08-已填充竞品对比案例/01-方法说明.md,4027,b16f900f3d99e80577ab302e651888aef0810a8e2a0383790a0ac629c4246c7b
+P3-竞品资料库/08-已填充竞品对比案例/ThinkPad/01-ThinkPad X1 Carbon G13 2025 新款 Ultra 5 225H - 32GB - 1TB SSD×MateBook X系列｜高管差旅、长文档与安全登录.md,13208,9df298e41375d79a5d77d04f5a70a9d530cf46fe7a153d25593b274d629d12af
+P3-竞品资料库/08-已填充竞品对比案例/ThinkPad/02-ThinkPad X14 2026 酷睿 Ultra 5 便携 AI 商旅本×MateBook 14 酷睿 Ultra｜咨询顾问的多窗口分析与商旅工位.md,13325,844aac09d4e43029abef1cd929a650a9b8947b060f72b4f6af0d2b8f5f746b1b
+P3-竞品资料库/08-已填充竞品对比案例/ThinkPad/03-ThinkPad X14 2026 酷睿 Ultra 5 便携 AI 商旅本×HUAWEI MateBook Pro S｜跨系统商旅、资料协同与离线应急.md,13382,4199d16e47f2ac5c6d038c484bbd33458d62b2450c23365fb4c7fd4b75893821
+P3-竞品资料库/08-已填充竞品对比案例/华硕/01-a豆14 Air 2026（M5451GA）×HUAWEI MateBook Pro S｜校园通勤、笔记整理与移动展示.md,12963,a880a0951a51b6921a764f0ce55e12ee9fd7aff41bd2229df0ad5d6a5d72d2dc
+P3-竞品资料库/08-已填充竞品对比案例/华硕/02-华硕灵耀14 双屏 2026（UX8407）×HUAWEI MateBook Fold 非凡大师｜多窗口研究、双屏演示与折叠形态适配.md,13319,ba3b7fa965e9182f7a0df32cfb892d1c3a9317856d437a814201a5d9536a6ac5
+P3-竞品资料库/08-已填充竞品对比案例/华硕/03-ProArt 创14（H7407，RTX Spark）×MateBook GT 系列｜本地 AI 原型、专业显示与移动创作.md,13441,97d865d323c3336538c51cd5b86b0c9ca3228ad5b4a2205406aa2b72a532378d
+P3-竞品资料库/08-已填充竞品对比案例/小米与REDMI/01-REDMI Book 14 2026×MateBook D 14｜日常学习、网页办公与手机文件交换.md,13152,54c01cb019443ff4625cc8d256fd576bde73f3b64e5fdff52c1d7fddefec959c
+P3-竞品资料库/08-已填充竞品对比案例/小米与REDMI/02-REDMI Book 16 2026×MateBook D 16｜16 英寸办公、表格处理与多设备互传.md,12833,6ed7556c942469aeb5053320e8763e453f789bee1920f620dec4480cd8403ab6
+P3-竞品资料库/08-已填充竞品对比案例/小米与REDMI/03-Xiaomi Book Pro 14×HUAWEI MateBook 14｜专业显示取向的移动提案与跨端协作.md,13598,69340a1dd18dec4317e6a35afd9cad9291d4c22a5e923aba7031d4b27c57ba2e
+P3-竞品资料库/08-已填充竞品对比案例/惠普/01-HP EliteBook X G2i 14 英寸新一代 AI PC×HUAWEI MateBook Pro｜移动管理层的会议、审批与企业安全.md,13187,e5b2716dd658a8708543221e71f06ee8c76097d32a1e69dc1309aaf1413d955d
+P3-竞品资料库/08-已填充竞品对比案例/惠普/02-HP ZBook Studio 16 英寸 G11 移动工作站×MateBook GT 系列｜4K 视频、三维预览与专业软件认证.md,13328,93c35c63a9ae66dc37adb18ae2c6383298fa5cc30a8139807e2966736cace013
+P3-竞品资料库/08-已填充竞品对比案例/惠普/03-HP EliteBook X G2a 14 英寸新一代 AI PC×HUAWEI MateBook 14｜数据密集型办公、内容提案与移动 AI 辅助.md,13489,754efa837b8def6b387ebb69d7811057c19252fad801b22dc9e5542cd2edb1d2
+P3-竞品资料库/08-已填充竞品对比案例/戴尔/01-新 XPS 13 笔记本（2026，DX13260）×MateBook X系列｜超轻 Windows 移动办公与客户演示.md,13531,e4ea24614430da408c5e8a69088dfeea310a203b0674cda9f766bb5d3c446919
+P3-竞品资料库/08-已填充竞品对比案例/戴尔/02-Dell Pro 14 Premium 笔记本（PA14250）×MateBook 14 酷睿 Ultra｜企业差旅、视频协作与设备纳管.md,13500,5e2ca43c5f0c3228e8e318d877a3169f4e4f6be4d5bb6601f596dcae792a2914
+P3-竞品资料库/08-已填充竞品对比案例/戴尔/03-Dell Pro 16 笔记本（PC16250）×MateBook D 16｜财务表格、数字录入与固定工位扩展.md,13084,da2a7c19e1fed6d5c88bc3e795d5e7c8163f389fc3cc487fccdcb8daba3b572d
+P3-竞品资料库/08-已填充竞品对比案例/联想/01-YOGA Air 14 Ultra Aura 2026 14英寸轻薄笔记本电脑×MateBook X系列｜超轻触控办公、批注与外接屏演示.md,13261,4da5952d471156fd1c5b56bc72a3e80bf2ffd31926dc190e1067299196af9008
+P3-竞品资料库/08-已填充竞品对比案例/联想/02-ThinkBook 14+ 2026 酷睿 Ultra 5 AI 全能本×MateBook 14 酷睿 Ultra｜摄影选片、轻剪辑与多接口现场交付.md,13244,1b7cdfbc36017e465f18b267f37aa48a362a3a32f9da6a1c8eeb849df4fff26d
+P3-竞品资料库/08-已填充竞品对比案例/联想/03-联想小新 Pro16 酷睿 16英寸轻薄笔记本电脑（小新 Pro 16 IPH11）×MateBook D 16 SE 版｜大屏学习、数据整理与轻创作.md,13140,4bccf1cbd7cb6341acd3296b6e18151bee3d61a221f24e63d51da8dd3b4cbde8
+P3-竞品资料库/08-已填充竞品对比案例/苹果/01-MacBook Air 13 英寸（M5）×HUAWEI MateBook Pro S｜高频差旅中的轻装写作与远程会议.md,13120,8bd56253f63da6aa4878c022081394c39a8327cfdc52b6708fd504469afdb316
+P3-竞品资料库/08-已填充竞品对比案例/苹果/02-MacBook Air 15 英寸（M5）×HUAWEI MateBook 14｜大视野审阅与跨设备资料整理.md,13074,f31badd4a7047b18782241dd0b2b81324dc0b0eaa0cdbefdfe8835446f84de4b
+P3-竞品资料库/08-已填充竞品对比案例/苹果/03-MacBook Pro 14 英寸（M5 Pro）×MateBook GT 系列｜开发、视频粗剪与多外设工位切换.md,13225,88de534bd86fe816ee95feda217225ce620ec7d4ea5b1e03ad64e9e9d94fe2c9
+P4-价格政策库（机密）/交付周期登记.md,6068,c9a33cb50e1d55ceed0ac638ab0d464a67001a68e24472436876a31a5ce4f52f
+P4-价格政策库（机密）/以旧换新登记.md,5953,a9a071377281dbb9b63108ac16d1724b97634f34b961568ffff9276068721e29
+P4-价格政策库（机密）/价格异常复核.md,6011,432676e7981a206c3a9b6e671b2de72491b9e3f2b7681a5335c7a201f41c60ad
+P4-价格政策库（机密）/企业采购报价登记.md,6038,fcc2895cef0e96dd2591f5f9610d7ebab6332c5ceabe9af54b9b9c1ba9d324ac
+P4-价格政策库（机密）/分期活动登记.md,5921,8d6dd5ddc56d8304dc8ce1863166506cc7dbd1214cf3e9efa574c555a16ba114
+P4-价格政策库（机密）/区域价差登记.md,5772,1532288373a074038a788b746e37e0ddb5790b745361fe8b0c6f62bacc809b01
+P4-价格政策库（机密）/历史价格变更.md,6062,e2242de1ec459c8f960751c0ae84ecbe97e93bcf4c91c2618d645a32a0eaa24b
+P4-价格政策库（机密）/商城当日价快照.md,5897,150b8b63c7d49479f7c161f0bf2f8a3877fe7d6d7ae85ca7bedad470bf37a4ed
+P4-价格政策库（机密）/国补与地方补贴登记.md,6161,30c94a3a6f1d9409cc9de954dd9a447aa37c37d8fbb6bf38a1ca8367fad7b9c3
+P4-价格政策库（机密）/套装价格登记.md,5969,39b8934662ca92b8cd2db200c495dfabb9fb8f2761d78a0cd9144688579170ad
+P4-价格政策库（机密）/审批记录模板.md,6026,9e2ce9e91d027450ac84070c710ea5f0c89c21e356e8bff7d640766157f6c30d
+P4-价格政策库（机密）/对外报价合规检查.md,6119,9b2e3ca4b8cbae2c7fdb61a6cfd54212bbf7934f3aa046adc1330d7f8b464144
+P4-价格政策库（机密）/库存状态登记.md,5969,97a004aede041458690d1049eac8d29273c167e610fd0324b728e2d8ff86fc52
+P4-价格政策库（机密）/建议零售价快照.md,6011,8abde0f9e7f3cd2d77da6a2c9354e8f3e6a1600f2a78beab9691a81e2c6d78af
+P4-价格政策库（机密）/报价有效期规则.md,5925,8a63c4f87ab07fccb57ac5195e82d623f395b8e9680d4e9464893407ff8a6b64
+P4-价格政策库（机密）/教育优惠登记.md,5986,c0b1927e01b5bc19c9956c9a959e9c07b05a1e0c8f953b2522eb311569cde69c
+P4-价格政策库（机密）/渠道报价登记.md,5961,25983d14d9209d1a9fd090669cff29bc47b1ca6fd5cbea9e0ec61fb651407cc6
+P4-价格政策库（机密）/赠品活动登记.md,5942,ca5a7dc0eb353f48bcfc94896169fc0a142d84c4a8b946510af326e3ae2994ee
+P4-价格政策库（机密）/返利政策受限模板.md,6004,c1dc1cb7cf48ecb3b932a4c71998190ca84aa2bdac53320939444f2866c7a94c
+P4-价格政策库（机密）/项目特价受限模板.md,6003,2670fa69892a584dded6e7b3baf7bf188edbb9dd94eaad78ddcbccad92700ab1
+P5-培训赋能库/00-学习路径/内容运营路径.md,9095,8ccb4c377cb16d510248c5bf155cdea8de3e4fbd2b9a60ea96259dec3cdff51c
+P5-培训赋能库/00-学习路径/政企顾问路径.md,10119,d7ae54bd54e0c0fb01d50c615020a1687391bdc3c6e10efe5f21c0283f8e31a5
+P5-培训赋能库/00-学习路径/新员工7天路径.md,8392,db8d25659de79bfe3a8cb227e5f70b615c4740238657cbe011ebe24417e7f485
+P5-培训赋能库/00-学习路径/销售顾问30天路径.md,8781,f07ae25b7e9a0f2c43794cd46fca3817cd2714fba0e511685b0ef82ed69280fa
+P5-培训赋能库/01-快速入门/Windows电脑服务工具地图.md,8919,f064037e942420a5e75b279b447e71c3e70570225408ae7bedd7df02b4bf1d5e
+P5-培训赋能库/01-快速入门/知识库使用快速入门.md,8755,9279b99c6a92e424aea34fe26cd449ef2be407aa91ec177a9637c104bd99a736
+P5-培训赋能库/01-快速入门/鸿蒙电脑首次开机核对表.md,9677,45038413b338bc80931209d2d9aa65a918c6930c4143ee40f7f49727de4ce568
+P5-培训赋能库/02-一指禅/快速检索与应答流程.md,8148,faaa32ca702f0a85204716eceda619177f04ed07b865e40ea66f668b0c235d24
+P5-培训赋能库/03-产品体系/华为电脑产品体系速查.md,8814,ba20b73b3ef48132db8aa2013a45de779d4c3620db888592b3417f9366f0db54
+P5-培训赋能库/04-系统能力/HarmonyOS电脑能力学习卡.md,9688,04602ec68e0f81650c9c7b61cb6242344390bf17e753f223dc4fe4223d798ca7
+P5-培训赋能库/05-配置解析/配置字段解读速查.md,9832,6d7f6f0453c1e8b185f7bc5e34bc2c773b80cc40768e03b15f4ccb77336c4c26
+P5-培训赋能库/06-测验/销售顾问自测题.md,9930,3c4f6756b75230aeb7719f4c513c44a472d6e85c1fec54b5406a8e2435c42646
+P5-培训赋能库/07-销售培训/销售对话演练指引.md,8917,b90604f9e34c21d6507fd827fb26a2685d010e421c51e3c7ae2f17306d0c557d
+P5-培训赋能库/08-售后能力/服务顾问情景演练.md,10025,c247599a282df23b9570d1f7fbaeb89ea095d0f2b5566333477e8a3c207af38f
+P5-培训赋能库/09-系统课程/00-总索引.md,7644,4b3c5ce06bd2345e41f36cbbf65604acba6281b783fa19751b8543df6d96ffef
+P5-培训赋能库/09-系统课程/01-型号与SKU识别/情景演练.md,3365,97cfc7f9b887501940c61fd8b00c5a386f4bbd23408eb0688326f8e91e146fe7
+P5-培训赋能库/09-系统课程/01-型号与SKU识别/测验.md,4177,9ee492b2578e027dc21d5d8be5df4ff380a4dc321e8d3fc7189c6b5a5ae60e7d
+P5-培训赋能库/09-系统课程/01-型号与SKU识别/讲义.md,5398,f048a0263d82ff9a841f2eba637c346d7446a056fe5f04a1ee1a109cf85b35c2
+P5-培训赋能库/09-系统课程/02-鸿蒙与Windows路线区分/情景演练.md,3420,3b686a093f8121579ddde72fdb20940cf471a451f9e55e4e099f8c21d8972eb9
+P5-培训赋能库/09-系统课程/02-鸿蒙与Windows路线区分/测验.md,4083,e8a736c035b9e7d03315b8dae9dd8562133ceb8228346108cabf2495fad983ce
+P5-培训赋能库/09-系统课程/02-鸿蒙与Windows路线区分/讲义.md,5340,466e84db5d3d86b27b2bd98fd817e936fb9a1c5e06daf443ac69067bc49f0528
+P5-培训赋能库/09-系统课程/03-处理器基础/情景演练.md,3326,dac72fd4d4e4edad8f5be4c805ab1ae1ddb07b059152e837a79d74a3ffd2265d
+P5-培训赋能库/09-系统课程/03-处理器基础/测验.md,4065,0c12a06ea14f29e0cf8805b55dda683609529fdfe4ae07fe3817f480d6e7ffe1
+P5-培训赋能库/09-系统课程/03-处理器基础/讲义.md,5240,0524d3b77908db588deb3848cc27812400fcbf15c1ea80e7ec86f6bcad5adde3
+P5-培训赋能库/09-系统课程/04-显卡与图形任务/情景演练.md,3267,e7bfe2db178a8dbee518299a366bea73ed9ee383177de534322ba9ee2b4d1b39
+P5-培训赋能库/09-系统课程/04-显卡与图形任务/测验.md,3967,0fc3444f34604f7c62f26e9f290994c614edba47eb9dfb014edc08bec89c2a51
+P5-培训赋能库/09-系统课程/04-显卡与图形任务/讲义.md,5197,70854811735957dc842a9bdacb273db8de2fdc94114352a55b9ea03d82996266
+P5-培训赋能库/09-系统课程/05-内存与多任务/情景演练.md,3240,4a532e117e4c52aee8f2a303f6cb814e49a6b48d8144281c54a0756c9d217699
+P5-培训赋能库/09-系统课程/05-内存与多任务/测验.md,3931,ede2683f6848636d5319bc7c7a2c156fc32f2b612edd3e31adc29760f125c906
+P5-培训赋能库/09-系统课程/05-内存与多任务/讲义.md,5125,e4d32eca13b79701f77910979256c489c46e7d62373a0c4c06a11b35308aa39f
+P5-培训赋能库/09-系统课程/06-存储与资料管理/情景演练.md,3257,1afdd26b4519e98371ad6cd76fd949280318eb6e4de4690ad77d7d505d04ba70
+P5-培训赋能库/09-系统课程/06-存储与资料管理/测验.md,3953,409bbc47ca92809c743ab81a10f8e98ad7bdf1e458f1502d4b01498b5bff8e97
+P5-培训赋能库/09-系统课程/06-存储与资料管理/讲义.md,5162,a87a36ab92c688b91df760cdea3bf95c8c1df33c3c8793c3c954c468e78c2e0e
+P5-培训赋能库/09-系统课程/07-OLED与LCD屏幕/情景演练.md,3213,6cb2a35ae91bd0a939649de615ce4b62c9c2f3d9a29ca1c4fe06af02b21b6b42
+P5-培训赋能库/09-系统课程/07-OLED与LCD屏幕/测验.md,3981,8b12c5a2ed7fd406f0a27d3a78c6aa207dabb7009e9430cc375fc0504744877d
+P5-培训赋能库/09-系统课程/07-OLED与LCD屏幕/讲义.md,5129,dc2a1c86f3f700076c2ae18192c8c1324e1703825679195448977358e14f3b72
+P5-培训赋能库/09-系统课程/08-分辨率比例与亮度/情景演练.md,3228,b45c2b62360dd58a9f0bbfc43862d411279daf9b1d6a2bec35e5b9562c3da7f0
+P5-培训赋能库/09-系统课程/08-分辨率比例与亮度/测验.md,3874,f274b25a371e50ea6c898041be854f7045874bdcf7999bdd41126fb7b939f4f0
+P5-培训赋能库/09-系统课程/08-分辨率比例与亮度/讲义.md,5080,57c20429dbf9622ca1e25943437f5524a619f7cbdccc5ff104a04f6ddd0e090a
+P5-培训赋能库/09-系统课程/09-柔光屏与护眼表述/情景演练.md,3204,c2adb8a39bf58fc7744afe68d761e4bb8b2a9b11a941638c8689ee4c9071212d
+P5-培训赋能库/09-系统课程/09-柔光屏与护眼表述/测验.md,3841,f21e981d7ffb6ba4ea138b82466b4e66f463aa1fe958d925a8ca474f0eec189b
+P5-培训赋能库/09-系统课程/09-柔光屏与护眼表述/讲义.md,5029,6abd2602941a8c841e1c4ab11f2f4034e9f4ffc0d66a2ad3ab5ea2d0f63906e1
+P5-培训赋能库/09-系统课程/10-重量尺寸与便携/情景演练.md,3159,068b89d2e6086ce56a0af9d5fa82ecd1edf848078d2588124d48d1023eb36d4d
+P5-培训赋能库/09-系统课程/10-重量尺寸与便携/测验.md,3751,48c93fdedbd30f767873dd873b9c846d8111a9d11ed321efdfab032531e5f98d
+P5-培训赋能库/09-系统课程/10-重量尺寸与便携/讲义.md,4918,788b1843b69f5c9cdda254a36efafdeda523065e21a28f341f8947818ffa5dd8
+P5-培训赋能库/09-系统课程/11-电池续航与测试条件/情景演练.md,3261,1d979ff5775028bbff1325d105ba9e528c789326ecde2bd3719754812c1d3adf
+P5-培训赋能库/09-系统课程/11-电池续航与测试条件/测验.md,3904,e8d575bb98c995c99f5916c124e2ada01f9905b0deaa5497b2bf6bf29b4098a1
+P5-培训赋能库/09-系统课程/11-电池续航与测试条件/讲义.md,5101,8ba3134e9f49182eb0767df60bab33668e7f9055e6fb42ef15d88721b2e8502a
+P5-培训赋能库/09-系统课程/12-接口与扩展坞/情景演练.md,3198,54101a69134a11ff83c58178363f5a3f600c410ba32341fe548da427bd168b0d
+P5-培训赋能库/09-系统课程/12-接口与扩展坞/测验.md,3892,d6e9a1c9f2ee92ecb5b415b349245ee573f04f281a5f11a5b27c2e0b3f6e3e97
+P5-培训赋能库/09-系统课程/12-接口与扩展坞/讲义.md,5017,1aa14fcaba29a1dcdfa2b3a89dcb89ab3facd218dccd1bd83679718508996bad
+P5-培训赋能库/09-系统课程/13-Wi-Fi蓝牙与网络/情景演练.md,3238,3ad96f77fe54fae5cef89b440e474f38b8c46beed77332b80fed1b4dbc764c9b
+P5-培训赋能库/09-系统课程/13-Wi-Fi蓝牙与网络/测验.md,3895,b0a308d7afbab9e179e62bf9c5500017e04d3ba4c64ef7d9908ad66e42e7aada
+P5-培训赋能库/09-系统课程/13-Wi-Fi蓝牙与网络/讲义.md,5083,7647fb7bbf6cdc4b0065f7a21c9f4ef618f45a5a4725cf1852a41834c2431040
+P5-培训赋能库/09-系统课程/14-摄像头麦克风与会议/情景演练.md,3199,6a824d6a5eeb6e78e2ea1d73f8611f85ed5d5b3d2610016b06b10e3d70ebbee2
+P5-培训赋能库/09-系统课程/14-摄像头麦克风与会议/测验.md,3817,9d04eb595072cdd8ae06a227d877016b5f22045a3aec9fbe2993d3a4cf9408c7
+P5-培训赋能库/09-系统课程/14-摄像头麦克风与会议/讲义.md,5033,c1b29cfa05c2a3783b44723a5ea6e94c529a0b150d04f1d6ed8f823fd20e004c
+P5-培训赋能库/09-系统课程/15-键盘触控板与输入/情景演练.md,3204,3173b8ef8152aa02077deae0593284f671d2f5740e6d557438a6c2060db405a7
+P5-培训赋能库/09-系统课程/15-键盘触控板与输入/测验.md,3757,1c49ea5763fc991ff61f64bc847fb95f910fa126fb227f0bd0fe7b124c4914e6
+P5-培训赋能库/09-系统课程/15-键盘触控板与输入/讲义.md,4909,b330b2857aba48e4afe1ab07987e6d1c0d1e0a4d19dce79ed436cb0999b6ff7d
+P5-培训赋能库/09-系统课程/16-手机平板电脑协同/情景演练.md,3218,dc71fa3cd266cd73ac6b02cae8d1a8cf32759fc15e3418cf19b42b95b7c71cfa
+P5-培训赋能库/09-系统课程/16-手机平板电脑协同/测验.md,3824,07f267ce84b694c42f208cbdb2abc45e8689a5d333180bbc01935e5d895546be
+P5-培训赋能库/09-系统课程/16-手机平板电脑协同/讲义.md,5027,ac379cdfbc0ef2e5be7251722d8008e655448fbe6866320db13a9460149241d0
+P5-培训赋能库/09-系统课程/17-投屏与文件互传/情景演练.md,3212,751cc7d4ef68883c67c63d84c3633a2ed143e4bc059b62dbd4282cd1b71699cd
+P5-培训赋能库/09-系统课程/17-投屏与文件互传/测验.md,3831,91a2fdbd81c75c068658b4d2cc30566eaf2fe6b4c41ce1751312ca8e160650f0
+P5-培训赋能库/09-系统课程/17-投屏与文件互传/讲义.md,5024,e9a5132a070be2cf50d2bcfe0c88d16945966f43996584421d10e012168af247
+P5-培训赋能库/09-系统课程/18-专业软件兼容核验/情景演练.md,3273,eaf04e98acebba32fc05f5abb4cd389f0cf1be947d8e1ee081d3af31814f1a8f
+P5-培训赋能库/09-系统课程/18-专业软件兼容核验/测验.md,3874,86b8e2b20b4c58200a49f591ca82869e4b02990c5fe6cd0014c90c130185402b
+P5-培训赋能库/09-系统课程/18-专业软件兼容核验/讲义.md,5044,de92f698d546ac729176de990e867fbfbc0df10a07ccabd668f552d9a70490fa
+P5-培训赋能库/09-系统课程/19-旧机资料迁移/情景演练.md,3156,2509a5c372f054fdb1c1b4461a2af290fd5930506817a1da9ea14801514a0543
+P5-培训赋能库/09-系统课程/19-旧机资料迁移/测验.md,3781,ee8c728ef0bc2abf7a01d81490b327726f82207e14931de330d5aed514395aad
+P5-培训赋能库/09-系统课程/19-旧机资料迁移/讲义.md,4978,14b8acea337359ac14d25ab6410e3ba926cdc64d9712cf5a92f28768ca603727
+P5-培训赋能库/09-系统课程/20-隐私与账号安全/情景演练.md,3210,a70edb10833c5979ed2986d8fa8789c14ee5ee9c8114a8baf0eb08ae479f7ac7
+P5-培训赋能库/09-系统课程/20-隐私与账号安全/测验.md,3834,7c6f1a8eaba6d161a901427e734efed691b0db6edc75c4572b8f920ddfe50440
+P5-培训赋能库/09-系统课程/20-隐私与账号安全/讲义.md,5052,b9d8367fc8f6e78f0592c2068e24739d31eef19b714cdaa4164108e3db89d766
+P5-培训赋能库/09-系统课程/21-新机开机设置/情景演练.md,3245,663e8d3da8e897c9f4aa84b789653dc556dd6b1e399232720ceab03fb67c464d
+P5-培训赋能库/09-系统课程/21-新机开机设置/测验.md,3941,9c0f157c3b7e9bd42cea186859fdb7dfddcb0387574ffb42a75fb57d169a3374
+P5-培训赋能库/09-系统课程/21-新机开机设置/讲义.md,5165,524aabaf53d908e0209131067e427b238d62e52dffbe0372037573b97a76bf71
+P5-培训赋能库/09-系统课程/22-驱动与系统更新/情景演练.md,3194,ebe6bf28be85b76640ac76ae3ed06f6c56400602168694006ef07fe576a0866b
+P5-培训赋能库/09-系统课程/22-驱动与系统更新/测验.md,3827,6f4f6befb18e7774751f9ed9d0d36d4ca11456d00b23d90bc3199c7b4a1911f9
+P5-培训赋能库/09-系统课程/22-驱动与系统更新/讲义.md,5066,02168b51753500a625b65b0bc4f07f16909a20df8bcb335b2bef15b4907f6e78
+P5-培训赋能库/09-系统课程/23-电脑管家与我的华为/情景演练.md,3273,f809acf6b95b3c31c90338201bfda18f659d96fbf056c0229fd102fa2aec2b3d
+P5-培训赋能库/09-系统课程/23-电脑管家与我的华为/测验.md,3958,eea866ba93aa3b5ce284d9a3dd79b42acb09287c8629fa808185803e23b37e1c
+P5-培训赋能库/09-系统课程/23-电脑管家与我的华为/讲义.md,5119,3536111d6c3459c883632683c4da0bea90c921481d937c64405f3e94d8a789e0
+P5-培训赋能库/09-系统课程/24-故障分级与转人工/情景演练.md,3192,e4932bf34135fd5d1741aac1caa901e03f2f7c26023d91400341b125d858b4e6
+P5-培训赋能库/09-系统课程/24-故障分级与转人工/测验.md,3877,f33e2a0111a953ac75bc8027aa11d0fa431647534ce726cb7e3abec219756c2b
+P5-培训赋能库/09-系统课程/24-故障分级与转人工/讲义.md,5089,4928148ea53131af2ac225bf5ec0529aefc81e92117a78efc34bc2b96f8166a0
+P5-培训赋能库/09-系统课程/25-保修与维修入口/情景演练.md,3117,c8d6a9d6b7d06fe97744b05efa043a00cee4a09db5da8bd213d7daf7d6eed6e8
+P5-培训赋能库/09-系统课程/25-保修与维修入口/测验.md,3823,27144b3c387d6241f7f0facd33e8376b6e2dbd60321a2e8520481e288d5a1225
+P5-培训赋能库/09-系统课程/25-保修与维修入口/讲义.md,5029,de77611bd945207cf679934a64520d7d2d692205a0508a718c8129c6a9c77f8e
+P5-培训赋能库/09-系统课程/26-门店需求访谈/情景演练.md,3152,37ce548482d062cb18259cb1fe7c90596e3dc272d05f317ae396a74c3e4a35b3
+P5-培训赋能库/09-系统课程/26-门店需求访谈/测验.md,3827,8c471c2d901a98f4edbc9b83bd798ec742bc7d1afdfbcfbd54c711b7d709e0ad
+P5-培训赋能库/09-系统课程/26-门店需求访谈/讲义.md,4973,2d63e010e767e73ad4d5bd321e6119e04e2c0f44db483844d632129eb42d3af8
+P5-培训赋能库/09-系统课程/27-政企需求访谈/情景演练.md,3210,237548d9760add349acb7c58142346ede55f3c9da7fa44a5c4f3ce5f5c4458cf
+P5-培训赋能库/09-系统课程/27-政企需求访谈/测验.md,3843,49c251d5c00f2264a4ac52ebad3bfcab5ee1c925e0651cfc6c56c9289dc9b907
+P5-培训赋能库/09-系统课程/27-政企需求访谈/讲义.md,5042,e78fb465679ae8c9d9ce4288001883cf139f5c059dfd795ea3c2fae721ddc995
+P5-培训赋能库/09-系统课程/28-教育客户需求访谈/情景演练.md,3225,d5fc395414331e627dba61e1f0effdfef023d8292caa0d2f59fc838eeca14dea
+P5-培训赋能库/09-系统课程/28-教育客户需求访谈/测验.md,3821,ed65e7e48ee9eee20a133a35bf61eb2b9117d24dda754ccf02e646b20d09d832
+P5-培训赋能库/09-系统课程/28-教育客户需求访谈/讲义.md,5006,851c2af8f02b17146ab58751fd256656858167cf8f48048fda427fa6fb390f2a
+P5-培训赋能库/09-系统课程/29-竞品证据采集/情景演练.md,3147,8223ffab024eeae9068a58419b70b849f3ad8eb611644a939d98e892b1c52cba
+P5-培训赋能库/09-系统课程/29-竞品证据采集/测验.md,3823,6671bba2f0e2bf9cffb63fa32cb1c5e2eb8c93626fce87bc4100851a1864770c
+P5-培训赋能库/09-系统课程/29-竞品证据采集/讲义.md,4984,47b37369259ecc9a32d1422042e726a5fa6e860ac0a85999ed9bfdb3bb942b37
+P5-培训赋能库/09-系统课程/30-价格促销合规/情景演练.md,3198,b75cccf910b01b039f19f9bc3a6223dddff60c14d9835b205d44210f7575d202
+P5-培训赋能库/09-系统课程/30-价格促销合规/测验.md,3853,3453572ec1f879b831006ae4f982e45ee580b02ef019979810021ae172d4d0a9
+P5-培训赋能库/09-系统课程/30-价格促销合规/讲义.md,5056,457a652e618dde9461e18d279c5b5e5c86144864b326c3f32a2e28968aa01407
+P5-培训赋能库/09-系统课程/31-图文内容引用/情景演练.md,3168,bdfddd3c9fef225ed6c34c4db8da1b4201ac37cf369cd832957cb2c9a20fcfa3
+P5-培训赋能库/09-系统课程/31-图文内容引用/测验.md,3762,68c5bd8bad82fa5798cbda551285ceedc302663231e5d6661bb4129e915e57e7
+P5-培训赋能库/09-系统课程/31-图文内容引用/讲义.md,4923,7c03a8b9750c2c207dff1f50d6a393883aac9a8330b070f784c49dd4d8326b95
+P5-培训赋能库/09-系统课程/32-图片来源与图注/情景演练.md,3188,e47b01d1d5f4d1ede562433f506857f75eda9c2bbff9a411e415e248535d0d84
+P5-培训赋能库/09-系统课程/32-图片来源与图注/测验.md,3815,c5294d813b19ae3fd191a5fcb886f724358805f7dde6b0c732c4801694b54aaa
+P5-培训赋能库/09-系统课程/32-图片来源与图注/讲义.md,5011,5724c6decb8114c84123a1819ccbe0e636d62c44d6edc5381c74c6af905ab1fc
+P5-培训赋能库/09-系统课程/33-直播讲解合规/情景演练.md,3191,ca9bee7df1e25dc75e0c1bf6295ae0cb7daea3d1dd64d9f46a9033061a2b38b2
+P5-培训赋能库/09-系统课程/33-直播讲解合规/测验.md,3809,2318103d053a985f1677b00d8fd42f49d5b6e5c72749a653639df16c85dbb52c
+P5-培训赋能库/09-系统课程/33-直播讲解合规/讲义.md,5021,6c67e40aa7127cb371ffe765763ccb9873e8ba08f804477311de7a29119db733
+P5-培训赋能库/09-系统课程/34-方案演示与验收/情景演练.md,3184,6db9eab11070b73c5feb55d2d659bd7c2067f4aeae10cfd3b6832a8d15349486
+P5-培训赋能库/09-系统课程/34-方案演示与验收/测验.md,3780,ab3c89bbd31d5fc178f7d479f6929ec9951c6b66c03fe1ea053593eb7f6e7923
+P5-培训赋能库/09-系统课程/34-方案演示与验收/讲义.md,4986,02835620024e8ade8f39c3158b564a4cdfb3bce4406c041227930d7353f1d2ad
+P5-培训赋能库/09-系统课程/35-知识库检索方法/情景演练.md,3210,3aca2956aa20c84671a6a01af0f6426eb6c44f7c981de42eedc33b36d8b6fb5f
+P5-培训赋能库/09-系统课程/35-知识库检索方法/测验.md,3858,735269f0421b380deda4eddc00cf5bb7e3d884ce484372130e315acfe6e4e024
+P5-培训赋能库/09-系统课程/35-知识库检索方法/讲义.md,5005,b864a9e7777c18fb6638ceb0a72923fafc902d908f375d1db2ca629ba0781235
+P5-培训赋能库/09-系统课程/36-事实冲突处理/情景演练.md,3174,0b29ec164c0c28366b43d9906a3b31e9dc6830932c5b1708e56b23f03abdcc7a
+P5-培训赋能库/09-系统课程/36-事实冲突处理/测验.md,3853,789829bc949cc102bf51188058e4ae7e5581126d9e3d943e25cfb5da2cd6fd54
+P5-培训赋能库/09-系统课程/36-事实冲突处理/讲义.md,5038,37e2d4016bde1c449b57b6b2daed0b036db174bb4378aad0a336e66d34baea6f
+P5-培训赋能库/09-系统课程/37-客户异议处理/情景演练.md,3191,c47d2aebeca4b9018587729b010efe2884373d1f2e2a30d2128058f6a65b6ef1
+P5-培训赋能库/09-系统课程/37-客户异议处理/测验.md,3770,ddfdc69b6a288c8e3d4da4e83b0b67e608df7b919ebf119f583d1099e428af67
+P5-培训赋能库/09-系统课程/37-客户异议处理/讲义.md,4973,a6af396852a15a82c5a0189ea6fdc2a322b238104efce664857cfb7b37694243
+P5-培训赋能库/09-系统课程/38-退换货边界/情景演练.md,3128,fc7616c92a22aaa79f3b4feaa39aa6b682397401e29193e0b0a8a846100f70c8
+P5-培训赋能库/09-系统课程/38-退换货边界/测验.md,3767,2a6d44dde2659b7a58dc8cdf12f296efe4d53a6f7c34ae4a9f0073a0c40686d0
+P5-培训赋能库/09-系统课程/38-退换货边界/讲义.md,4979,ad58df3c1e363add0534dfcdf014e6a10746407dc1d10ebd0f13e1141ccf44be
+P5-培训赋能库/09-系统课程/39-数据备份提醒/情景演练.md,3186,e4d3a0d6f46c2f04c8e9eb668cfe08eedc57044ede4181b7eb559130c4625ad2
+P5-培训赋能库/09-系统课程/39-数据备份提醒/测验.md,3835,353b902e19a183a9ec15e61b1d183c7dc944ecc955539c7c0964b823f1bd41f5
+P5-培训赋能库/09-系统课程/39-数据备份提醒/讲义.md,5014,53f5620d94d6099bb717431ef25d16f6112a20fb874b1be743fb17cbb284bda8
+P5-培训赋能库/09-系统课程/40-项目复盘方法/情景演练.md,3215,95dbc36484a60ed36c07676169adaef5a37f771491029363cf9a1c3774d10130
+P5-培训赋能库/09-系统课程/40-项目复盘方法/测验.md,3734,870069810a844dd9f92b7661b38510d2f8a30484391467809e187e6c569af6c5
+P5-培训赋能库/09-系统课程/40-项目复盘方法/讲义.md,4937,4e92ca1751dcc8e2036376199426962b40be6ca1c80e2a62e8c1155c9c45ea8f
+P6-营销素材库/01-软文/图文软文输出规范.md,5127,f549a5cc492da6f3bf2845d987d7602d3db120a16ba70af7fb43d06c739f2f47
+P6-营销素材库/02-平台模板/B站中长视频模板.md,4202,aedbfc1d3baeb70e434cc80f2ff7c1d7fa3721eab44e05da8cacc72c12d774fe
+P6-营销素材库/02-平台模板/企业采购方案模板.md,4390,d8c3fbe979373a3475ef3d3195f0a44e8596d998686eccae86e810c55311b438
+P6-营销素材库/02-平台模板/小红书图文模板.md,4383,588f45257097aafcd97d0cbbee0aea58f1e87c849fe60814198d23c5815c36a2
+P6-营销素材库/02-平台模板/微信公众号图文模板.md,4601,5b5dd10a058360d0ea4284987e548d2e08c1ad538ce85123839d407b4b40a545
+P6-营销素材库/02-平台模板/微信视频号模板.md,4335,dbdda04038ff83e4e7f3adb1de2c5961169fe8b6dfb7af6e0ca7e82327d7a434
+P6-营销素材库/02-平台模板/微博图文模板.md,4176,913bad3a5b0257c9083ed090f45dba2136925edae1753da6cd06bc1e44ec9951
+P6-营销素材库/02-平台模板/抖音短视频模板.md,4176,355031041b5d11a5f1c14b70c27f6f365c5b4141bfe29dec3bf37120d0e94e82
+P6-营销素材库/02-平台模板/新闻稿图文模板.md,4476,0ff8473f418d3ecb6c2a0f290147bb02f2d49c9c2bd90b5d70e01f78417601e0
+P6-营销素材库/02-平台模板/直播讲解模板.md,4273,5f7af2f50f2cfddf9bcecf3716d237a62e7780ac7e053096a2291cfac697e2cd
+P6-营销素材库/02-平台模板/知乎图文模板.md,4292,85c1d1fe973a389bad82d9d54b852fccf55df4799863611074dd606a8cf01d74
+P6-营销素材库/02-平台模板/短视频口播图文模板.md,4185,6a78723b9b49eb3fd8c1b110ca91ebfaeb639da4a3c3de0d99bb8e9ab6b2d5da
+P6-营销素材库/02-平台模板/销售朋友圈模板.md,4267,5f46c0beda54e3fd0fab9403e09f09eb3fa0cf5851e3c5aa01beb6f619fe010c
+P6-营销素材库/02-平台模板/门店海报图文模板.md,4247,ac26383baabe72554667d3485a9ffe7516bdf2b3c2bc94342f14d6260eb70a7c
+P6-营销素材库/03-新品发布/新品发布内容清单.md,4627,b64fef1725bbb98aae70549b197629e4ce522a9ead43b601e9c5414e55354ea9
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_HarmonyOS智慧桌面体验_35.png,183198,12405f21c835394e7c62164f3fb6854cb9d3c4c27dce83815bbae7bce94c6517
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_MateBook Fold分类横幅_44.jpg,76688,0a7afff9d3a7fe83979aaa6c356c8e285cf09576b845d436112142589a1b4ad6
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_MateBook Pro S分类横幅_43.jpg,70399,b477ea160a038cb6ee23703c2e53a7240530497289b3a23ce361a96ceb4c5e89
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_MateBook产品分类横幅_42.jpg,70328,d032a0f2fde5f3b59ae2eb9824b58ac11cf0352cfc063a0bfc9b5957b0e0aacd
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_MateBook系列专区横幅_40.jpg,153168,98a11c418a2d7c0155f6a91f651754d5f67e6155e58df96f66acd47f1a58633e
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_MateBook系列分类横幅_41.jpg,69135,92d111e0de6cc113b404ce527db45277b63188b1e8f98d2ed09cb55da9d9f8b4
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_专注办公与双设备协同_22.jpg,762256,2d5f25880083f78a8b6796618e3b095f784e1d8293e45369d5cbd813c6ee634e
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_产品组合白底展示_39.jpg,33423,93c7e556b635ff4fe424d4705be86e7284fd02accd23c9395d3b99e105a2385c
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_双层OLED折叠屏细节_18.png,100983,efba4e9cc20fdb2fe3eed9e100fdd53a1573dcec97da8a38ccaf3a564af64589
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_可靠隐私与数据保护_10.png,118067,f967c13fcd869578bca17cfee0ab0ba597af7221f95fac60221250b0784c3c87
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_商城电脑专区横幅_36.png,97540,7f3ac90d93056b55fe3816e3320293727a5b001a2306c5ab860f1193de38e1a8
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_多设备融合协同_12.jpg,387690,3d76e57566d404145bd8e68f769cec242850a2987cd6d0721ce702b2f3e5a78b
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_夜间内容创作场景_16.jpg,901349,f2b2205dac801868e07e559c0bcca7b55d4fc99e19955ef5a80b0d97f85e052b
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_官方五年焕新服务说明_25.png,84422,9aeb8764814d1b315e2e3aca8037301c31426296ecdbc0a1f57088045df4f01d
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_小艺任务高效处理_23.png,207324,d68e2a262d119e5de8667c87add7245d43e156c50441583d68a01f8d6964afea
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_文档处理与创作协同_32.jpg,558445,6e24d1d5a2fe9628abd88d71fc00fef7a75ffbbef7d1ab012332624b9ef6fc8b
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_明亮OLED云晰柔光屏_14.png,130205,ed7397b5229dafb17ca6733a955263106fbf2983d14695fa09425687f26c2a53
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_智慧协同会议场景_24.jpg,807597,2924f3066dfc1d216cbff0ce960cc5241c9baeafc4c53512b7a65b35c289166e
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_沉浸音频与无感交互_13.png,92291,6069d8259e48f5343f2bebea9b27378c87f10a15532c7fa82a1678ee012fe308
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_波点艺术设计机身细节_03.png,157284,c7185abc842fc71bae03e52eee449a57a46ee168b83a647d8067a5342abd206a
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_流畅性能与多任务体验_30.png,77485,e56158d3d9a15840f776990cd9e61095700029cc4d7f1aac5546c50e98daf694
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_流畅鸿蒙办公体验_08.png,232829,1ecb5cc9642396bf9bf7219c35085de044f350d5a538181a5e3a8ba5140ca458
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_深色高质感产品主视觉_28.jpg,137438,322ade765c719d08753ac977f3fd1c3334731940e59fc07d43dcf0ad62d6247f
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_深邃OLED护眼屏幕_09.png,175822,cdd016cbd0c58a82a39163a052a7c8583814587681a98c5658ca2ce509e4a06a
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_清晰大屏产品展示_17.png,32812,7c65b8f980204621db9b46bb3d04820a026c252f82de9f608af402ce053f025f
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_清洁保养服务说明_15.png,91899,da053ef7663d490e8f92441371a6086c5ee69ebac7d602e2e16cfcf95a9a7f62
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_温暖协作场景中的鸿蒙AI体验_01.png,256361,580c7e01672840d755eab392275c6700e5fa146ecbaae2d56da96eb10bfcf088
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_灵动鸿蒙AI功能_11.png,106896,0984cf1beabe9297fea75824dbcb1be1e49ab4081e638158e1b95decb2515112
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_灵活多能办公场景_33.png,244969,67ba8e35b9cbc3a091dc438cdf7fc7bf1309aa1d3bdcd19d62a187d2de115277
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_电脑与平板协同工作_21.jpg,322112,ac4da381fb82786a043b95db1116181d542ac39c3f7bf7f0700fa90f3084484f
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_电脑与手机协同工作_20.jpg,436109,0d4ab7f8ffefee0ac25f109afb5f85b897c174f9201ae9030ddf686b3f80e5ec
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_精密折叠铰链结构_06.png,170166,9298dabf2d9a8d724617ed06e30e1581fcf3deabc19931e3916711bbffc1ded4
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_紫色轻薄机身与移动场景_27.jpg,792215,12ed0410ce4f167b9a2bf9b4ddce348c50e617a2352a152b116a2eca8e0648bb
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_紫色轻薄电脑主视觉_38.jpg,76523,58a6527ca7c671a74e6981cdbff1ed5990fe3e67efedfec82d421974f5b1ac15
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_舒适会议与移动办公_26.jpg,720725,e81a55c5f4b7de0832c74e02eacd551dfea9d5c57a4baf77f8a1b0d68566195a
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_超轻薄机身展示_07.png,58404,067c6bcee093dde0a6ba581209f35c3c340a9633b534c604151320e0612fb553
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_跨设备智慧协同办公_04.png,182682,08ad1d94ab5df05707a33fc6d238e9cdffbf9a385eb289292c3a65c436193a15
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_金色轻薄电脑主视觉_37.jpg,220677,7394dd030041cc7b8cf35af0b90310663865a53d8f59e30bbd1c03ead4b298f9
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_长续航移动办公场景_02.png,207610,286722a43d9321286ef8571c2ac927e14c9c5c8b643b45b3afcccea9515b13b2
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_陪伴式轻松办公场景_19.png,294587,114dc71e85b0ac3d55c945f3793a710873ac2293620699709eb488d96d3cb6b1
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_高性能静音散热展示_29.png,241638,d5834c658dee06680fb8d5342e253454ad3deca59041fc3f0c6b8ce3122bf5ad
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_高素质OLED屏幕体验_05.png,218795,3da2bc4591c9b401a6e80d3a2863d53740ca3a327fb3f3eaa36927469d912cf0
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_高通信号与稳定连接_31.png,181317,c174551eac7eb0aabc5c256cc3f12e8b54b9c8f8ebe53e71eb46c4e2e2641fc1
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/vmall_pc_鸿蒙全场景设备连接_34.png,141959,7df1d8c8cdb800d33384c1f766fce8f4a094013a9bfc3db2ae6b00d2840ce3f7
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/使用说明.md,3394,7409318c82d6145e21c2e5a1215782ccdf3fc6a9c32188a08327e4a131b175a7
+P6-营销素材库/04-图片/02-华为商城电脑专区素材/图片索引.csv,14748,c1ba52f2dc38394e101a0e830f106e747678932aeb1f3f9c637b24640b9777ee
+P6-营销素材库/04-图片/图片选用与命名指南.md,3673,242df69198eb53f69c3db1986c4b7b90c98f6d6ca23c6f24009b9be4aa374ec2
+P6-营销素材库/05-多屏协同/多设备协同传播边界.md,4080,f3d10a41e2ad84e4450f61907dbb9a2ce2d62a5b7c802b47b34ea5955f0fda68
+P6-营销素材库/06-短视频脚本/短视频脚本规范.md,4097,5a2ff03c2af08477220b0f76b4f6fa2998153f6f86b0ca29fa97e5f6ce63142d
+P6-营销素材库/07-选题库/服务型内容选题.md,4693,54bf3032807067d246e5ed43ccadf3d91c442c7634304143c015ee12271ae97b
+P6-营销素材库/08-合规/售后与促销表述红线.md,4379,8fe34b9a847cb908f9765ea4889cd392c09af97c95af485e146f7ffd0e90285e
+P6-营销素材库/09-按型号平台/HUAWEI MateBook 14/小红书.md,4116,b2137e310237fe0921be5371bafdfb838ab1ac2b2610aa04d3a8108495823c4b
+P6-营销素材库/09-按型号平台/HUAWEI MateBook 14/微信公众号.md,4083,c01b73c420864fa4c89eba879736e0c28c6d51eb77a6390fa0ce36cd3c60f516
+P6-营销素材库/09-按型号平台/HUAWEI MateBook 14/新闻稿.md,4262,5c6d576eee4e15234146ab484907b23d8f98c1198f3cfd53069564af3f5d7ca2
+P6-营销素材库/09-按型号平台/HUAWEI MateBook 14/朋友圈.md,3841,4d46fc4a9e844c0e478db2664b9c5b007cf439a7424283a6a44f569a440d0fac
+P6-营销素材库/09-按型号平台/HUAWEI MateBook 14/直播讲解.md,4285,ee4656a366561cb89818eeaa4e542fae76055fdc77f91593a104b834324993af
+P6-营销素材库/09-按型号平台/HUAWEI MateBook 14/知乎回答.md,4002,2a2a3eda94108689cd8c707599d1453078b7ebc352fe6456107927f198a6afa0
+P6-营销素材库/09-按型号平台/HUAWEI MateBook 14/短视频口播.md,3978,3ccc0acece06b08c77b95e6f10ca0626372f11abfe51711caff1112b9f4e3ff9
+P6-营销素材库/09-按型号平台/HUAWEI MateBook 14/门店长图.md,4076,e06f16318e98e9151e2e17e1b51712e8b9b774abc95fb7d93f0f9dcacab8b2cb
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Fold 非凡大师/小红书.md,4135,493bab1918cc1746564363e6897fc6c41373e9a22d8c052542e9bbada7373d52
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Fold 非凡大师/微信公众号.md,4087,a5cac28b47ad7282acb227b86af57fb863a53e35425c4bab601d83baa015a323
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Fold 非凡大师/新闻稿.md,4272,40657c732f67413e7f8c77f5328b13e9600ba123bd4ffad377c10030d00692f9
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Fold 非凡大师/朋友圈.md,3868,e6acd687fe65226ee41cf390e3c37de423207490f532fb2185359f6aa70effd6
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Fold 非凡大师/直播讲解.md,4297,73893df18534a5135c64b4053300594183e6fbc6956c740ce6a46a08f2babd3c
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Fold 非凡大师/知乎回答.md,4003,8f5bfa961eb1e49699a42a63255fc49a87f0969469b1decedd87ecbfe6056e7f
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Fold 非凡大师/短视频口播.md,3987,e560ee3c19d03a51376483e22803fc5ec23cd24c7dfc3a7c6a7ad2f003171f35
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Fold 非凡大师/门店长图.md,4092,300912e20e65a48f402c5c449142c0cfed22fdcde0120b1b51da1f37d005590a
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro/小红书.md,4065,cae9bd37ba240e4c822672f9aa926963b88a233da40d6b48aaa0449a30e4b401
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro/微信公众号.md,3992,025e86e1d3dcac4f9a664f99959d9efd15629989a3d240963ac4941015a7114c
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro/新闻稿.md,4207,0774f42046f2fb193c49000c6efcfc6283d8ae9ee2916e45a114317f8474fbb2
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro/朋友圈.md,3790,c13d2a1dafd10f13976f775f7f1c09db58449c06f68222d07b2e251edf105a47
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro/直播讲解.md,4224,578715f476e07568c8b7de27d929759085f427ad7c221ad0666218831a5cc668
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro/知乎回答.md,3958,f314115aa8094ef2d2569efb0c4335a34311517262de3c356a4b2f98ccbe3f0e
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro/短视频口播.md,3938,f8b6bbe316486de0f5d226dff41dfce517258851eb60ec3725f7ad19b4932e4a
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro/门店长图.md,4043,bfb8efc1a6315b26db9e714faa81bc26733d433299b42938ad56b48708cef568
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro S/小红书.md,4173,0776c054fd376a0f22ab9395ed461aefa4e62c01154343b9eb6e4be027dceb86
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro S/微信公众号.md,4136,56a56d78cac9b561dd1ab3412bd03d7f06a90fdfd853a9e25f039e5e93bd34f2
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro S/新闻稿.md,4309,d6fc1198f7cb8df1474ff424797cb0d1b65840cda8331b427ebb5e1bf5a2afc4
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro S/朋友圈.md,3884,44db6603dc0b560ee185898d7a9197f14c5690f733c96394704270754997d4a6
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro S/直播讲解.md,4333,1d0aae770b56a12d71c0bb8c8b9b457566174f395a8a4a8dbfe4db38b24e09cc
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro S/知乎回答.md,4021,a4fc287392ebc6e72d08125fcdf4c6d9ea675bc12d10f1e2c4e5726476257008
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro S/短视频口播.md,4005,55db8047342466878f7bb7af98366361c2cea71a4955617bdc0bef4beb416fa7
+P6-营销素材库/09-按型号平台/HUAWEI MateBook Pro S/门店长图.md,4113,3389eaf0eb7acf1ab07fa38be388e95dc411a985d0b84b61d9b079c7e57120c2
+P6-营销素材库/09-按型号平台/MateBook 14 酷睿 Ultra/小红书.md,4102,920ab5b964f6e04ae9b9d58f2fb79337c5e0c99709f52d93142b43b671399b05
+P6-营销素材库/09-按型号平台/MateBook 14 酷睿 Ultra/微信公众号.md,4034,c9cca7b70a8b5891d3da0677ba7e956c130dc886e1c1ae900818268fe7ecf889
+P6-营销素材库/09-按型号平台/MateBook 14 酷睿 Ultra/新闻稿.md,4210,2f60bc94c7fcd430b7c592da6fa48d264afd53128e2dbe59df65e11a857a91ec
+P6-营销素材库/09-按型号平台/MateBook 14 酷睿 Ultra/朋友圈.md,3828,a84b4ad7594a53a48271cb775c6d30e65cb2e30c777085a5784b53b0edd6d1bc
+P6-营销素材库/09-按型号平台/MateBook 14 酷睿 Ultra/直播讲解.md,4271,139cc7b5aacdcabf2a10e1d0dbe33d6e596be9a939c2f2ef06528a6ccded0489
+P6-营销素材库/09-按型号平台/MateBook 14 酷睿 Ultra/知乎回答.md,3984,70bad4e9556b6758bfa0e84d19a7b3e9a69814e1632c1be9fce4117a9de7f6cf
+P6-营销素材库/09-按型号平台/MateBook 14 酷睿 Ultra/短视频口播.md,3937,8ba424ffb0092aab5c1decfc84bd63c5a6d4be65acfdb8d11a3248a88e8269c1
+P6-营销素材库/09-按型号平台/MateBook 14 酷睿 Ultra/门店长图.md,4048,e8dfe0c4b36794e3b4788c0a65fa1bfbbf8802758756e484c5292c0ffb27d923
+P6-营销素材库/09-按型号平台/MateBook D 14/小红书.md,3959,7e2fc43c480742a932d3b2fa923fc6a57eadc02ca2972250c6769b0df5148641
+P6-营销素材库/09-按型号平台/MateBook D 14/微信公众号.md,3891,de08030f984076c0482905416368b48c2cf5ade7374d2aca6e976f32dc364691
+P6-营销素材库/09-按型号平台/MateBook D 14/新闻稿.md,4083,11ffd60db124330350abc321761cb2f353e63b7b4501060aea04f735561eb6e3
+P6-营销素材库/09-按型号平台/MateBook D 14/朋友圈.md,3683,6061009eb3c52764c3de1d76010779a0c8e6eb74002efef2b708b9da681413ae
+P6-营销素材库/09-按型号平台/MateBook D 14/直播讲解.md,4125,037edf1317967f6fee279b834b7fa6f993652a0f9b9708aa00ee4c23c4390b04
+P6-营销素材库/09-按型号平台/MateBook D 14/知乎回答.md,3841,3a51bcee8b2e2f92672969f97a962930cca3ac5995a9bc3d6d5002e3492359c0
+P6-营销素材库/09-按型号平台/MateBook D 14/短视频口播.md,3797,72b8dca7b182babf131f2f43f2af38ba08f218057af4ada4bd7f215898220873
+P6-营销素材库/09-按型号平台/MateBook D 14/门店长图.md,3905,106b05662676f14fadce29cf15a38686535eb19543e106f3d281e580bd37967f
+P6-营销素材库/09-按型号平台/MateBook D 16/小红书.md,4000,e7efe60a64352744ee111abcd5d2137c18d01af03a5ce416a1765a97ad00d825
+P6-营销素材库/09-按型号平台/MateBook D 16/微信公众号.md,3959,f80f7356de092ced6b0a6e3bfb4e557b3999d9f16c8fc13c32ac64a85cca1da7
+P6-营销素材库/09-按型号平台/MateBook D 16/新闻稿.md,4121,4e061a0a48c6e1ac4dea551af25972688d8978d0c3b8f0aa6c0e83458af7a939
+P6-营销素材库/09-按型号平台/MateBook D 16/朋友圈.md,3727,151ce6a5e90b628102bddbf3e3a4fe716791b76f3bad892165527580c4b4b63c
+P6-营销素材库/09-按型号平台/MateBook D 16/直播讲解.md,4160,c08ac5c87e1dcdfda6b78607ac8408acd26e411731256cfcf53bbcd7c3540e37
+P6-营销素材库/09-按型号平台/MateBook D 16/知乎回答.md,3853,e6a90270123bc8e78cea078b9513f17c55352886aa7729bf5b711d311721ae08
+P6-营销素材库/09-按型号平台/MateBook D 16/短视频口播.md,3812,0e1888f4b39fe84e1ef9c753803996459d467938c5970533a5a237c160d51edd
+P6-营销素材库/09-按型号平台/MateBook D 16/门店长图.md,3916,4342a74759e34e5566830e75ab1a1d368b4395810f2a49a0057127daacfa42e3
+P6-营销素材库/09-按型号平台/MateBook D 16 SE 版/小红书.md,3999,e4058d7488518244f261c2911d47f1871fa25e51176fa1fb991e7560bc13af6b
+P6-营销素材库/09-按型号平台/MateBook D 16 SE 版/微信公众号.md,3964,cd816f89e388f60e5f5700051f051fa178f8eddb31a5f190f290a78a375636eb
+P6-营销素材库/09-按型号平台/MateBook D 16 SE 版/新闻稿.md,4149,70bb30eef0fa9d525736b937766c15d916a50f6718e5fdb458c91ea8efbc483b
+P6-营销素材库/09-按型号平台/MateBook D 16 SE 版/朋友圈.md,3719,5ceda985370a7e1e2e6e17054acadfcd9c934331cd38426f966e3d046dc1b700
+P6-营销素材库/09-按型号平台/MateBook D 16 SE 版/直播讲解.md,4161,e56bb865d9c2af9995007d0b47acc91b6aacd073e2b73c9fed1d3582d951c351
+P6-营销素材库/09-按型号平台/MateBook D 16 SE 版/知乎回答.md,3870,8b5bffac824b991966f4469af255c386c055e781958d4636ec86f9e51886713a
+P6-营销素材库/09-按型号平台/MateBook D 16 SE 版/短视频口播.md,3830,25314b458fd3fac557d7ab5a64271f17fe9c767b5ee1f3998ec19582758ca593
+P6-营销素材库/09-按型号平台/MateBook D 16 SE 版/门店长图.md,3940,6602ca600919b60a8476f7f21954c62185b787ce2ac2f14f4fe5fa23be33a2b0
+P6-营销素材库/09-按型号平台/MateBook GT 系列/小红书.md,4144,b6e5905edfddeebfcfd2b938e357f4cd13cd1ecdf87879cc7d90d3bcc80b3e25
+P6-营销素材库/09-按型号平台/MateBook GT 系列/微信公众号.md,4098,abe5f06e61bce01940fb36615db0579fe01b7b8c4cde814b97b0531b3596029b
+P6-营销素材库/09-按型号平台/MateBook GT 系列/新闻稿.md,4252,22392bedb2372c351cb113474bbc7d051bb0752dc56006092dd3401bcdda3fec
+P6-营销素材库/09-按型号平台/MateBook GT 系列/朋友圈.md,3872,bac660ff84fa049d130fff33a6b75326f7501a73ed34a9956c6bbfbdac922e71
+P6-营销素材库/09-按型号平台/MateBook GT 系列/直播讲解.md,4314,32137ce41a2418721670234a3dcc0759343a4c8403ebb6b903972b52fe80d483
+P6-营销素材库/09-按型号平台/MateBook GT 系列/知乎回答.md,3992,a98274c7fdd6fe31dd1016c5e512c06a33f068a0a35d442cb70a1cf2cdb1fd49
+P6-营销素材库/09-按型号平台/MateBook GT 系列/短视频口播.md,3961,4080a57b75f735bde48018888569dce96775271c74a39e220738e6e1a48bad48
+P6-营销素材库/09-按型号平台/MateBook GT 系列/门店长图.md,4069,cf7474be7dc122fb23bbd8930d82f42acbe02d8b73d2cd30e19df4e92b68f7fb
+P6-营销素材库/09-按型号平台/MateBook X系列/小红书.md,4189,e6fd4a818dc9a994c45b3f083da4aa37d64e3235cceaaf54c5beaf97acd3c0c1
+P6-营销素材库/09-按型号平台/MateBook X系列/微信公众号.md,4108,6a55e3b26d5aa17098f8b3d077d1855f3ea2e118d593a77ed2421e46d80597b7
+P6-营销素材库/09-按型号平台/MateBook X系列/新闻稿.md,4282,00afe5c46f16b8988a46cfddb469d28193e7a42750060f72a39caa7d2c1e5a7a
+P6-营销素材库/09-按型号平台/MateBook X系列/朋友圈.md,3909,45a45fd5f01fc7254e6af04d31ac192e6ff8066804aaa1675256965feb51633d
+P6-营销素材库/09-按型号平台/MateBook X系列/直播讲解.md,4357,d0a085e8eb921d4472625b776bc37a6a8e5bd614ec20cf01facbe62d0364253f
+P6-营销素材库/09-按型号平台/MateBook X系列/知乎回答.md,4071,6d9adcf696c15201c57b79ed31f6329fcc14e3ca82a63438f96d475e7851efe7
+P6-营销素材库/09-按型号平台/MateBook X系列/短视频口播.md,4012,5f0dfadb304e0ad913122a0c9b90b5224aef160ffdf4b92d750f3cc3670e44d6
+P6-营销素材库/09-按型号平台/MateBook X系列/门店长图.md,4108,2877dc6cddfdd842d87bce8677cece6ba74e4e28988f87a6d3632976010e37cd
+P6-营销素材库/10-大型选题库/场景问题标题200条.md,13139,d5bb2a570f5a9fcd36f6a4ff4d7aae60c9828853ee15fa8f4149ead3af2bc984
+P6-营销素材库/11-完整软文成稿库/00-总索引.md,8108,a61a0e961352384a90c51975ba4ac7f4331a14d68893bb6828ef0b65799a55fe
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook 14/小红书完整成稿.md,8841,fe04b7e4405e03a6e222425e510b6d6f7ccef45a0c4db0f1510b80d9d6932e68
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook 14/微信公众号完整成稿.md,10412,859ee490315b7842003b43f94ccfdac70ab8cd4130c2366b4177ad98b114c242
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook 14/新闻稿完整成稿.md,9940,cd42be9f47a1d649fce39853a95504f9f299feded79dc40366d6b370b113eaff
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook 14/朋友圈完整成稿.md,8654,38397418bf3a06c4c41eea2efa9baf81468b5690cbbe4d9f89231a9a786dd8de
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook 14/直播讲解完整成稿.md,11574,3080059022389c8eb2ea9e38859b83db7f94fc111d9974482c4f496bd8921359
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook 14/知乎回答完整成稿.md,10907,235d2b102b917b225e77a2033f6e53f42bba19de0a60d692b22e8dceb5776c81
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook 14/短视频口播完整成稿.md,9167,71f01d06feecad5cb4a1f723bafbb7ab4f4b07613b099ced4d19bfbd69cab511
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook 14/门店长图完整成稿.md,9702,b0b10c2befcb9aa4097a6686bf0d77fcdbd9f7f6fb9134c24d831c2c9f14e64f
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Fold 非凡大师/小红书完整成稿.md,9285,e5968ed4a4bfc58b71e99ff91a2c7fcbd8eea241e82128d82c3cd3980d513038
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Fold 非凡大师/微信公众号完整成稿.md,10844,93c2e697babe98d90e99219bcd9a17303a20fbb0233ffdb40722ac5e783956ea
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Fold 非凡大师/新闻稿完整成稿.md,10247,660aeccd785f7fa96098a242deccc97976151517359a4ec0d45a67aeb627fe02
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Fold 非凡大师/朋友圈完整成稿.md,8869,67874599401ec4697225782c28664ccad30c432c4cb8980e7fdc168e7a4a7b2b
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Fold 非凡大师/直播讲解完整成稿.md,12071,f2e5742ce40b994ae77df89eda4ef19a5f052e078a955fa9a65dede329553d8a
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Fold 非凡大师/知乎回答完整成稿.md,11051,deebc82268d1185e714faf680e60e08f5c973ddfead9c3db10cec08c2a408f6b
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Fold 非凡大师/短视频口播完整成稿.md,9580,075189f4afb0d1f0a3280237481a6d38d8609225bb87c24bb30b58bedc80f75b
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Fold 非凡大师/门店长图完整成稿.md,10189,1f27e644fa64c6d645faee38af34be9bb70b3b8ee2265c32243d22e3ead098f6
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro/小红书完整成稿.md,9458,20bf24aeedcf9a5922a38139bc600150e3be8c54667499b384f478f032fca8ed
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro/微信公众号完整成稿.md,10756,851c576beb85ebe07610f95d0299d909331974a17fcf1ba9d7497ef68d95b906
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro/新闻稿完整成稿.md,10057,952ba0566fa98d684aba4477f68f514cb0aaadcbd671e5fcaba543e51548aa85
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro/朋友圈完整成稿.md,8710,313fa6802de92a27aabf3503ae20562de0474fb779e5f4445bdf205889ffdc8f
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro/直播讲解完整成稿.md,11992,dc36d5efcb29040480b6c423d26936f6e543acaae2581aa53c58bb163b2d5575
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro/知乎回答完整成稿.md,10986,3a96dab8bd57231c5406b4e642f1581b81f71dd9221eab54821e2c1d6a7adc7d
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro/短视频口播完整成稿.md,9594,9b221173f0d048847eec8b2cc28c12d68870cb02d79a267e329c9734aaf9de1e
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro/门店长图完整成稿.md,10133,8a1fb49d82451ad73269c474eae7fa0b372c541294b0059c80b4b9d5c7717eb5
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro S/小红书完整成稿.md,9554,6d57c58cc80bbe94e89bcce2136a36bf4796d0f0c4f65abf493d45e6be0aa6e5
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro S/微信公众号完整成稿.md,10914,3718ff64963f43d9d3bc4ef7459976bbed350bb37b1dcfe5c64304dc6152abf0
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro S/新闻稿完整成稿.md,10173,41ea4a134f5ddb8a2a8c46afa4e8dd5ee87fa24976bb15ef01b5653cc1b010bb
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro S/朋友圈完整成稿.md,8946,baa0ee4c622569ea368dcedcc9fe7884f0dee7aeb28e2dda4733e999d4d209bb
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro S/直播讲解完整成稿.md,12172,0ce22ec229e29099b7146cdb259c0ca3c1f77e4eee9ee3a2da25db0bb5a40b47
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro S/知乎回答完整成稿.md,11103,aa93cbdb97183ccc3b42aad2fa217cb1961a146532f90287eca897b25883829e
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro S/短视频口播完整成稿.md,9749,6aa779be37d0d2470eb2fb7328acdde835b2f0a33944b6aa669c18fe6a4ce247
+P6-营销素材库/11-完整软文成稿库/HUAWEI MateBook Pro S/门店长图完整成稿.md,10245,949011076e048206fb670e4497999460c4b2be030babce2b12104e78f3f5b7ae
+P6-营销素材库/11-完整软文成稿库/MateBook 14 酷睿 Ultra/小红书完整成稿.md,9368,c9b10e12179a25cd6cbec16967d44c0e321df3160fde47881c98ed627c00c76a
+P6-营销素材库/11-完整软文成稿库/MateBook 14 酷睿 Ultra/微信公众号完整成稿.md,10751,0607ad998b8ea5cece04cae7ee6affe42c5c7298a12de62336a8149fb9e05fec
+P6-营销素材库/11-完整软文成稿库/MateBook 14 酷睿 Ultra/新闻稿完整成稿.md,10108,4df3a3e8cb02414fe3006b2de38a46bf8f383a31e3045d87d44b2574ea5afc65
+P6-营销素材库/11-完整软文成稿库/MateBook 14 酷睿 Ultra/朋友圈完整成稿.md,8715,437f577b10e44affaa5e639a887875733c23bd1799fb34da23725f7d06510294
+P6-营销素材库/11-完整软文成稿库/MateBook 14 酷睿 Ultra/直播讲解完整成稿.md,11964,64eee01b2f5af8f7c3e024fe4a758a21814baeb02623479614460fded892b57c
+P6-营销素材库/11-完整软文成稿库/MateBook 14 酷睿 Ultra/知乎回答完整成稿.md,10930,b8838c6db08f9ee5f170c91aa4c0f40768ced7f0b4a7263c532f0a933a7a1733
+P6-营销素材库/11-完整软文成稿库/MateBook 14 酷睿 Ultra/短视频口播完整成稿.md,9606,2c20ebb2e5411fe4b281693e0265f49a4272bde1e282d7b9be0ac704de5519fb
+P6-营销素材库/11-完整软文成稿库/MateBook 14 酷睿 Ultra/门店长图完整成稿.md,10071,b94acd97d0b61196e953e286c2fe3a77149446ec2c36454364578cccb165e921
+P6-营销素材库/11-完整软文成稿库/MateBook D 14/小红书完整成稿.md,9031,391125956b61e839346f1258b06e0ef43b2e99484691308627fc1aee83afbd2d
+P6-营销素材库/11-完整软文成稿库/MateBook D 14/微信公众号完整成稿.md,10375,743f3a535ac72176269025889b366396220dbb22403677e50fb288442c9408f4
+P6-营销素材库/11-完整软文成稿库/MateBook D 14/新闻稿完整成稿.md,9630,2b9083a84eb1b44ddb10c7e76f33f7f8918d0c30d3dcd6bb81d538de3547d6a9
+P6-营销素材库/11-完整软文成稿库/MateBook D 14/朋友圈完整成稿.md,8368,65af84d129871d7e7795eeb74deec04691a3372070a3af41d64994d7720fefdb
+P6-营销素材库/11-完整软文成稿库/MateBook D 14/直播讲解完整成稿.md,11595,c603648c7d585c0dc86c4d1c7dbd55c83921521ff451ed2f3f823ec9cb44f6ea
+P6-营销素材库/11-完整软文成稿库/MateBook D 14/知乎回答完整成稿.md,10626,a7b55d763dcb59731ffd7a0a266a20461a713e16695a325e49cc15a18bd065d6
+P6-营销素材库/11-完整软文成稿库/MateBook D 14/短视频口播完整成稿.md,9248,a66887d347c78d54e057fba2d6a66de5066e08837af07827037182bfeabe1bfe
+P6-营销素材库/11-完整软文成稿库/MateBook D 14/门店长图完整成稿.md,9734,6db68c90347982b796cecdd8a7016d7d3775e083a16220ea860b723fb4547ccb
+P6-营销素材库/11-完整软文成稿库/MateBook D 16/小红书完整成稿.md,8196,8ae4265fff34eaabc21399724ac1212a24616842300648d7a2f07ed371d81453
+P6-营销素材库/11-完整软文成稿库/MateBook D 16/微信公众号完整成稿.md,9779,301f4a951d61dc8b1ed476b9ffa811773de17df266ee79cec7618240352dad73
+P6-营销素材库/11-完整软文成稿库/MateBook D 16/新闻稿完整成稿.md,9577,a84ab47b30b4008ee21c58c1fef41fced49cdef5581e75ff08b1c69139754068
+P6-营销素材库/11-完整软文成稿库/MateBook D 16/朋友圈完整成稿.md,8231,5efcad01e24f28ad6070703b2baa2e3573b719794835178f710cae942076f3e2
+P6-营销素材库/11-完整软文成稿库/MateBook D 16/直播讲解完整成稿.md,10887,c06f55fa3b031ba5f1f7a067617d8529f8b0fd2d6c08864bbf9d8fd0ee830192
+P6-营销素材库/11-完整软文成稿库/MateBook D 16/知乎回答完整成稿.md,10440,47707dc99ffa01698807ff6d890a85b5b850626af7019f996df8f6ee6421806f
+P6-营销素材库/11-完整软文成稿库/MateBook D 16/短视频口播完整成稿.md,8497,261d54f0dc4a520bbaaa1b659c4fbeca6d5f0d24ff8ea534fe20fcacca04a73a
+P6-营销素材库/11-完整软文成稿库/MateBook D 16/门店长图完整成稿.md,9142,65182981c8ac7c0f62d5ccc34c80ec681b55f9ceb35ccf9c515941840d608a21
+P6-营销素材库/11-完整软文成稿库/MateBook D 16 SE 版/小红书完整成稿.md,8942,32b260bc4f01f6b5e8ee0b91b3fbe255a93103e4ceedb6b37159594cf5ba1777
+P6-营销素材库/11-完整软文成稿库/MateBook D 16 SE 版/微信公众号完整成稿.md,10526,16431b31ef1059e5910b517c62b87ad4e12fc301da071f455f6ca851779c7bc8
+P6-营销素材库/11-完整软文成稿库/MateBook D 16 SE 版/新闻稿完整成稿.md,9923,dde87074a0693e1444bda0d4aab9cf1d31533e008ca326ba36fce2112409e070
+P6-营销素材库/11-完整软文成稿库/MateBook D 16 SE 版/朋友圈完整成稿.md,8535,991bd0da72c689f77a45f02ec04ccd4186898776ffeb2ee81c654b084b883a33
+P6-营销素材库/11-完整软文成稿库/MateBook D 16 SE 版/直播讲解完整成稿.md,11732,f55e34d923f635ab6ec44bb79e0ce6903c3d2165b54b11308566e2800981d746
+P6-营销素材库/11-完整软文成稿库/MateBook D 16 SE 版/知乎回答完整成稿.md,10754,1e5e818032616885a56743b7ccec138f933da76fb5e1cfd2b0468643b1bf17af
+P6-营销素材库/11-完整软文成稿库/MateBook D 16 SE 版/短视频口播完整成稿.md,9255,bfcefef1b611edee9a70027f68eae88e8ac6de5b6255560a8c6a285f0db7bc44
+P6-营销素材库/11-完整软文成稿库/MateBook D 16 SE 版/门店长图完整成稿.md,9910,831f4df060c64edb12ec5dce4c2e7deb5e23d6b96269df95bdee4b612597ea74
+P6-营销素材库/11-完整软文成稿库/MateBook GT 系列/小红书完整成稿.md,9351,2392ccb9c4a3eeb48d24d0c408c3f9255662e753b4211bfc4704085c97af3f46
+P6-营销素材库/11-完整软文成稿库/MateBook GT 系列/微信公众号完整成稿.md,10718,a4118eee8ab9ada4580be664cf510f64ca7a6a425b6ffc01e37d5ce7649e1a68
+P6-营销素材库/11-完整软文成稿库/MateBook GT 系列/新闻稿完整成稿.md,10166,913676f15f0b161090d0f5846363400216242d48168b03c451ddc4c4d07d5892
+P6-营销素材库/11-完整软文成稿库/MateBook GT 系列/朋友圈完整成稿.md,8765,05700d89e8a3293337847f5e9db33e65dc7c329ca490e4db0d468d33cde68f68
+P6-营销素材库/11-完整软文成稿库/MateBook GT 系列/直播讲解完整成稿.md,11982,a3ba034b88ea67ecf1625e07d3f94426a61f885e1e4d784e467006e8053cf1a5
+P6-营销素材库/11-完整软文成稿库/MateBook GT 系列/知乎回答完整成稿.md,10985,0c3229355ef896b113d6d7ee27c9746b3b788d292e54c89ee72e1001cf20dc56
+P6-营销素材库/11-完整软文成稿库/MateBook GT 系列/短视频口播完整成稿.md,9666,51d63732c4b77e105e6139be77a31fc9181c674d4c21bcd0d215699883a817ab
+P6-营销素材库/11-完整软文成稿库/MateBook GT 系列/门店长图完整成稿.md,10099,da562c1d7d0e2ca1aca4c2b3f73c83039a612247f54252e12d6d12866bea62d2
+P6-营销素材库/11-完整软文成稿库/MateBook X系列/小红书完整成稿.md,8537,6ebcadfe19f4041e1dc277b7eb21c0504ee5c0b77ebd842d79f7dd94ba1e45ae
+P6-营销素材库/11-完整软文成稿库/MateBook X系列/微信公众号完整成稿.md,10116,c6318a76364ee21b3966cc57bc37d6aabb1905fb01991751f7c08cfafed54cd9
+P6-营销素材库/11-完整软文成稿库/MateBook X系列/新闻稿完整成稿.md,9910,97ae451575bda209f706be0af62ec3498a527c6050d961a7de5b5ba3c04c0a50
+P6-营销素材库/11-完整软文成稿库/MateBook X系列/朋友圈完整成稿.md,8571,3b09059274f64c805d377847e3c3843639167c330f1ef293ec7156e310072679
+P6-营销素材库/11-完整软文成稿库/MateBook X系列/直播讲解完整成稿.md,11224,62ac0e7859647e96cc9d86eda22b08478c6ef628928ad656f2ec24ac1ab2d210
+P6-营销素材库/11-完整软文成稿库/MateBook X系列/知乎回答完整成稿.md,10826,f53795e2f5acbafb2eaa99ba0648211e606f81329100376cecea2cc4180c768c
+P6-营销素材库/11-完整软文成稿库/MateBook X系列/短视频口播完整成稿.md,8781,264323508d85896d7c1bc8606c4e96d122516c5ea9c679628f8a9df6d9951bb0
+P6-营销素材库/11-完整软文成稿库/MateBook X系列/门店长图完整成稿.md,9477,b05bd2f9cbbeaef539b3cd4ba873acadd6609171217be410b274398c4cb6c4a5
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-001_XMAGE 升级为「华为睿影 XMAGE」，开启移动影像新十年.md,10281,d54e2b0b863ec200fc7e1b1947e2047043d2018c110e71587b96073e36fdbfee
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-002_华为小艺以 42 分满分摘得 IMO 2026 金牌.md,10336,00bff903c031ae828cc527063b31fb37ad508889c8a70361ce0e5406b99e3153
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-003_HDC 2026：鸿蒙创新精品应用奖揭晓，好作品在华为应用市场被看见.md,10462,fd9fe66417d5b6ce77696ba03ceee5243817ce3099034a133a87c23e214530e9
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-004_《华为应用市场 2025 年度安全与隐私治理报告》正式发布：完善鸿蒙生态安全.md,10733,e08d786babc8c8d2d1bd87275cbc36fe8562b5e5a30b54afee0900f4dc67948d
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-005_2026 XMAGE 共见・深圳启幕 颁发首批“华为影像 XMAGE 特约摄.md,10435,aa31707bad37062a104c661b3550e0003d881c26c3121f6c106f336df6653eff
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-006_2026 华为影像大赛全球开赛，此刻由你掌镜，共赴移动影像创作新程.md,10435,f2482ca5144f5882e7e02d328f8a61e9572ee52418bb6e201d587a6b44b372b2
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-007_华为发布 AppGallery Awards 2025 年度应用与游戏.md,10633,3c1c00fdd8f5af09a2b0f3b9b8352d7c046bd0e1ec7b1ab665246aa0e75f5183
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-008_第六届华为影像 XMAGE·金鸡手机电影计划表彰作品揭晓 移动影像助力全民电.md,10386,aa27ed61f1c69ebe96a3d3fef0f644010dc4277bc359b2b30d13a9ef389ebf88
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-009_2025 华为影像大赛颁奖盛典暨年度影像展“看世界，看见你”于巴黎大皇宫开幕.md,10563,e4749c3a62380ac1fe5653b60b94db6f68a009c17eb09e08c530eb792c1cb815
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-010_XMAGE 共见·丽水 - 一场关于光、影、人文、自然的对话.md,10428,763f9968950292d07db13f9012a2dfc818f81a617c90d99fe05fbf0f256e254c
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-011_华为正式发布 HarmonyOS 6，10 月 22 日开启公测.md,10202,b86e72813d055303cf45764963303705cda90ee928f83c93b36a76f0c44e34a8
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-012_全新华为应用市场：加速打造用户探索“新乐园”及开发者增长“新飞轮”.md,10560,e4d369cc94f7ba7254fc9520f7fa06786726615abffd6952b1796e648eef7394
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-013_XMAGE 共见·安吉 - 华为邀多位摄影师采风交流，授予“华为影像认证摄影.md,10500,493050a2a233bc9b4fc119a81af7741bf3ac40182d8b635d0f73191799244642
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-014_XMAGE 共见·上海 - 华为授予首批“XMAGE 华为影像认证摄影师”.md,10285,e50347fea832a89c9870fc09a9bd2b37573ff195622aea5cb92f51f3532f9b2a
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-015_首款鸿蒙 AI 智能手表 HUAWEI WATCH 5 发布，重绘智慧未来新.md,10658,e5a62022f4fd91577165441bfd6ad5b37fa60856641ef81809203b2aa86e17ee
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-016_华为发布 HUAWEI Pura 80 系列，让影像远超想象.md,10240,459aea1313a9e8f18945b3de56ca3231b1558492569fff78e96432fe683220a7
+P6-营销素材库/12-华为官方传播案例研究/01-消费者业务官网新闻/MC-017_2025 华为影像大赛全球正式开赛：让每个人感受到影像的力量.md,10448,e03c2fd02f570b403dae70f08a14e9ac1a85e7c4d65d7c2fabe21a6a654960af
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-018_HUAWEI Mate90 系列及全场景新品发布会.md,10501,2b612ac031e1ed93a899fa44b4cc024c4a61359e548b677d0f6d2798d9ced5e5
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-019_HarmonyOS 7 - HUAWEI Mate XT 2 及全场景新品发.md,10234,01c68b0cdeb2994adde1ff2ff90d0daf1e81055616b4d8b4026ce22d8b3a4207
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-020_尊界时代旗舰 MPV 及华为全场景新品发布会.md,10944,2fffbcff339ac49173f66d30ae66f92d713be21ed3044ffb4eeeafdd924bbf09
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-021_nova 16 系列及全场景新品发布会.md,10235,5428e149cab030e187719823cd729243fccb29321aba6aa430396ac42533eaec
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-022_华为 Pura 系列及全场景新品发布会.md,10401,0041a6a3a302ad1dd4542b8a4b3d4404c858d997b5217bca851cb1915bf91531
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-023_华为春季全场景新品发布会.md,10614,e0fe236933478b95f442e2dbee13ac02928c8cf595e55f60a76a72a03ec4dddf
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-024_nova 15 系列及全场景新品发布会.md,10384,72789f39a9c40d82c8be2247e0e1c2f70944d05d829b92ae0bae15f3c63e70c0
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-025_华为 Mate 80 系列 - Mate X7 及全场景新品发布会.md,10449,81c9f11230954b04a45fd92b6c4bd0b8ae4fbdc0bce72e425441bea68e8327bf
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-026_华为穿戴音频新品发布会.md,10335,b6f84c52da2114deae11d35542a1b2f32f91f1e42bbdd4858745e553b0ef55c4
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-027_华为 Mate XTs 非凡大师及全场景新品发布会.md,10386,f14d8d88f8bd6eb3455d8214af424cb386b49b633df2bfbd7ca4a27fbe05ab62
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-028_华为 Pura 80 系列及全场景新品发布会.md,10359,707070c808c55ee63828444e5502bad88171d4398e62519e2490b1903b59dbb7
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-029_nova 14 系列及鸿蒙电脑新品发布会.md,10848,fe139f4366cc48a31cd87382e2e56d280d27cd792b5a65e6c2d30d2be3025f04
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-030_华为 Pura 先锋盛典及鸿蒙智行新品发布会.md,10440,c965c1902617316a3ba75397cb9a44e3827a8699b1fa14c115a2d1b679643fc9
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-031_华为 Mate 品牌盛典.md,10938,24beb07fccb6ef26ab27f654cc79f839cc5b3a75fa0efd09588c9b63c4ac4714
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-032_原生鸿蒙之夜暨华为全场景新品发布会.md,10196,24a65008f7e3a78516a7d0454b74a84b9a2f7427ecda9c833efbb9a3619f74a2
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-033_HUAWEI 秋季全场景新品发布会.md,10333,d860e4f418b6e12ade7b886931e8737fac86c5750557a1ac671e20b7c83f4781
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-034_鸿蒙智行享界 S9 及华为全场景新品发布会.md,11032,dc6ba6f0e3309ff50692afa68f714f0c46434529a17fe15bae19b079db4ce378
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-035_华为夏季全场景新品发布会.md,10347,753ad0d42f886e9cb2bc9b3e33ce0a7745bb76a81cbaac9a7fa7b2578b9ecf0d
+P6-营销素材库/12-华为官方传播案例研究/02-消费者业务官网发布会/MC-036_HUAWEI Pocket 2 时尚盛典.md,10594,15a8e2fd44ffc2dda759cf4b651bc3f16a5f3e6c4dc11f25c8371dce49c672bb
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-037_鸿蒙办公产业峰会召开：多维构建生态引力场，共建鸿蒙商用新生态.md,10325,1a7e2396886955036a6310e9e577e1a431834f9f7c562b0af991ed8747f6c4b2
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-038_鸿蒙商用布局新进展：华为擎云将发布新一代鸿蒙电脑及鸿蒙电脑企业版.md,10292,22e755346bb30e1400dd64ea5ccb88466edde64fd5c0d3a8ad7c37fa2e9d4c36
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-039_华为官宣全新企业办公操作系统及鸿蒙商用电脑！.md,10533,b6e3f92e007115a1894075d3eef877df63375a537b0156089d7b95f0eaf715d2
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-040_因聚而生 数智有为，华为擎云亮相华为中国合作伙伴大会 2024.md,10339,823ef3f1c3305b7ad5ea71a95f39b33a89762b8e3a0279f4c25c7bd8feecfe90
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-041_商用全场景互联，华为擎云助新京报高效完成服贸会报道工作.md,10458,9c18b940bcd144477043325a615aa085944b13459e8be39af5177a79033e1f6d
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-042_华为擎云商用终端安全、高效、协同能力，助力中小企业擎起好生意.md,10507,66a89a7bfcb7c0fba8445ece758cc619b83270b22c7935b0eef290ba5530ea4e
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-043_赋能千百业，共擎创未来，华为擎云开启新征程.md,10101,bade466b573b30481da404d6340df37d533bfa5129b299dc1e8697604bcf924d
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-044_华为终端商用携行业解决方案亮相数博会，共探数字化新未来.md,10250,a844b7e415d042fa4b833f58c2bcb626ee39f49d5f8c0be6285996c3a406bda3
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-045_华为擎云亮相“华为中国合作伙伴大会 2023”.md,10171,e6c10c3931f6e5f02442a57430bbb39fb2a43f2e84b75f5a6c9c7857ba71dcd6
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-046_华为亮相教育装备展 激发智慧教育新未来.md,10169,4c1f5f840d2c950c886569252472204a22522894a7bf1a963b3fd2a441ff0f09
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-047_千行百业共“擎云”，华为终端全新商用品牌及新品发布.md,10526,6003161eed78a1f7772955f6b973cf64c108c3194b67cd27861cff26f58c4a93
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-048_华为擎云笔记本助力人民网记者两会高效报道.md,10372,cf22e2a8b387f460a28e1ed2a5e3de921b4aa330d4fc6e98ea6b41c9d390d468
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-049_华为擎云 G540 即将面市，打造政企专属智慧可靠商务本.md,10252,6a94b310e0b395fcacfd4e0819a290b0fdd58391190e3882449bbcb8130e23de
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-050_重构中小企业智慧办公体验 华为擎云 S540 商用笔记本近期将面市.md,10306,1f8eeebd1f8ef763c9890d26356db3361403a5b9f39ebdd211124c0cd828f309
+P6-营销素材库/12-华为官方传播案例研究/03-华为擎云官网新闻/MC-051_华为终端举办政企合作伙伴大会暨新品推介会：擎云直上，共创新境.md,10414,266d4c1852184c67aa633ce7ffb3dca1010a650180c9bb3e921a211f467c7b6c
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-052_HUAWEI MateBook 14 酷睿 Ultra.md,10499,99c063dda6e1b35690e0e8788f9514e35a8cb5aedca57f2fc74f1f2cd7046f56
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-053_HUAWEI MateBook 14（鸿蒙版）.md,10541,6be7a0b84b0c693f0093120902661b78bbfc68d0914fb8b079e6bb2a02e9f7ad
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-054_HUAWEI MateBook D 14 2024.md,10446,0d5b12f561ad4978b11b481698ad128c1c64fa9fd01cd9f2d6aab82264a1c418
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-055_HUAWEI MateBook D 16 2024.md,10368,ee769d42175a8e02afb522ea91361fe500cb666b1bd147571e4af279f4d76d53
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-056_HUAWEI MateBook D 16 SE 版 2024.md,10442,79d23d938155f2053a495198390303abd95e812697cb28edf2a427cc186d43f8
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-057_HUAWEI MateBook Fold 非凡大师.md,10522,26d836d2fa61563b5567473d3500a94dddd5648501635fd36ef8ed8faa60286a
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-058_HUAWEI MateBook GT 14.md,10314,23179d59f778f487c4dc6fd10e8f450dc890a1bee480f230d36c0721cae9003d
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-059_HUAWEI MateBook Pro S.md,10259,dd88a5060c86cc97efdc5aaf35fc587b4963b92066c29986b2fc299aec552c2a
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-060_HUAWEI MateBook Pro（鸿蒙版）.md,10542,249a6ec367eb6329603a8789ac6d1a56cfca76b61553d9598f8ff98ca8b305c5
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-061_HUAWEI MateBook X Pro 酷睿 Ultra 微绒典藏版.md,11408,e7112bdc7e1d77a4b0f928b621b1b8d3775fad8812f5e58c0f29faa01ce826da
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-062_HUAWEI MateDock 2.md,10138,f7568194579d34ec4c98e8e711698087fa4790703785eccaf6c3b8f52bc2a1a4
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-063_HUAWEI MateDock 3.md,10108,4189547c9da05749b56c79bd810583e9e3336751e957930ba1604d2891393f7e
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-064_HUAWEI MateView GT 27 英寸 4K 超清版.md,11017,0ef1fc6a5a5b071227a228a69ab1f4316602309f9b57045df7eeb95a06fe4749
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-065_HUAWEI MateView GT 27 英寸高刷版.md,11020,554b1f7426f95cccb2a7a7986253a7a77cc9dbdeccb89c4a000b191fc39eacf9
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-066_HUAWEI MateView SE 27 英寸 FHD.md,10797,e1e5411241f66bd259fcb1fbfb648d19b48ce6f5f13caa6176dc8b36de4b942b
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-067_HUAWEI MateView SE 27 英寸 QHD.md,10734,80e21be85566cf5ff15155b24be72f74a1d922f9dad4295133bdbbd16d9c3c73
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-068_HUAWEI PixLab V1.md,10145,d7778120e457a05918c688a73c01b17cb53200509b8904df77e2b22b049255c9
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-069_HUAWEI PixLab X1.md,10148,dfefb7156f5d6bb6124d07cdccac7cbb581767e8b1ccc5f545ef9c8cff30070e
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-070_HUAWEI 高键程智能键盘.md,10273,1dc61ca0b2f2de95a3b5071b3b51c7617ebc1ce9143070423a34e41305ea5a1c
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-071_华为全能充多口充电器（Max 100 W）.md,10591,028af5a33140d07abb593dcb4b995a33327364f8ae554fcb1b72f695b2ed21cf
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-072_华为无线鼠标 3.md,10590,e3f449956a9fd795a405cbdd113aab9d40c248104e185b1190566b59738068ab
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-073_华为无线鼠标 3 轻音版.md,10739,766a51d9c98813d1226ab1afaba9ec193637ebaee7fec7d6e425751d1cb3c022
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-074_华为无线鼠标 Slim 专业版.md,10845,56e58b53678cf40d84611d1ea8fac97c07fad56d46c272ed363e80206d51eb43
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-075_华为无线鼠标 星闪版.md,10697,0322c641b5b13bd02b7521453b1d42664f802229ec705fe378c3550564eec3b9
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-076_华为无线鼠标（第二代）.md,10882,25b49d77c3e24833b0317ecc2005f7bc67cd21f1a3e3d302ff2da25b83c6fbdb
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-077_华为星跃随行键盘.md,10312,66692ff3b21de560ada792337b1ef3426f986ff72ce0c54aa7268d1418f38e01
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-078_华为毕昇激光打印机 X1.md,10457,cc2f3a804077ddcb6c902776cbda3d3fd6c7447627f9ba819929f790ebddcb39
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-079_华为毕昇激光打印机 X1 Max.md,10510,34a47e22b1edf3746254b91fc272393f866369ff00e62f05dbac6872f0eb6fae
+P6-营销素材库/12-华为官方传播案例研究/04-消费者产品落地页/MC-080_华为毕昇激光打印机 X1 Pro.md,10488,e9a9b95fadc58c34fe445029dbefa718b2586d275becd25b41f127e055718684
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-081_HUAWEI F-1500BZ.md,10235,e04f924f8fd9c13fb717caf502abebf3eeab5a68935349626b7bf1065cbf1db0
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-082_HUAWEI MateBook Fold 企业版.md,10476,a4a8d881de37c85807592e9983e5fe4684bc97e7cb11df0f299b65c9414770c4
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-083_HUAWEI X-15000BZ.md,10152,136e65a8f78d3051ee4141ca88b4c7a43258a3702127cade46468f3326d42291
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-084_华为擎云 HM740.md,10308,823b3bc48792f9357561226a36149bd3ac445e71473474b25f7adcf7f56a9453
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-085_华为擎云 HM940.md,10202,9a2550b4f16368b9e20c1ee00655826891b190a4696807c9da7936de47a41b4d
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-086_华为擎云 L420.md,10218,f9a108e29abacd218517f913271e3689d37412f576d64ddb2f668649420effd4
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-087_华为擎云 L420x.md,10180,c3328f46b06c57570f95c69aceb2097a943c5a174058c117925aa04946e8313f
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-088_华为擎云 L420z.md,10189,0c1412b1de8efb55981e65e5012fe93019ee9a134ebb5ba79fe6980ef13fb5b3
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-089_华为擎云 L540x.md,10286,7e1a234860b54ab10136ed661359a2556c692072a8a4a6a0334c32ebc83bd229
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-090_华为擎云 L540x 优享版.md,10335,9182082c83ecad4e980a828d9d6a15b4515932d5f3ee4584e8394a18d7b23c7a
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-091_华为擎云 L540z.md,10223,ef89002b402c4a446c813357c8c0d822f3922828274ef228a8f351d3ded41b33
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-092_华为擎云 L540z 优享版.md,10254,d16ac6853d3892be592cdd511c883970407b86051fd43ea23467986c63c8d4ea
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-093_华为擎云 M271H.md,10092,cd96a003f3bcd33906864b546459e10a6a800eec799b68cbdafc81cd2ef4f9e7
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-094_华为擎云 M272H.md,10104,5553efde6d32d4b43e0264e2aea231140f7bed52d684c8f4ac683d14248ca944
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-095_华为擎云 M272Q.md,10073,cac3987dcf1e732c81562ec239816e519c581411dd46e0e92bdac745ead83753
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-096_华为擎云 M273U 柔光版.md,10331,c64663951b96cd10e7e34d0f5cc56ec094ba4023310be0bfac7cf9b72a068b24
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-097_华为擎云 M273U 标准版.md,10173,07c9188517f72e143ea917c599b20d6748ae58f0b56bf5c0467bd1d785abb682
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-098_华为擎云 P5 激光单功能打印机.md,10240,313ff0d0e3e825301feccdcf5db8dad4819736f7ba7a106afdbea916b13854a0
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-099_华为擎云 P5 激光多功能一体机.md,10270,d8b132cc7c9286eb61634108a4e837e42dcc4df0ec60f27a1e37ee736e30ff92
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-100_华为擎云 W515y.md,10348,6e9063d7087c1eeced60d2db1c042822383d10f99aa5b1102783fc0856ad9037
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-101_华为擎云 W585x 优享版.md,10287,3b570a5c02a7954471fb8f3bfbe8eac4b9de7abaa01e1c25e861064819978e1f
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-102_华为擎云 W585y.md,10216,2c35b10b1f72efa640bb0ced4836fa15395c40840d4cbfbd9dfe5ce8e7afe0f3
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-103_华为擎云 W585y 行业版.md,10187,8c3b208f3a1dfa98b7b1d7d23c1f7088177ac92940458d5e669f402e7f504fbf
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-104_华为显示器 B3-242H.md,10178,66f93e2d9ddec6f6e0491e614b4104e55312720551b440d754aae7212ac6720e
+P6-营销素材库/12-华为官方传播案例研究/05-华为擎云产品落地页/MC-105_华为显示器 B3-243H.md,10168,a989cc0b33895dad8a16b1d56bb701da918b053563815e54f06ba300bd741543
+P6-营销素材库/12-华为官方传播案例研究/06-商用支持产品页/MC-106_HUAWEI PixLab B5.md,10207,02aed3abf50b1bbeb864d8963e8f942263b00d755e58c9c0b2fa757d74623a85
+P6-营销素材库/12-华为官方传播案例研究/07-华为商城电脑专区/MC-107_华为电脑专区：按鸿蒙电脑、台显打印、D系列、数字系列和配件分层导购.md,10485,e3eaa556b1b0450b8264f4932f607f1bae20bb87905b4f9f71b4e4071d3e597f
+P6-营销素材库/12-华为官方传播案例研究/08-华为商城智慧办公馆/MC-108_智慧办公馆：平板、笔记本、台显打印与配件的一站式场景导购.md,10624,0666c0552eb85af50fce245cbb095342b7ce667f9e49bd3acc243d3bb16a4bb0
+P6-营销素材库/12-华为官方传播案例研究/09-HUAWEI-Community/MC-109_HUAWEI MateBook X 2020- When Work Beco.md,10142,c97c74339b767f2cfad61fed47c73b11a5f74539050238131ba9e3ba86d1e775
+P6-营销素材库/12-华为官方传播案例研究/09-HUAWEI-Community/MC-110_First Impression on HUAWEI MateBook D.md,10132,92e36a6ba27e37ab3bc96660d6b722ce42a649ac5b2a070917383fb55e19d3c4
+P6-营销素材库/12-华为官方传播案例研究/09-HUAWEI-Community/MC-111_HUAWEI MateBook X Pro 2021 y el nuevo.md,10209,cee25a387daf1679611f07d8a838af5fc5ad069c73781ed4549fee799d335e6f
+P6-营销素材库/12-华为官方传播案例研究/09-HUAWEI-Community/MC-112_[MateBook X Pro] Huawei apresenta o no.md,10132,668b0ca5c6875e561fa2c670809eceb872744666ea81eda31c3cb96b21d92d34
+P6-营销素材库/12-华为官方传播案例研究/09-HUAWEI-Community/MC-113_[MateBook X Pro] An honest review afte.md,10220,ccaa437d7bb7d098fbaa3751f9ec1638f39a7456bfcf18be14e12930ec5f9047
+P6-营销素材库/12-华为官方传播案例研究/总索引.md,25830,5334cd5f206ab705a252de4af7ce276716eba8977c9b3fa88e4cfce6fdf6f9d9
+P6-营销素材库/12-华为官方传播案例研究/构建与质量审计.md,2660,7d57dbaaba8addcf54054909aea569464a717e3154a06e3ab4a8754e9447dfd6
+P6-营销素材库/13-多平台公开案例研究/00-总索引.md,7382,ca5e366114ff5acff28afee0bbfbe1ac61ced16517f18cc36f3d4853fcf55d36
+P6-营销素材库/13-多平台公开案例研究/01-公众号长图文/01-折叠电脑研发幕后故事.md,6695,bbf354412426ba7038ba53303f581e11661d983786e79fe4f766f6cc852c2753
+P6-营销素材库/13-多平台公开案例研究/01-公众号长图文/02-智慧办公场景教育.md,6454,3f2ce5e4ef61275ebdc49858748fb4ea0280119f4989982aeb0a3fd06999a940
+P6-营销素材库/13-多平台公开案例研究/01-公众号长图文/03-鸿蒙生态阶段性进展.md,6435,a5ab9819bc2218777f25eacbb09a058c9e59c1f08ada5525ed1530eab0ebe30f
+P6-营销素材库/13-多平台公开案例研究/01-公众号长图文/04-新品家族与年轻生活方式.md,6390,d7f59e35d85934dd4c25607317e142115dca986977dd33060dbf1560873a3ab1
+P6-营销素材库/13-多平台公开案例研究/01-公众号长图文/05-新品价值解释型长文.md,6476,4e45d4b4f593f5f3a8cad2f17cc14aa9cd31c2a0d52ea49bef07355d3ee6b3d3
+P6-营销素材库/13-多平台公开案例研究/02-新闻稿/06-MacBook Air M4 正式发布.md,6243,a6821be04d7dcd596f832ee299b4d6e64760ee654ff4a12458d4298285819001
+P6-营销素材库/13-多平台公开案例研究/02-新闻稿/07-Surface Windows 11 AI+ PC 发布.md,6359,708f6d09bf85c91123e393662023ef78ee5e73cad08e3b7cb826306cf9de3fa7
+P6-营销素材库/13-多平台公开案例研究/02-新闻稿/08-Surface 商用 AI PC 上市.md,6400,c0049913ff492a532257fd239014be3c9666319c8758e01412fc23af7571fbed
+P6-营销素材库/13-多平台公开案例研究/02-新闻稿/09-MateBook 14 鸿蒙版上市报道.md,6238,4d12af59f75fb3a060febef56301b5efb7b93759f576c182eb3819f4bef509a6
+P6-营销素材库/13-多平台公开案例研究/02-新闻稿/10-鸿蒙电脑发布的媒体快讯.md,6243,1bb6ed5862be0673591d542b059c380e6686220bc16dcf231b8046c7434076b4
+P6-营销素材库/13-多平台公开案例研究/03-知乎/11-618 华为 Linux 笔记本怎么选.md,6389,112712bf44615d2000746d8d43b2b3f2274098d854384741b00139a7b572d645
+P6-营销素材库/13-多平台公开案例研究/03-知乎/12-不同预算的 MateBook 系列选择.md,6242,85d50847e4e147b9b5f8f060ba86aafbef43d8afaf59d0a74b5412df76a1dc48
+P6-营销素材库/13-多平台公开案例研究/03-知乎/13-2024 年 618 型号分档推荐.md,6182,dbcfe22a6845a4a43c46fd958229e58230bc0df2b390da807585841a84b573a8
+P6-营销素材库/13-多平台公开案例研究/03-知乎/14-GT 14 处理器版本怎么选.md,6210,372bdebc64fa4aa90c76faeb884a14c4818c953002bdce04ff008c143524a6fa
+P6-营销素材库/13-多平台公开案例研究/03-知乎/15-MateBook 16s 亮点和不足.md,6216,b41238fe23395f2a7204f7d8b80390ec7f48ada1d12df412e60c25bd82b19e7b
+P6-营销素材库/13-多平台公开案例研究/04-小红书/16-英特尔“游牧式办公”.md,6289,623156a6d00c4ff23ab240dc9bb738d455831914487745aa997eb6c3cbd6f46b
+P6-营销素材库/13-多平台公开案例研究/04-小红书/17-OPPO 小折叠共创新品.md,6253,946dcef71efaa017fc4569f2743a9422e2a6f49aa48d2de9dbed6d8dcb9c0a75
+P6-营销素材库/13-多平台公开案例研究/04-小红书/18-华为 Mate 系列设计共创活动.md,6348,d803a874ad733a7ff8ae050aa634f99cf143bfee47038a2caff60b12a6c5a8c6
+P6-营销素材库/13-多平台公开案例研究/04-小红书/19-华为 nova Flip 潮流配件活动.md,6313,70c7d5585729e6d2a7321d8772b9da9590194ebb751bafc9460a200dae1e4c3a
+P6-营销素材库/13-多平台公开案例研究/04-小红书/20-京东电脑数码 Citywalk 案例.md,6314,6d3cae775aa04dd2d43dcefc30561c7d306ba3c66d953bb4df0afa5b676c7bb7
+P6-营销素材库/13-多平台公开案例研究/05-微博/21-华为暑期学习出游场景.md,5924,526bd39326f560dd29e405af06e879e07fb813c4f8fa1ec6db72b11317de0c13
+P6-营销素材库/13-多平台公开案例研究/05-微博/22-联想小新秋招“AI 搭档”.md,5797,71a8eb3f22a5a4241c821a0aafe270bac22bf14b00ef73e39436d9b070a82d89
+P6-营销素材库/13-多平台公开案例研究/05-微博/23-联想小新“论文私教”.md,5806,6695467cd412d2ad8254fdaacd555b91b968c4b6e513359247215eaf6f7cb0ee
+P6-营销素材库/13-多平台公开案例研究/05-微博/24-联想小新毕业季情绪海报.md,5803,f3e6e32f0d6084bbe81a24f4f2f1e665b2e8b70399a314b80c53c7f319e5c12e
+P6-营销素材库/13-多平台公开案例研究/05-微博/25-小新 Pro 2025 全系列开售长图.md,5865,44fad0976c22b310e4fc43355e88572e32bdcb26e2e102b0048c1baaeb77c46c
+P6-营销素材库/13-多平台公开案例研究/06-通用短视频/26-MateBook Fold 快速开箱.md,5981,5d6bfaf55292392d9cd56feae40dd923e01ed9344911c312173eea8e05397088
+P6-营销素材库/13-多平台公开案例研究/06-通用短视频/27-MateBook Fold 首发上手.md,5954,d8f2b6ec92380cebbf33233b8c81d8b22b9e5065ea304a57a13703d5f859beb0
+P6-营销素材库/13-多平台公开案例研究/06-通用短视频/28-小新 Pro GT 官方开箱.md,5863,f0205e208a1af16df38e0a365b94be41217b754b2cf92e727c62378a1345edb2
+P6-营销素材库/13-多平台公开案例研究/06-通用短视频/29-小新 15 2025 官方开箱.md,5864,8d9ec08c306e38697452a1593646907aa5bf1494a4142e6fe5f93cb1e104276f
+P6-营销素材库/13-多平台公开案例研究/06-通用短视频/30-小新 15 OLED 官方图文开箱.md,5930,f7824f4af5d50f67fd33e12d30fe4e6ac1775854e52f9e6aacf4f8af7b4a90f4
+P6-营销素材库/13-多平台公开案例研究/07-视频号适配参照/31-出行攻略型竖屏参照.md,6165,2661967f73b0c2112bd00905599002a33ebc3314260199d1fe589b4dc30d06e2
+P6-营销素材库/13-多平台公开案例研究/07-视频号适配参照/32-论文任务演示型参照.md,6129,96fd6896f293c5f5c48c21383cb75c278ebab84e1474083f854d43122aacb9b9
+P6-营销素材库/13-多平台公开案例研究/07-视频号适配参照/33-翻转本三姿态演示参照.md,6083,e8f04330bf7eb84d272c7754e7d099949028b968e43a75b5c9597bfc9d346291
+P6-营销素材库/13-多平台公开案例研究/07-视频号适配参照/34-AI 主机常驻任务参照.md,6127,d47a69132e5d57332f243d5db57efe34b5992de06cfb71aab23d75df7d70281c
+P6-营销素材库/13-多平台公开案例研究/07-视频号适配参照/35-AI 情景短剧参照.md,6066,ec63e7185777dfe2115aa0a696abd72681db70888f256ae21b1931987e91cad6
+P6-营销素材库/13-多平台公开案例研究/08-抖音/36-“大模型时代的电脑”观点型短视频.md,6017,d6aeb493a813189b3b68eb71da08e2f0ec5b4044719094aa1f80195b53ed5fbd
+P6-营销素材库/13-多平台公开案例研究/08-抖音/37-CAD 能否运行的单任务验证.md,5923,3052f9267d1e3ee58f28178f412bb3ab706b3a2218737dc015fe4068e7bf8bc8
+P6-营销素材库/13-多平台公开案例研究/08-抖音/38-Win11 虚拟机体验验证.md,5965,1e5aa342e5f18e4df93c717eebac9055e150fae892d8ce46fc2f148b966f03a2
+P6-营销素材库/13-多平台公开案例研究/08-抖音/39-鸿蒙生态全场景深度试驾.md,5931,0246299616f33d63ef476dc81ef50267840bf08439db387a6b645ccbac923eeb
+P6-营销素材库/13-多平台公开案例研究/08-抖音/40-直播间价格钩子短视频.md,5929,48401b9afde3d36aae56b5d79150e6e84ef601ca3082a613d3df280b9d76a6d8
+P6-营销素材库/13-多平台公开案例研究/09-B站/41-鸿蒙电脑完整深测.md,6049,fa34a5128ea4b7c754277f06bc39839c312321c8a1a5ed8d4dd39b2407fcf70d
+P6-营销素材库/13-多平台公开案例研究/09-B站/42-Fold 发布会现场真机.md,5974,8057ebffb42cdd9497112b7c1e8634cd9433211c71300ac0c9949f4edd1aa718
+P6-营销素材库/13-多平台公开案例研究/09-B站/43-材料工艺科普共创.md,6062,10c98374961f3e7e662303a00a993514123960b600b12f53eccadf6e3e20626e
+P6-营销素材库/13-多平台公开案例研究/09-B站/44-三尺寸机型怎么挑.md,6035,eac52d58e8f861d590dcd760d06c6b9dc77174bfc1702b3fd252e5dd4b9b588a
+P6-营销素材库/13-多平台公开案例研究/09-B站/45-拯救者发布会预热.md,5943,762605570ed862b1aeb074e4a9ca2c5c8b632b9002c5371c4a3fa8587ecaa696
+P6-营销素材库/13-多平台公开案例研究/10-直播/46-鸿蒙电脑新品发布会.md,6007,a46cb9e9081a0de8b417cf245c28005d82aa12f298508d4d4ed3bcfadb35dd21
+P6-营销素材库/13-多平台公开案例研究/10-直播/47-总裁直播用人物故事带货.md,6039,998a02d26c72a967a1c7e22b6858a559abc802934cd9b145eccecd5b7ab4b03e
+P6-营销素材库/13-多平台公开案例研究/10-直播/48-新品发布会的“生产力需求”主线.md,5965,edbb1fe58e3379655da20dbf2c7775bc73d85a93db969b33f04055bafbc864d6
+P6-营销素材库/13-多平台公开案例研究/10-直播/49-B2B 发布直播倒计时.md,5932,77eaf4802949bd79d9420253196a52051a23931c3041c66fd97b2f0c883504d6
+P6-营销素材库/13-多平台公开案例研究/10-直播/50-直播间幕后运营复盘.md,6137,fb46093355af75c89c69c320772767f7379c4d32fd37c71f0973b9053f346800
+P6-营销素材库/13-多平台公开案例研究/11-门店长图/51-MateBook Pro 长页.md,6038,c88a17aed80a1fc697ca49b17f5c71e9ef62ea729c81272eaf89ab385fb93fb4
+P6-营销素材库/13-多平台公开案例研究/11-门店长图/52-MateBook Fold 长页.md,6135,73baa9de74ad935e6089958ffe07b50d2509f406d528b967ad3c964c808c527e
+P6-营销素材库/13-多平台公开案例研究/11-门店长图/53-MateBook X Pro 长页.md,6111,43f04980452093728f95a708990143c3f512a0bc954503291d5ead7fbf702f73
+P6-营销素材库/13-多平台公开案例研究/11-门店长图/54-MateBook GT 14 长页.md,6023,0f44314a49a4685b6474f0afdfe36206bd88087e120393e78709ea7a83210fa0
+P6-营销素材库/13-多平台公开案例研究/11-门店长图/55-MateBook D 16 长页.md,6072,94b8131740757269671aded8527cde064afc1d634acbee88853c3d053fa56474
+P6-营销素材库/13-多平台公开案例研究/12-销售朋友圈/56-秋招一人群一任务.md,5885,0da18089989a8e62d689b2547b700e785daa738dbd1441480af6863de4b414f2
+P6-营销素材库/13-多平台公开案例研究/12-销售朋友圈/57-论文季人工复核提示.md,5883,6cf3dd1df5f22e3b99b610a4497b0d56c5e84c4333bfe1d818d3128de1980eec
+P6-营销素材库/13-多平台公开案例研究/12-销售朋友圈/58-毕业季轻薄续航场景.md,5881,24d4ab8f6f58c02815156a6960fb5e799cd005210564be777008d5af0fd3bb17
+P6-营销素材库/13-多平台公开案例研究/12-销售朋友圈/59-大屏表格办公.md,5906,cc3f85d5ad8ef4a96ce81ddfaad70ce0987a5c57c9df28b2d61e2bf64ea64c1b
+P6-营销素材库/13-多平台公开案例研究/12-销售朋友圈/60-移动商务减负.md,5877,14fcf76eda9627bce5b7f3e29b968e9ee3dd217f342e1af857499d2d5c7bb59c
+P6-营销素材库/13-多平台公开案例研究/13-企业采购方案/61-国电大渡河桌面云案例.md,6183,004e39e9d21619c37a63d5c066dffde022a9239e5664a0d18e6abc3a818f00db
+P6-营销素材库/13-多平台公开案例研究/13-企业采购方案/62-东风通信多场景桌面云.md,6114,68b18b9fefa6961ae31d4634b7d10599acfd67a726848115ba7ac560096bab07
+P6-营销素材库/13-多平台公开案例研究/13-企业采购方案/63-广期所安全办公案例.md,6194,126db625c0fdb9708426621149ec3b3a2433981eaa47d4c288130e4179062819
+P6-营销素材库/13-多平台公开案例研究/13-企业采购方案/64-戴尔中小软件企业 IT 方案.md,6472,1608a92e06a035bbb6e722fb405c59c337730cf278724e5020eba1007c072edc
+P6-营销素材库/13-多平台公开案例研究/13-企业采购方案/65-中化化肥一线 PC 焕新案例.md,6285,3aec811eb4d5332d4ff63461f87c63b36f41f4f1a1f4580552d4f0b17358389a
+P7-常见问题库/01-售前FAQ/售前FAQ框架.md,11034,a2826f3ff25d5be55e9df36c4192d710750a7aee80bd42e1ba7033005186e8a7
+P7-常见问题库/01-售前FAQ/购买与服务FAQ.md,11172,d11e9ce83701b64ebdda092236c9f8c8bdd4b0ae5aa24df1fdb3dfbfa5814a64
+P7-常见问题库/01-售前FAQ/软件与兼容FAQ.md,10948,95973f72bee34be81c6569ae4e25aaaaf862a95cf611e72643b783f7e744933f
+P7-常见问题库/01-售前FAQ/选型与版本FAQ.md,11199,8e83182cda297b6d0d559d23cf791ef785e0dc02a37f8b5c8cb2341f129cf06c
+P7-常见问题库/02-售后政策/官方售后入口.md,11013,a2b21e96003002c5f432226814faeb6684d5a8f7a9c4b946d051291aa4e499a8
+P7-常见问题库/02-售后政策/官方服务权益速查.md,11055,4c5980b24d44bca726791a26e0459ac5ce12d7a0743322e0c6003d0a7cca088a
+P7-常见问题库/02-售后政策/笔记本保修政策速查.md,10957,bbb58cbaafe0212bac850a32e6402c144f9fe4fa36ef745ce4148c55e3cb642d
+P7-常见问题库/03-系统安装/系统安装与恢复安全说明.md,11982,f698b213a0bb5a4c3aa2990d3dd7cb1c0c8840829f7d3be06862bbf0d195cd94
+P7-常见问题库/04-故障排查/问题反馈与日志说明.md,11059,eee64ef4ad6611927f804346559a8328d1c45cbcfa00068d65904ff5a6c3e3c2
+P7-常见问题库/04-故障排查/鸿蒙电脑网络问题排查.md,11631,800ad8d840d9b34cfb6329295787b1c89a951174fb6b7b1829bd6458640c71a2
+P7-常见问题库/05-常见故障/故障分级与排查记录.md,11159,52e4db89796c13f0637db3a6bac6a33fec3073f2d5c2282bbcb85eb8bf9e3684
+P7-常见问题库/06-高频问答/01-如何确认完整型号.md,9840,c032f06aaec21b01c598cd4f45f8b0788079e0f1404d1d1101c754fb3da5ba1b
+P7-常见问题库/06-高频问答/02-如何确认销售配置.md,9347,e26e4423f636ca932cafd9da783d419f1e048c88d9334fe63e4f8b28ac01783d
+P7-常见问题库/06-高频问答/03-鸿蒙版与Windows版区别.md,8817,54cce3396888a821e393b502c0dafe64b78317ebd9803789bb388906d79340b3
+P7-常见问题库/06-高频问答/04-专业软件能否安装.md,8489,dfd8b8e654dadc25f585f835bfb60acfdc30dc843c572c54ab02788611982896
+P7-常见问题库/06-高频问答/05-外设是否兼容.md,9307,8464817ab89a2e292459285f3019b944d9126adb515d9ef67b9e3a7fe5402487
+P7-常见问题库/06-高频问答/06-手机协同需要什么条件.md,9643,b571ef008b45dd53dd524a480d55b83c785b1c3cb6c0f0a9f38acf01d0aa93f6
+P7-常见问题库/06-高频问答/07-平板协同需要什么条件.md,9496,0f03870fe00861cc492064af076563ecf56049c55b223a8549f373407f0cf1ea
+P7-常见问题库/06-高频问答/08-怎样连接蓝牙鼠标.md,9282,4d7dc291d6054871aaff41d5ebcdc9f7ac7ebe0486d2d50978761561c03ac5a6
+P7-常见问题库/06-高频问答/09-怎样连接蓝牙耳机.md,9069,f792aec656d5e1b03094f86414fc3eaab259c661c980e52122ef9d75f6e7bab9
+P7-常见问题库/06-高频问答/10-怎样使用触控板手势.md,9214,4c1ab9f984232550e2b7b3fef0971c08305c32328873141dabc1fc4debd80296
+P7-常见问题库/06-高频问答/11-屏幕亮度无法调节.md,8954,2534925b131398333cfb5ddead808c1d0c01405cb788b8eba8fc60e73d8bb86d
+P7-常见问题库/06-高频问答/12-如何设置指纹.md,9747,650316ef42a9e853ceb9fa4a867d35c76131f0e637968e1c80ad15fb51795ff9
+P7-常见问题库/06-高频问答/13-如何科学保养电池.md,9228,b9df67949179849b8c1d89d20d15c6ab1d3db2c7d28a78224df2bf7e6c3d735f
+P7-常见问题库/06-高频问答/14-续航为何与宣传不同.md,9323,a872af122f638e99e5a00b90a69772926cd367b6e061713cd2b6da6c96f622f2
+P7-常见问题库/06-高频问答/15-如何下载驱动.md,9328,437931be89ed5f4f1cc7b63845775778c49ea7acc8fbdf3a502605fa9743f2b8
+P7-常见问题库/06-高频问答/16-如何查找产品手册.md,9039,88291ebfd6457661951a47eb69149c52775ac70d4177ae9696c35965f88ac320
+P7-常见问题库/06-高频问答/17-如何使用电脑管家.md,9039,a7f6f7427ce1772a26bd89626fef0baff456e2d297ad1bb1406543cbfa5c1039
+P7-常见问题库/06-高频问答/18-如何进行自助检测.md,8306,25109b74852f3e5acdee9086173a1ffa1be62dfbf6391e42f3a517a983233a68
+P7-常见问题库/06-高频问答/19-如何使用PC克隆.md,8958,cc3da3eb4f76923d9f760184fff7388a2da49dbfee99153d34a4dc7b7caa3b60
+P7-常见问题库/06-高频问答/20-换机前如何备份.md,8960,9665cb81b1d131c4d17bbfeeb72dce14c1dd9200c0725ea8f870afb76a195ba4
+P7-常见问题库/06-高频问答/21-单个应用无法联网.md,8850,1716fd3188713ee9aaedfd84f6df8c7d906a9075e587c6fd25f21373c5d59aeb
+P7-常见问题库/06-高频问答/22-企业网络无法访问.md,9220,93e70d38acdfd025ad07dec45463676dd11ddac3f93de111d7cbcd697db3db50
+P7-常见问题库/06-高频问答/23-校园网连接问题.md,9086,469910dc48d217ba8c8c9a852beaf12ba547b8c7716593328bd6cfc95eb94c92
+P7-常见问题库/06-高频问答/24-Wi-Fi连接不稳定.md,9222,65dcbaab51516d809d2d1a55ff3e2246be249d34fcb0277f2fbac288e84712c4
+P7-常见问题库/06-高频问答/25-投屏失败如何排查.md,9485,91290b40fdb57a160dd363677b9d2cf5f6df90858f169fd331584c87b866c7d9
+P7-常见问题库/06-高频问答/26-摄像头无法使用.md,9111,c46a6ae35dfd70c2aa200e42cccb1c405e7d7b61feee7cbefb17298d3375c190
+P7-常见问题库/06-高频问答/27-麦克风没有声音.md,9153,0692908fc955918c0b27b6ed965c512801eb4f80715288b286f1bf214af1e37c
+P7-常见问题库/06-高频问答/28-扬声器没有声音.md,8990,fb34093c6b085348065549b6a24ed29544233346fdf0c795706b2e2c3fcf4a5d
+P7-常见问题库/06-高频问答/29-外接显示器无信号.md,9037,b85dace7a85f990b32160c26b8ce20f9ae8e7042501351f3388e20a78f67c026
+P7-常见问题库/06-高频问答/30-USB-C不能充电.md,9096,7f9a80a7b0dcbe461395c8a4924dfea0371657f6f95efd209ffd459376a02336
+P7-常见问题库/06-高频问答/31-接口扩展坞不识别.md,9313,704399bd1755423f82cc2595681c69a786c49b1a64e8238430bf84f471a625d6
+P7-常见问题库/06-高频问答/32-系统更新前准备.md,9060,397b313e6622f5baa397241b092e93a310f3290e1ff5c63968eecb3083b35a74
+P7-常见问题库/06-高频问答/33-系统更新失败.md,9051,9533bb202ebcc0f6fccffb836f858aac9a7acfdcea0bfa35546dd7a9f4e452d3
+P7-常见问题库/06-高频问答/34-忘记锁屏密码.md,9241,7725a4c58bf1bc6922c1e9c04fbe52f8806e0631f165abcf4427bdf522e467cd
+P7-常见问题库/06-高频问答/35-恢复密钥如何保管.md,8906,2c7e80a35a04aad87f19cef7441cf3f78471970ee823ec0e7d1746d6d6123ee8
+P7-常见问题库/06-高频问答/36-应用问题如何反馈.md,8387,202b127aded76899a31d7faba477be0b99b93cfaf248e58347824214e2329b63
+P7-常见问题库/06-高频问答/37-哪里查询保修期.md,9056,5ffc81f426c0ba5a9aee794a00b31913937d7c96f27ad28fcc54b26bd299002c
+P7-常见问题库/06-高频问答/38-保修凭证有哪些.md,8969,abd07c6ac4fcbeff19f17dfc3531f353789b3f7c70fa8feef6d923eb24a1a8c7
+P7-常见问题库/06-高频问答/39-主机保修多久.md,8925,585cdf7a0deda48bf98f63c494bbf29105c30f5b8b8532403022e37bb807c729
+P7-常见问题库/06-高频问答/40-电池保修多久.md,8886,5daa87f9b35f9903396c312172591e4a5787b9b33b14f53b276cbe90ea395346
+P7-常见问题库/06-高频问答/41-什么情况不保修.md,8908,0e5fbeee63302e9fb1fc8ba585e478921c331328278b493984d11354cae5aca2
+P7-常见问题库/06-高频问答/42-如何预约维修.md,8824,9791a871ffa57aead1f5bcd385155eab9e0fe84333e4898f3eea551aea85bd81
+P7-常见问题库/06-高频问答/43-如何申请寄修.md,8813,e2ddd17afa7a3b27655c3a7e939e930319155df738955431fe3fcb54316a075a
+P7-常见问题库/06-高频问答/44-如何查询维修进度.md,8830,d7e440eea45083fa8e3cc38d89ee184589b9d186cd9f953d7836048fe6ce1290
+P7-常见问题库/06-高频问答/45-如何查备件价格.md,8926,35cc97ab23183eaaed10b123237fa588745be91024c027e90d4bbe64f22401b4
+P7-常见问题库/06-高频问答/46-是否支持上门服务.md,8829,9dee5d52b62eef5613b95cb92a0eec279a1eff149865a4aa7b4c2d4989c6dfe2
+P7-常见问题库/06-高频问答/47-系统焕新是什么.md,8672,85f562617ce0455a9c313483001345b306365aa54295c8c770ca2710ff5d217d
+P7-常见问题库/06-高频问答/48-换电池活动如何确认.md,8502,1450591a8fc0f748842878b596839ef15b09fcc28363e24693b8bc9a7ead9663
+P7-常见问题库/06-高频问答/49-硬盘升级如何确认.md,8833,ae4fd7de714bdc6c2ceb242a93cb5c055928e63b47773c607f35fb70867417d3
+P7-常见问题库/06-高频问答/50-退换货需要什么条件.md,8657,813673428dfe180cb1f3558811b1147502ea03221b1a7f63a72bb52076d7d979
+P7-常见问题库/07-华为官方支持条目/01-华为 Windows 计算机如何使用 F10恢复出厂设置.md,13180,f147984a5d392775f07e0c54a2074193cb8f0bcfe0417f8889c9d7d74c5d46ef
+P7-常见问题库/07-华为官方支持条目/02-华为 Windows 电脑如何安装驱动.md,13236,670b6be0fbc9b29882040fdaaa9cb16dd58df9048cc42c0a2ec6ab56e9351bb3
+P7-常见问题库/07-华为官方支持条目/03-华为 Windows 电脑如何下载和更新华为电脑管家.md,12708,328ab7b065e5c106b9347dcab4ca8a635fb1a405881e926ae573f688f2af2dc7
+P7-常见问题库/07-华为官方支持条目/04-华为计算机如何查看型号.md,12789,95df0cd3b840972f2d8da228181c89ef589c5f9e1f343a6ee814ad1b12aee578
+P7-常见问题库/07-华为官方支持条目/05-华为Windows-Linux电脑如何查看S-N序列号.md,13128,272e82a1410343e390f41a9f9ae59b356a04b7190ac663c0460c4ae59c9897a6
+P7-常见问题库/07-华为官方支持条目/06-华为计算机如何重置网络.md,13485,ad748c245048d098bd51b5f10050a08a890a39c38f470bc78704ca01f703e923
+P7-常见问题库/07-华为官方支持条目/07-华为计算机系统更新失败或报错.md,12592,e21c826f062c1d70c98f39b097da0d21b4a53ccfbd7565fbf24db3fb1681261c
+P7-常见问题库/07-华为官方支持条目/08-华为计算机如何更新 Windows 系统至最新版本.md,12938,1141336c4b582a419aee390e2a753105659aa60eb6357bbe58ef9dae58469a13
+P7-常见问题库/07-华为官方支持条目/09-华为Windows电脑忘记开机密码处理办法.md,13563,1385f6030ca35d71641057000ebc0c9cf4fe31110857f6d729746ea315b16799
+P7-常见问题库/07-华为官方支持条目/10-华为计算机提示磁盘锁定或者显示Bitlocker需要恢复密钥.md,13433,31f0335fdbb981888f084f36889d4af69ecb3a85cda62540ff8ce658190651e5
+P7-常见问题库/07-华为官方支持条目/11-华为Windows电脑C盘可用空间不足.md,13178,3fcff6a2efc08f1b900042eeaaa1158cd7a51af65a5297d0b02773850d7ac661
+P7-常见问题库/07-华为官方支持条目/12-华为计算机开机速度慢.md,12552,05febba32b6531d030c48e53ad4165202470f8191c2da37d234674109f2a30cd
+P7-常见问题库/07-华为官方支持条目/13-华为 Windows 计算机如何在电脑管家中登录-退出华为帐号.md,12985,30140a02d5d25c6269aea84aba73a5f59194d86a158765527c3a2ddde3f829f7
+P7-常见问题库/07-华为官方支持条目/14-华为 Windows 笔记本如何使用F1到F12按键功能.md,12437,9669b2623b4e9bef041e1a65f0c9521c5d492851958e2b6b370f756e1bf3710f
+P7-常见问题库/07-华为官方支持条目/15-华为笔记本电脑如何使用触摸板手势.md,12542,89ca1c16886cab495beebfcb50a30db524b7088e7e6a3066e5c0da4b79b874ee
+P7-常见问题库/07-华为官方支持条目/16-华为笔记本电脑如何查看充电状态.md,12730,af0a44d0c87079a90727a42291638576711acc9fb7b93d61572288bc8022af79
+P7-常见问题库/07-华为官方支持条目/17-华为计算机如何设置屏幕刷新率.md,12628,d3538ff93e3baef4705e852af3ce6aa213cf096464da3b05c55e0818a9ed7272
+P7-常见问题库/07-华为官方支持条目/18-华为笔记本电脑触控板无法使用或间接性失灵.md,12734,716242dd0b405b2ce96160c98751f6ebc1ce52892db424048a3df48f0ed34b24
+P7-常见问题库/07-华为官方支持条目/19-华为Windows电脑触摸屏反应慢、卡顿或无法使用.md,12899,a95042cb20f972a06b1ee1ebca9379f50849f6c19f89da1ddbf57e3f5a00ec6c
+P7-常见问题库/07-华为官方支持条目/20-华为Windows笔记本键盘背光灯不亮.md,12635,0d02c43d0f375ed4618ca4dbfb6f33dca9d3538d2de03217c67c08101bee301e
+P7-常见问题库/07-华为官方支持条目/21-华为计算机键盘热键功能无法使用.md,12529,0f127a803e1390aac5c727be381d0e5545b6cd8a2f0a7f352aae7cdfb923bb30
+P7-常见问题库/07-华为官方支持条目/22-华为Windows电脑无法识别USB设备.md,12945,d77e37bfa33e517c3595f332b5aee72012ac5d62ffac1d5a601781166e49278b
+P7-常见问题库/07-华为官方支持条目/23-华为计算机使用三方软件麦克风无声或杂音.md,12799,a66a9a154db7e7d0be32f68a529d8b6e6f3db5aa63d6ef84e92ab2ed09e7f384
+P7-常见问题库/07-华为官方支持条目/24-华为计算机无法连接其它品牌打印机或连接后无法打印.md,12874,c6f9c58fa8cc3292b692a6be459df1ee98901e022e5f356cb09efe246e412d0d
+P7-常见问题库/07-华为官方支持条目/25-华为计算机如何连接共享打印机.md,12500,1dd8e9a93755d218939f752f298bbe917a5c3d6dfc50ef80316837d2e9d1b4ee
+P7-常见问题库/07-华为官方支持条目/26-华为Windows电脑屏幕亮度异常.md,12713,4049b2291cb9633d7dc19408a1a06136e2ca58dde955d0e8d54e5c5e93aa4306
+P7-常见问题库/07-华为官方支持条目/27-华为计算机无法连接WLAN无线网络.md,13032,cd952e6f950f3297125cb01b46e31439b4bea032b26539ce994599dd5be5dcb5
+P7-常见问题库/07-华为官方支持条目/28-手机-平板-计算机如何无线投屏至华为计算机.md,13518,37eda94921f5ed101da88f6308c65fe006901ea5d0af9bfd3ea293fc1b1d62cb
+P7-常见问题库/07-华为官方支持条目/29-华为计算机如何使用华为电脑管家一键热点功能.md,12822,abba76305508ba2d2ccedf7e254ab21c8ae8c029195eb966f9e8a113e0143b52
+P7-常见问题库/07-华为官方支持条目/30-华为Windows电脑蓝牙图标或蓝牙模块丢失.md,13095,827877b4cef6d15532b931de7d6eed60048e7d43bed33645627c180561d1df83
+P7-常见问题库/07-华为官方支持条目/31-华为计算机一碰传或多屏协同文件传输失败.md,12888,3ff3b6ea9dfef110a02641e390acd677e1693d021ad8dbd71b44da9d1a9e23b0
+P7-常见问题库/07-华为官方支持条目/32-华为Windows电脑连接蓝牙鼠标后，突然连接断开或无法使用.md,12928,9086dada0115a375524e24702a739367a532eb407fc43fb027a9ef092199bdba
+P7-常见问题库/07-华为官方支持条目/33-华为计算机连接蓝牙耳机-蓝牙音箱后，音频输出异常.md,12846,28bd7bd2bb2e63f498dd1bf0247e141fa0eae9b9ecac27a6a4322e035026e1ce
+P7-常见问题库/07-华为官方支持条目/34-华为Windows计算机与蓝牙设备无法连接.md,12908,e336db9560727152496f1a345babd80d2d53237dc0a56bebb898f282067bb31b
+P7-常见问题库/07-华为官方支持条目/35-华为计算机WLAN无线网络图标丢失.md,12739,f25ffc15cf7aa8b1d779e5cc015b921bb03a52cf4355edb1c3cb46d20901f39f
+P7-常见问题库/07-华为官方支持条目/36-华为计算机连接WLAN网速慢.md,12736,1b91fcd523ffc80aa3b082b087985b51298100cc01c51b3449ca704c0584991c
+P7-常见问题库/07-华为官方支持条目/37-华为计算机搜索不到WLAN或连接WLAN后频繁断网.md,12773,8924c15e47dd73eecdfd11c1b741bca3392c312d29dcb8ca5462b75138aede76
+P7-常见问题库/07-华为官方支持条目/38-华为计算机跨设备剪贴板功能无法使用，复制粘贴失败.md,13641,a4b7f3dc6e6f54fd7276459db955f00f131c6680392723c83be3add962be3565
+P7-常见问题库/07-华为官方支持条目/39-华为计算机无线投屏后播放音视频卡顿、花屏.md,12882,9205011c2971885d0975f7a5c124a295b44a489e4a359a75f1dc92d0e743599e
+P7-常见问题库/07-华为官方支持条目/40-华为Windows电脑如何连接显示器、投影仪、电视.md,12851,ab729534db96f3d9658ccdda32396b36a8bac4d3d07795a349ec511bb4a66303
+P7-常见问题库/07-华为官方支持条目/41-华为Windows电脑与显示器-智慧屏如何连接使用多屏协同.md,12722,6b193b68fb81e7908dc3959071f710ef5cf0894a4d338e2d8d709b9db75fcd34
+P7-常见问题库/07-华为官方支持条目/42-华为笔记本电脑在重载或高温环境下充电慢或停充.md,12878,07ac4055ee0a6a40cdc8f734fc0438fe26df2d48fef44e2df7ba714d1f8b9d9e
+P7-常见问题库/07-华为官方支持条目/43-华为Windows笔记本充电时电池电量不增加.md,12664,ea898edfd94c6ad3c9d9d272ecf086ecfaf9ebc1b97175db33f5038722695ff6
+P7-常见问题库/07-华为官方支持条目/44-华为笔记本电脑播放视频时耗电快.md,12883,1f1e685a4c77bebeb62679133f5006205d90bdc239c7b80972bfe82f6aa7e7ba
+P7-常见问题库/07-华为官方支持条目/45-华为笔记本电脑睡眠状态下耗电快.md,12717,42d31b281a7cc222e49c0c266666354a5c877090550c390d0d9d9f3e5e95162b
+P7-常见问题库/07-华为官方支持条目/46-华为笔记本电脑使用过程中发热或风扇声音大.md,13011,1d5260194bfac5f8185212f082cb0f0037e5c34a443dd1532c30fcfaa0b6b125
+P7-常见问题库/07-华为官方支持条目/47-鸿蒙电脑小艺慧记功能介绍.md,13276,d1b615cbf06164a57c6e97aa5b4fed876ec089e859acac30a0f2411c0b78e6cd
+P7-常见问题库/07-华为官方支持条目/48-鸿蒙电脑小艺基础操作.md,12887,bd98b99ad6fa81974cf84bee9c7bfc5dc15a529d366054443de9e79c799a9177
+P7-常见问题库/07-华为官方支持条目/49-鸿蒙电脑小艺搜索的功能介绍.md,13182,24319293acfa5e0c787cd73483af3596f82e303e12de543e3efd1301b69f1773
+P7-常见问题库/07-华为官方支持条目/50-鸿蒙电脑在系统流畅性上做了哪些升级？鸿蒙电脑带来了哪些性能的提升？.md,13009,a09ff2dfd1ed138ffa4ec66929e63bf250dcd8359a5700e4dd8143ab973ecae4
+P7-常见问题库/07-华为官方支持条目/51-鸿蒙电脑如何管理应用访问权限.md,13259,6fdc9ae0242c06e81de9d156a2678bcf03724b831fe1d5f1cd081a84f3a65754
+P7-常见问题库/07-华为官方支持条目/52-鸿蒙电脑如何使用控制中心.md,12852,7e8bf0a980f14808a2335a2b6e75d29c5b525a37175286a979011408fcbcc23c
+P7-常见问题库/07-华为官方支持条目/53-鸿蒙电脑如何创建应用分身.md,12948,f3a36b799f486490491ef862c692f350831bb11b67cc4c23c2ad714c376d874e
+P7-常见问题库/07-华为官方支持条目/54-鸿蒙电脑如何查看设备信息.md,12769,ee94846db5fb17918344f1e076956a4bad9a20cf9ad9e5bea12f332724040aaa
+P7-常见问题库/07-华为官方支持条目/55-鸿蒙电脑如何通过隐私灯了解权限使用.md,13048,de976cb2ff90afc3504ed943af9b24f7beea9aca0438b480077ab513edd65f34
+P7-常见问题库/07-华为官方支持条目/56-了解鸿蒙电脑常用快捷键和热键.md,12746,dba9b61aa84684e131730a860a5115a169768831db1a1cd1329c5ae1b331c3ab
+P7-常见问题库/07-华为官方支持条目/57-了解鸿蒙电脑常用触控板手势.md,12713,434b2dd8793aae9fbc2f044ea4797637b82dd26f92c6df58e20bc2c023328813
+P7-常见问题库/07-华为官方支持条目/58-华为鸿蒙电脑如何使用华为分享功能.md,13393,a8b7ca0b1313a2df6b33adacc23b2f6547658ea188a16830899fde21ec34639a
+P7-常见问题库/07-华为官方支持条目/59-鸿蒙电脑如何进行跨设备复制和粘贴.md,13338,7425c974575824ac0f73f0c1d7d9c925d44154b5beef083d34c12999b88eb5ac
+P7-常见问题库/07-华为官方支持条目/60-鸿蒙电脑如何进行多设备间通信能力共享.md,13489,f418e785a63d774d1c46bf23f9f25082bd4ee2f86b8f0b543e0683ed5976c824
+P7-常见问题库/07-华为官方支持条目/61-其他品牌或者其他系统的电脑数据是否支持迁移至鸿蒙电脑.md,12985,fb315aec7fa449610ce64a6f1438badf169fe44c30570a0fe97b2c5c9b6f7766
+P7-常见问题库/07-华为官方支持条目/62-华为鸿蒙电脑如何连接无线网络.md,12778,03dce56797c528add9e69d00c40b48402b14d91347116837b66680c131690ce9
+P7-常见问题库/07-华为官方支持条目/63-华为鸿蒙电脑如何连接隐藏的无线网络.md,13186,8281f5b76ce5af798743393e2e61dd65befdf0c06c1183e05974baaae18b6568
+P7-常见问题库/07-华为官方支持条目/64-华为鸿蒙电脑如何连接蓝牙-星闪鼠标.md,12872,dc471365aff47c16c1069127e2a96e6c2008c556f55189379a5158d11c498a9a
+P7-常见问题库/07-华为官方支持条目/65-华为鸿蒙电脑部分应用无法上网问题排查.md,12777,895d84b7661035a6f3f1e8beff7efafcf7d84436bcad4a3dec8074430142c392
+P7-常见问题库/07-华为官方支持条目/66-华为鸿蒙电脑如何使用网络邻居访问其他电脑、NAS等设备.md,12699,da12ca5e0a6fc66c450d9f7495531c617cdc741e354bb134e9cea43cb2d22855
+P7-常见问题库/07-华为官方支持条目/67-华为鸿蒙电脑如何安装用户证书并连接公司网络.md,13616,77e03124d1e8a0f6f9733352ca40502bbd9439af68381940667f8064cb31e984
+P7-常见问题库/07-华为官方支持条目/68-使用数据克隆，将 Windows 电脑数据迁移至鸿蒙电脑.md,13327,6c1e0b3a2936c5a2433486667689a16b3a0944206b3c6f70cba9834f5d48320f
+P7-常见问题库/07-华为官方支持条目/69-华为鸿蒙电脑-平板电脑如何打印文件.md,12547,30e69a30f1dc578fb31e0efa0d838bcc54d44fddcdf365816fc320645d1762fe
+P7-常见问题库/07-华为官方支持条目/70-华为鸿蒙电脑如何设置麦克风.md,12988,b67860533a1e04035ba07b73a7bec72ac4ec10a2150de19f9418ba76c50944d9
+P7-常见问题库/07-华为官方支持条目/71-华为鸿蒙电脑如何连接蓝牙耳机.md,12777,8b535ecb9b672007001e28462b3aec3fc651fccc6cb4b5e7f654010a7cd33128
+P7-常见问题库/07-华为官方支持条目/72-华为鸿蒙电脑外接存储设备不识别问题排查方法.md,13687,2d50b831d99bf2129b3d040eb8b3d83ba6328a9a6f0edaecb8bdd531418c87bf
+P7-常见问题库/07-华为官方支持条目/73-华为鸿蒙电脑如何使用外接存储设备.md,13407,3153d6114509499143821edb8f92b5dcdb99d9c49f60480fe4ffc23c307a583d
+P7-常见问题库/07-华为官方支持条目/74-华为鸿蒙电脑有线连接显示器出现黑屏-花屏-闪屏等问题的排查指导.md,13401,a5fe1742ae708c25e70ce31a868cad6de99c309458aab1c34cf6e31e3abcf406
+P7-常见问题库/07-华为官方支持条目/75-华为鸿蒙电脑外接音频设备故障排查.md,13075,11414f72477e66ca5e6c83bcef01e855d7afdcfecbc685d3eb393359697913d2
+P7-常见问题库/07-华为官方支持条目/76-华为鸿蒙电脑-平板电脑无法连接打印机、扫描仪或打印、扫描失败.md,13230,52b044f0fdfb3fe2f2d31482e7319d401e8c826dfd7386328b43079bdc0abeae
+P7-常见问题库/07-华为官方支持条目/77-华为鸿蒙电脑如何设置电池保护.md,12700,cd6bbd8a7db314162d9f66274c40795b4c34ea06df652f651397289e1870aced
+P7-常见问题库/07-华为官方支持条目/78-鸿蒙电脑如何延长续航时间.md,12945,440f5af458303a75553c35d33732856541d880f1cecac71e77ca7cac9599fc35
+P7-常见问题库/07-华为官方支持条目/79-华为鸿蒙电脑使用过程中发热或风扇声音大.md,13119,2e1184a441bb13f4f83af3f246ab15de1a9e98f294f0ea8f20ff9fa1ffea3cba
+P7-常见问题库/07-华为官方支持条目/官方支持索引.csv,22488,2bb68efbc2cbb7086ab028a370ea11315de1d2d6d1f35f2ac56fbd073a4b69dc
+P7-常见问题库/08-综合排障指南/00-总索引.md,2296,64c9351244728038bb2306de48e0606122fa0363970be4a101b6bad9e5f1fb38
+P7-常见问题库/08-综合排障指南/01-Windows电脑身份与环境信息采集.md,5880,af7bd7b793b3df45ee75db41621030b420794f4ed085c05c70ec5799d3f0e1e9
+P7-常见问题库/08-综合排障指南/02-Windows驱动、电脑管家与基础更新.md,5340,bfbad9639df52c3c06aab9fedbd4e42e45f519685ee69be47734f789be547391
+P7-常见问题库/08-综合排障指南/03-Windows更新失败与系统恢复决策.md,5466,1247b5298e1b628ccc7bc2808b74443fa88ebf01a0c7aad5623abad1448fe823
+P7-常见问题库/08-综合排障指南/04-Windows密码、账号与BitLocker恢复.md,5530,fbd05bc12ccb6594205943caa0fd339c6e04531386c40c361e46402acb50639a
+P7-常见问题库/08-综合排障指南/05-Windows磁盘空间与开机缓慢.md,4979,17804e6a77826b0cc56a1e6603033b95e1221bdf3ae04b4138360b9817e62846
+P7-常见问题库/08-综合排障指南/06-Windows键盘、触控板与触摸屏排障.md,6335,eebb4635b189678bdee105106060745206b51ac68c27dc1767ee91b7e1ee2342
+P7-常见问题库/08-综合排障指南/07-Windows显示、音频、USB与打印外设.md,6472,846a3f2ca3f98bc9c4396dc30802bb6480b3a78bb667c23c3a5e911f554c8668
+P7-常见问题库/08-综合排障指南/08-Windows WLAN连接、慢速与断网.md,6130,4041d507dc6a25f085e11fc6fffa8a1b90baaf0d714be519285a30951f35831e
+P7-常见问题库/08-综合排障指南/09-Windows蓝牙设备完整排障.md,5781,15cd9c8dd7a776b0dd4f5a36f6ee4b5cf86bbea21279b9bad357abcda13f5d0f
+P7-常见问题库/08-综合排障指南/10-Windows投屏、多屏与跨设备协同.md,7206,3fe190287df273c9e637849155911459ddd6f7050a102b834c6c1e315e6736cb
+P7-常见问题库/08-综合排障指南/11-Windows电池、充电、续航与散热.md,6444,2518cd7384d223777e26be33cfa6e5f7e007b3f3966c8685e73ff2f509c3f492
+P7-常见问题库/08-综合排障指南/12-鸿蒙电脑小艺与AI能力使用核验.md,5964,281cf2b8236d2b778c83853756e02be286c1828d17c190752d63d89329bb7db0
+P7-常见问题库/08-综合排障指南/13-鸿蒙电脑权限、设备信息与输入操作.md,7399,531937927adb2539e2d0befe7d73cc77289c16d6eef392e0f4809c99fd92abdd
+P7-常见问题库/08-综合排障指南/14-鸿蒙电脑无线网络、公司网络与NAS.md,6223,02e7965bcdf9897a0e45c538c456a22aa707d6680d0ac1bc30cc035f234bcd7c
+P7-常见问题库/08-综合排障指南/15-鸿蒙电脑分享、剪贴板与多设备通信.md,6281,dcc224f67885e8346e60474e894f20ce705d268ba605489ca2aec74f281b46d4
+P7-常见问题库/08-综合排障指南/16-Windows迁移至鸿蒙电脑完整流程.md,5305,924781f7a3284ad91a4ce2dbeb32018494493f03e1534170621a8fc827a8bfd9
+P7-常见问题库/08-综合排障指南/17-鸿蒙电脑存储、显示、音频与打印外设.md,7424,0ff2d9cd264c58c8a750a0ad9eaecf8a03223499b231a034a2018d9c38a8e06e
+P7-常见问题库/08-综合排障指南/18-鸿蒙电脑电池保护、续航与散热.md,5536,482881a3783f1099826c8718af285f54d6033055bc768947019c594f7948183f
+P8-客户场景库/01-政企/政企场景问题.md,19402,c191ea58eb71ce18a103a747b8bff1454c1a4069313473f7b27447977d3a5f0b
+P8-客户场景库/02-教育/教育场景问题.md,19943,ab60a0716abb97f237bbc98b57261c43405dab37afa8c6925b6576a82b027a8a
+P8-客户场景库/03-中小企业/中小企业场景问题.md,19218,cc9a84fb16f8d0a9bbc40af8b997ab0e3076916a51eeb9e595a65d66f43089c7
+P8-客户场景库/04-门店/门店场景问题.md,17787,9fb404e530abbce70849bb2a14ba7eeefd6a6888dcd973c34f5f10fa96eb6a4a
+P8-客户场景库/05-内容创作/内容创作场景卡.md,18448,a6bcfd8431ac6e7f38a028467bc8058c8b867ee5eb12803cf032e5490d3da88c
+P8-客户场景库/06-移动办公/移动办公场景卡.md,18912,8636fbfc9f5acf75e967fac269ddb418b43d76db0291ffa4cce36244d42a0ff3
+P8-客户场景库/07-学生学习/学生学习场景卡.md,18271,c540ac5bfe4f1848e9f98236182542bc73d40d78a7535063824236fe0ed23e00
+P8-客户场景库/08-家庭换新/家庭换新场景卡.md,17445,5d3f6268c370098d197ea86bfe7bcd983ff25ed6abd7bda337d6e83a64c58f91
+P8-客户场景库/09-商务管理/商务管理场景卡.md,18084,42dbc7cd02c13cc51a141d094e5d416ac4b5cc6e8cbf74db5243d5943354f050
+P8-客户场景库/10-售后服务/售后场景问题.md,17857,0b2a16affbc93f36263ae6623c7866322c64a10c43d09fb0435533f2af170e50
+P8-客户场景库/11-企业IT/企业部署场景卡.md,19844,510e9de911866ecff724aa1ca3202624f3124dd003bc5322eec5ec4b9e335fa7
+P8-客户场景库/12-行业场景/00-总索引.md,9294,d576a6d1fa07f42af075fb64c598c66ed3552255414b5a1a27e4d7de25ace629
+P8-客户场景库/12-行业场景/01-政府机关/完整参考案例.md,7615,b63871646f842a015b7d128db30e13eaaea6791bd9697d69cf53af2e66ba342a
+P8-客户场景库/12-行业场景/01-政府机关/客户画像.md,3177,d6e94855fb5eb60f16391bffd32a2eaf752535aa1d9365c7c6e83410087b8a7b
+P8-客户场景库/12-行业场景/01-政府机关/方案输出模板.md,3673,470815c244d906f81f445169c6d82780a7c60ca5053fb9e83023ec5417a6059f
+P8-客户场景库/12-行业场景/01-政府机关/问题清单.md,3258,7c46ddc24fd476c71fb3cded310b5933bf53639f70143ecbeaecc7e8b0252676
+P8-客户场景库/12-行业场景/01-政府机关/验收清单.md,3559,3c30b2ef1440a3d480ad3119ecd8d38bbbc948246466d998b6c5123471d158ae
+P8-客户场景库/12-行业场景/02-央国企/完整参考案例.md,7509,e85a19afdfc9e10f90cb435804d03a6fb4fcc9e2ff89f7bb0ad7430d22da67ca
+P8-客户场景库/12-行业场景/02-央国企/客户画像.md,3115,6c13ce298eb572d81ddc534d8ed3ca408165c3a28616f81824c7b5fbaf826ec9
+P8-客户场景库/12-行业场景/02-央国企/方案输出模板.md,3640,2a9d79e72926beba1f327214254c1e310137dc5d7b48b8e0c0ae0d7b64789d55
+P8-客户场景库/12-行业场景/02-央国企/问题清单.md,3187,3846cf19c2414bf532eec7f6f10d4c2f92219cca1152bdd6599b4ba6c41476b1
+P8-客户场景库/12-行业场景/02-央国企/验收清单.md,3525,ba50cd73578bf1a289ff86fa305acf17e05eb23ab177876d8ed868380b011b78
+P8-客户场景库/12-行业场景/03-制造业/完整参考案例.md,7554,6335642034052840e2afb8372ceef8934c114c47bc6d00a5c0d40172d2266a67
+P8-客户场景库/12-行业场景/03-制造业/客户画像.md,3113,1f6c520bb340a421e6182cc2d9ee3366021bf805cce247045bdfd709de619799
+P8-客户场景库/12-行业场景/03-制造业/方案输出模板.md,3643,2feca2638583dccad2d43957f03155898ca816db6588e0b61c603604608fb10e
+P8-客户场景库/12-行业场景/03-制造业/问题清单.md,3247,03929179c3b1216bfd4283a3eed0051bc7058ee745e9a3ab4f5af3a1827d4731
+P8-客户场景库/12-行业场景/03-制造业/验收清单.md,3545,889b5008e6c6d9dd47c693586b759354a313bbf9f44b0724976fde4619083b46
+P8-客户场景库/12-行业场景/04-金融/完整参考案例.md,7547,8aa726b3f37d7dc01b7263c5260564a27f5010cceda62dde70055bb8ae691feb
+P8-客户场景库/12-行业场景/04-金融/客户画像.md,3144,dcdcd5e8926906e837d5d899baf7e377bef4372ecb72574041ab607f9303ef6d
+P8-客户场景库/12-行业场景/04-金融/方案输出模板.md,3653,6861e01cec4ea4e9b6ca1acbe3c2e7c820c7a55ecf4ee3c1d640bbd66c63cd8b
+P8-客户场景库/12-行业场景/04-金融/问题清单.md,3225,abbd515fa49b3304688b2334e3b7e1b83a95c8feeb4830ccbbb79ade2f69e3a0
+P8-客户场景库/12-行业场景/04-金融/验收清单.md,3535,be97882d0e71ec85fb812a1bda57749ce4c802e05a10bbf7a780383d7b0c5773
+P8-客户场景库/12-行业场景/05-医疗/完整参考案例.md,7520,98da8f8eb476b5c42df6ae56729ee4015be6cc7f571b30929b8cacc73f6b7b0a
+P8-客户场景库/12-行业场景/05-医疗/客户画像.md,3106,be742e9d81d84f50a8961d36011aee77a2dd40253a45794be879fb3baac7b62e
+P8-客户场景库/12-行业场景/05-医疗/方案输出模板.md,3620,f6f74004615de9bd93d97c34633d5207086978c402b7741dacea2af64d177763
+P8-客户场景库/12-行业场景/05-医疗/问题清单.md,3219,c7545805c4480e969179b350de47fe26d1c18950fcbfa462101ece97a29a5e8e
+P8-客户场景库/12-行业场景/05-医疗/验收清单.md,3533,2cc2ad7da45dacec460ac00a6ed41e421363b3939b2f22449c29570e672d8692
+P8-客户场景库/12-行业场景/06-教育管理/完整参考案例.md,7551,4ae2d614e56a4b506364ccab698ff74e41029858acef8f693249a02735dfa614
+P8-客户场景库/12-行业场景/06-教育管理/客户画像.md,3138,65d3ba9be8926a4c74f46852893d8c2016118ff9d312570cfcb1a56d4c834ea1
+P8-客户场景库/12-行业场景/06-教育管理/方案输出模板.md,3658,48537b16febed2f4567762c4e93335d0740876879206ff3b6c9caaa89944a7b0
+P8-客户场景库/12-行业场景/06-教育管理/问题清单.md,3208,cb1e38e9274b71760e844c3fdfab87b874f0cf1d68384a751094324ebecf2832
+P8-客户场景库/12-行业场景/06-教育管理/验收清单.md,3538,9546d555e2ebc5703dcd888784f5de26ac8f7c7f8c36a8876803a87f4e058f34
+P8-客户场景库/12-行业场景/07-高校教师/完整参考案例.md,7590,2384b57355a589b93a843e3fd1db3c4b55f6ec33f83dab67937e370119a35867
+P8-客户场景库/12-行业场景/07-高校教师/客户画像.md,3162,9a439b1fba9d53b84462f3cc0e3e5a3bf65a61e713c5618f669573c56fd4833f
+P8-客户场景库/12-行业场景/07-高校教师/方案输出模板.md,3667,126c0218ea4b39715dd33d5f9b0ae4ed1e4937ffe1f0a89700b0d580715a6bd4
+P8-客户场景库/12-行业场景/07-高校教师/问题清单.md,3226,b62dac642697d71498b00385ac2a174c7049daaa077fbe3cc0d81b8db65f22ce
+P8-客户场景库/12-行业场景/07-高校教师/验收清单.md,3568,1a621509461b1f78b433ba7cdc60fcad276a716f6adf6fda409209117f2443cd
+P8-客户场景库/12-行业场景/08-高校学生/完整参考案例.md,7473,72ddb1aec11a0242255c119b1bab32d5122572a77dcb596f198d4e743e9bb5c8
+P8-客户场景库/12-行业场景/08-高校学生/客户画像.md,3075,59f6f3c16f399f5741fbf863bf28dd09041076b9d902df6882794924051382dd
+P8-客户场景库/12-行业场景/08-高校学生/方案输出模板.md,3604,4c70f6e68c4becee0fd95e4c86d8e7dc353ff1f9a626f18ce3e9f1559a95d40e
+P8-客户场景库/12-行业场景/08-高校学生/问题清单.md,3169,86b231bdcdf55d435cea5af2023bfc3c4dbfb051fe34e0a6c6d2bb7101388e9e
+P8-客户场景库/12-行业场景/08-高校学生/验收清单.md,3532,ed24d99be7e359d23733769f24ab862b65a9b08d14c933921afaa3293e091090
+P8-客户场景库/12-行业场景/09-中小学教师/完整参考案例.md,7480,de6d8b495861e515857d610ccd18c707f2aebf59dbf027404b6758d59ea47f21
+P8-客户场景库/12-行业场景/09-中小学教师/客户画像.md,3087,8ac8ddbc1e5bcdff7a3a5e049b94b2a3f9a7f7996261761634159f73aa929841
+P8-客户场景库/12-行业场景/09-中小学教师/方案输出模板.md,3613,bf803b20b7e9eeaf7ea41b87632edc918bf8a6290d53466bed7d8b3f84231b97
+P8-客户场景库/12-行业场景/09-中小学教师/问题清单.md,3191,e9a4e1f5a3ce637e4baeb40faa438e95339f7197fce4713b25df21a8b6587493
+P8-客户场景库/12-行业场景/09-中小学教师/验收清单.md,3562,4d89cb1230530701f497d657ac53d42753bd634f58db69d085c2330e5d622198
+P8-客户场景库/12-行业场景/10-中小学生家庭/完整参考案例.md,7470,bc9a9d36fa8531c2af6dfbc4dfa961e615fb39d28fb09c099183ea44db7a849f
+P8-客户场景库/12-行业场景/10-中小学生家庭/客户画像.md,3075,5348322389b67f9c11109a97a36c2458b88f60959fe4ae3563e4aaa790c8d1e5
+P8-客户场景库/12-行业场景/10-中小学生家庭/方案输出模板.md,3601,1c20165451a58a3745af436c805a11067b1e333ce057ca7250a1162da93c8427
+P8-客户场景库/12-行业场景/10-中小学生家庭/问题清单.md,3154,da907906239408f2464b4e02ae27ad91f9f20a42469b65a9d8bfb2652e5c19e7
+P8-客户场景库/12-行业场景/10-中小学生家庭/验收清单.md,3550,5f5abf9f28031299d7dbc99a78d88d883ec406b7671c540f0f98e9b018550bd7
+P8-客户场景库/12-行业场景/11-科研机构/完整参考案例.md,7552,7505c835f543327e301dd64c675b707d2b2b5d3434c826f30502f4d995bcd01e
+P8-客户场景库/12-行业场景/11-科研机构/客户画像.md,3127,d874d68cb8ea095fd688f83461312eaf1c4a5cfb75733f857bb0583b1b71a0c6
+P8-客户场景库/12-行业场景/11-科研机构/方案输出模板.md,3642,ca674c65df578e8fb3731b1239b2d2c79d4b7a6880e4dfa40a73adc39eb9770f
+P8-客户场景库/12-行业场景/11-科研机构/问题清单.md,3237,0b0d9f6d7b1e2204635b2a5d829604e6b12695d2996875e5ed42e14e583fcf24
+P8-客户场景库/12-行业场景/11-科研机构/验收清单.md,3571,4703c6596d6fd9995609ca44b28cf31c5d9ab7d65965793c85dd811de7886049
+P8-客户场景库/12-行业场景/12-软件开发/完整参考案例.md,7478,1a9d66bcf10a435d497bfd4a2f0a99cc2ae1e96a20f49d2ceac95a55fd3f3ff7
+P8-客户场景库/12-行业场景/12-软件开发/客户画像.md,3072,96d7ce699da357d957c2063be3ce5dbe38fa046ed062ce0c25f73b50cb492e25
+P8-客户场景库/12-行业场景/12-软件开发/方案输出模板.md,3619,df8cd82070ae2ac19ecbd9e0060cdf7ad5ce711e1676d3accd8ce17263ef6ed1
+P8-客户场景库/12-行业场景/12-软件开发/问题清单.md,3160,3f9cfa411ea21cdd0fc3779054552fdbfa8d2afc5eb9354d61f1deacf5b7d484
+P8-客户场景库/12-行业场景/12-软件开发/验收清单.md,3532,c2c86b71adf032c302c4807ce24401a03b2ffaed683b69a7b8ee3080c8ef0392
+P8-客户场景库/12-行业场景/13-设计创意/完整参考案例.md,7493,5ffce5c441ea90d76ecf7d085ddc0ec6c4dbdd2e2ee595e4e639b0e8d686b2c8
+P8-客户场景库/12-行业场景/13-设计创意/客户画像.md,3110,affa00bdc0438800f58c523172e9049c9ae0cda73711a76ecbfb8055385d24a8
+P8-客户场景库/12-行业场景/13-设计创意/方案输出模板.md,3633,1f5861995b8225eb31cebf8e1bb59efec5b89bcc555a478383dbea8cedf57265
+P8-客户场景库/12-行业场景/13-设计创意/问题清单.md,3190,f86255ffb004994cc00e071ea9008d9e930eb6e49919c9820d7886ad48002154
+P8-客户场景库/12-行业场景/13-设计创意/验收清单.md,3526,15e616f08601f7f692f5e011b85287b33ab3adbc5cc31ecb849d871b9d1637e9
+P8-客户场景库/12-行业场景/14-视频制作/完整参考案例.md,7533,43d13f50de2b5139cdfaf9268f3d72f48bddd31d8f6ac61e5ed230be50e63d16
+P8-客户场景库/12-行业场景/14-视频制作/客户画像.md,3111,abce582d79fc8f135cd83134e8122161f007859fc8434d46ea73bb943e80d79d
+P8-客户场景库/12-行业场景/14-视频制作/方案输出模板.md,3640,6d4e265e555483c2e42eace037723c727977746ebe4c416e50447946cc3e9597
+P8-客户场景库/12-行业场景/14-视频制作/问题清单.md,3196,3b16d75d0f8bfc1972ba80d927e0af1c0e420bf567cf105dd31534c1bd3ad6c0
+P8-客户场景库/12-行业场景/14-视频制作/验收清单.md,3538,c2c08a33c7e6b9d9e8d4717cb1090a6fbe7c81dab6dbe556e0878fefe941e23b
+P8-客户场景库/12-行业场景/15-媒体编辑/完整参考案例.md,7467,6bd4128b90b48e2f564080273550b9345ec124369d48b7d9aeb5eae588302acc
+P8-客户场景库/12-行业场景/15-媒体编辑/客户画像.md,3087,2fc8e6527d35e2869566c84d644e9679394bd7e1f911b547812594469436604a
+P8-客户场景库/12-行业场景/15-媒体编辑/方案输出模板.md,3625,da347b62eaceb075829e651f9bc8ee0145e4b55d5bf7c53661347cc388cd90c1
+P8-客户场景库/12-行业场景/15-媒体编辑/问题清单.md,3160,3b4fc691fe5d79743ca75f807a8feb5b38d01475571c939c1f662fda48b9059c
+P8-客户场景库/12-行业场景/15-媒体编辑/验收清单.md,3523,22df06bcb8ddd11df6c99cb2c14c1e1931c5239c4fc4d1317156f8aba809e3cd
+P8-客户场景库/12-行业场景/16-咨询服务/完整参考案例.md,7446,3a3b196fbe6a33f082609e6a5d4ebfeb41f8bf579d8f5ec3046a0679ea7db3bf
+P8-客户场景库/12-行业场景/16-咨询服务/客户画像.md,3063,2f4f0536410ecb9c6b8671a95b691e45c480ed1b9272e1a328849ef7749b58d0
+P8-客户场景库/12-行业场景/16-咨询服务/方案输出模板.md,3598,77364cce1d5d3cf25c82af07f7c50ccca99c9bdaa001e979537236a39c090724
+P8-客户场景库/12-行业场景/16-咨询服务/问题清单.md,3169,1f76552c5e39534a49b331ae900c024d00843676dd512b067654b7658948670f
+P8-客户场景库/12-行业场景/16-咨询服务/验收清单.md,3535,84c3b57eedabd533521b93bb1f953acd7c42792cbfa78c0119873fccfc325697
+P8-客户场景库/12-行业场景/17-法律服务/完整参考案例.md,7458,7ad6155db677fe8d91a94b265ffc69afce8aef7f5d000955521613ce278494a5
+P8-客户场景库/12-行业场景/17-法律服务/客户画像.md,3084,9f91e5af1c99bbc4ea28df66af8c4908fb96cdbb77491206382a8ac2d53f77e6
+P8-客户场景库/12-行业场景/17-法律服务/方案输出模板.md,3610,734ba51bc344c06c77d4e1157f1ff0fd66865be9439647f934bc57de050caeb0
+P8-客户场景库/12-行业场景/17-法律服务/问题清单.md,3175,3f9c5adb3b0cba15da5148793f20d92861f9b35c2709ef807ca0a8e5ad5d7ec5
+P8-客户场景库/12-行业场景/17-法律服务/验收清单.md,3505,8ec4977164ddadbf075d3fd289a625b5ea0d949319b630c6ff3ae664e78924eb
+P8-客户场景库/12-行业场景/18-财税审计/完整参考案例.md,7496,bdafc0e1ae031c8fca5985998dc7d9e69293f313e66cbd3a926b91bd82a753db
+P8-客户场景库/12-行业场景/18-财税审计/客户画像.md,3094,b8e736cb96bad7edb07a42d2f1b0356da1b03fd65d95f421108cb5b031370cbf
+P8-客户场景库/12-行业场景/18-财税审计/方案输出模板.md,3620,feb823bbcdca5e8c737f6e17ccbdd1ba7069ddde912e9e473c364bb7192fc75c
+P8-客户场景库/12-行业场景/18-财税审计/问题清单.md,3191,cda7e8a4bf0826606705d4436363dfa624a5cbb6b32031a50ae755f50d88fcb8
+P8-客户场景库/12-行业场景/18-财税审计/验收清单.md,3552,d2c3325201df1aad817da1c35fbee8558d52c474412cf52eb8caffd7cf0ea9d3
+P8-客户场景库/12-行业场景/19-房地产/完整参考案例.md,7449,8ee00c1af2e5d68443e5c7e0b258e0e7fad9be86bdfb85f864a4b18333299495
+P8-客户场景库/12-行业场景/19-房地产/客户画像.md,3078,05c5bbc564e7943fdffb9872e042359ffe84ebb5aedcad81c030962fed9f007f
+P8-客户场景库/12-行业场景/19-房地产/方案输出模板.md,3604,7e05787d985342f4f28135dab29bb3f797edd9b292f414af92c59a89d088d416
+P8-客户场景库/12-行业场景/19-房地产/问题清单.md,3172,35ae2f9c381302cedbb3fafe3d4f7c7885b487e94de3488855a1d91093cc74d2
+P8-客户场景库/12-行业场景/19-房地产/验收清单.md,3532,c8c50e5e5fc0d0001fec769e9ee0dc69128ded16b8a4df045711055befe1aef1
+P8-客户场景库/12-行业场景/20-建筑工程/完整参考案例.md,7499,0eb952f2937b35112432f9bc828a3c380cf8c4bd8854a256987b47e2cdc8e66b
+P8-客户场景库/12-行业场景/20-建筑工程/客户画像.md,3112,4c47504cc3ee4bf82f8f044a2cef932194219316364ee368eaee13b3be73067b
+P8-客户场景库/12-行业场景/20-建筑工程/方案输出模板.md,3632,73b510f943daa36719c1a695aebda94f460ea7eb4c99f044e0381ca73927b710
+P8-客户场景库/12-行业场景/20-建筑工程/问题清单.md,3180,d30f0734ced2923aff363de811f1ea4ab0c5ad8cc605c40eb39d6c03e0a2eb62
+P8-客户场景库/12-行业场景/20-建筑工程/验收清单.md,3566,1dad2e38b61ddc881b9c5b666223d05b7b2974353e8903157d3b1dd7eeb929ea
+P8-客户场景库/12-行业场景/21-零售门店/完整参考案例.md,7500,0e0a32033cc251b78b26ba34d7e70f338ab0d2c2a657a3dd7437fc792bbf881f
+P8-客户场景库/12-行业场景/21-零售门店/客户画像.md,3105,cbcbe4119009ffef906b0cc5c63d8ba7b09fa9a98f685772997d0e1ea7e6a5eb
+P8-客户场景库/12-行业场景/21-零售门店/方案输出模板.md,3618,d6624c38b6f1d0396558b5d5571f0c79f7f3da2b54af8e6c2a92797241876b41
+P8-客户场景库/12-行业场景/21-零售门店/问题清单.md,3192,791c0f6f1cec1f228cad920f7184b9eedd5a4bc91d71fdac43e65a42e8961f5c
+P8-客户场景库/12-行业场景/21-零售门店/验收清单.md,3535,b09b956de26b8b2699ead19b8660050e5c6583365ec3d94dc9567e56121da5fa
+P8-客户场景库/12-行业场景/22-酒店文旅/完整参考案例.md,7467,a9eaeb161e66ff04b8244cdada60b72585bdd76840416951605c78ebd0f2f455
+P8-客户场景库/12-行业场景/22-酒店文旅/客户画像.md,3075,72828735d18f19dee7b1894d52ac25bdfcaa1639fcac85f1adfb0eadb0bdb855
+P8-客户场景库/12-行业场景/22-酒店文旅/方案输出模板.md,3601,a8a9b44ae4a6ee2f7d41dbccf6ad17d5c89c3dc2b662ab7fa7be5d43e84464bc
+P8-客户场景库/12-行业场景/22-酒店文旅/问题清单.md,3193,25aa1ed7b87a3352367d46f6eeff711e7dc10b839ec2371d32e49b7931a2ce8e
+P8-客户场景库/12-行业场景/22-酒店文旅/验收清单.md,3532,4a936cfa05ac4ffcd498f41c125b80497e0eec7b07bc30f17f3d95007e4d44f9
+P8-客户场景库/12-行业场景/23-交通物流/完整参考案例.md,7454,85406093b7054d9cba9180d43b971ae9201e4f159b6a443cff3a7c3744054c92
+P8-客户场景库/12-行业场景/23-交通物流/客户画像.md,3075,5e5ea400153b803a90c185bd1e654d0e4447bd0e8f80f27122368c2f6ce974a5
+P8-客户场景库/12-行业场景/23-交通物流/方案输出模板.md,3615,fe18dc727bc67b8a4d310afbcb75bb22fb9b84347a49d9f054811b996cacee04
+P8-客户场景库/12-行业场景/23-交通物流/问题清单.md,3157,f464e679c2a5399fd9e4635e4869a46883ebd65a6e3ad8141a13f9132055c148
+P8-客户场景库/12-行业场景/23-交通物流/验收清单.md,3508,02b64ae9a09d341efc8d9e1263c0addf274233092b5c76f5ca59c05c6ffd1233
+P8-客户场景库/12-行业场景/24-电商运营/完整参考案例.md,7494,7221c05e86ca130a1cddfa33cc59109f765e3328f50daa61af62d6ff590fcbd6
+P8-客户场景库/12-行业场景/24-电商运营/客户画像.md,3087,de71ae655f5cda992055fac16e9a11ffaf1db1272237a8473e81679288760a96
+P8-客户场景库/12-行业场景/24-电商运营/方案输出模板.md,3616,6b3179c9ec6944b5c878fc19ca2b9ab46e3fd56c1ca252456665436f06f592bd
+P8-客户场景库/12-行业场景/24-电商运营/问题清单.md,3178,47c0cfeed67628be672d732377174de398100ae1c20c0f612570b35863ec53ec
+P8-客户场景库/12-行业场景/24-电商运营/验收清单.md,3562,954362053ea8dcdb6efd15bb54b5971b5889d53f3c19c8b4b855f23a17b60f46
+P8-客户场景库/12-行业场景/25-销售团队/完整参考案例.md,7452,ff5df3c2fbc5f0779bfa5e0fb4636e49aac8d4f403582920f13fb0bb3a9456e5
+P8-客户场景库/12-行业场景/25-销售团队/客户画像.md,3069,7e029e5940bead261b74eb8a4e4fbc57d52fa712a984dadd170a0c574bf055a8
+P8-客户场景库/12-行业场景/25-销售团队/方案输出模板.md,3618,395f7bf036d461bf7e606f48de4bedc52bdffa6b19206a4be5f97dd14b1f2bb2
+P8-客户场景库/12-行业场景/25-销售团队/问题清单.md,3144,146d1cc9e765f73f7660d9a59cf2cc62048a16adfd05a5876f9fdeec29aa7b7f
+P8-客户场景库/12-行业场景/25-销售团队/验收清单.md,3499,4fc4abe6f94c990f48963d2b7be412fd8deab9c79a0a37248072fa85ab26bddc
+P8-客户场景库/12-行业场景/26-人力资源/完整参考案例.md,7512,742ecd27c2093453465cd9e7212a7efff07b53ca367d936bb5473424b218b75c
+P8-客户场景库/12-行业场景/26-人力资源/客户画像.md,3118,fb6cdd41561a7414a77f07787e30705fca8f6697e2cac3ffdfc4ae20be437462
+P8-客户场景库/12-行业场景/26-人力资源/方案输出模板.md,3633,2a31d9659c0e5e31db9dbc194571bb324f7609e0a2c67de395ae1d2dcc1f5555
+P8-客户场景库/12-行业场景/26-人力资源/问题清单.md,3184,40cb34edeac44520724684a1dbe52fdbbe355e765f74ca00f80837e47babed9b
+P8-客户场景库/12-行业场景/26-人力资源/验收清单.md,3538,4eb3357f3decdc7a3abe954c86cd2c0001c229770d6d88e4719f6aaf8efb2a44
+P8-客户场景库/12-行业场景/27-行政管理/完整参考案例.md,7521,6d1e9c11bb54c373144ea3848f8c816e72fbd8c33a3eb7c3835fd8dbcb2e8b7c
+P8-客户场景库/12-行业场景/27-行政管理/客户画像.md,3102,f9f12a66eafe318a4e0f5e7de90455f07290b03a69be7a777dde61de8dde3594
+P8-客户场景库/12-行业场景/27-行政管理/方案输出模板.md,3628,915fb0d3ab00843407f15ccb219c84e651477a12358434eff90c2f62b780946f
+P8-客户场景库/12-行业场景/27-行政管理/问题清单.md,3199,38e9f9e8b915e5feb8499360d4b91001fc39f24833330c62f9b7d76e431e5b68
+P8-客户场景库/12-行业场景/27-行政管理/验收清单.md,3535,f37b44d2a9291ab77b166d3e5f2eac5d7ac5a45cee1ef61578ecdd513c626864
+P8-客户场景库/12-行业场景/28-企业高管/完整参考案例.md,7455,e5def14374e1513991127d60ff791c8007f77b6c088f8df5cbbfb43cad6d7985
+P8-客户场景库/12-行业场景/28-企业高管/客户画像.md,3078,3303944838968e686137cdbf73136800b9261688afe706614541dbbd5adb6701
+P8-客户场景库/12-行业场景/28-企业高管/方案输出模板.md,3607,4eac4d1df29b3057d0024b28dc28948b1dc29ab6a1360d3ce4363cb22b7c9ae5
+P8-客户场景库/12-行业场景/28-企业高管/问题清单.md,3163,45389bcc2e8790119c7b1ace26cc1ee7e1798bfbfb8cd55345705cda17ff3ccc
+P8-客户场景库/12-行业场景/28-企业高管/验收清单.md,3547,ed7862a4aa708d05f41f325cb5c2a21ae67963f9d35176ed75a37de9fb42df68
+P8-客户场景库/12-行业场景/29-自由职业/完整参考案例.md,7504,b32727af9011cb1d6f46ef56826153a8a50427d6202dbdf25d25a2228e1d2b5c
+P8-客户场景库/12-行业场景/29-自由职业/客户画像.md,3107,8c28d606de0e2a1b906498f0a4d07e3ce6f7b5f7fa57aca8dfccca3f731f3c65
+P8-客户场景库/12-行业场景/29-自由职业/方案输出模板.md,3636,9ac6245346694fbca135ffae2c78cf6d5766059f3a810cf3c3f4c1af52c5af34
+P8-客户场景库/12-行业场景/29-自由职业/问题清单.md,3193,4fafef720904a0642f8444fa995921d94a00716d5d05d7dfae9fe77fa4231c5a
+P8-客户场景库/12-行业场景/29-自由职业/验收清单.md,3544,d4d1e1cefc1a2368586f5421af3cd4a0905dd6db396f802c664890ef1190ac21
+P8-客户场景库/12-行业场景/30-家庭共享/完整参考案例.md,7488,b8180a7a200cc096dfacdcad154abeaf830950792b935cd262d5b19dd20e703e
+P8-客户场景库/12-行业场景/30-家庭共享/客户画像.md,3072,1fc86b2181e4443e83b8519d79f6317a1ebf6e9bd436bc624dc3e6e877e0841a
+P8-客户场景库/12-行业场景/30-家庭共享/方案输出模板.md,3622,629487a40b081fdd5d28c8dd332991b5b44a554effc1906a91ba01d008ee037b
+P8-客户场景库/12-行业场景/30-家庭共享/问题清单.md,3209,5a190bf48aabd11edfa110822f44fb290324b54050033bca03141da1878f79bf
+P8-客户场景库/12-行业场景/30-家庭共享/验收清单.md,3547,d199066134c2bbe9be97a8cff65ad68c70a3c1a4526beb7ae88ccd064381d3f9
+README-大型版说明.md,4290,6619e8ad91e6ef49cdee4f4b4f932f55dc484b7eb752eea6b44afc0bb8a4f7ad
+README.md,5816,7f6daf80a1ede7e67b54470bfbd0bcf0612548305b852899308f7294f3adcedf
+全库导航.md,8271,9b58ea7dd29522ef510a214ada56c66402c16e0f64f63d9c5ba941c0312c3308
+全库统计.json,2164,211f9b169bfffc5f8d7f4c458087c85ec9877acffbb5ebbe45f9ae80b6b14fad
+全库统计与校验报告.md,2769,ac07016c80c9a5914bd5bbee0a0ea973aed0060002933fd974227bc4eb8d00e5
+公开来源总表.csv,194128,04128318fad9cccb07ef2b3bbf8d0fea2fc66509a108e4a0be4e2a9dffc7720b
+导入ima说明.md,7101,8ad700d12f8c74cd9384de5bf9ea5970f83d19ef0d4003cbe1169ac5babf2c78
+版本变更说明_v6.md,4403,8a4040d6b69948e096f907d61275907e86a7505203564b5b2c319d145db8db8d
+版本变更说明_v7.md,1241,1357530dd7fc28d8cfc6fc1944d0475e4f330888c80a29ffb3494cfb9c7f675f
+重点型号构建明细.json,1453,8fd045ddbb668d88277024f910d497b78a2d8392a708af6b37678e6be32ac44a
