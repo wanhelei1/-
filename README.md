@@ -8,7 +8,7 @@
 - **零依赖可跑**：纯 Python 标准库 HTTP 服务 + 随包分发的本地知识库，无 API Key、无第三方包、无网络依赖，评审环境永远有东西看。
 - **证据优先**：结论附文件/章节来源与基准日期；价格只展示带核验日期的官方公开快照，不能安全展示的金额直接转人工核验。
 - **诚实的边界**：知识问答为明确标注的本地 Mock 精选检索；机密的 P4 价格政策由打包脚本自动排除；合规检查保留人工确认项，不冒充可直接发布。
-- **16 项自动化测试**：一条命令验收，2026-10-18 实测 16/16 通过。
+- **18 项自动化测试**：一条命令验收，覆盖独立需求推荐接口与未知需求的证据不足处理。
 
 ## 环境要求
 
@@ -92,7 +92,7 @@ py -3 prepare_public_deploy.py
 ## 使用流程
 
 1. 首页「顾客接待」选择场景（门店零售 / 学生学习），输入客户任务，可补充角色、优先顾虑、软件版本、外设型号和拟核对产品。
-2. 点击「生成接待方案与价格核验」查看轻量接待结果；或点击「运行完整洞察、推荐与合规流程」一次串联洞察、推荐、价格、营销与合规链路。
+2. 输入客户需求，点击「生成具体型号推荐」查看有证据支持的型号与待确认项；也可点击「生成接待方案与价格核验」查看轻量接待结果，或运行完整洞察、推荐与合规流程。
 3. 在「营销内容」选择型号、渠道、人群，单独生成营销草稿及事实依据。
 4. 在「价格核验」查看来源、日期、价格状态和必须人工确认的条件。
 5. 在「知识问答」按问题检索本地知识片段与出处。
@@ -117,7 +117,7 @@ store_growth_workflow.py（跨模块流程装配，模块间不互相复制代�
 knowledge-base/华为PC全板块深度知识库_v7/（本地事实源，公开子集）
 ```
 
-主要接口：`GET /health` · `GET /api/bootstrap` · `POST /api/insight` · `POST /api/workflow` · `POST /api/consult` · `POST /api/knowledge-query` · `POST /api/quote` · `POST /api/marketing` · `POST /api/followups/plan|task|status`。
+主要接口：`GET /health` · `GET /api/bootstrap` · `POST /api/insight` · `POST /api/recommendation` · `POST /api/workflow` · `POST /api/consult` · `POST /api/knowledge-query` · `POST /api/quote` · `POST /api/marketing` · `POST /api/followups/plan|task|status`。
 
 ## 仓库结构
 
@@ -129,7 +129,7 @@ knowledge-base/华为PC全板块深度知识库_v7/（本地事实源，公开�
 ├── customer_insight_agent/      # ① 客户洞察模块
 ├── 3号(1)/                      # ② 推荐引擎 + 检索适配（Mock）
 ├── BLOCK-07/                    # ⑦ 合规模块
-├── tests/                       # 16 项自动化测试
+├── tests/                       # 18 项自动化测试
 ├── docs/                        # 需求与方案 / 系统设计 / 演示与测试
 ├── prepare_public_deploy.py     # 公开包生成器（自动排除受限资料）
 ├── Dockerfile / .dockerignore   # 魔搭 Docker 创空间（0.0.0.0:7860）

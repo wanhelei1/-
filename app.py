@@ -14,7 +14,7 @@ from urllib.parse import unquote, urlparse
 
 from marketing_content_module import generate_marketing_content
 from pricing_module import build_quote_status
-from store_growth_workflow import run_customer_insight, run_store_growth_workflow
+from store_growth_workflow import run_customer_insight, run_customer_recommendation, run_store_growth_workflow
 from follow_up_module import create_plan as create_follow_up_plan
 from follow_up_module import update_plan_status, update_task as update_follow_up_task
 from retrieval_adapter import RetrievalAdapterError, mode_label, retrieve_with_adapter
@@ -192,6 +192,8 @@ class Handler(BaseHTTPRequestHandler):
                 return self._respond(400, _json_bytes({"error": "JSON object required"}))
             if path == "/api/workflow":
                 result = run_store_growth_workflow(payload)
+            elif path == "/api/recommendation":
+                result = run_customer_recommendation(payload)
             elif path == "/api/knowledge-query":
                 try:
                     result = _knowledge_query(payload)

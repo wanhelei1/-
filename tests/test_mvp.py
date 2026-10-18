@@ -95,6 +95,24 @@ class HttpSmokeTests(unittest.TestCase):
         quote = self.post("/api/quote", {"product":"HUAWEI MateBook 14"})
         self.assertIn("status", quote)
 
+    def test_customer_recommendation_endpoint_returns_models_and_evidence(self):
+        result = self.post("/api/recommendation", {
+            "need": "需要一台 OLED 触控屏电脑",
+        })
+        self.assertEqual(result["retrieval_status"], "success")
+        self.assertTrue(result["recommendations"])
+        recommendation = result["recommendations"][0]
+        self.assertTrue(recommendation["product_name"])
+        self.assertIn("fit_assessment", recommendation)
+        self.assertTrue(recommendation["sources"])
+
+    def test_customer_recommendation_endpoint_keeps_unknown_need_unresolved(self):
+        result = self.post("/api/recommendation", {
+            "need": "需要一台适合量子编译和火星通信的电脑",
+        })
+        self.assertIn(result["retrieval_status"], {"no_results", "insufficient_evidence"})
+        self.assertFalse(result["recommendations"])
+
     def test_unified_workflow_endpoint(self):
         result = self.post("/api/workflow", {
             "personas": ["学生"], "scenes": ["学习与网课"],

@@ -40,6 +40,45 @@ def run_customer_insight(payload: Mapping[str, Any]) -> dict[str, Any]:
     return build_insight(dict(payload), _INSIGHT_KB)
 
 
+def run_customer_recommendation(payload: Mapping[str, Any]) -> dict[str, Any]:
+    """Generate a standalone model recommendation from customer needs."""
+    if not isinstance(payload, Mapping):
+        raise TypeError("recommendation payload must be an object")
+
+    hard_conditions = payload.get("hard_conditions", "")
+    if isinstance(hard_conditions, list):
+        hard_text = "\n".join(str(item).strip() for item in hard_conditions if str(item).strip())
+    else:
+        hard_text = str(hard_conditions or "").strip()
+    for extra in (payload.get("required_software"), payload.get("peripherals")):
+        if extra and str(extra).strip():
+            hard_text = "\n".join(filter(None, (hard_text, str(extra).strip())))
+
+    profile = {
+        "need": str(payload.get("need") or payload.get("customer_task") or "").strip(),
+        "customer_type": str(payload.get("customer_type") or payload.get("persona") or "").strip(),
+        "usage_scenario": str(payload.get("usage_scenario") or payload.get("scenario") or "").strip(),
+        "budget_text": str(payload.get("budget_text") or payload.get("budget") or "").strip(),
+        "hard_conditions": hard_text,
+        "preferences": str(payload.get("preferences") or payload.get("concern") or "").strip(),
+        "rejected_features": str(payload.get("rejected_features") or "").strip(),
+        "notes": str(payload.get("notes") or "").strip(),
+    }
+    plan = generate_recommendation_plan(profile)
+    return {
+        "profile": profile,
+        "retrieval_status": plan.get("retrieval_status"),
+        "recommendations": plan.get("recommendations", []),
+        "unresolved_candidates": plan.get("unresolved_candidates", []),
+        "excluded_products": plan.get("excluded_products", []),
+        "warnings": plan.get("warnings", []),
+        "sources": plan.get("sources", []),
+        "plan": plan,
+        "requirements_markdown": render_customer_requirements(plan),
+        "results_markdown": render_recommendation_results(plan),
+    }
+
+
 def _marketing_evidence(result: Mapping[str, Any]) -> list[dict[str, str]]:
     sources = [str(item) for item in result.get("sources", [])]
     facts = []
