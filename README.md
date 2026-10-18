@@ -7,7 +7,7 @@
 - **解决什么问题：** 把需求确认、产品推荐、公开价格核验、营销草稿、3 分钟顾客演示脚本、成交跟进和依据合规检查组织成一条可追溯流程。
 - **怎么运行：** 不需要 API Key，不需要第三方 Python 包，不需要联网；使用随包分发的公开知识库和确定性规则即可运行。
 - **当前边界：** 七步业务环节均有代码实现；演示脚本是可编辑的规则驱动草稿，产品事实带来源，兼容、价格、库存与体验仍须核验。
-- **提交入口：** GitHub 当前地址为 `https://github.com/wanhelei1/-`；ModelScope 尚未配置已验证的公开地址。
+- **提交入口：** GitHub 当前地址为 `https://github.com/wanhelei1/-`；ModelScope 地址为： https://modelscope.cn/studios/cg12323/zhekesongbisaizuizhong-huawei
 
 ## 先看程序流程
 
