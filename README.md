@@ -169,23 +169,15 @@ py -3 -m unittest discover -s tests -v
 
 ## ModelScope Docker 部署
 
-本仓库可以直接作为 Docker 创空间代码来源。创建空间后：
+公开演示空间：[ModelScope 魔搭空间](https://modelscope.cn/studios/cg12323/zhekesongbisaizuizhong-huawei)。该空间使用自定义 `serve.py` 处理网关探测，并由 Dockerfile 将 LFS 管理的 `app.pkg` 解压到 `/app`；更新时保留现有 `serve.py` 与 Dockerfile，只替换筛选后的应用归档。
 
-1. 选择 Docker 运行方式并使用 `master` 分支。
-2. 确认容器监听 `0.0.0.0:7860`。
-3. 将空间设为公开。
-4. 使用无痕窗口访问真实空间地址，并完整走一遍上面的演示路径。
-5. 在最终提交表和 README 中填写真实 ModelScope 地址。
-
-当前仓库**没有配置已验证的公开 ModelScope 地址**，不要把 `https://modelscope.cn/studios/<用户名>/<空间名>` 当成可访问链接。
-
-从完整开发目录重新生成公开部署包时：
+从完整开发目录生成新的公开部署包时，指定一个尚不存在的输出目录：
 
 ```powershell
-py -3 prepare_public_deploy.py --output dist/public-deploy
+py -3 prepare_public_deploy.py --output dist/public-deploy-new
 ```
 
-脚本会自动排除受限知识库目录，并生成 `bundle-manifest.json`。
+脚本会自动排除受限知识库目录，并生成 `bundle-manifest.json`。部署前应核对清单并在无痕窗口验证真实空间。
 
 ## 已知局限与下一步
 
