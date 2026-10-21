@@ -27,6 +27,8 @@ DEFAULT_KB_ROOT = (
 # list small makes the offline demo predictable and keeps citations auditable.
 CURATED_DOCUMENTS = (
     Path("README.md"),
+    Path("P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook 14/产品事实.md"),
+    Path("P1-产品参数库/01-鸿蒙电脑/HUAWEI MateBook Pro/产品事实.md"),
     Path("P1-产品参数库/04-华为商城销售款式/MateBook 14 鸿蒙版销售配置.md"),
     Path("P1-产品参数库/04-华为商城销售款式/商城在售款式快照.md"),
     Path("P2-卖点话术库/00-使用说明/话术事实边界.md"),
@@ -68,6 +70,7 @@ class MockDocument:
     line_start: int | None = None
     line_end: int | None = None
     demo: bool = True
+    product_metadata: Mapping[str, Any] | None = None
 
     def as_result(self, score: float) -> dict[str, Any]:
         return {
@@ -81,6 +84,7 @@ class MockDocument:
             "line_start": self.line_start,
             "line_end": self.line_end,
             "demo": self.demo,
+            "product_metadata": dict(self.product_metadata or {}),
         }
 
 
@@ -173,6 +177,18 @@ def _split_excerpts(content: str) -> Iterable[tuple[str, str, int, int]]:
         yield from flush_section(heading, body, section_start, len(lines))
 
 
+def _product_metadata_for_path(relative_path: Path) -> dict[str, str]:
+    """Bind official fact excerpts to the product directory that contains them."""
+    parts = relative_path.parts
+    if (
+        relative_path.name == "产品事实.md"
+        and len(parts) >= 3
+        and parts[0] == "P1-产品参数库"
+    ):
+        return {"product_name": relative_path.parent.name}
+    return {}
+
+
 def _load_documents(kb_root: Path) -> list[MockDocument]:
     documents: list[MockDocument] = []
     for relative_path in CURATED_DOCUMENTS:
@@ -198,6 +214,7 @@ def _load_documents(kb_root: Path) -> list[MockDocument]:
                     section=section,
                     line_start=line_start,
                     line_end=line_end,
+                    product_metadata=_product_metadata_for_path(relative_path),
                 )
             )
     return documents
@@ -291,7 +308,9 @@ class LocalMockRetriever:
             "results": [
                 document.as_result(score)
                 for score, _, document in scored[:top_k]
-                if score >= 0.12
+                # Long customer profiles dilute coverage scores. Keep weak local
+                # hits for the downstream P1 evidence gate to assess.
+                if score >= 0.03
             ]
         }
 

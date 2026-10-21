@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import os
+import threading
 from pathlib import Path
 from typing import Any, Mapping
 
@@ -22,14 +23,24 @@ from modules.recommendation.recommendation_engine import (  # noqa: E402
 
 
 _INSIGHT_KB: KnowledgeBase | None = None
+_INSIGHT_KB_LOCK = threading.Lock()
+
+
+def _recorded_insight_value(customer: Mapping[str, Any], field: str) -> str:
+    entry = customer.get(field, {})
+    if not isinstance(entry, Mapping) or entry.get("status") != "已记录":
+        return ""
+    return str(entry.get("value", "")).strip()
 
 
 def run_customer_insight(payload: Mapping[str, Any]) -> dict[str, Any]:
     """Build the first-stage insight card from explicit customer input."""
     global _INSIGHT_KB
     if _INSIGHT_KB is None:
-        os.environ.setdefault("HUAWEI_PC_KB", str(KB))
-        _INSIGHT_KB = KnowledgeBase(KB)
+        with _INSIGHT_KB_LOCK:
+            if _INSIGHT_KB is None:
+                os.environ.setdefault("HUAWEI_PC_KB", str(KB))
+                _INSIGHT_KB = KnowledgeBase(KB)
     return build_insight(dict(payload), _INSIGHT_KB)
 
 
@@ -47,13 +58,17 @@ def run_customer_recommendation(payload: Mapping[str, Any]) -> dict[str, Any]:
         if extra and str(extra).strip():
             hard_text = "\n".join(filter(None, (hard_text, str(extra).strip())))
 
+    preferences = payload.get("preferences") or payload.get("priority_concerns") or payload.get("concern") or ""
+    if isinstance(preferences, list):
+        preferences = "、".join(str(item).strip() for item in preferences if str(item).strip())
     profile = {
         "need": str(payload.get("need") or payload.get("customer_task") or "").strip(),
+        "customer_task": str(payload.get("customer_task") or "").strip(),
         "customer_type": str(payload.get("customer_type") or payload.get("persona") or "").strip(),
         "usage_scenario": str(payload.get("usage_scenario") or payload.get("scenario") or "").strip(),
         "budget_text": str(payload.get("budget_text") or payload.get("budget") or "").strip(),
         "hard_conditions": hard_text,
-        "preferences": str(payload.get("preferences") or payload.get("concern") or "").strip(),
+        "preferences": str(preferences).strip(),
         "rejected_features": str(payload.get("rejected_features") or "").strip(),
         "notes": str(payload.get("notes") or "").strip(),
     }
@@ -73,14 +88,17 @@ def run_customer_recommendation(payload: Mapping[str, Any]) -> dict[str, Any]:
 
 
 def _marketing_evidence(result: Mapping[str, Any]) -> list[dict[str, str]]:
-    sources = [str(item) for item in result.get("sources", [])]
+    fact_sources = result.get("evidence_fact_sources", [])
     facts = []
     for index, claim in enumerate(result.get("evidence_facts", []), start=1):
+        source_path = ""
+        if isinstance(fact_sources, list) and index - 1 < len(fact_sources):
+            source_path = str(fact_sources[index - 1])
         facts.append({
             "id": f"F{index}",
             "claim": str(claim),
-            "source_title": Path(sources[0]).name if sources else "",
-            "source_path": sources[0] if sources else "",
+            "source_title": Path(source_path).name if source_path else "",
+            "source_path": source_path,
         })
     return facts
 
@@ -107,10 +125,10 @@ def run_store_growth_workflow(payload: Mapping[str, Any]) -> dict[str, Any]:
 
     insight = run_customer_insight(payload)
     customer = insight.get("customer", {})
-    insight_need = customer.get("needs", {}).get("value", "")
-    insight_scene = customer.get("scene", {}).get("value", "")
-    insight_persona = customer.get("persona", {}).get("value", "")
-    insight_concern = customer.get("concern", {}).get("value", "")
+    insight_need = _recorded_insight_value(customer, "needs")
+    insight_scene = _recorded_insight_value(customer, "scene")
+    insight_persona = _recorded_insight_value(customer, "persona")
+    insight_concern = _recorded_insight_value(customer, "concern")
     insight_priorities = customer.get("priority_concerns", [])
     if isinstance(insight_priorities, list):
         insight_priorities = "、".join(str(item).strip() for item in insight_priorities if str(item).strip())

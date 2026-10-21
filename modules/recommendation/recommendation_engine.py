@@ -68,7 +68,7 @@ _HARD_CUES = (
     "不高于",
     "必须支持",
 )
-_REJECT_CUES = ("不接受", "拒绝", "不能要", "不需要", "不要", "避免")
+_REJECT_CUES = ("不想要", "不接受", "拒绝", "不能要", "不需要", "不要", "避免")
 _NEGATIVE_FACT_PATTERN = re.compile(
     r"(?:不支持|不适用|不兼容|无法|不含|不提供|没有|无|需另购|需单独购买|不包含)"
 )
@@ -93,12 +93,14 @@ class CustomerProfile:
     preferences: str = ""
     rejected_features: str = ""
     notes: str = ""
+    customer_task: str = ""
 
     @classmethod
     def from_values(cls, values: Mapping[str, Any]) -> "CustomerProfile":
         cleaned: dict[str, str] = {}
         limits = {
             "need": MAX_INPUT_LENGTH,
+            "customer_task": 1000,
             "customer_type": 300,
             "usage_scenario": 1000,
             "budget_text": 300,
@@ -124,6 +126,7 @@ class CustomerProfile:
     def explicit_fields(self) -> dict[str, str]:
         return {
             "客户需求描述": self.need,
+            "首要任务": self.customer_task,
             "客户类型": self.customer_type,
             "使用场景": self.usage_scenario,
             "预算范围": self.budget_text,
@@ -134,7 +137,17 @@ class CustomerProfile:
         }
 
     def retrieval_query(self) -> str:
-        return " ".join(value for value in self.explicit_fields().values() if value)
+        # Exclusions constrain ranking; they must not act as positive retrieval terms.
+        return " ".join(value for value in (
+            _strip_rejected_clauses(self.need),
+            _strip_rejected_clauses(self.customer_task),
+            self.customer_type,
+            self.usage_scenario,
+            self.budget_text,
+            self.hard_conditions,
+            self.preferences,
+            self.notes,
+        ) if value)
 
 
 @dataclass(frozen=True)
@@ -222,20 +235,45 @@ def _split_needs(text: str) -> list[str]:
         sentence = sentence.strip(" ，,、\t")
         if sentence and sentence not in parts:
             parts.append(sentence)
-    return parts or [text.strip()]
+    return parts
 
 
 def _extract_rejected(text: str) -> list[str]:
+    """Extract every separately stated exclusion without retaining conjunctions."""
     rejected: list[str] = []
+    cues = "|".join(re.escape(cue) for cue in sorted(_REJECT_CUES, key=len, reverse=True))
+    cue_pattern = re.compile(cues)
     for sentence in _split_needs(text):
-        for cue in _REJECT_CUES:
-            index = sentence.find(cue)
-            if index >= 0:
-                feature = sentence[index + len(cue) :].strip(" ：:，,、 ")
-                if feature and feature not in rejected:
-                    rejected.append(feature)
-                break
+        matches = list(cue_pattern.finditer(sentence))
+        for index, match in enumerate(matches):
+            end = matches[index + 1].start() if index + 1 < len(matches) else len(sentence)
+            feature = sentence[match.end() : end]
+            feature = re.sub(r"^[\s：:,，、]*(?:也|都)?", "", feature)
+            feature = re.sub(r"[\s：:,，、]*(?:也|都)?$", "", feature).strip()
+            # "不想要 OLED 和触控屏" is two independent exclusions too.
+            for item in re.split(r"(?:、|和|及|以及)", feature):
+                item = item.strip(" ：:，,、 ")
+                if item and item not in rejected:
+                    rejected.append(item)
     return rejected
+
+
+def _strip_rejected_clauses(text: str) -> str:
+    """Keep the affirmative part of a need; exclusions are assessed separately."""
+    kept: list[str] = []
+    for sentence in _split_needs(text):
+        positions = [
+            sentence.find(cue) for cue in _REJECT_CUES
+            if sentence.find(cue) >= 0
+        ]
+        if not positions:
+            kept.append(sentence)
+            continue
+        affirmative = sentence[:min(positions)].rstrip(" ，,、；;但也").strip()
+        # A speaker prefix (for example, "我不想要…") is not a positive need.
+        if affirmative and affirmative not in {"我", "我们", "客户", "顾客", "用户", "也", "都"}:
+            kept.append(affirmative)
+    return "；".join(kept)
 
 
 def _parse_budget(text: str) -> tuple[dict[str, Any] | None, str | None]:
@@ -405,11 +443,17 @@ def _ensure_candidate(
     return candidate
 
 
+def _is_p1_product_fact_source(source: SourceReference) -> bool:
+    path = (source.local_path or "").replace("\\", "/")
+    return "P1-产品参数库/" in path and path.endswith("/产品事实.md")
+
+
 def _add_fact(
     candidate: _Candidate,
     field_name: str,
     value: Any,
     source: SourceReference,
+    evidence_kind: str = "unverified",
 ) -> None:
     text = _values_to_text(value)
     if not text:
@@ -420,6 +464,7 @@ def _add_fact(
             "value": text,
             "source_ids": [source.id],
             "traceable": source.traceable,
+            "evidence_kinds": [evidence_kind],
         }
     )
     if source.id not in candidate.source_ids:
@@ -507,26 +552,42 @@ def _build_candidates(
             candidate = _ensure_candidate(candidates, row_name, None, None)
             sellpoint = row.group(2).strip()
             classification = row.group(3).strip()
-            _add_fact(candidate, "专区公开卖点（历史快照）", sellpoint, source)
+            _add_fact(
+                candidate, "专区公开卖点（历史快照）", sellpoint, source,
+                evidence_kind="snapshot",
+            )
             if classification:
-                _add_fact(candidate, "知识库归类说明（非产品参数）", classification, source)
+                _add_fact(
+                    candidate, "知识库归类说明（非产品参数）", classification, source,
+                    evidence_kind="context",
+                )
 
         for name in names:
             candidate = _ensure_candidate(candidates, name, product_id, model)
             if source.id not in candidate.source_ids:
                 candidate.source_ids.append(source.id)
+            evidence_kind = "official_spec" if _is_p1_product_fact_source(source) else "unverified"
             if metadata_name and name.casefold() == metadata_name.casefold():
                 for field_name, value in _metadata_facts(metadata):
-                    _add_fact(candidate, field_name, value, source)
+                    _add_fact(candidate, field_name, value, source, evidence_kind=evidence_kind)
             names_in_text = _extract_product_names(text)
             is_source_specific = name.casefold() in {
                 value.casefold() for value in _extract_product_names(section + " " + source_title)
             }
             if name.casefold() in row_product_names:
                 continue
-            if is_source_specific or len(names_in_text) == 1:
-                for field_name, value in _parse_text_facts(text):
-                    _add_fact(candidate, field_name, value, source)
+            is_metadata_bound_product_fact = (
+                bool(metadata_name)
+                and name.casefold() == metadata_name.casefold()
+                and _is_p1_product_fact_source(source)
+            )
+            if is_source_specific or is_metadata_bound_product_fact or len(names_in_text) == 1:
+                parsed_facts = _parse_text_facts(text)
+                section_field = _METADATA_FACT_KEYS.get(section.lower().strip())
+                if is_metadata_bound_product_fact and section_field:
+                    parsed_facts.append((section_field, text))
+                for field_name, value in parsed_facts:
+                    _add_fact(candidate, field_name, value, source, evidence_kind=evidence_kind)
 
     return candidates, sources
 
@@ -544,16 +605,26 @@ def _finalize_facts(candidate: _Candidate) -> list[dict[str, Any]]:
                 "value": fact["value"],
                 "source_ids": list(fact["source_ids"]),
                 "traceable": bool(fact["traceable"]),
+                "evidence_kinds": list(fact.get("evidence_kinds", ["unverified"])),
             }
         else:
             existing["source_ids"] = sorted(set(existing["source_ids"] + fact["source_ids"]))
             existing["traceable"] = existing["traceable"] or bool(fact["traceable"])
+            existing["evidence_kinds"] = sorted(set(
+                existing["evidence_kinds"] + fact.get("evidence_kinds", ["unverified"])
+            ))
 
     finalized: list[dict[str, Any]] = []
     for values in by_field.values():
         distinct = list(values.values())
         if len(distinct) == 1:
-            distinct[0]["status"] = "verified" if distinct[0]["traceable"] else "unverified"
+            kinds = set(distinct[0].get("evidence_kinds", ()))
+            if distinct[0]["traceable"] and "official_spec" in kinds:
+                distinct[0]["status"] = "verified"
+            elif kinds == {"snapshot"}:
+                distinct[0]["status"] = "snapshot"
+            else:
+                distinct[0]["status"] = "unverified"
             finalized.append(distinct[0])
             continue
         all_sources = sorted({source_id for fact in distinct for source_id in fact["source_ids"]})
@@ -573,7 +644,7 @@ def _finalize_facts(candidate: _Candidate) -> list[dict[str, Any]]:
     return finalized
 
 
-def _fact_evidence(facts: list[dict[str, Any]], *, include_historical_claims: bool = True) -> str:
+def _fact_evidence(facts: list[dict[str, Any]], *, include_historical_claims: bool = False) -> str:
     excluded_fields = {"知识库归类说明（非产品参数）"}
     if not include_historical_claims:
         excluded_fields.add("专区公开卖点（历史快照）")
@@ -649,7 +720,9 @@ def _check_budget(budget: dict[str, Any] | None, facts: list[dict[str, Any]]) ->
 
 
 def _profile_and_requirements(profile: CustomerProfile) -> tuple[RequirementSet, list[str], str | None]:
-    core_needs = _split_needs(profile.need)
+    core_needs = _split_needs(_strip_rejected_clauses(
+        "\n".join(value for value in (profile.customer_task, profile.need) if value)
+    ))
     explicit_hard = _split_items(profile.hard_conditions)
     detected_hard: list[str] = []
     for sentence in core_needs:
@@ -811,7 +884,88 @@ def _assess_candidate(
         "_hard_mismatches": len(hard_mismatches),
         "_hard_unknowns": len(hard_unknowns),
         "_core_matches": len(core_matches),
-        "_traceable_fact_count": sum(1 for fact in facts if fact.get("traceable")),
+        "_traceable_fact_count": sum(
+            1 for fact in facts
+            if fact.get("status") == "verified" and fact.get("traceable")
+        ),
+    }
+
+
+def _personalized_recommendation(profile: CustomerProfile, assessment: Mapping[str, Any]) -> dict[str, str]:
+    fit = assessment.get("fit_assessment", {})
+    dimensions = fit.get("dimensions", {})
+    matched_requirements = set(fit.get("matched_requirements", []))
+    reasons = assessment.get("recommendation_reasons", [])
+    concerns = _split_items(profile.preferences)
+    task = profile.customer_task
+    context = []
+    if profile.customer_type:
+        context.append(f"您作为{profile.customer_type}")
+    if profile.usage_scenario:
+        context.append(f"主要在“{profile.usage_scenario}”使用")
+    if task:
+        context.append(f"首要任务是“{task}”")
+    elif profile.need:
+        context.append(f"本次需求是“{profile.need}”")
+
+    explanation = "，".join(context) + "。" if context else "结合您提供的需求，"
+    evidence_reasons = [
+        f"“{reason.get('customer_need', '')}”对应的已核验资料为{reason.get('product_fact', '')}"
+        for reason in reasons[:2]
+    ]
+    if evidence_reasons:
+        explanation += "推荐依据：" + "；".join(evidence_reasons) + "。"
+    else:
+        explanation += "当前候选仍需结合可追溯产品资料核对，不能仅凭顾客身份或场景推断产品优势。"
+
+    concern_notes = []
+    for concern in concerns:
+        matching_reason = next(
+            (reason for reason in reasons if reason.get("customer_need") == concern),
+            None,
+        )
+        if matching_reason:
+            concern_notes.append(
+                f"“{concern}”有对应资料事实：{matching_reason.get('product_fact', '')}"
+            )
+        else:
+            concern_notes.append(f"“{concern}”尚缺少足够资料佐证，建议现场核验")
+    if concern_notes:
+        explanation += "优先顾虑：" + "；".join(concern_notes) + "。"
+
+    validation_notes = [
+        f"首要任务“{need}”尚未被产品资料直接证实，建议现场演练核验"
+        for need in _split_needs(profile.customer_task)
+        if need not in matched_requirements
+    ]
+    matched_scenarios = set(dimensions.get("usage_scenario", {}).get("matched", []))
+    validation_notes.extend(
+        f"使用场景“{scene}”尚未被产品资料直接证实，建议按该场景试用"
+        for scene in _split_items(profile.usage_scenario)
+        if scene not in matched_scenarios
+    )
+    if validation_notes:
+        explanation += "需现场确认：" + "；".join(validation_notes) + "。"
+
+    persona = profile.customer_type
+    if any(label in persona for label in ("教师", "老师")):
+        role_example = "您作为教师，可按备课和课堂准备的日常流程"
+    elif "学生" in persona:
+        role_example = "您作为学生，可按上课、自习或整理课程资料的日常流程"
+    elif persona:
+        role_example = f"您作为{persona}，可按自己的日常工作或学习流程"
+    else:
+        role_example = "您可按自己的日常使用流程"
+    scene = f"“{profile.usage_scenario}”场景" if profile.usage_scenario else "实际使用场景"
+    activity = f"完成“{task}”" if task else f"验证“{profile.need}”"
+    example = f"例如，{role_example}，在{scene}中用实际资料{activity}。"
+    if concerns:
+        example += f"试用时按优先级逐项核对“{'、'.join(concerns)}”；资料未确认的项目，验证后再作购买判断。"
+    else:
+        example += "试用时按您的实际流程核对需求，并确认资料未覆盖的条件。"
+    return {
+        "customer_facing_reason": explanation,
+        "example_scenario": example,
     }
 
 
@@ -915,6 +1069,8 @@ def generate_recommendation_plan(
         _assess_candidate(candidate, requirements, sources_by_id)
         for candidate in candidates.values()
     ]
+    for assessment in assessments:
+        assessment.update(_personalized_recommendation(profile, assessment))
     assessments.sort(
         key=lambda item: (
             item["_hard_mismatches"],
@@ -1028,6 +1184,10 @@ def _render_product(item: Mapping[str, Any], heading: str) -> list[str]:
         lines.append("；".join(identity))
     lines.append(f"**适配程度：{_markdown_escape(fit.get('level') or '信息不足，暂无法判断')}**")
     lines.append(_markdown_escape(fit.get("explanation") or "暂无适配解释。"))
+    if item.get("customer_facing_reason"):
+        lines.append(f"\n**结合顾客需求：** {_markdown_escape(item['customer_facing_reason'])}")
+    if item.get("example_scenario"):
+        lines.append(f"\n**建议现场体验：** {_markdown_escape(item['example_scenario'])}")
 
     reasons = item.get("recommendation_reasons") or []
     lines.append("\n**推荐理由（需求 → 事实 → 结论）**")
@@ -1121,11 +1281,13 @@ def run_recommendation(
     rejected_features: str = "",
     notes: str = "",
     retriever: Callable[..., RetrievalResponse] = retrieve_with_adapter,
+    customer_task: str = "",
 ) -> tuple[str, str, str]:
     """Gradio callback kept thin so the recommendation engine stays testable."""
 
     profile = {
         "need": need,
+        "customer_task": customer_task,
         "customer_type": customer_type,
         "usage_scenario": usage_scenario,
         "budget_text": budget_text,

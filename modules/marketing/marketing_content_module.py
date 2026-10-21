@@ -59,6 +59,14 @@ def _read(path: Path) -> str:
     return path.read_text(encoding="utf-8-sig")
 
 
+def _source_path(root: Path, path: Path) -> str:
+    """Return a stable knowledge-base-relative source path for API clients."""
+    try:
+        return path.relative_to(root).as_posix()
+    except ValueError:
+        return path.name
+
+
 def _find_model_dir(root: Path, product: str, section: str) -> Optional[Path]:
     parent = root / section
     if not parent.exists():
@@ -269,7 +277,12 @@ def generate_marketing_content(
     guide = root / "P6-营销素材库" / "04-图片" / "图片选用与命名指南.md"
     fact_policy = root / "P2-卖点话术库" / "00-使用说明" / "话术事实边界.md"
     p5_policy = root / "P5-培训赋能库" / "09-系统课程" / "32-图片来源与图注" / "讲义.md"
-    sources = [str(p) for p in (p6_path, p2_path, guide, fact_policy, p5_policy) if p and p.exists()]
+    sources = [
+        _source_path(root, p)
+        for p in (p6_path, p2_path, guide, fact_policy, p5_policy)
+        if p and p.exists()
+    ]
+    fact_source = _source_path(root, p6_path) if p6_path and p6_path.exists() else ""
     found_claims = [claim for claim in FORBIDDEN_CLAIMS if claim in title + "\n" + body]
     return {
         "product": product_name,
@@ -281,6 +294,7 @@ def generate_marketing_content(
         "recommended_images": images,
         "image_source_note": "推荐素材仅供选型；发布前须核对原始来源、适用型号、权利状态及品牌规范。" if images else "暂无型号匹配的已索引图片；未推荐无来源图片。",
         "evidence_facts": facts,
+        "evidence_fact_sources": [fact_source] * len(facts),
         "audience_validation_prompt": audience_prompt,
         "sources": sources,
         "warnings": warnings,

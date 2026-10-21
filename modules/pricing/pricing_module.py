@@ -12,12 +12,12 @@ from __future__ import annotations
 
 import csv
 import re
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from datetime import datetime
 from statistics import median
 from urllib.parse import urlparse
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional
+from typing import Any, Dict, Iterable, List, Mapping, Optional
 
 
 DEFAULT_CSV = (
@@ -28,9 +28,25 @@ DEFAULT_CSV = (
     / "08-官方公开价格快照"
     / "官方价格快照.csv"
 )
+DEFAULT_COMPETITOR_COMPARISON_CSV = DEFAULT_CSV.with_name("竞品可比配置价格与性能快照.csv")
 
 # 只有明确出现这些状态时，才阻止展示金额；不凭空推断库存或成交状态。
 BLOCKED_STATUS_WORDS = ("下架", "未公开", "无当前公开", "官方询价")
+COMPARABLE_PRICE_BASES = ("官方商城页面价", "当前商城页面价")
+OFFICIAL_COMPETITOR_DOMAINS = {
+    "apple": ("apple.com", "apple.com.cn"),
+    "samsung": ("samsung.com", "samsung.com.cn"),
+    "vivo": ("vivo.com", "vivo.com.cn"),
+}
+COMPETITOR_BRAND_ALIASES = {
+    "苹果": "apple",
+    "apple": "apple",
+    "三星": "samsung",
+    "samsung": "samsung",
+    "vivo": "vivo",
+}
+MAX_COMPARISON_SNAPSHOT_GAP_DAYS = 31
+MAX_BENCHMARK_SCORE_GAP = 0.10
 
 
 @dataclass(frozen=True)
@@ -53,6 +69,17 @@ class PriceRecord:
     evidence: str
     verification_status: str
     mapping_note: str
+    processor: str = ""
+    memory_gb: Optional[float] = None
+    storage_gb: Optional[float] = None
+    display_size_in: Optional[float] = None
+    benchmark_name: str = ""
+    benchmark_version: str = ""
+    benchmark_score: Optional[float] = None
+    benchmark_unit: str = ""
+    benchmark_verified: bool = False
+    benchmark_source_title: str = ""
+    benchmark_source_url: str = ""
 
 
 @dataclass(frozen=True)
@@ -72,6 +99,7 @@ class QuoteResult:
     manual_review_items: List[str]
     evidence: str
     record_id: str
+    competitor_comparisons: List[Dict[str, object]] = field(default_factory=list)
 
     def to_dict(self) -> Dict[str, object]:
         return asdict(self)
@@ -108,7 +136,319 @@ def _record(row: Dict[str, str]) -> PriceRecord:
         evidence=row.get("证据摘要", "").strip(),
         verification_status=row.get("核验状态", "").strip(),
         mapping_note=row.get("映射备注", "").strip(),
+        processor=row.get("处理器", "").strip(),
+        memory_gb=_number(row.get("内存（GB）", "")),
+        storage_gb=_number(row.get("存储（GB）", "")),
+        display_size_in=_number(row.get("屏幕尺寸（英寸）", "")),
+        benchmark_name=row.get("跑分项目", "").strip(),
+        benchmark_version=row.get("跑分版本", "").strip(),
+        benchmark_score=_number(row.get("跑分", "")),
+        benchmark_unit=row.get("跑分单位", "").strip(),
+        benchmark_verified="已核验" in row.get("跑分核验状态", ""),
+        benchmark_source_title=row.get("跑分来源标题", "").strip(),
+        benchmark_source_url=row.get("跑分来源URL", "").strip(),
     )
+
+
+@dataclass(frozen=True)
+class CompetitorPriceRecord:
+    """A competitor snapshot is usable only with complete price and benchmark evidence."""
+
+    brand: str
+    product_name: str
+    configuration: str
+    sku: str
+    category: str
+    price: Optional[float]
+    price_type: str
+    verified_at: str
+    source_title: str
+    source_url: str
+    verification_status: str
+    evidence: str
+    processor: str
+    memory_gb: Optional[float]
+    storage_gb: Optional[float]
+    display_size_in: Optional[float]
+    benchmark_name: str
+    benchmark_version: str
+    benchmark_score: Optional[float]
+    benchmark_unit: str
+    benchmark_verified: bool
+    benchmark_source_title: str
+    benchmark_source_url: str
+
+
+def _snapshot_value(record: object, *names: str, default: Any = "") -> Any:
+    for name in names:
+        if isinstance(record, Mapping) and name in record:
+            value = record[name]
+        else:
+            value = getattr(record, name, None)
+        if value is not None and value != "":
+            return value
+    return default
+
+
+def _float_value(value: Any) -> Optional[float]:
+    if value is None or value == "" or isinstance(value, bool):
+        return None
+    if isinstance(value, (int, float)):
+        return float(value)
+    numbers = re.findall(r"\d+(?:\.\d+)?", str(value).replace(",", ""))
+    if len(numbers) != 1:
+        return None
+    try:
+        return float(numbers[0])
+    except ValueError:
+        return None
+
+
+def _bool_value(value: Any) -> bool:
+    if isinstance(value, bool):
+        return value
+    return str(value or "").strip().casefold() in {"1", "true", "yes", "y", "已核验", "verified"}
+
+
+def _capacity(text: Any, kind: str) -> Optional[float]:
+    if isinstance(text, (int, float)) and not isinstance(text, bool):
+        return float(text)
+    raw = str(text or "").strip()
+    if re.fullmatch(r"\d+(?:\.\d+)?", raw):
+        return float(raw)
+    labels = (kind, "内存" if kind == "memory" else "存储")
+    label_pattern = "|".join(re.escape(label) for label in labels)
+    match = re.search(rf"(?:{label_pattern})\s*[:：]?\s*(\d+(?:\.\d+)?)\s*(GB|TB)", raw, re.I)
+    if not match:
+        # Configurations such as 16GB/512GB are parsed by the caller only when
+        # the requested capacity is explicitly labelled; never concatenate numbers.
+        return None
+    amount = float(match.group(1))
+    return amount * 1024 if match.group(2).upper() == "TB" else amount
+
+
+def _coerce_competitor_record(value: object) -> CompetitorPriceRecord:
+    status = str(_snapshot_value(value, "verification_status", "status", "核验状态", default="")).strip()
+    benchmark_status = str(_snapshot_value(value, "benchmark_status", default="")).strip()
+    benchmark_verified = _snapshot_value(value, "benchmark_verified", default=None)
+    if benchmark_verified is None:
+        benchmark_verified = "已核验" in benchmark_status or "verified" in benchmark_status.casefold()
+    config = str(_snapshot_value(value, "configuration", "config", "精确款式", default="")).strip()
+    return CompetitorPriceRecord(
+        brand=str(_snapshot_value(value, "brand", "品牌", default="")).strip(),
+        product_name=str(_snapshot_value(value, "product_name", "product", "model", "产品名称", default="")).strip(),
+        configuration=config,
+        sku=str(_snapshot_value(value, "sku", "型号或SKU", default="")).strip(),
+        category=str(_snapshot_value(value, "category", "分类", default="")).strip(),
+        price=_float_value(_snapshot_value(value, "price", "page_price", "public_price", "页面金额（元）", default=None)),
+        price_type=str(_snapshot_value(value, "price_type", "price_basis", "价格类型", default="")).strip(),
+        verified_at=str(_snapshot_value(value, "verified_at", "date", "核验时间", default="")).strip(),
+        source_title=str(_snapshot_value(value, "source_title", "price_source_title", "来源标题", default="")).strip(),
+        source_url=str(_snapshot_value(value, "source_url", "price_source_url", "url", "官方URL", default="")).strip(),
+        verification_status=status,
+        evidence=str(_snapshot_value(value, "evidence", "price_evidence", "证据摘要", default="")).strip(),
+        processor=str(_snapshot_value(value, "processor", "cpu", "处理器", default="")).strip(),
+        memory_gb=_capacity(_snapshot_value(value, "memory_gb", "memory", "内存", default=None), "memory"),
+        storage_gb=_capacity(_snapshot_value(value, "storage_gb", "storage", "存储", default=None), "storage"),
+        display_size_in=_float_value(_snapshot_value(value, "display_size_in", "screen_size", "屏幕尺寸", default=None)),
+        benchmark_name=str(_snapshot_value(value, "benchmark_name", "benchmark", "跑分项目", default="")).strip(),
+        benchmark_version=str(_snapshot_value(value, "benchmark_version", "跑分版本", default="")).strip(),
+        benchmark_score=_float_value(_snapshot_value(value, "benchmark_score", "score", "跑分", default=None)),
+        benchmark_unit=str(_snapshot_value(value, "benchmark_unit", "跑分单位", default="")).strip(),
+        benchmark_verified=_bool_value(benchmark_verified),
+        benchmark_source_title=str(_snapshot_value(value, "benchmark_source_title", "跑分来源标题", default="")).strip(),
+        benchmark_source_url=str(_snapshot_value(value, "benchmark_source_url", "跑分来源URL", default="")).strip(),
+    )
+
+
+def load_competitor_price_records(csv_path: Optional[Path | str] = None) -> List[CompetitorPriceRecord]:
+    """Load optional competitor evidence; a missing file intentionally means no comparisons."""
+    path = Path(csv_path) if csv_path else DEFAULT_COMPETITOR_COMPARISON_CSV
+    if not path.exists():
+        return []
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        return [_coerce_competitor_record(row) for row in csv.DictReader(handle)]
+
+
+def _date_value(value: Any) -> Optional[datetime]:
+    try:
+        return datetime.strptime(str(value)[:10], "%Y-%m-%d")
+    except (TypeError, ValueError):
+        return None
+
+
+def _verified_status(value: Any) -> bool:
+    text = str(value or "").casefold()
+    return "已核验" in text or "verified" in text
+
+
+def _official_source(brand: str, url: str) -> bool:
+    host = (urlparse(url).hostname or "").lower()
+    key = COMPETITOR_BRAND_ALIASES.get(brand.strip().casefold(), "")
+    return bool(key and any(host == domain or host.endswith("." + domain) for domain in OFFICIAL_COMPETITOR_DOMAINS[key]))
+
+
+def _price_source_allowed(record: CompetitorPriceRecord) -> bool:
+    if not record.product_name or not record.configuration or not record.sku:
+        return False
+    if not record.source_url.startswith("https://") or not _verified_status(record.verification_status):
+        return False
+    if record.price_type not in COMPARABLE_PRICE_BASES:
+        return False
+    return _official_source(record.brand, record.source_url)
+
+
+def _huawei_source_allowed(url: str) -> bool:
+    host = (urlparse(url).hostname or "").lower()
+    return any(host == domain or host.endswith("." + domain) for domain in ("huawei.com", "vmall.com"))
+
+
+def _family(text: str) -> str:
+    value = text.casefold()
+    if any(word in value for word in ("电脑", "笔记本", "macbook", "matebook", "laptop", "galaxy book", "book", "pc")):
+        return "computer"
+    if any(word in value for word in ("平板", "tablet", "ipad")):
+        return "tablet"
+    if any(word in value for word in ("手机", "phone", "iphone", "galaxy", "x200")):
+        return "phone"
+    return ""
+
+
+def _hardware(record: object) -> Dict[str, Any]:
+    config = str(_snapshot_value(record, "configuration", "config", "精确款式", default=""))
+    return {
+        "processor": str(_snapshot_value(record, "processor", "cpu", "处理器", default="")).strip(),
+        "memory_gb": _float_value(_snapshot_value(record, "memory_gb", "memory", "内存", default=None)),
+        "storage_gb": _float_value(_snapshot_value(record, "storage_gb", "storage", "存储", default=None)),
+        "display_size_in": _float_value(_snapshot_value(record, "display_size_in", "screen_size", "屏幕尺寸", default=None)),
+        "configuration": config,
+        "sku": str(_snapshot_value(record, "sku", "型号或SKU", default="")).strip(),
+    }
+
+
+def _benchmark(record: object) -> Dict[str, Any]:
+    return {
+        "name": str(_snapshot_value(record, "benchmark_name", "benchmark", "跑分项目", default="")).strip(),
+        "version": str(_snapshot_value(record, "benchmark_version", "跑分版本", default="")).strip(),
+        "score": _float_value(_snapshot_value(record, "benchmark_score", "score", "跑分", default=None)),
+        "unit": str(_snapshot_value(record, "benchmark_unit", "跑分单位", default="")).strip(),
+        "verified": _bool_value(_snapshot_value(record, "benchmark_verified", default=False)),
+        "source_title": str(_snapshot_value(record, "benchmark_source_title", "跑分来源标题", default="")).strip(),
+        "source_url": str(_snapshot_value(record, "benchmark_source_url", "跑分来源URL", default="")).strip(),
+    }
+
+
+def _evidence_link(record: object) -> Dict[str, str]:
+    return {
+        "title": str(_snapshot_value(record, "source_title", "price_source_title", "来源标题", default="")).strip(),
+        "url": str(_snapshot_value(record, "source_url", "price_source_url", "url", "官方URL", default="")).strip(),
+        "date": str(_snapshot_value(record, "verified_at", "date", "核验时间", default="")).strip()[:10],
+    }
+
+
+def compare_price_snapshots(
+    huawei_record: object,
+    competitor_records: Iterable[object],
+) -> List[Dict[str, object]]:
+    """Return only evidence-complete competitor savings comparisons.
+
+    Both sides need a verified page price, matching memory/storage, a same-version
+    benchmark with scores within 10%, traceable sources, and snapshots within 31
+    days. Missing evidence rejects the candidate rather than producing a guess.
+    """
+    h_price = _float_value(_snapshot_value(huawei_record, "page_price", "public_price", "price", default=None))
+    h_status = _snapshot_value(huawei_record, "verification_status", "status", default="")
+    h_basis = str(_snapshot_value(huawei_record, "price_type", "price_basis", default=""))
+    h_source = str(_snapshot_value(huawei_record, "source_url", "url", default=""))
+    h_date = _date_value(_snapshot_value(huawei_record, "verified_at", "baseline_date", "date", default=""))
+    h_hw = _hardware(huawei_record)
+    h_bench = _benchmark(huawei_record)
+    h_family = _family(str(_snapshot_value(huawei_record, "category", "product", "product_name", default="")))
+    if not (h_price and h_price > 0 and _verified_status(h_status) and h_basis in COMPARABLE_PRICE_BASES and h_date and _huawei_source_allowed(h_source)):
+        return []
+    if not h_family or not h_bench["verified"] or not h_bench["source_url"].startswith("https://"):
+        return []
+    if not h_hw["configuration"] or not h_hw["sku"] or not h_hw["processor"]:
+        return []
+    if h_hw["memory_gb"] is None or h_hw["storage_gb"] is None:
+        return []
+    results: List[Dict[str, object]] = []
+    for raw in competitor_records:
+        competitor = _coerce_competitor_record(raw)
+        c_date = _date_value(competitor.verified_at)
+        c_hw = _hardware(competitor)
+        c_bench = _benchmark(competitor)
+        c_family = _family(" ".join((competitor.category, competitor.product_name)))
+        if not (competitor.price and competitor.price > h_price and _price_source_allowed(competitor)):
+            continue
+        if not c_date or abs((c_date - h_date).days) > MAX_COMPARISON_SNAPSHOT_GAP_DAYS:
+            continue
+        if not h_family or c_family != h_family:
+            continue
+        if not c_hw["configuration"] or not c_hw["sku"] or not c_hw["processor"]:
+            continue
+        if c_hw["memory_gb"] is None or c_hw["storage_gb"] is None:
+            continue
+        if c_hw["memory_gb"] != h_hw["memory_gb"] or c_hw["storage_gb"] != h_hw["storage_gb"]:
+            continue
+        if h_hw["display_size_in"] is not None and c_hw["display_size_in"] is not None and abs(h_hw["display_size_in"] - c_hw["display_size_in"]) > 1.5:
+            continue
+        if not (c_bench["verified"] and c_bench["source_url"].startswith("https://")):
+            continue
+        if not h_bench["name"] or h_bench["name"].casefold() != c_bench["name"].casefold():
+            continue
+        if not h_bench["version"] or h_bench["version"] != c_bench["version"] or h_bench["unit"] != c_bench["unit"]:
+            continue
+        if not h_bench["score"] or not c_bench["score"]:
+            continue
+        score_gap = abs(h_bench["score"] - c_bench["score"]) / max(h_bench["score"], c_bench["score"])
+        if score_gap > MAX_BENCHMARK_SCORE_GAP:
+            continue
+        savings = round(competitor.price - h_price, 2)
+        competitor_name = competitor.product_name or competitor.sku
+        brand = competitor.brand or "友商"
+        results.append({
+            "headline": f"比{brand}的{competitor_name}同配置产品便宜¥{savings:,.0f}",
+            "competitor_brand": brand,
+            "competitor_product": competitor_name,
+            "savings": savings,
+            "huawei_price": h_price,
+            "competitor_price": competitor.price,
+            "price_difference": savings,
+            "configuration_comparison": {
+                "huawei": h_hw,
+                "competitor": c_hw,
+                "matched_fields": ["内存", "存储"] + (["屏幕尺寸"] if h_hw["display_size_in"] is not None and c_hw["display_size_in"] is not None else []),
+            },
+            "benchmark_comparison": {
+                "name": h_bench["name"], "version": h_bench["version"], "unit": h_bench["unit"],
+                "huawei_score": h_bench["score"], "competitor_score": c_bench["score"],
+                "relative_gap": round(score_gap, 4),
+            },
+            "sources": {"huawei_price": _evidence_link(huawei_record), "competitor_price": _evidence_link(competitor),
+                        "huawei_benchmark": {"title": h_bench["source_title"], "url": h_bench["source_url"]},
+                        "competitor_benchmark": {"title": c_bench["source_title"], "url": c_bench["source_url"]}},
+            "disclaimer": "价格为同一时间窗口的公开页面快照，不代表当前库存、成交价、补贴或购买承诺；跑分仅用于本次同口径筛选。",
+        })
+    return sorted(results, key=lambda item: float(item["savings"]), reverse=True)
+
+
+def build_competitor_price_comparison(
+    product_query: str,
+    records: Optional[Iterable[PriceRecord]] = None,
+    competitor_records: Optional[Iterable[object]] = None,
+) -> List[Dict[str, object]]:
+    """Find the Huawei snapshot and return qualifying competitor savings only."""
+    matches = find_price_records(product_query, records=records)
+    huawei = next((item for item in matches if item.page_price is not None and _verified_status(item.verification_status) and not _blocked(item)), None)
+    if huawei is None:
+        return []
+    candidates = list(competitor_records) if competitor_records is not None else load_competitor_price_records()
+    return compare_price_snapshots(huawei, candidates)
+
+
+# Explicit aliases make the evidence gate easy to use from integrations and tests.
+find_competitor_price_advantages = compare_price_snapshots
 
 
 def load_price_records(csv_path: Optional[Path | str] = None) -> List[PriceRecord]:
@@ -123,12 +463,31 @@ def load_price_records(csv_path: Optional[Path | str] = None) -> List[PriceRecor
         return [_record(row) for row in csv.DictReader(handle)]
 
 
+_PRICE_GENERIC_TERMS = {"huawei", "华为", "matebook", "电脑", "笔记本", "产品", "配置", "价格"}
+
+
+def _match_terms(text: str) -> set[str]:
+    """Return whole search terms; never use arbitrary substring matching for prices."""
+    return set(re.findall(r"[a-z0-9]+|[\u3400-\u4dbf\u4e00-\u9fff]+", (text or "").casefold()))
+
+
 def _match_score(record: PriceRecord, query: str) -> int:
-    terms = [part for part in re.split(r"\s+|[，,、;；/]+", query.strip()) if part]
-    haystack = " ".join(
+    """Score only complete, product-identifying queries against one price record."""
+    query_terms = _match_terms(query)
+    meaningful_terms = query_terms - _PRICE_GENERIC_TERMS
+    if not meaningful_terms:
+        return 0
+    record_terms = _match_terms(" ".join(
         [record.product_name, record.original_name, record.configuration, record.sku]
-    ).lower()
-    return sum(1 for term in terms if term.lower() in haystack)
+    ))
+    if not query_terms.issubset(record_terms):
+        return 0
+    # A price must be tied to a model/SKU discriminator, not merely to its brand.
+    has_discriminator = any(
+        any(char.isdigit() for char in term) or term not in {"pro", "鸿蒙版", "酷睿", "麒麟"}
+        for term in meaningful_terms
+    )
+    return len(query_terms) if has_discriminator else 0
 
 
 def find_price_records(
@@ -185,7 +544,11 @@ def _blocked(record: PriceRecord) -> bool:
     return any(word in text for word in BLOCKED_STATUS_WORDS)
 
 
-def build_quote_status(product_query: str, records: Optional[Iterable[PriceRecord]] = None) -> QuoteResult:
+def build_quote_status(
+    product_query: str,
+    records: Optional[Iterable[PriceRecord]] = None,
+    competitor_records: Optional[Iterable[object]] = None,
+) -> QuoteResult:
     """Build one safe quote result for the team app.
 
     A public snapshot amount is shown only when it is present, verified, and not
@@ -193,37 +556,48 @@ def build_quote_status(product_query: str, records: Optional[Iterable[PriceRecor
     review items because the P4 four-level store pricing data is unavailable.
     """
     matches = find_price_records(product_query, records=records)
-    record = next(
-        (
-            item
-            for item in matches
-            if item.page_price is not None
-            and "已核验" in item.verification_status
-            and not _blocked(item)
-        ),
-        None,
-    )
+    verified_matches = [
+        item for item in matches
+        if item.page_price is not None
+        and "已核验" in item.verification_status
+        and not _blocked(item)
+    ]
+    # A series name can legitimately match multiple SKU snapshots. Selecting the
+    # first one would turn an incomplete request into somebody else's price.
+    record = verified_matches[0] if len(verified_matches) == 1 else None
 
     if record is None:
-        fallback = matches[0] if matches else None
+        fallback = matches[0] if len(matches) == 1 else None
+        ambiguous = len(verified_matches) > 1 or len(matches) > 1
+        review_items = _manual_items(fallback)
+        if ambiguous:
+            review_items.insert(0, "输入对应多个型号或 SKU，不能擅自选择其中一条价格记录")
+        elif fallback is not None:
+            review_items.insert(0, "该记录不满足当前公开价格展示条件，不能输出具体金额")
         return QuoteResult(
-            product=fallback.product_name if fallback else product_query.strip(),
-            configuration=fallback.configuration if fallback else "待确认具体配置",
+            # Keep the requested identity visible; never substitute a nearby record.
+            product=product_query.strip(),
+            configuration="待确认具体配置",
             public_price=None,
-            reference_price=fallback.reference_price if fallback else None,
+            reference_price=None,
             currency="CNY",
-            price_basis=fallback.price_type if fallback else "暂无可核验公开价格",
-            baseline_date=_date_only(fallback.verified_at) if fallback else "待核验",
-            source_title=fallback.source_title if fallback else "暂无来源",
-            source_url=fallback.source_url if fallback else "",
-            stock_status=fallback.stock_status if fallback else "待核验",
+            price_basis="暂无可核验公开价格",
+            baseline_date="待核验",
+            source_title="暂无可唯一对应的来源",
+            source_url="",
+            stock_status="待核验",
             status="manual_review",
             status_label="待人工核验，暂不输出具体成交价",
-            manual_review_items=_manual_items(fallback),
-            evidence=fallback.evidence if fallback else "知识库中未找到可用价格证据",
-            record_id=fallback.record_id if fallback else "",
+            manual_review_items=review_items,
+            evidence="未找到唯一且可展示的官方价格快照",
+            record_id="",
+            competitor_comparisons=[],
         )
 
+    comparisons = compare_price_snapshots(
+        record,
+        list(competitor_records) if competitor_records is not None else load_competitor_price_records(),
+    )
     return QuoteResult(
         product=record.product_name,
         configuration=record.configuration or "具体配置待确认",
@@ -240,6 +614,7 @@ def build_quote_status(product_query: str, records: Optional[Iterable[PriceRecor
         manual_review_items=_manual_items(record),
         evidence=record.evidence,
         record_id=record.record_id,
+        competitor_comparisons=comparisons,
     )
 
 

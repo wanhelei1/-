@@ -18,6 +18,56 @@ PRODUCT_DIRS = (
     Path("P1-产品参数库/02-MateBook-Windows"),
 )
 
+# Keep the customer-facing list short and at one level of abstraction. Legacy
+# labels are folded into these categories so older API clients do not recreate
+# removed sub-options in the insight card.
+PRIORITY_CONCERN_OPTIONS = (
+    "预算与价格",
+    "性能是否够用",
+    "软件和外设能否使用",
+    "日常使用体验",
+    "售后与保障",
+)
+_PRIORITY_CONCERN_ALIASES = {
+    "预算与价格": "预算与价格",
+    "性能是否够用": "性能是否够用",
+    "性能与配置": "性能是否够用",
+    "软件和外设能否使用": "软件和外设能否使用",
+    "软件与设备兼容": "软件和外设能否使用",
+    "软件与外设兼容": "软件和外设能否使用",
+    "软件/外设兼容": "软件和外设能否使用",
+    "便携与续航": "日常使用体验",
+    "屏幕与触控体验": "日常使用体验",
+    "便携与日常体验": "日常使用体验",
+    "日常使用体验": "日常使用体验",
+    "品牌与售后": "售后与保障",
+    "售后与服务保障": "售后与保障",
+    "售后与保障": "售后与保障",
+}
+_REMOVED_PRIORITY_CONCERNS = {
+    "数据安全",
+    "竞品比较",
+    "系统路线选择",
+    "库存到货",
+    "库存与到货",
+    "接口连接",
+    "接口与连接",
+    "旧设备数据迁移",
+    "旧设备迁移",
+}
+
+
+def _normalise_priority_concerns(values: Iterable[str]) -> list[str]:
+    result: list[str] = []
+    for raw_value in values:
+        value = str(raw_value).strip()[:80]
+        if not value or value in _REMOVED_PRIORITY_CONCERNS:
+            continue
+        value = _PRIORITY_CONCERN_ALIASES.get(value, value)
+        if value not in result:
+            result.append(value)
+    return result
+
 
 @dataclass(frozen=True)
 class Chunk:
@@ -255,15 +305,15 @@ def build_insight(payload: dict, kb: KnowledgeBase) -> dict:
     concern_detail = text("concern_detail")
     trigger = "、".join(trigger_values)
     customer_words = text("customer_words", 1200)
-    priority_values = choices("priority_concerns", 12)
+    priority_values = _normalise_priority_concerns(choices("priority_concerns", 12))
     legacy_priority = payload.get("priority_concern", "")
     if not priority_values:
         if isinstance(legacy_priority, list):
-            priority_values = [str(item).strip()[:80] for item in legacy_priority if str(item).strip()]
+            priority_values = _normalise_priority_concerns(legacy_priority)
         else:
             legacy_text = str(legacy_priority or "").strip()[:120]
             if legacy_text:
-                priority_values = [legacy_text]
+                priority_values = _normalise_priority_concerns([legacy_text])
     if priority_values:
         priority_values = add_other(priority_values, "concern_other")
     if not priority_values:

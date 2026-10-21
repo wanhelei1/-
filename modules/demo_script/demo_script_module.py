@@ -31,6 +31,8 @@ FACT_PATTERN = re.compile(
     re.IGNORECASE,
 )
 SKIP_FACT = ("实际", "可能", "请以", "温馨提示", "免责声明", "来源：", "抓取日期")
+_SOURCE_HEADING_PATTERN = re.compile(r"(?:来源|参考链接|资料链接|source|reference)", re.IGNORECASE)
+_URL_PATTERN = re.compile(r"(?:https?://|www\.)", re.IGNORECASE)
 RELEVANCE_TERMS = {
     "屏幕": ("屏幕", "显示", "色彩", "触控", "阅读", "设计"),
     "便携": ("重量", "厚度", "尺寸", "通勤", "携带", "出差", "便携"),
@@ -64,6 +66,10 @@ def _resolve_facts_file(product: str, knowledge_base_dir: Path) -> Path | None:
     return max(matches, key=lambda path: len(path.parent.name)) if matches else None
 
 
+def _is_source_heading(text: str) -> bool:
+    return bool(_SOURCE_HEADING_PATTERN.search(text))
+
+
 def _label_for(lines: list[str], index: int, headings: list[str]) -> str:
     previous = index - 1
     while previous >= 0 and not lines[previous].strip():
@@ -76,11 +82,15 @@ def _label_for(lines: list[str], index: int, headings: list[str]) -> str:
             candidate
             and len(candidate) <= 32
             and not candidate.startswith("#")
+            and not _URL_PATTERN.search(candidate)
+            and not _is_source_heading(candidate)
             and not re.search(r"[。！？；]$", candidate)
             and not FACT_PATTERN.search(candidate)
         ):
             label = candidate
     section = headings[-1] if headings else ""
+    if _is_source_heading(section):
+        section = ""
     if label and section and label != section:
         return f"{section} · {label}"
     return label or section
@@ -101,7 +111,13 @@ def _extract_facts(path: Path, need_text: str, limit: int = 3) -> list[dict[str,
             headings.append(heading.group(2).strip())
             continue
         text = re.sub(r"^\s*[-*+]\s+", "", raw).strip()
-        if not text or text.startswith(("[", ">", "|", "!")) or any(word in text for word in SKIP_FACT):
+        if (
+            not text
+            or text.startswith(("[", ">", "|", "!"))
+            or _URL_PATTERN.search(text)
+            or any(_is_source_heading(item) for item in headings)
+            or any(word in text for word in SKIP_FACT)
+        ):
             continue
         if not FACT_PATTERN.search(text) or len(text) > 180:
             continue
