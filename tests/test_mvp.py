@@ -9,7 +9,12 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 import app
-from modules.pricing.pricing_module import PriceRecord, build_quote_status, compare_price_snapshots
+from modules.pricing.pricing_module import (
+    PriceRecord,
+    build_quote_status,
+    compare_price_snapshots,
+    load_competitor_price_records,
+)
 
 
 class MvpDataTests(unittest.TestCase):
@@ -30,6 +35,25 @@ class MvpDataTests(unittest.TestCase):
         ])
         for removed in ("数据安全", "竞品比较", "系统路线选择", "库存到货", "接口连接", "旧设备数据迁移"):
             self.assertNotIn(removed, option_values)
+
+    def test_profile_inputs_are_choice_driven_with_one_special_needs_textarea(self):
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn('id="persona" class="control"', html)
+        self.assertIn('id="software" class="control"', html)
+        self.assertIn('id="peripherals" class="control"', html)
+        self.assertIn('id="customer-task" class="control" rows="5"', html)
+        self.assertIn('特殊需求（可选）', html)
+        self.assertNotIn('id="concern-other"', html)
+        self.assertIn('id="demo-task" class="control" rows="5"', html)
+        self.assertIn('id="demo-scenario" class="control"', html)
+
+    def test_demo_view_hides_internal_source_metadata(self):
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+        demo_renderer = html[html.index("function renderDemoScript"):html.index("function fillDemoFromConsult")]
+        self.assertIn("source_links", demo_renderer)
+        self.assertNotIn("f.source", demo_renderer)
+        self.assertNotIn("f.line_start", demo_renderer)
+        self.assertNotIn("华为PC全板块深度知识库_v7/", demo_renderer)
 
     def test_catalog_and_scenario_are_loaded_from_knowledge_base(self):
         products = app._catalog()
@@ -188,6 +212,36 @@ class PriceComparisonTests(unittest.TestCase):
     def test_unofficial_or_untraceable_price_source_is_suppressed(self):
         self.assertEqual(compare_price_snapshots(self.huawei_record(), [self.competitor(source_url="https://shop.example.test/apple")]), [])
         self.assertEqual(compare_price_snapshots(self.huawei_record(), [self.competitor(sku="")]), [])
+
+    def test_comparison_requires_official_mall_basis_and_traceable_sources(self):
+        huawei = self.huawei_record()
+        competitor = self.competitor()
+        rejected_competitors = [
+            competitor | {"price_type": "当前商城页面价"},
+            competitor | {"source_title": ""},
+            competitor | {"benchmark_source_title": ""},
+            competitor | {"verified_at": "2026-11-18"},
+        ]
+        for candidate in rejected_competitors:
+            with self.subTest(candidate=candidate):
+                self.assertEqual(compare_price_snapshots(huawei, [candidate]), [])
+
+        rejected_huawei_records = [
+            self.huawei_record(price_type="当前商城页面价"),
+            self.huawei_record(source_title=""),
+            self.huawei_record(benchmark_source_title=""),
+        ]
+        for candidate in rejected_huawei_records:
+            with self.subTest(candidate=candidate):
+                self.assertEqual(compare_price_snapshots(candidate, [competitor]), [])
+
+    def test_empty_competitor_evidence_template_produces_no_savings_claim(self):
+        self.assertEqual(load_competitor_price_records(), [])
+        result = build_quote_status(
+            "HUAWEI MateBook 14",
+            records=[self.huawei_record()],
+        ).to_dict()
+        self.assertEqual(result["competitor_comparisons"], [])
 
     def test_quote_never_maps_unknown_or_partial_input_to_a_real_price(self):
         records = [self.huawei_record()]

@@ -35,7 +35,12 @@ class DemoScriptTests(unittest.TestCase):
         objection = script["sections"][3]["say"]
         self.assertIn("不会先承诺兼容", objection)
         self.assertIn("学校软件 4.2", script["sections"][1]["say"])
-        self.assertIn("3 分钟顾客演示脚本", format_demo_script(script))
+        rendered = format_demo_script(script)
+        self.assertIn("3 分钟顾客演示脚本", rendered)
+        self.assertNotIn("华为PC全板块深度知识库_v7/", rendered)
+        self.assertNotIn("依据：", rendered)
+        self.assertTrue(script["source_links"])
+        self.assertTrue(script["source_links"][0]["url"].startswith("https://"))
 
     def test_missing_product_does_not_invent_product_claims(self):
         script = generate_demo_script({"customer_task": "完成课程作业"})

@@ -32,7 +32,9 @@ DEFAULT_COMPETITOR_COMPARISON_CSV = DEFAULT_CSV.with_name("竞品可比配置价
 
 # 只有明确出现这些状态时，才阻止展示金额；不凭空推断库存或成交状态。
 BLOCKED_STATUS_WORDS = ("下架", "未公开", "无当前公开", "官方询价")
-COMPARABLE_PRICE_BASES = ("官方商城页面价", "当前商城页面价")
+# Savings claims are more restrictive than ordinary quote display: both sides must
+# identify the same kind of official mall page-price snapshot.
+COMPARABLE_PRICE_BASES = ("官方商城页面价",)
 OFFICIAL_COMPETITOR_DOMAINS = {
     "apple": ("apple.com", "apple.com.cn"),
     "samsung": ("samsung.com", "samsung.com.cn"),
@@ -282,6 +284,12 @@ def _verified_status(value: Any) -> bool:
     return "已核验" in text or "verified" in text
 
 
+def _traceable_https_source(title: str, url: str) -> bool:
+    """Require a human-readable source title and a valid HTTPS page URL."""
+    parsed = urlparse(url.strip())
+    return bool(title.strip() and parsed.scheme == "https" and parsed.hostname)
+
+
 def _official_source(brand: str, url: str) -> bool:
     host = (urlparse(url).hostname or "").lower()
     key = COMPETITOR_BRAND_ALIASES.get(brand.strip().casefold(), "")
@@ -291,14 +299,18 @@ def _official_source(brand: str, url: str) -> bool:
 def _price_source_allowed(record: CompetitorPriceRecord) -> bool:
     if not record.product_name or not record.configuration or not record.sku:
         return False
-    if not record.source_url.startswith("https://") or not _verified_status(record.verification_status):
+    if not _verified_status(record.verification_status):
         return False
     if record.price_type not in COMPARABLE_PRICE_BASES:
+        return False
+    if not _traceable_https_source(record.source_title, record.source_url):
         return False
     return _official_source(record.brand, record.source_url)
 
 
-def _huawei_source_allowed(url: str) -> bool:
+def _huawei_source_allowed(title: str, url: str) -> bool:
+    if not _traceable_https_source(title, url):
+        return False
     host = (urlparse(url).hostname or "").lower()
     return any(host == domain or host.endswith("." + domain) for domain in ("huawei.com", "vmall.com"))
 
@@ -352,21 +364,24 @@ def compare_price_snapshots(
 ) -> List[Dict[str, object]]:
     """Return only evidence-complete competitor savings comparisons.
 
-    Both sides need a verified page price, matching memory/storage, a same-version
-    benchmark with scores within 10%, traceable sources, and snapshots within 31
-    days. Missing evidence rejects the candidate rather than producing a guess.
+    Both sides need a verified official-mall page price, precise SKU/CPU/memory/
+    storage, traceable price and benchmark sources, a same-project/version/unit
+    benchmark within 10%, and snapshots no more than 31 days apart. Only Apple,
+    Samsung, and vivo official domains may supply competitor prices. Missing or
+    non-comparable evidence rejects the candidate rather than producing a guess.
     """
     h_price = _float_value(_snapshot_value(huawei_record, "page_price", "public_price", "price", default=None))
     h_status = _snapshot_value(huawei_record, "verification_status", "status", default="")
     h_basis = str(_snapshot_value(huawei_record, "price_type", "price_basis", default=""))
+    h_source_title = str(_snapshot_value(huawei_record, "source_title", "price_source_title", default=""))
     h_source = str(_snapshot_value(huawei_record, "source_url", "url", default=""))
     h_date = _date_value(_snapshot_value(huawei_record, "verified_at", "baseline_date", "date", default=""))
     h_hw = _hardware(huawei_record)
     h_bench = _benchmark(huawei_record)
     h_family = _family(str(_snapshot_value(huawei_record, "category", "product", "product_name", default="")))
-    if not (h_price and h_price > 0 and _verified_status(h_status) and h_basis in COMPARABLE_PRICE_BASES and h_date and _huawei_source_allowed(h_source)):
+    if not (h_price and h_price > 0 and _verified_status(h_status) and h_basis in COMPARABLE_PRICE_BASES and h_date and _huawei_source_allowed(h_source_title, h_source)):
         return []
-    if not h_family or not h_bench["verified"] or not h_bench["source_url"].startswith("https://"):
+    if not h_family or not h_bench["verified"] or not _traceable_https_source(h_bench["source_title"], h_bench["source_url"]):
         return []
     if not h_hw["configuration"] or not h_hw["sku"] or not h_hw["processor"]:
         return []
@@ -393,7 +408,7 @@ def compare_price_snapshots(
             continue
         if h_hw["display_size_in"] is not None and c_hw["display_size_in"] is not None and abs(h_hw["display_size_in"] - c_hw["display_size_in"]) > 1.5:
             continue
-        if not (c_bench["verified"] and c_bench["source_url"].startswith("https://")):
+        if not (c_bench["verified"] and _traceable_https_source(c_bench["source_title"], c_bench["source_url"])):
             continue
         if not h_bench["name"] or h_bench["name"].casefold() != c_bench["name"].casefold():
             continue

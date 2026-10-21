@@ -1,9 +1,9 @@
 """Deterministic, evidence-backed three-minute in-store demo script drafts.
 
 The script is a structured coaching aid, not an LLM-generated or customer-tested
-sales script. Product claims are copied from public product fact files and carry
-relative paths and line numbers. Unknown compatibility and commercial terms stay
-as questions for human verification.
+sales script. Product claims are copied from public product fact files with internal
+provenance, while customer-facing output links only to the official product pages.
+Unknown compatibility and commercial terms stay as questions for human verification.
 """
 from __future__ import annotations
 
@@ -33,6 +33,7 @@ FACT_PATTERN = re.compile(
 SKIP_FACT = ("实际", "可能", "请以", "温馨提示", "免责声明", "来源：", "抓取日期")
 _SOURCE_HEADING_PATTERN = re.compile(r"(?:来源|参考链接|资料链接|source|reference)", re.IGNORECASE)
 _URL_PATTERN = re.compile(r"(?:https?://|www\.)", re.IGNORECASE)
+_SOURCE_LINK_PATTERN = re.compile(r"^\s*[-*+]\s*([^：:]+?)[：:]\s*(https://[^\s)]+)", re.IGNORECASE)
 RELEVANCE_TERMS = {
     "屏幕": ("屏幕", "显示", "色彩", "触控", "阅读", "设计"),
     "便携": ("重量", "厚度", "尺寸", "通勤", "携带", "出差", "便携"),
@@ -148,6 +149,22 @@ def _extract_facts(path: Path, need_text: str, limit: int = 3) -> list[dict[str,
     return selected
 
 
+def _extract_source_links(path: Path) -> list[dict[str, str]]:
+    """Return labeled official links without exposing local source metadata."""
+    links: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for raw in path.read_text(encoding="utf-8-sig").splitlines():
+        match = _SOURCE_LINK_PATTERN.match(raw)
+        if not match:
+            continue
+        label, url = _clean(match.group(1), 80), match.group(2).rstrip(".,，。；;）)")
+        if not label or url in seen:
+            continue
+        seen.add(url)
+        links.append({"label": label, "url": url})
+    return links
+
+
 def knowledge_base_root(path: Path) -> Path:
     """Return the parent suitable for stable knowledge-base-relative citations."""
     for parent in path.parents:
@@ -211,13 +228,13 @@ def generate_demo_script(
     topic, response = _objection_response(concern)
     product_display = product or "待确认具体产品型号"
     task_display = f"{task}。" if task else "您最希望电脑帮您完成的具体任务。"
-    evidence_lines = [f"{fact['claim']}（{fact['source']}:{fact['line_start']}）" for fact in facts]
+    evidence_lines = [fact["claim"] for fact in facts]
     if evidence_lines:
         demo_talk = (
             f"这次我们看的是 {product_display}。结合您刚才说的“{task or '使用需求'}”，"
-            "我只展示有资料依据、且和当前任务相关的部分："
+            "我只展示已核对、且和当前任务相关的重点："
             + "；".join(evidence_lines)
-            + "。这些是产品资料摘录，销售 SKU 和配置仍需逐项确认。"
+            + "。具体销售 SKU 和配置仍需逐项确认。"
         )
     elif product:
         demo_talk = (
@@ -302,9 +319,10 @@ def generate_demo_script(
             "peripherals": peripherals,
         },
         "sections": sections,
+        "source_links": _extract_source_links(facts_path) if facts_path else [],
         "guardrails": [
             "这是确定性规则生成的可编辑话术草稿，不是大模型输出或实测销售效果。",
-            "产品事实附知识库相对路径和行号；请核对完整销售 SKU 与资料时效。",
+            "产品重点只来自已核对的资料；可通过“查看产品依据”打开官方页面，并核对完整销售 SKU。",
             "不承诺实时成交价、库存、优惠、软件兼容性或未经验证的体验结果。",
             "不得录入顾客姓名、手机号、账号等身份或敏感信息。",
         ],
@@ -320,6 +338,4 @@ def format_demo_script(script: Mapping[str, Any]) -> str:
             f"【{section['title']} · {section['duration_seconds']} 秒】",
             str(section.get("say", "")),
         ])
-        for fact in section.get("evidence", []):
-            lines.append(f"依据：{fact['claim']}（{fact['source']}:{fact['line_start']}）")
     return "\n".join(lines)
