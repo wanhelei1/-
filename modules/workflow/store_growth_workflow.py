@@ -13,7 +13,10 @@ os.environ.setdefault("KB_ROOT", str(KB))
 from modules.compliance.block07_compliance import build_evidence_section  # noqa: E402
 from modules.demo_script.demo_script_module import generate_demo_script  # noqa: E402
 from modules.customer_insight.kb_agent import KnowledgeBase, build_insight  # noqa: E402
-from modules.marketing.marketing_content_module import generate_marketing_content  # noqa: E402
+from modules.marketing.marketing_content_module import (  # noqa: E402
+    _image_suggestions,
+    generate_marketing_content,
+)
 from modules.pricing.pricing_module import build_quote_status  # noqa: E402
 from modules.recommendation.recommendation_engine import (  # noqa: E402
     generate_recommendation_plan,
@@ -73,6 +76,12 @@ def run_customer_recommendation(payload: Mapping[str, Any]) -> dict[str, Any]:
         "notes": str(payload.get("notes") or "").strip(),
     }
     plan = generate_recommendation_plan(profile)
+    # Reuse the exact P1/P6 image index used by marketing. Images are additive
+    # evidence metadata; a missing match never creates a placeholder image.
+    for item in plan.get("recommendations", []):
+        item["recommended_images"] = _image_suggestions(
+            KB, str(item.get("product_name") or item.get("product_model") or ""), limit=2
+        )
     return {
         "profile": profile,
         "retrieval_status": plan.get("retrieval_status"),
@@ -155,9 +164,9 @@ def run_store_growth_workflow(payload: Mapping[str, Any]) -> dict[str, Any]:
     recommendation = generate_recommendation_plan(profile)
     recommended = recommendation.get("recommendations", [])
     explicit_product = str(payload.get("product", "")).strip()
-    product = explicit_product or (
-        str(recommended[0].get("product_name", "")) if recommended else ""
-    )
+    # Partial customer information can populate the recommendation panel, but
+    # must not silently select a SKU or trigger quote/marketing stages.
+    product = explicit_product
 
     quote = build_quote_status(product).to_dict() if product else None
     marketing = None
@@ -217,6 +226,6 @@ def run_store_growth_workflow(payload: Mapping[str, Any]) -> dict[str, Any]:
             "推荐仅基于检索来源；硬条件未知时不会按满足处理。",
             "价格为来源快照，不代表当前成交价、库存或促销。",
             "软件与外设兼容性必须在目标版本和环境验证。",
-            "营销内容仅为草稿；合规通过也不替代人工发布审核。",
+            "营销内容可直接发布；动态价格、库存、SKU 与素材授权仍须按提示核验。",
         ],
     }

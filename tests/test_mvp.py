@@ -368,6 +368,25 @@ class HttpSmokeTests(unittest.TestCase):
         self.assertIn(result["retrieval_status"], {"no_results", "insufficient_evidence"})
         self.assertFalse(result["recommendations"])
 
+    def test_partial_profile_returns_ranked_candidates_with_priority(self):
+        result = self.post("/api/recommendation", {
+            "usage_scenario": "学习与网课",
+            "preferences": "便携与续航",
+        })
+        self.assertEqual(result["retrieval_status"], "success")
+        self.assertTrue(result["recommendations"])
+        scores = [item["fit_assessment"]["relative_match_score"] for item in result["recommendations"]]
+        self.assertEqual(scores, sorted(scores, reverse=True))
+        self.assertIn("recommended_images", result["recommendations"][0])
+
+    def test_marketing_returns_publishable_copy(self):
+        result = self.post("/api/marketing", {
+            "product": "HUAWEI MateBook 14", "platform": "小红书", "audience": "学生用户",
+        })
+        self.assertTrue(result["publish_ready"])
+        self.assertEqual(result["publishable_copy"], result["body"])
+        self.assertTrue(result["compliance"]["publish_ready"])
+
     def test_unified_workflow_endpoint(self):
         result = self.post("/api/workflow", {
             "personas": ["学生"], "scenes": ["学习与网课"],

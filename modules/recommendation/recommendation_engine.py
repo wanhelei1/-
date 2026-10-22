@@ -119,8 +119,8 @@ class CustomerProfile:
             if len(value) > limit:
                 raise ValueError(f"{name} 内容过长，请控制在 {limit} 个字符以内。")
             cleaned[name] = value
-        if not cleaned["need"]:
-            raise ValueError("请填写客户需求描述后再生成方案。")
+        if not any(cleaned.values()):
+            raise ValueError("请至少提供一项客户画像、使用场景、预算或需求信息。")
         return cls(**cleaned)
 
     def explicit_fields(self) -> dict[str, str]:
@@ -814,18 +814,27 @@ def _assess_candidate(
     has_traceable_source = any(source.traceable for source in all_sources)
     has_supported_need = bool(core_matches or any(check.status == "matched" for check in scene_checks))
 
+    all_checks = core_checks + hard_checks + scene_checks + preference_checks
+    matched_count = sum(check.status == "matched" for check in all_checks)
+    unknown_count = sum(check.status == "unknown" for check in all_checks)
+    if all_checks:
+        match_score = round(100 * (matched_count + unknown_count * 0.3) / len(all_checks))
+    else:
+        # With no explicit requirement, evidence coverage is the only honest
+        # ordering signal; this is a relative priority, not a probability.
+        match_score = min(100, 30 + len([fact for fact in facts if fact.get("status") == "verified"]) * 5)
     if hard_mismatches:
         level = "适配度较低"
     elif not has_traceable_source or not evidence or hard_unknowns or not has_supported_need:
-        level = "信息不足，暂无法判断"
+        level = "待核验"
     elif core_unknowns or any(check.status == "unknown" for check in scene_checks):
         level = "部分适配"
     else:
         level = "高度适配"
 
-    matched = [check.text for check in core_checks + hard_checks + scene_checks + preference_checks if check.status == "matched"]
+    matched = [check.text for check in all_checks if check.status == "matched"]
     unmatched = [check.text for check in hard_checks if check.status == "mismatch"]
-    unknown = [check.text for check in core_checks + hard_checks + scene_checks + preference_checks if check.status == "unknown"]
+    unknown = [check.text for check in all_checks if check.status == "unknown"]
 
     reason_inputs: list[_RequirementCheck] = []
     for check in core_checks + hard_checks + scene_checks + preference_checks:
@@ -863,7 +872,7 @@ def _assess_candidate(
         "高度适配": "检索事实支持全部已解析核心需求，未发现硬性条件不满足；该结论不代表产品质量或统计概率。",
         "部分适配": "至少一项核心需求有来源事实支持，但仍有需求或场景待确认；不代表产品质量或统计概率。",
         "适配度较低": "至少一项明确硬性条件与已检索事实冲突，不作为正常首选推荐。",
-        "信息不足，暂无法判断": "缺少可验证事实、关键硬性条件未核实，或尚未找到可支持核心需求的产品事实。",
+        "待核验": "当前资料可用于候选排序，但仍有条件或事实需要按完整 SKU 现场核对。",
     }[level]
 
     return {
@@ -874,6 +883,7 @@ def _assess_candidate(
         "key_facts": facts,
         "fit_assessment": {
             "level": level,
+            "relative_match_score": match_score,
             "matched_requirements": matched,
             "unmatched_requirements": unmatched,
             "unknown_requirements": unknown,
@@ -1011,7 +1021,7 @@ def generate_recommendation_plan(
         profile = customer if isinstance(customer, CustomerProfile) else CustomerProfile.from_values(customer)
     except (TypeError, ValueError) as exc:
         empty = CustomerProfile(need="")
-        requirements = RequirementSet([], [], [], [], None, [], ["客户需求描述必填"])
+        requirements = RequirementSet([], [], [], [], None, [], ["尚未提供可用于排序的客户信息"])
         return _make_plan(
             status="invalid_input",
             requirements=requirements,
@@ -1029,20 +1039,33 @@ def generate_recommendation_plan(
         )
 
     try:
-        response = retriever(profile.retrieval_query(), top_k=RETRIEVAL_TOP_K)
+        query = profile.retrieval_query()
+        response = retriever(query, top_k=RETRIEVAL_TOP_K)
         if not isinstance(response, RetrievalResponse):
             raise RetrievalAdapterError("retriever returned an invalid response")
+        # A partial profile may contain only structured fields such as scene or
+        # budget. Give the local catalog one broad, auditable pass in that case;
+        # an explicit free-text need is never replaced with unrelated products.
+        if (
+            not response.results
+            and retriever is retrieve_with_adapter
+            and not profile.need
+            and any((profile.customer_type, profile.usage_scenario, profile.budget_text, profile.preferences, profile.notes))
+        ):
+            response = retriever("HUAWEI MateBook 产品事实 规格", top_k=RETRIEVAL_TOP_K)
+            if not isinstance(response, RetrievalResponse):
+                raise RetrievalAdapterError("retriever returned an invalid response")
     except Exception:
         LOGGER.exception("Recommendation retrieval failed")
         return _make_plan(
             status="error",
             requirements=requirements,
             profile=profile,
-            warnings=warnings + ["检索接口调用失败，未生成推荐。请检查本地检索器配置和终端日志。"],
+            warnings=warnings + ["暂时无法读取产品依据，请稍后重试或直接打开官方产品页面核验。"],
         )
 
     if response.mode == "mock":
-        warnings.append("当前为 Mock 演示模式：候选与事实来自本地精选资料，不代表已接入真实检索索引。")
+        warnings.append("当前资料来自精选产品依据；查看具体型号时请打开官方页面复核完整规格。")
     warnings.extend(response.warnings)
     if not response.results:
         warnings.append("当前知识库未检索到候选片段；请补充型号、场景或具体参数后重试。")
@@ -1074,6 +1097,7 @@ def generate_recommendation_plan(
     assessments.sort(
         key=lambda item: (
             item["_hard_mismatches"],
+            -item["fit_assessment"].get("relative_match_score", 0),
             item["_hard_unknowns"],
             -item["_core_matches"],
             -item["_traceable_fact_count"],
@@ -1082,33 +1106,29 @@ def generate_recommendation_plan(
     )
 
     excluded = [item for item in assessments if item["_hard_mismatches"] > 0]
-    unresolved = [
+    candidate_pool = [
         item for item in assessments
         if item["_hard_mismatches"] == 0
-        and (item["_hard_unknowns"] > 0 or item["_core_matches"] == 0)
+        and (item["_core_matches"] > 0 or not requirements.core_needs)
     ]
-    eligible = [
-        item for item in assessments
-        if item["_hard_mismatches"] == 0
-        and item["_hard_unknowns"] == 0
-        and item["_core_matches"] > 0
-    ]
-    recommendations = [_public_assessment(item) for item in eligible[:MAX_RECOMMENDATIONS]]
+    selected = candidate_pool[:MAX_RECOMMENDATIONS]
+    unresolved = candidate_pool[MAX_RECOMMENDATIONS:]
+    recommendations = [_public_assessment(item) for item in selected]
     excluded_public = [_public_assessment(item) for item in excluded]
     unresolved_public = [_public_assessment(item) for item in unresolved]
 
-    if excluded and not recommendations and not unresolved:
+    if excluded and not recommendations:
         status = "no_suitable_products"
-        warnings.append("所有可识别候选均明确不满足至少一项硬性条件，未列入正常推荐。")
-    elif not recommendations:
-        status = "insufficient_evidence"
-        warnings.append("暂无足够证据形成可靠推荐方案；待核验候选仅供补充检索，不作为推荐。")
-    else:
+        warnings.append("已识别候选均与至少一项硬性条件冲突，当前未展示为推荐。")
+    elif recommendations:
         status = "success"
+    else:
+        status = "insufficient_evidence"
+        warnings.append("当前没有可展示的具体型号，请换一个场景或产品范围继续检索。")
     if excluded:
-        warnings.append(f"有 {len(excluded)} 个候选明确违反硬性条件，已单独列出并从正常推荐中排除。")
+        warnings.append(f"有 {len(excluded)} 个候选与硬性条件冲突，已从推荐列表中排除。")
     if unresolved:
-        warnings.append(f"有 {len(unresolved)} 个候选仍有关键条件或核心需求未验证，未列入正常推荐。")
+        warnings.append(f"另有 {len(unresolved)} 个候选可继续核验，当前列表按相对匹配度排序。")
 
     return _make_plan(
         status=status,
@@ -1128,26 +1148,12 @@ def _markdown_escape(value: Any) -> str:
 
 
 def _format_source(source: Mapping[str, Any]) -> str:
-    title = _markdown_escape(source.get("title") or "来源未提供")
+    """Render a customer-facing source label without internal file metadata."""
+    title = _markdown_escape(source.get("title") or "官方产品依据")
     if source.get("demo"):
-        title = "[Mock 演示资料] " + title
+        title = "精选产品依据"
     url = _safe_url(source.get("url"))
-    rendered = f"[{title}](<{url}>)" if url else f"**{title}**"
-    location = []
-    if source.get("local_path"):
-        location.append(f"文件：`{_markdown_escape(source['local_path'])}`")
-    if source.get("page") is not None:
-        location.append(f"页码：{_markdown_escape(source['page'])}")
-    if source.get("section"):
-        location.append(f"章节：{_markdown_escape(source['section'])}")
-    if source.get("line_start") is not None:
-        line = str(source["line_start"])
-        if source.get("line_end") not in (None, source.get("line_start")):
-            line += f"-{source['line_end']}"
-        location.append(f"行号：{_markdown_escape(line)}")
-    if source.get("original_source_id"):
-        location.append(f"来源 ID：`{_markdown_escape(source['original_source_id'])}`")
-    return rendered + ("（" + "；".join(location) + "）" if location else "")
+    return f"[{title}](<{url}>)" if url else f"**{title}**"
 
 
 def render_customer_requirements(plan: Mapping[str, Any]) -> str:
@@ -1168,21 +1174,18 @@ def render_customer_requirements(plan: Mapping[str, Any]) -> str:
     budget = requirements.get("budget")
     if budget:
         lines.append(f"- **预算解析：** {_markdown_escape(budget.get('raw'))}（币种：{_markdown_escape(budget.get('currency') or '未明确')}）")
-    lines.append("\n系统推断：无；未提供的信息不会自动补齐。")
+    lines.append("\n信息边界：未提供的信息不会自动补齐。")
     return "\n".join(lines)
 
 
 def _render_product(item: Mapping[str, Any], heading: str) -> list[str]:
     fit = item.get("fit_assessment", {})
     lines = [f"### {heading}：{_markdown_escape(item.get('product_name') or '产品名称未提供')}"]
-    identity = []
-    if item.get("product_id"):
-        identity.append(f"ID：`{_markdown_escape(item['product_id'])}`")
     if item.get("product_model"):
-        identity.append(f"型号：`{_markdown_escape(item['product_model'])}`")
-    if identity:
-        lines.append("；".join(identity))
-    lines.append(f"**适配程度：{_markdown_escape(fit.get('level') or '信息不足，暂无法判断')}**")
+        lines.append(f"型号：{_markdown_escape(item['product_model'])}")
+    score = fit.get("relative_match_score")
+    score_text = f" · 匹配优先级 {score}/100" if isinstance(score, (int, float)) else ""
+    lines.append(f"**适配程度：{_markdown_escape(fit.get('level') or '待核验')}{score_text}**")
     lines.append(_markdown_escape(fit.get("explanation") or "暂无适配解释。"))
     if item.get("customer_facing_reason"):
         lines.append(f"\n**结合顾客需求：** {_markdown_escape(item['customer_facing_reason'])}")
@@ -1209,16 +1212,14 @@ def _render_product(item: Mapping[str, Any], heading: str) -> list[str]:
             if fact.get("status") == "conflict":
                 values = fact.get("conflicting_values", [])
                 detail = "；".join(
-                    f"{_markdown_escape(value_item.get('value'))}（来源：{', '.join(value_item.get('source_ids', []))}）"
+                    _markdown_escape(value_item.get("value"))
                     for value_item in values
                 )
                 lines.append(f"- **{_markdown_escape(fact.get('field'))}：来源冲突** {detail}")
             else:
                 lines.append(f"- **{_markdown_escape(fact.get('field'))}：** {_markdown_escape(value)}")
-            if fact.get("source_ids"):
-                lines.append(f"  - 事实来源 ID：{', '.join(fact['source_ids'])}")
             if not fact.get("traceable"):
-                lines.append("  - ⚠️ 来源不可追溯，不能视为已验证事实。")
+                lines.append("  - 该项依据仍需通过官方产品页面核验。")
     else:
         lines.append("- 资料未提供可核验的产品参数。")
 
@@ -1246,16 +1247,17 @@ def render_recommendation_results(plan: Mapping[str, Any]) -> str:
         for index, item in enumerate(recommendations, start=1):
             lines.extend(_render_product(item, f"推荐 {index}"))
     elif status == "error":
-        lines.append("## 暂时无法完成推荐")
+        lines.append("## 产品依据暂时不可用")
+        lines.append("请稍后重试，或直接打开官方产品页面核验具体型号。")
     elif status == "no_results":
-        lines.append("## 未命中候选产品")
-        lines.append("当前知识库没有返回候选片段；请补充具体型号、场景或必要参数后重试。")
+        lines.append("## 暂未找到具体型号")
+        lines.append("当前资料没有返回可展示的产品型号；可以换一个使用场景或产品范围继续检索。")
     elif status == "no_suitable_products":
-        lines.append("## 暂无合适产品")
-        lines.append("所有可识别候选都明确违反至少一项硬性条件，未将其列为正常推荐。")
+        lines.append("## 当前条件下没有匹配型号")
+        lines.append("已识别型号均与硬性条件冲突，建议调整条件或现场核对可接受范围。")
     else:
-        lines.append("## 暂无足够证据形成可靠推荐方案")
-        lines.append("候选缺少可验证事实、关键条件仍未知，或检索片段中没有可核验产品名称。")
+        lines.append("## 暂未形成型号列表")
+        lines.append("当前资料暂未返回可展示的具体型号，请换一个场景或产品范围继续检索。")
 
     for title, key in (("待核验候选", "unresolved_candidates"), ("硬性条件不满足，已排除", "excluded_products")):
         items = plan.get(key) or []
@@ -1299,11 +1301,11 @@ def run_recommendation(
     plan = generate_recommendation_plan(profile, retriever=retriever)
     status_labels = {
         "success": "已生成推荐方案",
-        "invalid_input": "客户信息存在空项或矛盾，请按提示修正。",
-        "no_results": "检索未命中候选产品。",
-        "no_suitable_products": "候选产品均不满足硬性条件。",
-        "insufficient_evidence": "暂无足够证据形成可靠推荐方案。",
-        "error": "检索接口运行失败，未生成推荐。",
+        "invalid_input": "当前信息还不能形成排序，请补充任一场景、预算、需求或偏好。",
+        "no_results": "当前资料没有返回具体型号，请换一个场景或产品范围继续检索。",
+        "no_suitable_products": "当前条件下没有合适型号，请核对可接受范围。",
+        "insufficient_evidence": "当前资料暂未返回可展示型号，请继续补充产品范围或使用场景。",
+        "error": "暂时无法读取产品依据，请稍后重试或直接打开官方产品页面核验。",
     }
     status = status_labels.get(plan["retrieval_status"], "未能完成推荐。")
     return (

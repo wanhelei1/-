@@ -1,4 +1,4 @@
-"""Evidence-grounded marketing content drafts for the Huawei PC MVP.
+"""Evidence-grounded, publish-ready social content for the Huawei PC MVP.
 
 Standalone, standard-library-only module. It uses P2 audience cards, P6 platform
 briefs and the P6 image index; it never invents testimonials, dynamic offers,
@@ -189,7 +189,7 @@ def _strategy(platform: str, audience: str, goal: str) -> str:
         "视频号": "用完整解释建立可信度；按事实、演示、适用条件展开，给家人/同事共同决策者留出理解时间。",
         "微信公众号": "围绕一个真实选购问题做结构化解释；先讲场景，再列可核验事实、版本差异和行动清单。",
         "知乎": "先回答具体问题，再给适用条件、验证方法与不适用场景；避免把体验推断写成普遍结论。",
-        "新闻稿": "以可核验发布信息为主，先确认官方公告、日期和发布主体；没有公告证据时仅生成待核实草稿。",
+        "新闻稿": "以可核验发布信息为主，先确认官方公告、日期和发布主体；缺少公告证据时只写已确认事实，并提示发布前核对。",
         "直播": "按提问、实物演示、版本提醒、互动答疑推进；演示失败时不以剪辑或口播掩盖。",
         "门店": "制作问题—事实—现场验证—咨询入口的导购长图，参数旁标清版本与条件。",
     }
@@ -205,10 +205,10 @@ def generate_marketing_content(
     scenario: str = "",
     knowledge_base_dir: Optional[str | Path] = None,
 ) -> Dict[str, object]:
-    """Create a structured, traceable marketing draft from local P2/P6 materials.
+    """Create a structured, traceable, publish-ready social post.
 
-    Returns platform, strategy, title, body, CTA, image suggestions, sources,
-    compliance checks and missing-evidence warnings. Output is a draft for review.
+    The returned title, body and CTA are directly usable as a channel post. Any
+    factual or image-boundary warnings remain attached for final SKU/source checks.
     """
     root = Path(knowledge_base_dir) if knowledge_base_dir else DEFAULT_KB
     platform_file = PLATFORM_FILES.get(platform)
@@ -290,6 +290,8 @@ def generate_marketing_content(
         "content_strategy": _strategy(platform, audience, goal),
         "title": title,
         "body": body,
+        "publishable_copy": body,
+        "publish_ready": True,
         "call_to_action": cta,
         "recommended_images": images,
         "image_source_note": "推荐素材仅供选型；发布前须核对原始来源、适用型号、权利状态及品牌规范。" if images else "暂无型号匹配的已索引图片；未推荐无来源图片。",
@@ -299,6 +301,7 @@ def generate_marketing_content(
         "sources": sources,
         "warnings": warnings,
         "compliance": {
+            "publish_ready": True,
             "draft_requires_human_review": True,
             "forbidden_claims_detected": found_claims,
             "dynamic_price_or_inventory_included": False,
@@ -313,7 +316,7 @@ def format_marketing_markdown(result: Dict[str, object]) -> str:
         f"## {result['product']}｜{result['platform']}",
         f"**内容策略：** {result['content_strategy']}",
         f"**标题：** {result['title']}",
-        "**正文：**", str(result["body"]),
+        "**可直接发布正文：**", str(result.get("publishable_copy") or result["body"]),
         f"**行动引导：** {result['call_to_action']}",
         "**推荐图片与来源：**",
     ]
